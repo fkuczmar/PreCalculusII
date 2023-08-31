@@ -1,5 +1,5 @@
 \documentclass{ximera}
-\title{Parameterized Curves}
+\title{Parametrically-defined Curves}
 
 
 \newcommand{\pskip}{\vskip 0.1 in}
@@ -12,9 +12,9 @@ An introduction to describing lines and segments parametrically.
 
 You already know at least two ways to describe curves algebraically - as graphs of functions like $y=x^2$, or as graph of relations like $x^2 + y^2 = 3$. In this section, we introduce a third way and describe curves parametrically. 
 
-To describe a curve in the plane \emph{parametrically} means to express the $x$ and $y$-coordinates as functions of a third variable called the \emph{parameter}. Often, but not always, the parameter measures time, and in this case the parameterization describes a \emph{motion}. It tells us the position of a point as a function of time. As such, the parameterization gives us much more information than just the path of the motion.
+To describe a curve in the plane \emph{parametrically} means to express the $x$ and $y$-coordinates as functions of a third variable called the \emph{parameter}. Often, but not always, the parameter measures time, and in this case the parameterization describes a \emph{motion}. It tells us the position of a point as a function of time. As such, the parameterization gives us much more information than just the path.% of the motion.
 
-For example, it is relatively easy to describe the \emph{path} of the earth around the sun as an ellipse with one focus at the sun, having a certain shape and size. But is would be much more difficult to parameterize the motion of the earth around the sun, as this would require knowing the position of the earth at any time in its orbit.
+For example, it is relatively easy to describe the \emph{path} of the earth around the sun as an ellipse with one focus at the sun, having a certain shape and size. But is would be much more difficult to parameterize the motion of the earth, as this would require knowing the position of the earth at any time in its orbit.
 
 In this class we will parameterize several different types of motions:
 
@@ -38,7 +38,7 @@ This chapter focuses on the first, motion with a constant velocity.
 
 \section{Motion with a Constant Velocity}
 
-In colloquial English, velocity is a synonym for speed, as in ``A 747 has a maximum velocity of 650 miles/hour." But this is incorrect, as velocity is propery a vector that describes both speed and direction. So we might describe the velocity of a car by saying that it moves due north at a speed of 60 miles/hour. For an object to move with a constant velocity means that it travels in a fixed direction at a constant speed.
+In colloquial English, velocity is a synonym for speed, as in ``A 747 has a maximum velocity of 650 miles/hour." But this is incorrect, as velocity is properly a vector that describes both speed and direction. So we could describe the velocity of a car by saying that it moves due north at a speed of 60 miles/hour. For an object to move with a constant velocity means that it travels in a fixed direction at a constant speed.
 
 \pskip
 
@@ -48,7 +48,7 @@ In colloquial English, velocity is a synonym for speed, as in ``A 747 has a maxi
 
 \noindent {\bf Solution:} The question is asking us to express the beetle's coordinates as functions of time, and we should start by precisely defining a variable that measures time. We'll do this by letting $t$ be the number of minutes past noon, so that for this problem $-2 \leq t \leq 20$. 
 
-Now we need to find functions
+Now we need to find \emph{coordinate functions}
 \[
    x = f(t) \text{ and } y = g(t) , \text{ for } -2\leq t \leq 20 ,
 \]
@@ -70,7 +70,7 @@ Now make a similar computation for the $y$-coordinate function and input your ex
     \end{question}
 
 \begin{exploration}\label{exp:pc1}
-Drag the slider $s$ to see the coordinates of the beetle at different times during its journey.
+The graphs of the beetle's coordinate functions $x=f(t)$ and $y=g(t)$, $-2\leq t \leq 20$, are shown below. Note the units and variable names on the axes. Drag the slider $s$ to see the coordinates of the beetle at different times during its journey.
  
 \pdfOnly{
 Access Desmos interactives through the online version of this text at
@@ -85,10 +85,10 @@ Access Desmos interactives through the online version of this text at
 \end{onlineOnly}
 \end{exploration}
 
-
+The next slide shows the motion of the beetle along its path.
 
 \begin{exploration}\label{exp:pc1b}
-Drag the slider $s$ to see the coordinates of the beetle at different times during its journey.
+Play the slider $s$ to see the beetle move along its path (the path is graphed in Line 4 and the motion in Line 5). Then click on the graph icon at the far left of Line 4 to hide the path. Play the slider again to see the beetle leave its tracks (coded in Line 6 - note the domain of the parameter $s$ there).
  
 \pdfOnly{
 Access Desmos interactives through the online version of this text at
@@ -99,6 +99,67 @@ Access Desmos interactives through the online version of this text at
 \begin{onlineOnly}
     \begin{center}
 \desmos{i2guw7uhnk}{900}{600}
+\end{center}
+\end{onlineOnly}
+\end{exploration}
+
+
+Let's add another insect and suppose that between 11:58 am and 12:20pm an ant also crawls with a constant velocity, passing the point $C(-2,-10)$ at 12:03pm heading directly toward the point $D(30,6)$.
+
+\pskip
+
+\noindent {\bf Example 2:} Parameterize the motion of the ant to make it collide with the beetle.
+
+\pskip
+
+\noindent {\bf Solution:} The solution to this problem requires several steps and to get started it helps to think backwards. We can parameterize the ant's motion if we know its position at two times. We already know where it is at 12:02pm, so we just need to find its position at some other time. And here is where the requirement that the insects collide comes into play. If we could find where and when they collide, then we could parameterize the ant's motion.
+
+We can find where the insects collide by knowing equations of their paths and using algebra. Then once we find where they collide, we can find the the collision using the parameterization of the beetle's motion.
+
+So to get started, first find a Cartestian equation (expressing $y$ in terms of $x$) of the ant's path and enter it in the line below.
+
+\begin{question}  
+         $ y=a(x) =  \answer{y=-10+\frac{1}{2}(x+2)}$  
+    \end{question}
+
+Next find a Cartestian equation of the beetle's path and enter it in the line below.
+
+\begin{question}  
+         $ y=b(x) =  \answer{y=8-\frac{9}{13}(x+3)}$  
+    \end{question}
+
+{\bf Use algebra} to find the {\bf exact} coordinates of the collision point and enter them (as an ordered pair) in the line below.
+
+\begin{question}  
+         $ (x_0,y_0) =  \answer{(388/31 , -85/31)}$
+    \end{question}
+
+Then find the time $t_0)$ of collision and enter it in the line below.
+
+\begin{question}  
+         $ t_0 =  \answer{290/31}$
+    \end{question}
+
+Finally, find expressions $x=f_1(t)$ and $y=g_1(t)$ for the ant's coordinate functions and in the Desmos Activity below.
+
+\begin{question}  
+         $ x = f_1(t) =   \answer{-2+\frac{388/31+2}{290/31-3}(t-3)}$
+
+        \hskip 0.93 in $y=g_1(t) =  \answer{-10+\frac{-85/31+10}{290/31-3}(t-3)}$
+    \end{question}
+
+
+\begin{exploration}\label{exp:pc1c}
+Finish entering the expressions for the ant's coordinate functions $x=f_1(t)$ and $y=g_1(t)$ in Lines 15 and 16 below. Then play the slider $s$ to see if the insects collide.
+\pdfOnly{
+Access Desmos interactives through the online version of this text at
+ 
+\href{https://www.desmos.com/calculator/p6x88ekem9}.
+}
+ 
+\begin{onlineOnly}
+    \begin{center}
+\desmos{p6x88ekem9}{900}{600}
 \end{center}
 \end{onlineOnly}
 \end{exploration}
