@@ -69,6 +69,12 @@ Now make a similar computation for the $y$-coordinate function and input your ex
          $ y=g(t) =  \answer{8-\frac{9}{7}(t-1)}$  
     \end{question}
 
+In conclusion, the functions
+\[
+    x = f(t) = -3 + \frac{13}{7}(t-1) \text{ and }  y=g(t) = 8-\frac{9}{7}(t-1) , \text{ for } -2\leq t \leq 20 ,
+\]
+express the beetle's coordinates (measured in yards) in terms of the number of minutes past noon.
+
 \begin{exploration}\label{exp:pc1}
 The graphs of the beetle's coordinate functions $x=f(t)$ and $y=g(t)$, $-2\leq t \leq 20$, are shown below. Note the units and variable names on the axes. Drag the slider $s$ to see the coordinates of the beetle at different times during its journey.
  
@@ -112,35 +118,35 @@ Let's add another insect and suppose that between 11:58 am and 12:20pm an ant al
 
 \pskip
 
-\noindent {\bf Solution:} The solution to this problem requires several steps and to get started it helps to think backwards. We can parameterize the ant's motion if we know its position at two times. We already know where it is at 12:02pm, so we just need to find its position at some other time. And here is where the requirement that the insects collide comes into play. If we could find where and when they collide, then we could parameterize the ant's motion.
+\noindent {\bf Solution:} The solution to this problem requires several steps and to get started it helps to think backwards. We can parameterize the ant's motion if we know its position at two times. We already know where it is at 12:02pm, so we just need to find its position at some other time. And here is where the requirement that the insects collide comes into play. We'll find both where and when they collide, and then use this additional information to parameterize the ant's motion.
 
-We can find where the insects collide by knowing equations of their paths and using algebra. Then once we find where they collide, we can find the the collision using the parameterization of the beetle's motion.
+We can find where the insects collide by first finding equations of their paths. Then once we find where they collide, we can find the collision time by using the parameterization of the beetle's motion.
 
-So to get started, first find a Cartestian equation (expressing $y$ in terms of $x$) of the ant's path and enter it in the line below.
+To get started, first find a Cartestian equation (expressing $y$ in terms of $x$) of the ant's path and enter it in the line below.
 
 \begin{question}  
-         $ y=a(x) =  \answer{y=-10+\frac{1}{2}(x+2)}$  
+         $ y=a(x) =  \answer{-10+\frac{1}{2}(x+2)}$  
     \end{question}
 
 Next find a Cartestian equation of the beetle's path and enter it in the line below.
 
 \begin{question}  
-         $ y=b(x) =  \answer{y=8-\frac{9}{13}(x+3)}$  
+         $ y=b(x) =  \answer{8-\frac{9}{13}(x+3)}$  
     \end{question}
 
-{\bf Use algebra} to find the {\bf exact} coordinates of the collision point and enter them (as an ordered pair) in the line below.
+{\bf Use algebra} to find the {\bf exact} coordinates of the collision point and enter these (as an ordered pair) in the line below.
 
 \begin{question}  
          $ (x_0,y_0) =  \answer{(388/31 , -85/31)}$
     \end{question}
 
-Then find the time $t_0)$ of collision and enter it in the line below.
+Then find the time $t_0$ (measured in minutes past noon) of collision and enter it in the line below.
 
 \begin{question}  
          $ t_0 =  \answer{290/31}$
     \end{question}
 
-Finally, find expressions $x=f_1(t)$ and $y=g_1(t)$ for the ant's coordinate functions and in the Desmos Activity below.
+Finally, find expressions $x=f_1(t)$ and $y=g_1(t)$ for the ant's coordinate functions. Enter these twice. Once in the boxes below and again in the Desmos Activity that follows.
 
 \begin{question}  
          $ x = f_1(t) =   \answer{-2+\frac{388/31+2}{290/31-3}(t-3)}$
@@ -150,19 +156,35 @@ Finally, find expressions $x=f_1(t)$ and $y=g_1(t)$ for the ant's coordinate fun
 
 
 \begin{exploration}\label{exp:pc1c}
-Finish entering the expressions for the ant's coordinate functions $x=f_1(t)$ and $y=g_1(t)$ in Lines 15 and 16 below. Then play the slider $s$ to see if the insects collide.
+Enter the correct expressions for the ant's coordinate functions $x=f_1(t)$ and $y=g_1(t)$ in Lines 15 and 16 below. Then play the slider $s$ to make sure that the insects collide.
+
 \pdfOnly{
 Access Desmos interactives through the online version of this text at
  
-\href{https://www.desmos.com/calculator/p6x88ekem9}.
+\href{https://www.desmos.com/calculator/pjci6nssqv}.
 }
  
 \begin{onlineOnly}
     \begin{center}
-\desmos{p6x88ekem9}{900}{600}
+\desmos{pjci6nssqv}{900}{600}
 \end{center}
 \end{onlineOnly}
 \end{exploration}
+
+
+\noindent {\bf Example 3:} Parameterize the motion of a beetle given that between noon and 12:30pm it crawls with a constant speed of $5$ yds/min, that it always heads directly toward the point $A(-23,19)$, and that it passes the point $B(7,-1)$ at 12:23pm. 
+
+\pskip
+
+\noindent {\bf Solution:} As before, we'll let $t$ be the number of minutes past noon. Our goal is to find functions
+\[
+   x = f(t) \text{ and } y = g(t), \text{ for } 0\leq t \leq 30 ,
+\]
+that express the beetle's coordinates (measured in yards) in terms of the number of minutes past noon.
+
+
+
+
 
 \end{document}
 
