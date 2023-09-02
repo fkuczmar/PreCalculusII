@@ -6,11 +6,11 @@
 
 \begin{document}
 \begin{abstract}
-An introduction to describing lines and segments parametrically.
+Motion with constant velocity
 \end{abstract}
 \maketitle
 
-You already know at least two ways to describe curves algebraically - as graphs of functions like $y=x^2$, or as graph of relations like $x^2 + y^2 = 3$. In this section, we introduce a third way and describe curves parametrically. 
+You already know at least two ways to describe a curve algebraically - as  the graph of a function like $y=x^2$, or as the graph of a relation like $x^2 + y^2 = 3$. In this section, we introduce a third way and describe curves parametrically. 
 
 To describe a curve in the plane \emph{parametrically} means to express the $x$ and $y$-coordinates as functions of a third variable called the \emph{parameter}. Often, but not always, the parameter measures time, and in this case the parameterization describes a \emph{motion}. It tells us the position of a point as a function of time. As such, the parameterization gives us much more information than just the path.% of the motion.
 
@@ -63,10 +63,12 @@ and (using point-slope)
      x = f(t) = -3 + \frac{13}{7}(t-1) , -2\leq t \leq 20 .
 \]
 
-Now make a similar computation for the $y$-coordinate function and input your expression in the box below.
 
-\begin{question}  
-         $ y=g(t) =  \answer{8-\frac{9}{7}(t-1)}$  
+\begin{question} 
+Now make a similar computation for the $y$-coordinate function and input your expression in the box below. 
+\[
+ y=g(t) =  \answer{8-\frac{9}{7}(t-1)} 
+\]
     \end{question}
 
 In conclusion, the functions
@@ -122,11 +124,13 @@ Let's add another insect and suppose that between 11:58 am and 12:20pm an ant al
 
 We can find where the insects collide by first finding equations of their paths. Then once we find where they collide, we can find the collision time by using the parameterization of the beetle's motion.
 
-To get started, first find a Cartestian equation (expressing $y$ in terms of $x$) of the ant's path and enter it in the line below.
 
 \begin{question}  
-         $ y=a(x) =  \answer{-10+\frac{1}{2}(x+2)}$  
-    \end{question}
+To get started, first find a Cartestian equation (expressing $y$ in terms of $x$) of the ant's path and enter it in the line below.
+ \[
+     y=a(x) =  \answer{-10+\frac{1}{2}(x+2)}
+\] 
+   \end{question}
 
 Next find a Cartestian equation of the beetle's path and enter it in the line below.
 
@@ -172,7 +176,7 @@ Access Desmos interactives through the online version of this text at
 \end{exploration}
 
 
-\noindent {\bf Example 3:} Parameterize the motion of a beetle given that between noon and 12:30pm it crawls with a constant speed of $5$ yds/min, that it always heads directly toward the point $A(-23,19)$, and that it passes the point $B(7,-1)$ at 12:23pm. 
+\noindent {\bf Example 3:} Parameterize the motion of a beetle given that between noon and 12:30pm it crawls with a constant speed of $1.7$ yds/min, that it always heads directly toward the point $A(-23,19)$, and that it passes the point $B(7,-1)$ at 12:23pm. 
 
 \pskip
 
@@ -182,9 +186,117 @@ Access Desmos interactives through the online version of this text at
 \]
 that express the beetle's coordinates (measured in yards) in terms of the number of minutes past noon.
 
+Unlike the previous problems, we are given the position only at a single time. But we can use the other information to compute the rates (with respect to time) at which the beetle's coordinates change as it moves along its path. We'll then use these rates along with our knowledge of the beetle's position at 12:23pm to find expressions for the coordinate functions. 
+
+The rates of change in the beetle's coordinates are determined by the speed and the direction of travel. We'll first find the time it takes to crawl from $A$ to $B$. 
+
+In crawling from $B(7,-1)$ to $A(-23,19)$, the beetle crawls a distance of
+\begin{align*}
+  \Delta s  &= \sqrt{(-23 - 7)^2 +   (19 - (-1))^2}  \text{ yds} \\
+      & = 10\sqrt{13} \text { yds} .
+\end{align*}
+
+And to travel this distance at the constant speed of $v = 1.7$ yards/min takes
+\[
+       \Delta t = \frac{\Delta s}{v}   = \frac{10 \sqrt{13} \text { yds}}{1.7 \text{ yds/min}} = \frac{10 \sqrt{13}}{1.7 } \text{ min} .
+\]
+
+During this time, its $x$-coordinate changes by
+\[
+   \Delta x = (-23 - 7) \text{ yds} = -30 \text{ yds} ,
+\]
+giving an average rate of change of
+\begin{align*}
+  \frac{\Delta x}{\Delta t} &= \frac{-30 \text{ yds}}{\frac{10 \sqrt{13}}{1.7} \text{ min}}  \\
+                                     & = \left( 1.7 \text{ yds/min} \right) \left( \frac{-30 \text{ yds}}{10\sqrt{13} \text{ yds}} \right) \label{Eq:RateofChange} \\
+                                     & = \frac{-5.1}{\sqrt{13}} \text{ yds/min}  
+\end{align*}
+in the $x$-coordinate. 
+
+Then since the beetle passes the point $B(7,-1)$ at 12:23pm,  the $x$-coordinate function for the motion is
+\[
+     x = f(t) = 7 - \frac{5.1}{\sqrt{13}}\left( t-23 \right) , \text{ for } 0\leq t \leq 30 .
+\]
+
+It is worth pointing out that the rate of change in the $x$-coordinate
+\[
+    \frac{\Delta x}{\Delta t} = \left( 1.7 \text{ yds/min} \right) \left( \frac{-30 \text{ yds}}{10\sqrt{13} \text{ yds}} \right)
+\]
+is the product of the beetle's speed and the dimensionless ratio 
+\[
+     \frac{\Delta x}{\Delta s} = \frac{-30 \text{ yds}}{10\sqrt{13} \text{ yds}}
+\]
+of the change in the $x$-coordinate to the distance between $A$ and $B$. This ratio is much like the slope $\Delta y / \Delta x$ of the path, where the change $\Delta s$ is positive (or negative) when we move along the path in the direction (or in the opposite direction) of the motion. If you have taken trigonometry before, you might recognize the ratio $\Delta x\/Delta s$ as the cosine of the counterclockwise angle from the positive $x$-axis to the direction of motion. But much more on this later.
+ 
+%It is this ratio that encodes the direction of travel and if you have taken trigonometry before, you might recognize this as the cosine of a certain angle (from the positive $x$-axis counterclockwise to the direction of motion). It is much like the slope $\Delta y / \Delta x$ of the path, but encodes more information as the slope does not distinguish between the two possible directions of travel along the path. But much more on this later. 
+
+\begin{question}
+ Find an expression for the $y$-coordinate function  
+\[
+ y = g(t) =   \answer{-1+\frac{3.4}{\sqrt{13}}( t-23)}
+\]
+of the motion.
+    \end{question}
 
 
+\pskip \pskip
 
+
+\noindent {\bf Example 4:} Let $h>0$ be a constant. Bug A leaves the point $(0,h)$ at time $t=0$ seconds and moves with constant speed $v$ m/s in the direction of the positive $x$-axis along the line $y=h$. At time $t=0$, Bug $B$ leaves the origin and moves with a constant velocity and constant speed $w$ m/s. Some time later the bugs collide.
+
+\begin{question}
+ Find an expression in terms of $h$, $v$, and $w$ for the time $t_0$ of the collision.  
+\[
+        t_0   =  \answer{\frac{h}{\sqrt{w^2-v^2}}}
+\]
+    \end{question}
+
+\begin{question}
+ Find an expression in terms of $h$, $v$, and $w$ for the coordinates of the collision point.  
+\[
+       (x_0, y_0)  =  \answer{\left( \frac{vh}{\sqrt{w^2-v^2}},h \right)}
+\]
+    \end{question}
+
+
+\begin{question}
+Parameterize the motion of Bug $B$ in terms of $h$, $v$, $w$ and $t$. Assume $t\geq 0$.
+\[
+        x = f(t)   =  \answer{v_0 t}
+\]
+\[
+      y = g(t) = \answer{\sqrt{w^2-v^2}t}
+\]
+    \end{question}
+
+\begin{exploration}\label{exp:pc1c}
+Enter the correct expression for the collision time in Line 10 below. Then enter the correct expressions for Bug B's coordinate functions $x=f(t)$ and $y=g(t)$ in Lines 11 and 12. Play the slider $s$ to make sure that the bugs collide.
+
+\pdfOnly{
+Access Desmos interactives through the online version of this text at
+ 
+\href{https://www.desmos.com/calculator/xuhjbr4m5r}.
+}
+ 
+\begin{onlineOnly}
+    \begin{center}
+\desmos{xuhjbr4m5r}{900}{600}
+\end{center}
+\end{onlineOnly}
+\end{exploration}
+
+
+\begin{example}
+Test
+\end{example}
+
+
+\begin{explanation}
+Test
+\end{explanation}
+
+
+\noindent {\bf Example 5:} 
 
 \end{document}
 
