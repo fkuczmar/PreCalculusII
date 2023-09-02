@@ -14,7 +14,7 @@ You already know at least two ways to describe a curve algebraically - as  the g
 
 To describe a curve in the plane \emph{parametrically} means to express the $x$ and $y$-coordinates as functions of a third variable called the \emph{parameter}. Often, but not always, the parameter measures time, and in this case the parameterization describes a \emph{motion}. It tells us the position of a point as a function of time. As such, the parameterization gives us much more information than just the path.% of the motion.
 
-For example, it is relatively easy to describe the \emph{path} of the earth around the sun as an ellipse with one focus at the sun, having a certain shape and size. But is would be much more difficult to parameterize the motion of the earth, as this would require knowing the position of the earth at any time in its orbit.
+For example, it is relatively easy to describe the path of the earth around the sun as an ellipse with one focus at the sun, having a certain shape and size. But it is much more difficult to parameterize the motion of the earth, as this would require knowing the position of the earth at any time in its orbit.
 
 In this class we will parameterize several different types of motions:
 
@@ -284,6 +284,58 @@ Access Desmos interactives through the online version of this text at
 \end{center}
 \end{onlineOnly}
 \end{exploration}
+
+
+
+\noindent {\bf Example 5:} Let $h,x_0>0$ be constants. Bug A leaves the point $(0,h)$ at time $t=0$ seconds and moves with constant speed $v$ m/s in the direction of the positive $x$-axis along the line $y=h$. Bug $B$ leaves the origin some time later and moves with a constant speed $w$ m/s directly toward the point $(x_0,h)$. The bugs eventually collide.
+
+\begin{question}
+ Find an expression for the time $t_0$ (measured in seconds since time $t=0$) of the collision. %in terms of $h$, $v$, and $w$ for the time $t_0$ of the collision.  
+\[
+        t_0   =  \answer{\frac{x_0}{v} - \frac{\sqrt{x_0^2+h^2}}{w}}
+\]
+    \end{question}
+
+
+\begin{question}
+Parameterize the motion of Bug $B$ for $t\geq t_0$.
+\[
+        x = f(t)   =  \answer{\frac{wx_0}{\sqrt{x_0^2+h^2}}\left( t - t_0  \right)}
+\]
+\[
+      y = g(t) =  \answer{\frac{wh}{\sqrt{x_0^2+h^2}}\left( t - t_0  \right)}
+\]
+    \end{question}
+
+\begin{exploration}\label{exp:pc1c}
+Enter the correct expression for the collision time in Line 16 below. Then enter the correct expressions for Bug B's coordinate functions $x=f(t)$ and $y=g(t)$ in Lines 17 and 18. Play the slider $s$ to make sure that the bugs collide.
+
+\pdfOnly{
+Access Desmos interactives through the online version of this text at
+ 
+\href{https://www.desmos.com/calculator/ooylgfbvtx}.
+}
+ 
+\begin{onlineOnly}
+    \begin{center}
+\desmos{ooylgfbvtx}{900}{600}
+\end{center}
+\end{onlineOnly}
+\end{exploration}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 \begin{example}
