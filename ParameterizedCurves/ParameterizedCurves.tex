@@ -226,7 +226,7 @@ is the product of the beetle's speed and the dimensionless ratio
 \[
      \frac{\Delta x}{\Delta s} = \frac{-30 \text{ yds}}{10\sqrt{13} \text{ yds}}
 \]
-of the change in the $x$-coordinate to the distance between $A$ and $B$. This ratio is much like the slope $\Delta y / \Delta x$ of the path, where the change $\Delta s$ is positive (or negative) when we move along the path in the direction (or in the opposite direction) of the motion. If you have taken trigonometry before, you might recognize the ratio $\Delta x\/Delta s$ as the cosine of the counterclockwise angle from the positive $x$-axis to the direction of motion. But much more on this later.
+of the change in the $x$-coordinate to the distance between $A$ and $B$. This ratio is much like the slope $\Delta y / \Delta x$ of the path, where the change $\Delta s$ is positive (or negative) when we move along the path in the direction (or in the opposite direction) of the motion. If you have taken trigonometry before, you might recognize the ratio $\Delta x/\Delta s$ as the cosine of the counterclockwise angle from the positive $x$-axis to the direction of motion. But much more on this later.
  
 %It is this ratio that encodes the direction of travel and if you have taken trigonometry before, you might recognize this as the cosine of a certain angle (from the positive $x$-axis counterclockwise to the direction of motion). It is much like the slope $\Delta y / \Delta x$ of the path, but encodes more information as the slope does not distinguish between the two possible directions of travel along the path. But much more on this later. 
 
@@ -324,31 +324,50 @@ Access Desmos interactives through the online version of this text at
 \end{exploration}
 
 
+\begin{example} {\bf Target Practice:}
+A balloon with radius $r$ cm is centered at the point with coordinates $(a,b)$. You shoot an arrow from the origin at time $t=0$ seconds in the direction of the point $(c, \sqrt{1-c^2})$, where $-1\leq c \leq 1$. The arrow travels with constant speed $v$ cm/sec and constant velocity as it would in a video game that ignores the force of gravity. 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-\begin{example}
-Test
+Our goal is to make the balloon pop when (and if) it gets hit by the arrow. 
 \end{example}
 
 
 \begin{explanation}
-Test
+\begin{question}
+
+\end{question}
+Find an expression for the time $t_0$ (measured in seconds since time $t=0$) when the arrow (modeled as a point) punctures the balloon. 
+\[
+   t_0 = \answer{\frac{1}{v} \left( a c + b \sqrt{1-c^2}-\sqrt{r^2 - \left( a \sqrt{1-c^2} - b c \right)^2}\right)}
+\]
+
+\begin{exploration}\label{exp:pc1c}
+Enter the correct expression for $t_0$ in Line 19 below. Play the slider $s$ to check the balloon pops at the correct time. Drag the slider $c$ or the center of the balloon so that the arrow misses the balloon. Then play the slider $s$ to check that the balloon does not pop.
+
+\pdfOnly{
+Access Desmos interactives through the online version of this text at
+ 
+\href{https://www.desmos.com/calculator/tz7fde0di2}.
+}
+ 
+\begin{onlineOnly}
+    \begin{center}
+\desmos{tz7fde0di2}{900}{600}
+\end{center}
+\end{onlineOnly}
+\end{exploration}
+
+
 \end{explanation}
 
 
-\noindent {\bf Example 5:} 
+
+
+
+
+
+
+
+
 
 \end{document}
 
