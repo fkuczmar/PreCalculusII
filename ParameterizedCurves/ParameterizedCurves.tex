@@ -314,10 +314,18 @@ Access Desmos interactives through the online version of this text at
 
 \end{explanation}
 
-\noindent {\bf Example 5:} Let $h,x_0>0$ be constants. Bug A leaves the point $(0,h)$ at time $t=0$ seconds and moves with constant speed $v$ m/s in the direction of the positive $x$-axis along the line $y=h$. Bug $B$ leaves the origin some time later and moves with a constant speed $w$ m/s directly toward the point $(x_0,h)$. The bugs eventually collide.
+\begin{example}   \label{Ex5}
+Let $h,x_0>0$ be constants. Bug A leaves the point $(0,h)$ at time $t=0$ seconds and moves with constant speed $v$ m/s in the direction of the positive $x$-axis along the line $y=h$. Bug $B$ leaves the origin some time later and moves with a constant speed $w$ m/s directly toward the point $(x_0,h)$.  How can we parameterize the motion of Bug B to make it collide with Bug A?
+\end{example}
+
+\begin{explanation}
+The key is to determine \emph{not} when the bugs collide, but rather when Bug B leaves the origin. We'll start by defining an unknown, $t_0$, to be the time (measured in seconds since time $t=0$) when Bug B leaves the origin. 
+
+Now use the Pythagorean theorem to write an equation that relates the variables. Then solve your equation to express $t_0$ in terms of the parameters $h$, $x_0$, $v$, and $w$.
+
 
 \begin{question}
- Find an expression for the time $t_0$ (measured in seconds since time $t=0$) of the collision. %in terms of $h$, $v$, and $w$ for the time $t_0$ of the collision.  
+ Find an expression for the time $t_0$ (measured in seconds since time $t=0$) that Bug B leaves the origin. %in terms of $h$, $v$, and $w$ for the time $t_0$ of the collision.  
 \[
         t_0   =  \answer{\frac{x_0}{v} - \frac{\sqrt{x_0^2+h^2}}{w}}
 \]
@@ -350,6 +358,8 @@ Access Desmos interactives through the online version of this text at
 \end{onlineOnly}
 \end{exploration}
 
+
+\end{explanation}
 
 \begin{example} {\bf Target Practice:}
 A balloon with radius $r$ cm is centered at the point with coordinates $(a,b)$. You shoot an arrow from the origin at time $t=0$ seconds in the direction of the point $(c, \sqrt{1-c^2})$, where $-1\leq c \leq 1$. The arrow travels with constant speed $v$ cm/sec and constant velocity as it would in a video game that ignores the force of gravity. 
