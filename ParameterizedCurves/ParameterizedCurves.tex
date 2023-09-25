@@ -257,8 +257,17 @@ of the motion.
 
 
 \begin{example} \label{Ex4}
- Let $h>0$ be a constant. Bug A leaves the point $(0,h)$ at time $t=0$ seconds and moves with constant speed $v$ m/s in the direction of the positive $x$-axis along the line $y=h$. At time $t=0$, Bug $B$ leaves the origin and moves with a constant velocity and constant speed $w$ m/s. Some time later the bugs collide.
+ Let $h>0$ be a constant. Bug A leaves the point $(0,h)$ at time $t=0$ seconds and moves with constant speed $v$ m/s in the direction of the positive $x$-axis along the line $y=h$. At time $t=0$, Bug $B$ leaves the origin and moves with a constant velocity and constant speed $w$ m/s. How can we parameterize the motion of Bug B to make it collide with Bug A?
+\end{example}
 
+\begin{explanation}
+The solution has several steps. Let's first think about what these should be.
+
+We are given the speed of Bug B and its initial position. So to completely describe the motion we need to determine its direction. We'll do this by finding the coordinates of the collision point. 
+
+Since we can easily paramterize the motion of Bug A, it is enough to first determine the time of the collision. We'll start by defining an unknown, call it $t_0$, that measures the number of seconds after time $t=0$ when the bugs collide. The key now is to draw right triangle $\Delta OAC$, where $O$ is the origin, $A$ is the point with coordinates $(0,h)$, and $C$ is the collision point. 
+
+We can express the lengths of the sides of $\Delta AOC$ in terms of the parameters $h$, $v$, $w$ and the unknown $t_0$. Then we can use the Pythagorean theorem to write an equation and solve for $t_0$.
 
 \begin{question}
  Find an expression in terms of $h$, $v$, and $w$ for the time $t_0$ of the collision.  
@@ -266,6 +275,8 @@ of the motion.
         t_0   =  \answer{\frac{h}{\sqrt{w^2-v^2}}}
 \]
     \end{question}
+
+Now that we have the collision time, we can use what we know about the motion of Bug A to find the collision point.
 
 \begin{question}
  Find an expression in terms of $h$, $v$, and $w$ for the coordinates of the collision point.  
@@ -301,7 +312,7 @@ Access Desmos interactives through the online version of this text at
 \end{onlineOnly}
 \end{exploration}
 
-\end{example}
+\end{explanation}
 
 \noindent {\bf Example 5:} Let $h,x_0>0$ be constants. Bug A leaves the point $(0,h)$ at time $t=0$ seconds and moves with constant speed $v$ m/s in the direction of the positive $x$-axis along the line $y=h$. Bug $B$ leaves the origin some time later and moves with a constant speed $w$ m/s directly toward the point $(x_0,h)$. The bugs eventually collide.
 
