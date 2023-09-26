@@ -12,7 +12,7 @@ Motion with constant velocity
 
 You already know at least two ways to describe a curve algebraically - as  the graph of a function like $y=x^2$, or as the graph of a relation like $x^2 + y^2 = 3$. In this section, we introduce a third way and describe curves parametrically. 
 
-To describe a curve in the plane \emph{parametrically} means to express the $x$ and $y$-coordinates as functions of a third variable called the \emph{parameter}. Often, but not always, the parameter measures time, and in this case the parameterization describes a \emph{motion}. It tells us the position of a point as a function of time. As such, the parameterization gives us much more information than just the path.% of the motion.
+To describe a curve in the plane \emph{parametrically} means to express the $x$ and $y$-coordinates as functions of a third variable called the \emph{parameter}. Often, but not always, the parameter measures time, and in this case the parameterization describes a \emph{motion}. It tells us the position of a point as a function of time. As such, the parameterization gives more information than just the path.% of the motion.
 
 For example, it is relatively easy to describe the path of the earth around the sun as an ellipse with one focus at the sun, having a certain shape and size. But it is much more difficult to parameterize the motion of the earth, as this would require knowing the position of the earth at any time in its orbit.
 
@@ -34,7 +34,43 @@ d. motions around an ellipse
 
 \pskip
 
-This chapter focuses on the first, motion with a constant velocity.
+This chapter focuses on the first, motion with a constant velocity. But we'll start with a review of transformations and how they apply to parametrically-defined curves.
+
+\section{Transforming Parametrically-Defined Curves}
+\begin{example}
+The \emph{coordinate functions}
+\[
+     x = f(t) , \text{ for } t_0 \leq t \leq t_1
+\]
+and
+\[
+    y = g(t) , \text{ for } t_0 \leq t \leq t_1 ,
+\]
+express the coordinates (in cm) of a beetle crawling in the $xy$-plane in terms of the number of seconds past noon. The graphs of these functions are shown below.
+
+
+
+\begin{exploration}\label{exp:pc1c}
+Enter the correct expression for the collision time in Line 10 below. Then enter the correct expressions for Bug B's coordinate functions $x=f(t)$ and $y=g(t)$ in Lines 11 and 12. Play the slider $s$ to make sure that the bugs collide.
+
+\pdfOnly{
+Access Desmos interactives through the online version of this text at
+ 
+\href{https://www.desmos.com/calculator/xmxuyctaib}.
+}
+ 
+\begin{onlineOnly}
+    \begin{center}
+\desmos{xmxuyctaib}{900}{600}
+\end{center}
+\end{onlineOnly}
+\end{exploration}
+
+
+\end{example}
+
+
+
 
 \section{Motion with a Constant Velocity}
 
@@ -367,6 +403,8 @@ A balloon with radius $r$ cm is centered at the point with coordinates $(a,b)$. 
 Our goal is to make the balloon pop when (and if) it gets hit by the arrow. 
 \end{example}
 
+\begin{explanation}
+The key is to determine when (if ever) the arrow punctures the balloon. This will happen \emph{the first time} (if ever) the distance between the arrow and the center of the balloon is equal to the balloon's radius. To find this time, start by parameterizing the motion of the balloon. Then write an equation that says the distance between the arrow and the balloon is equal to the balloon's radius. Finally, solve this quadratic equation by completing the square and enter the first of the two times below. 
 
 \begin{question}
 
@@ -378,7 +416,7 @@ Find an expression for the time $t_0$ (measured in seconds since time $t=0$) whe
 \end{question}
 
 \begin{exploration}\label{exp:pc1c}
-Enter the correct expression for $t_0$ in Line 19 below. Play the slider $s$ to check the balloon pops at the correct time. Drag the slider $c$ or the center of the balloon so that the arrow misses the balloon. Then play the slider $s$ to check that the balloon does not pop.
+Enter the correct expression for $t_0$ in Line 19 below. Play the slider $s$ to check the balloon pops at the correct time. Drag the slider $c$ or the center of the balloon so that the arrow misses the balloon. Then play the slider $s$ to check that the balloon does not pop. Use the slider to change the value of $v$ and make sure everything still works.
 
 \pdfOnly{
 Access Desmos interactives through the online version of this text at
@@ -393,6 +431,8 @@ Access Desmos interactives through the online version of this text at
 \end{onlineOnly}
 \end{exploration}
 
+
+\end{explanation}
 
 
 
