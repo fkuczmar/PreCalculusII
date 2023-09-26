@@ -46,12 +46,19 @@ and
 \[
     y = g(t) , \text{ for } t_0 \leq t \leq t_1 ,
 \]
-express the coordinates (in cm) of a beetle crawling in the $xy$-plane in terms of the number of seconds past noon. The graphs of these functions are shown below.
+express the coordinates (in cm) of a beetle crawling in the $xy$-plane in terms of the number of seconds past noon. The graphs of these functions are shown below. Note that the coordinate axes are playing several roles. So, for the graph of the coordinate function $x=f(t)$ (green), the input $t$ (along the horizontal axis) is measured in seconds and the output $x$ (along the vertical axis) is measured in centimeters. 
 
 
 
 \begin{exploration}\label{exp:pc1c}
-Enter the correct expression for the collision time in Line 10 below. Then enter the correct expressions for Bug B's coordinate functions $x=f(t)$ and $y=g(t)$ in Lines 11 and 12. Play the slider $s$ to make sure that the bugs collide.
+(a) Use the graphs below to appoximate the coordinates of four points on the path. Then use the graphs to sketch the path. Explain your reasoning.
+
+Then check your work by clicking on the circle at the beginning of Line 13 to see the path. 
+
+\pskip
+
+(b) Play the slider $u$ on Line 31 to see the motion of the beetle along its path. Use this to sketch by hand a graph of the speed $v$ of the beetle (in cm/sec) as a function of $t$. Do not include a scale on the vertical axis. Explain your reasoning.
+
 
 \pdfOnly{
 Access Desmos interactives through the online version of this text at
@@ -61,7 +68,60 @@ Access Desmos interactives through the online version of this text at
  
 \begin{onlineOnly}
     \begin{center}
-\desmos{xmxuyctaib}{900}{600}
+\desmos{tetwsj8rki}{900}{600}
+\end{center}
+\end{onlineOnly}
+\end{exploration}
+
+We'll now define a new motion for an ant by transforming the beetle's coordinate functions, as below:
+\[
+   x = f_1(t) = a_1 + b_1 f(k(t-c_1))
+\]
+and
+\[
+   y =g_1(t) = a_2 + b_2 g(k(t-c_1)) .
+\]
+
+\begin{question}
+What are the units of the constants $a_1$, $b_1$, $k$, and $c_1$? Explain your reasoning.
+\end{question}
+
+\begin{question}
+Find the domain of the coordinate functions. Assume $k>0$.
+\end{question}
+
+Now we'll explore the effects the constants $a_1$, ... $c_1$ have on the graphs of the coordinate function, the path, and the motion. Possible ways to describe these tranformations include statements like:
+
+\begin{itemize}
+\item{A transation in the direction of the postive $x$-axis by 4 ??, where the ?? need to be replaced with the appropriate units.}
+
+\item{A dilation by a factor of two about the positive $t$-axis.}
+
+\item{The motion is speeded up by a factor of two. So at corresponding points on the paths, the ant always moves twice as fast as the beetle.}
+
+\end{itemize}
+
+
+
+\begin{exploration}\label{exp:pc1c}
+Turn on the path folder by clicking the circle at the beginning of Line 13 as before. 
+
+\pskip
+
+Experiment with the sliders on Lines 32-37, by changing one parameter at a time, in order. Describe what effect each parameter has on the graphs of the coordinate function, the path, and the motion. Explain \emph{why} each parameter has the effect it does.
+
+Take your time. There is quite a bit to notice here.
+
+
+\pdfOnly{
+Access Desmos interactives through the online version of this text at
+ 
+\href{https://www.desmos.com/calculator/xmxuyctaib}.
+}
+ 
+\begin{onlineOnly}
+    \begin{center}
+\desmos{tetwsj8rki}{900}{600}
 \end{center}
 \end{onlineOnly}
 \end{exploration}
