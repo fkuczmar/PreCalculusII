@@ -40,11 +40,11 @@ This chapter focuses on the first, motion with a constant velocity. But we'll st
 \begin{example} \label{Ex0}
 The \emph{coordinate functions}
 \[
-     x = f(t) , \text{ for } t_0 \leq t \leq t_1
+     x = f(t) , \text{ for } 0\leq t \leq 4
 \]
 and
 \[
-    y = g(t) , \text{ for } t_0 \leq t \leq t_1 ,
+    y = g(t) , \text{ for }0 \leq t \leq 4 ,
 \]
 express the coordinates (in cm) of a beetle crawling in the $xy$-plane in terms of the number of seconds past noon. The graphs of these functions are shown below. Note that the coordinate axes are playing several roles. So, for the graph of the coordinate function $x=f(t)$ (green), the input $t$ (along the horizontal axis) is measured in seconds and the output $x$ (along the vertical axis) is measured in centimeters. 
 
@@ -53,11 +53,11 @@ express the coordinates (in cm) of a beetle crawling in the $xy$-plane in terms 
 \begin{exploration}\label{exp:pc1c}
 (a) Use the graphs below to appoximate the coordinates of four points on the path. Then use the graphs to sketch the path by hand. Explain your reasoning.
 
-Then check your work by clicking on the circle at the beginning of Line 13 to see the path. 
+Then check your work by clicking on the circle at the beginning of Line 15 to see the path. 
 
 \pskip
 
-(b) Play the slider $u$ on Line 31 to see the motion of the beetle along its path. Use this to sketch by hand a graph of the speed $v$ of the beetle (in cm/sec) as a function of $t$. Do not include a scale on the vertical axis. Explain your reasoning.
+(b) Play the slider $u$ on Line 34 to see the motion of the beetle along its path. Use this to sketch by hand a graph of the speed $v$ of the beetle (in cm/sec) as a function of $t$. Do not include a scale on the vertical axis. Explain your reasoning.
 
 
 \pdfOnly{
@@ -73,7 +73,7 @@ Access Desmos interactives through the online version of this text at
 \end{onlineOnly}
 \end{exploration}
 
-We'll now define a new motion for an ant by transforming the beetle's coordinate functions. Here are the coordinate functions for the ant, where $a_1$, $a_2$, $b_1$, $b_2$, $k$, and $c_1$ are constants:
+We'll now define a new motion for an ant by transforming the beetle's coordinate functions. Here are the coordinate functions for the ant, where $a_1$, $a_2$, $b_1$, $b_2$, $k$, and $c_1$ are constants and the functions $f$ and $g$ are the same as above:
 \[
    x = f_1(t) = a_1 + b_1 f(k(t-c_1))
 \]
@@ -86,9 +86,9 @@ and
 What are the units of the constants $a_1$, $b_1$, $k$, and $c_1$? Explain your reasoning.
 \end{question}
 
-\begin{question}
-Find the domain of the coordinate functions. Assume $k>0$. What is the domain if $k<0$?
-\end{question}
+%\begin{question}
+%Find the domain of the coordinate functions. Assume $k>0$. What is the domain if $k<0$?
+%\end{question}
 
 Now we'll explore the effects the constants $a_1$, ... $c_1$ have on the graphs of the coordinate function, the path, and the motion. Possible ways to describe these tranformations include statements like:
 
@@ -104,24 +104,43 @@ Now we'll explore the effects the constants $a_1$, ... $c_1$ have on the graphs 
 
 
 \begin{exploration}\label{exp:pc2c}
-Turn on the path folder by clicking the circle at the beginning of Line 13 as before. 
+Turn on the path folder by clicking the circle at the beginning of Line 15 as before. 
 
 \pskip
 
-Experiment with the sliders on Lines 32-37, by changing one parameter at a time, in the order listed. Describe how each parameter affects the graphs of the coordinate function, the path, and the motion. Explain \emph{why} each parameter has the effect it does. Be sure to choose both positive and negative values for the parameters.
+For each of the following transformations (a)-(d) below, do the following:
 
-Take your time. There is quite a bit to consider here.
+\begin{itemize}
+
+\item{Describe the transformations that take the graphs of the original coordinate functions to the graphs of the new coordinate functions.)} 
+
+\item{Describe the transformations that take the original path to the new path.}
+
+\item{Find the domain of the new coordinate functions.}
+
+\item{Desribe how the transformations affect the speed and the time interval of the motion.}
+
+\item{Include Screenshots of the three original graphs and the three new graphs.}
+
+\end{itemize}
+
+(a) Drag the sliders on Lines 35 and 36 so that $a_1=-1$ and $a_2=-5$. 
+
+\pskip
+
+(b) Keeping  $a_1 = -1$ and $a2=-5$, set $c_1=3$ in Line 37.  
+
 
 
 \pdfOnly{
 Access Desmos interactives through the online version of this text at
  
-\href{https://www.desmos.com/calculator/xmxuyctaib}.
+\href{https://www.desmos.com/calculator/thdeiz627q}.
 }
  
 \begin{onlineOnly}
     \begin{center}
-\desmos{vj939plbwm}{900}{600}
+\desmos{thdeiz627q}{900}{600}
 \end{center}
 \end{onlineOnly}
 \end{exploration}
