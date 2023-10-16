@@ -9,6 +9,63 @@ An introduction to circular trigonometry.
 \end{abstract}
 \maketitle
 
-You might have noticed
+You might have noticed at the end of the last chapter that we did not parameterize the motion of the bugs crawling around a circle at a constant speed. That was because we did not have the cosine and sine functions and these are needed to parameterize uniform circular motion.
+
+Imagine standing at the origin facing the positive $x$-axis. Now rotate counterclockwise through an angle of $\theta$ radians and walk any distance, say $r$ meters in this direction, and stop at the point $P$ with coordinates $(x,y)$.
+
+Now the cosine function takes as an input the (dimensionless) angle $\theta$ measured in radians, and returns as an output the \emph{dimensionless} ratio $x/r$. We write this as 
+\[
+   \cos \theta = \frac{x \text{ cm}}{r \text{ cm}} = \frac{x}{r} .
+\]
+
+Similarly, the sine of the angle $\theta$ is defined as the \emph{dimensionless} ratio $y/r$, so that
+\[
+   \sin \theta = \frac{y \text{ cm}}{r \text{ cm}} = \frac{y}{r} .
+\]
+
+\begin{question} \label{Q1:Cosine}
+Explain why the values of $\cos theta$ and $\sin\theta$ do {\bf not} depend on $r$ (ie. on how far you walk away from the origin). 
+\end{question}
+
+
+
+Many of you are probably familiar with the unit circle. But working with the unit circle makes it seem like the outputs to these functions are lengths. It obscures the key point that the outputs are dimensionless. So do yourself a favor and {\bf forget about the unit circle.} It is also not necessary to waste time memorizing anything about the unit circle. Instead, knowing the definitions of the cosine and sine functions is enough to figure out all you need.
+
+It's one thing to define these functions, but quite another to compute or approximate their values. Much effort and ingenuity has gone into this problem over many centuries. But we can start to get a feel for the sine and cosine functions by using a radian protractor to approximate some of their outputs.
+
+
+\begin{exploration}\label{Exp1:CF}
+Use the radian protractor to approximate each of the following. Show a screenshot and give a brief explanation for each. Include all units in your computations. Then simplify each ratio. You may use a {\bf four-function calculator} for two of these questions to do arithmetic.
+
+(a) $\cos 5$, $\sin 5$
+
+(b) $\cos (-5)$,  $\sin (-5)$
+
+(c) $\cos 2.7$, $\sin 2.7$
+
+(d) $\cos (\pi - 2.7)$, $\sin (\pi-2.7)$
+
+(e) $\cos 360$, $\sin 360$
+
+(f) $\cos 200^\circ$, $\sin 200^\circ$
+
+\pdfOnly{
+Access Desmos interactives through the online version of this text at
+ 
+\href{https://www.desmos.com/calculator/pnhnho4xsx}.
+}
+ 
+\begin{onlineOnly}
+    \begin{center}
+\desmos{pnhnho4xsx}{900}{600}
+\end{center}
+\end{onlineOnly}
+\end{exploration}
+
+\begin{question} \label{Q2:Cosine}
+A friend says that the cosine of an angle $\theta$ is the ratio of the length of the adjacent leg to the length of the hypotenuse in a right triangle with $\theta$ as one of the angle angles. Explain why this is incorrect.
+\end{question}
+
+
 
 \end{document}
