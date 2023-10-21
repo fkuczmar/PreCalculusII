@@ -63,10 +63,105 @@ Access Desmos interactives through the online version of this text at
 \end{exploration}
 
 \begin{question} \label{Q2:Cosine}
-%A friend says that the cosine of an angle $\theta$ is the ratio of the length of the adjacent leg to the length of the hypotenuse in a right triangle with $\theta$ as one of the angle angles. Explain why this is incorrect.
 Approximate the value of $\cos (\pi^\circ)$. Explain your reasoning and include a picture to help with your explanation.
 \end{question}
 
+
+\section{Parameterizing Motions}
+From the definitions of $\cos\theta$ and $\sin \theta$, we know
+\[
+    x = r \cos \theta 
+\]
+and
+\[
+      y=r\sin \theta .
+\]
+These equations tell us how to compute the coordinates of point given its distance to the orign $r$ and its \emph{polar angle} $\theta$.
+
+Regarding $r$ as a constant, they also tell us how to paramterize the circle $x^2 + y^2 = r^2$ in terms of the polar angle $\theta$.
+
+\begin{example} \label{Ex10:Cosine}
+Parameterize the circle of radius $10$ centered at the point $(4,9)$.
+
+\begin{explanation}
+The coordinate functions
+\[
+     x = f(\theta) = 10\cos \theta   , 0\leq \theta \leq 2\pi
+\]
+and
+\[
+  y =g(\theta) = 10\sin \theta   , 0\leq \theta \leq 2\pi
+\]
+parameterize the circle of radius $10$ centered at the origin. Adding $4$ to the $x$-coordinates and $9$ to the $y$-coordinates translates this circle centered at $(0,0)$ to the circle of radius 10 centered at $(4,9)$. So the latter has parameterization
+\[
+     x = f(\theta) = 4+ 10\cos \theta   , 0\leq \theta \leq 2\pi
+\]
+and
+\[
+  y = g(\theta) = 9 + 10\sin \theta   , 0\leq \theta \leq 2\pi .
+\]
+\end{explanation}
+\end{example}
+
+On the other hand, we can hold $\theta$ fixed and regard $r$ as the parameter in the coordinate functions
+\[
+    x = r \cos \theta 
+\]
+and
+\[
+      y=r\sin \theta .
+\]
+This lets us parameterize a segment from the origin that makes the angle $\theta$ with the postive $x$-axis.
+
+\begin{example} \label{Ex11:Cosine}
+Starting at the origin facing the positive $x$-axis, you turn counterclockwise through an angle of 2 radians. You then walk $10$ meters directly away from the origin. Express the coordinates of a point along your path in terms of its distance $r$ from the origin.
+
+\begin{explanation}
+The coordinate functions
+\[
+     x = f(r) = r\cos 2   , 0\leq r \leq 10
+\]
+and
+\[
+  y =g(r) = r \sin 2   , 0\leq r \leq 10
+\]
+parameterize this path in terms of the distance to the origin.
+\end{explanation}
+\end{example}
+
+
+\begin{question}  \label{Q2:Cosine}
+Parameterize each of the following motions from time $t=0$ seconds to time $t=20$ seconds.  All coordinates are measured in meters. Use the point-slope form of a linear function when necessary. Check that your parameterizations are correct in the Desmos worksheet  below. 
+
+(a) A motion that rotates counter-clockwise at a constant rate of $20^\circ$/sec around the circle centered at the point $(-2,10)$ and passes the point $(5,10)$ at time $t=13$ seconds. 
+
+(b) A motion that rotates clockwise around the circle centered at the point $(-2,10)$ at a constant speed of $3$m/s  and passes the point $(-2,0)$ at time $t=13$ seconds. 
+
+(c) A motion that moves along a path inclined at the angle of $5\pi/8$ radians to the postive $x$-axis. The motion has a constant speed of $1/4$ m/s and leaves the origin at time $t=0$ seconds.
+
+(d) A motion in a fixed direction with a constant speed that passes the point $A(3,-2)$ at time $t=6$ seconds and the point $B(-1,8)$ at time $t=10$ seconds.
+
+(e) Any clockwise motion about the ellipse
+\[
+   \frac{x^2}{25} + \frac{y^2}{15} = 1 .
+\]
+
+(f) A counterclockwise motion around the circle $x^2+y^2=r^2$ that rotates about the point $(a,0)$ at a constant rate. Assume $-r<a<r$.
+
+\pdfOnly{
+Access Desmos interactives through the online version of this text at
+ 
+\href{https://www.desmos.com/calculator/3r6ncnf3fc}.
+}
+ 
+\begin{onlineOnly}
+    \begin{center}
+\desmos{3r6ncnf3fc}{900}{600}
+\end{center}
+\end{onlineOnly}
+
+
+\end{question}
 
 
 \end{document}
