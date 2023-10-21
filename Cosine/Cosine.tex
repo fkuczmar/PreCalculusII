@@ -124,12 +124,37 @@ and
 \end{example}
 
 
+\begin{example} \label{Ex11:Cosine}
+Parameterize a motion that rotates counterclockwise about the circle of radius $10$ centered at the point $(4,9)$ with a speed of of $3$ cm/s. The motion runs from time $t=0$ to time $t=20$ seconds and passes the point $(14,9)$ at time $t=12$ seconds. The coordinates are measure in centimeters.
+
+\begin{explanation}
+We need only to express the polar angle $\theta$ of the motion as a function of $t$ and substitute this expression for $\theta$ in parameterization in the previous example.
+
+Since the motion rotates about the point $(4,9)$ at a rate of
+\[
+    v = \frac{3 \text{ cm/s}}{10 \text{cm}} = 0.3 \text{ rad/sec} 
+\]
+and $\theta = 0$ when $t=12$, 
+\[
+   \theta = 0.3(t-12) , \,\, 0\leq t \leq 20 .
+\]
+So the coordinate functions of the motion are
+\[
+     x = f(t) = 4+ 10\cos (0.3(t-12)) ,  \,\,  0\leq \theta \leq 20
+\]
+and
+\[
+  y = g(t) = 9 + 10\sin (0.3(t-12))  , \,\,   0\leq t\leq 20 .
+\]
+\end{explanation}
+\end{example}
+
 
 
 \begin{question}  \label{Q2:Cosine}
 Parameterize each of the following motions from time $t=0$ seconds to time $t=20$ seconds.  All coordinates are measured in meters. Use the point-slope form of a linear function when necessary. Check that your parameterizations are correct in the Desmos worksheet  below. 
 
-(a) A motion that rotates counter-clockwise at a constant rate of $20^\circ$/sec around the circle centered at the point $(-2,10)$ and passes the point $(5,10)$ at time $t=13$ seconds. 
+(a) A motion that rotates counter-clockwise at a constant rate of $20^\circ/\text{sec}$ around the circle centered at the point $(-2,10)$ and passes the point $(5,10)$ at time $t=13$ seconds. 
 
 (b) A motion that rotates clockwise around the circle centered at the point $(-2,10)$ at a constant speed of $3$m/s  and passes the point $(-2,0)$ at time $t=13$ seconds. 
 
@@ -137,12 +162,19 @@ Parameterize each of the following motions from time $t=0$ seconds to time $t=20
 
 (d) A motion in a fixed direction with a constant speed that passes the point $A(3,-2)$ at time $t=6$ seconds and the point $B(-1,8)$ at time $t=10$ seconds.
 
-(e) Any clockwise motion about the ellipse
+(e) A clockwise motion about the ellipse
 \[
    \frac{x^2}{25} + \frac{y^2}{15} = 1 .
 \]
+Does your motion rotate about the origin at a constant rate?
 
-(f) A counterclockwise motion around the circle $x^2+y^2=r^2$ that rotates about the point $(a,0)$ at a constant rate. Assume $-r<a<r$.
+(f) A motion along the semi-circle
+\[
+    x = \sqrt{25 - y^2}
+\]
+that oscillates between the points $(0,5)$ and $(0,-5)$ and returns to its starting position $(0,5)$ every 4 seconds.
+
+(g) A counterclockwise motion around the circle $x^2+y^2=r^2$ that rotates about the point $(a,0)$ at a constant rate. Assume $-r<a<r$.
 
 \pdfOnly{
 Access Desmos interactives through the online version of this text at
@@ -155,6 +187,17 @@ Access Desmos interactives through the online version of this text at
 \desmos{3r6ncnf3fc}{900}{600}
 \end{center}
 \end{onlineOnly}
+
+\end{question}
+
+\begin{question} \label{Q3:Cosine}
+Partial information is given below regarding three uniform circlular motions. Describe (in words) possible counterclockwise and clockwise motions for each. Then find the missing coordinate function for each of your descriptions.
+
+(a) $x=f(t) = 5 + 3 \cos \left( \frac{2}{5}t \right)$
+
+(b) $y = g(t) = 8 + 3 \sin \left( \frac{2\pi}{5}t \right)$
+
+(c) $x=f(t) = 5 - 3 \cos \left( \frac{\pi}{12}\left( t-12 \right) \right)$
 
 
 \end{question}
