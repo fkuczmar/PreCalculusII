@@ -10,10 +10,27 @@ Right triangle trigonometry.
 \maketitle
 
 
-The most important thing to remember about right triangle trigonometry is that it only applies to right triangles.
+Right triangle trigonometry is a special case of circular trigonometry, where the polar angle $\theta$ is one of the acute angles in a right triangle and therefore has a measure strictly between $0$ and $\pi/2$ radians. In this case, we can interpret the trigonometric ratios geometrically as %$\cos\theta$, $\sin\theta$, and $\tan\theta$ respectively as the ratios of the leg adjato the hypotenuse
+\[
+   \cos \theta = \frac{x}{r}  = \ \frac{\text{leg adjacent the angle } \theta}{\text{hypotenuse}}
+\]
+\[
+   \sin \theta = \frac{y}{r}  = \ \frac{\text{leg opposite the angle } \theta}{\text{hypotenuse}}
+\]
+\[
+   \cos \theta = \frac{y}{x}  = \ \frac{\text{leg opposite the angle } \theta}{\text{leg adjacent the angle } \theta}
+\]
+
+These ratios, as well as the angle $\theta$, all encode the \emph{shape} of a right triangle. 
+
+\begin{question}   \label{Q45:RightTriangle}
+Draw a right triangle in the appropriate postion in an $xy$-coordinate system and explain the interpretations of the three ratios above.
+\end{question}
+
+The most important thing to remember about right triangle trigonometry is that you can only use it for right triangles.
 
 \begin{question} \label{Q1:RightTriangle}
-You stand $a$ meters from the base of a tall building and measure the angle of inclination to a point $P$ on the building. You then use that measurement to compute the height of the point $P$ above eye-level.
+You stand $a$ meters from the base of a tall building and measure the angle of  elevation to a point $P$ on the building. You then use that measurement to compute the height of the point $P$ above eye-level.
 
 Let 
 \[
@@ -23,22 +40,39 @@ be the function that expresses that computed height (in feet) in terms of the me
 
 (a) Draw a picture that captures the scenario. Include the ground, you, the building, the point $P$, the line of sight to $P$, and the angle $\theta$.
 
-(b) Find an expression for the function $f$.
+(b) Use your picture from part (a) to find an expression for $f(\theta)$.
 
-(c) There will be some error in your measurement that will lead to an error in computing the height of point $P$.
+(c) There will be an error $\Delta \theta$ in your measurement of the angle $\theta$ and this will lead to an error in computing the height of point $P$.  To approximate this error, we average the two errors
+\[
+     e_1 = f(\theta + \Delta\theta) - f(\theta)
+\]
+and 
+\[
+   e_2 = f(\theta) - f(\theta - \Delta\theta).
+\]
+This gives the approximate error in the computed height as
+\begin{equation}
+   e =   0.5 (e_1 + e_2) = 0.5 \left(  f(\theta + \Delta\theta) - f(\theta - \Delta\theta)     \right) . \label{Eq:Error65}
+\end{equation}
+Experiment with the Desmos activity below and describe qualitatively how the error varies with the measured angle of elevation.
 
+(d) You stand $20$ meters from the base of a building and measure the angle of elevation to the top of the building. You use this measurement to compute the height of the building to be $80$ meters. 
 
-\begin{exploration}\label{Exp3:Comp}
+You then walk away from the building, measure the angle of elevation to the top to be $0.6$ radians, and compute the height of the building again.
+
+ Use the above expression (\ref{Eq:Error65}) to approximate the two errors in computing the height. Aassume a maximum error of $\pm 0.1$ radians in measuring the two angles of elevation. 
+
+\begin{exploration}
 
 \pdfOnly{
 Access Desmos interactives through the online version of this text at
  
-\href{https://www.desmos.com/calculator/vyzdgymdjf}.
+\href{https://www.desmos.com/calculator/15px2vpxz1}.
 }
  
 \begin{onlineOnly}
     \begin{center}
-\desmos{vyzdgymdjf}{900}{600}
+\desmos{15px2vpxz1}{900}{600}
 \end{center}
 \end{onlineOnly}
 \end{exploration} 
@@ -46,5 +80,51 @@ Access Desmos interactives through the online version of this text at
 \end{question}
 
 
+\begin{question} \label{Q3:RightTriangle}
+A ferris wheel has radius $80$ meters and the center of the wheel is $90$ meters above the ground. You ride the wheel for one revolution.
+
+Let 
+\[
+    h = f(\theta) \, , 0\leq \theta \leq 2pi ,
+\]
+be the function that expresses your height above the ground in terms of the wheel's angle of rotation, measured from the time you  got on.
+
+(a)  Assume $0 < \theta < \pi/2$ and draw a picture that captures the scenario. Include the ground, the ferris wheel, a point $P$ on the wheel representing your position after the wheel has turned through $\theta$ radians, and other lines as necessary. Label the angle $\theta$.
+
+(b) Use your picture from part (a) to find an expression for $f(\theta)$.
+
+(c) Suppose the wheel stops when you are at the angular position $\theta$ and that it then turns through a small angle $\Delta \theta$ and stops again.  Use the exploration below to describe qualitatively how the small change
+\[
+    \Delta h = f(\theta + \Delta \theta) - f(\theta)
+\]
+in your height depends on the angle $\theta$. 
+
+(d) Fix $\Delta \theta \sim 0$ and use the exploration to sketch by hand a graph of the function 
+\[
+     \Delta h = g(\theta) \, , 0\leq \theta \leq 2\pi ,
+\]
+that takes as an input the wheel's angle of rotation $\theta$ and returns as an output the change $\Delta h$
+in your height as the wheel turns through the small angle $\Delta \theta$.
+
+\begin{exploration}
+
+\pdfOnly{
+Access Desmos interactives through the online version of this text at
+ 
+\href{https://www.desmos.com/calculator/8swp20zond}.
+}
+ 
+\begin{onlineOnly}
+    \begin{center}
+\desmos{8swp20zond}{900}{600}
+\end{center}
+\end{onlineOnly}
+\end{exploration} 
+
+
+
+
+
+\end{question}
 
 \end{document}
