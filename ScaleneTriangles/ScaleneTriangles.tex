@@ -9,19 +9,70 @@ The law of sines, the law of cosines.
 \end{abstract}
 \maketitle
 
+\begin{exploration}
+The law of cosines, like the Pythagorean theorem, is really a statement about areas. But perhaps the simplest way to think about the law of cosines might be in terms of lengths. 
+
+The figure below shows a way to visualize the law of cosines. To avoid fractions, we scale $\Delta ABC$ with side lengths $a$, $b$, $c$ , by the factor $c$, so that the scaled triangle (still called $\Delta ABC$) has side lengths $ac$, $bc$, and $c^2$.
 
 \pdfOnly{
 Access Desmos interactives through the online version of this text at
  
-\href{https://www.desmos.com/calculator/9fubvhv8wj}.
+\href{https://www.desmos.com/calculator/vpq0crsvw3}.
 }
  
 \begin{onlineOnly}
     \begin{center}
-\desmos{9fubvhv8wj}{900}{600}
+\desmos{vpq0crsvw3}{900}{600}
 \end{center}
 \end{onlineOnly}
 
+
+Now the idea is to partition $\overline{AB}$ into three segments by finding points $C_A$ and $C_B$ on $\overline{AB}$ so that
+\[ 
+    \Delta ACC_A \sim \Delta C BC_B \sim \Delta ABC .
+\]
+Then in $\Delta ACC_A$,
+\[
+    AC_A = (b/c)(bc) = b^2
+\]
+and
+\[
+  CC_A = (b/c)(ac) = ab.
+\]
+And in $\Delta C BC_B $,
+\[
+    BC_B = (a/c)(ac) = a^2
+\]
+and
+\[
+  CC_B = (a/c)(bc) = ab.
+\]
+
+To determine the length of $CA_A C_B$, let $2theta$ be the measure of $\angle C_A C C_B$. Then
+\[
+     2\theta + \alpha + \beta = \gamma ,
+\]
+and since
+\[
+    \alpha + \beta = \pi - \gamma ,
+\]
+\[
+   \theta = \gamma - \pi/2.
+\]
+So with $M$ as the midpoint of $\overline{C_A C_B}$,
+\[
+   C_A C_B = 2 C_A M = 2ab \sin \theta = -2ab\cos\gamma .
+\]
+
+That's all we need, for since
+\[
+    AB = BC_B + C_B C_A + C_AA ,
+\]
+\[
+  c^2 = a^2 - 2ab \cos \gamma + b^2 .
+\]
+
+\end{exploration}
 
 
 
