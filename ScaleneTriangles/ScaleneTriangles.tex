@@ -48,7 +48,7 @@ and
   CC_B = (a/c)(bc) = ab.
 \]
 
-To determine the length of $CA_A C_B$, let $2theta$ be the measure of $\angle C_A C C_B$. Then
+To determine the length of $CA_A C_B$, let $2\theta$ be the measure of $\angle C_A C C_B$. Then
 \[
      2\theta + \alpha + \beta = \gamma ,
 \]
@@ -70,6 +70,36 @@ That's all we need, for since
 \]
 \[
   c^2 = a^2 - 2ab \cos \gamma + b^2 .
+\]
+
+But perhaps since $AB = BM +AM$ it might be better to write the law of cosines as
+\[
+   c^2 = (a^2 -ab\cos\gamma) + (b^2- ab\cos \gamma) .
+\]
+
+This suggests another, more abstract way of getting at the law of cosines. Because $AM = bc \cos \alpha$ and $BM = ac \cos\beta$,
+\[
+   c^2 = bc \cos \alpha + ac \cos \beta .
+\]
+Now the expressions 
+\[
+   f(a,b,c) = bc \cos\alpha
+\]
+and
+\[
+   g(a,b,c) = ac \cos \beta
+\]
+must be quadratic functions of $a$,$b$, $c$ and symmetric in the sense that
+\[
+  g(a,b,c) = f(b,a,c) .
+\]
+So if
+\[
+  f(a,b,c) = \lambda_1 a^2 + \lambda_2 b^2 + \lambda_3 c^2 + \lambda_4 ab + \lambda_5 ac + \lambda_6 bc ,
+\]
+then
+\[
+  g(a,b,c) = \lambda_1 b^2 + \lambda_2 a^2 + \lambda_3 c^2 + \lambda_4 ab + \lambda_5 bc + \lambda_6 ac  .
 \]
 
 \end{exploration}
@@ -220,4 +250,19 @@ Access Desmos interactives through the online version of this text at
 
 
 
+https://www.desmos.com/3d/fbaa38f918
+
+
+
+\pdfOnly{
+Access Desmos interactives through the online version of this text at
+ 
+\href{https://www.desmos.com/3d/fbaa38f918}.
+}
+ 
+\begin{onlineOnly}
+    \begin{center}
+\desmos{fbaa38f918}{900}{600}
+\end{center}
+\end{onlineOnly}
 \end{document}
