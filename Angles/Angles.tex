@@ -9,29 +9,55 @@ Measuring angles in radians.
 \end{abstract}
 \maketitle
 
-The defintion of a meter is arbitrary and if we lived on a flat world there would be no natural unit of length. But on a perfect sphere, the radius serves as a natural length. A distance equal to the radius measured along the equator of a planet would cover the same fraction of the equator no matter the radius.
+\section{Turning in Circles}
+
+The defintion of a meter is arbitrary and if we lived on a flat world there would be no natural unit of length. But on a perfect sphere, the radius serves as a natural length. A distance equal to the radius measured along the equator of a planet would cover the same fraction of the equator on all planets.
 
 The \emph{nautical mile} was originally defined as the distance along the earth's equator subtended by an angle of $1/60$ degree with its vertex at the earth's center. It is an example of a naturally defined length on an earth assumed to be a perfect sphere.
 
-Just like the meter, the definition of what it means for an angle to have a measure of one degree ($1^\circ$) is arbitrary. It means that an angle measuring $1^\circ$ with its vertex at the center of any circle, cuts out an arclength equal to $1/360$ of the circle's circumference. Why $1/360$? Why are there 360 degrees in one revolution? We don't really know.
+Just like the meter, the definition of what it means for an angle to have a measure of one degree ($1^\circ$) is arbitrary. It means that an angle measuring $1^\circ$ with its vertex at the center of any circle, cuts out an arclength equal to $1/360$ of the circle's circumference. Why $1/360$? Why are there 360 degrees in one revolution? Perhaps because there are about 360 days in one year, but we don't know for sure.
+
+To me it seems like the most natural way to measure an angle would be in revolutions. For example, you might stand in one place and turn through $4.5$ revolutions. This would be a lot clearer than saying you turned through
+\[
+   4.5 \text{ rev} = (4.5 \text{ rev} ) \left( \frac{360 \text{ degrees}}{1 \text{ rev}} \right) = 1620 \text{ degrees}.
+\]
+
+But it turns out that there is an even easier way to measure angles. %This way is suggested by the following problem.
 
 \begin{question}  \label{Q0:Radians}
 A lost penguin swims 786 miles due south from the north pole on a perfectly spherical earth assumed to have a radius of $3960$ miles. A disoriented ostrich walks $2871$ miles due south from the north pole on Planet X, assumed to have a radius of $14,500$ miles. Which animal ends up at the greater latitude on their respective planet? Explain your reasoning.
 
-Note: Latitude is measured as an angle between the equatorial plane and a spherical radius. For example, Shoreline is at a latitude of about $47.75^\circ$ North of the equator. This means that the radius of earth drawn to Shoreline makes an angle of  $47.75^\circ$ with the equatorial plane. But you need not think about degrees to answer this question.
+Note: Latitude is measured as an angle between the equatorial plane and a spherical radius. For example, Shoreline is at a latitude of about $47.75^\circ$ North of the equator. This means that the radius of earth drawn to Shoreline makes an angle of  $47.75^\circ$ with the equatorial plane. Or it migh be easier to think of the radius to Shoreline making an angle of $90^\circ - 47.75^\circ = 42.25^\circ$ with the radius to the north pole. But you need not think about degrees to answer this question.
 \end{question}
 
-A less arbitrary way to measure angles uses \emph{radians}. The word comes from radius and an angle of 1 radian with its vertex at the center of a circle subtends (cuts out) an arclength equal to the circle's radius. An angle with a measure of 2 radians similarly placed subtends an arclength equal to twice the circle's radius. 
+This problem suggests a natural way to measure angles using \emph{radians}. The word \emph{radian} comes from radius and an angle measuring 1 radian placed with its vertex at the center of a circle subtends (cuts out) an arclength equal to the circle's radius. An angle with a measure of 2 radians similarly placed subtends an arclength equal to twice the circle's radius. 
 
-Many formulas that use the radian measure of an angle are more simple than they would be if the angle were measured in degrees.
+Many formulas that use the radian measure of an angle are more simple than they would be if the angle were measured in degrees. We'll see a few examples of this shortly and you'll see more next quarter in calculus.
 
-To measure an angle in radians, draw a circle of any radius centered at the angle's vertex. Then measure the arclength along the circumference subtended by the angle. Take this length and divide it by the radius (measured in the same units). The result gives the measure of the angle in radians. Being the ratio of two lengths, the radian measure is dimensionless.
+To measure an angle in radians do the following. First draw a circle of any radius centered at the angle's vertex. Then measure the arclength along the circumference subtended by the angle. Finally take this arclength and divide it by the radius (measured in the same units). The result gives the measure of the angle in radians. Being the ratio of two lengths, the radian measure is dimensionless.
 
 
 \begin{question} \label{Q1:Radians}
 What does it mean for an angle to have a measure of $4.5$ radians? Sketch such an angle directly, {\bf without} converting the radian measure to degrees.
 \end{question}
 
+\begin{question} \label{Q01:Radians}
+(a) You run $725$ meters around a circlular track of radius $50$ meters. Through what angle did you turn about the track's center?
+\[
+    \answer{14.5} \text{ radians}
+\]
+
+(b) In running around a circular track of radius $50$ meters you turn through an angle of $21$ radians about its center. How far did you run?
+\[
+    \answer{1050} \text{ meters}
+\]
+
+(c) In running $1000$ meters around a circular track you turn through an angle of $16$ radians about its center. What is the track's radius?
+\[
+   \answer{62.5} \text{ meters}
+\]
+
+\end{question}
 
 
 \begin{exploration}  \label{Q111:Radians}
@@ -45,7 +71,7 @@ What does it mean for an angle to have a measure of $4.5$ radians? Sketch such a
 
 (e) How do your sums from parts (b) and (d) compare? What do you think the exact sums are? Explain why.
 
-(f) Suppose you walk counterclockwise one time around the pentagon. When you reach a vertex you change your direction by turning through the exterior angle there at a constant rate of $2/5$ rad/sec. How much time do you spend turning during your walk? Explain. 
+%(f) Suppose you walk counterclockwise one time around the pentagon. When you reach a vertex you change your direction by turning through the exterior angle there at a constant rate of $2/5$ rad/sec. How much time do you spend turning during your walk? Explain. 
 
 \pdfOnly{
 Access Desmos interactives through the online version of this text at
@@ -61,13 +87,39 @@ Access Desmos interactives through the online version of this text at
 \end{exploration}
 
 
+\section{$\pi$, What is it?}
+Suppose you stand in place and turn through one revolution. Through how many radians did you turn?
+
+To answer this question, draw an imaginary circle about yourself, say with radius $r$ meters. Then dividethe circumference of that circle by its radius. That dimensionless ratio gives you the radain measure of one revolution. It measures the number of radii that you need to wrap around the circle's circumference.
+
+\begin{exploration}  \label{E33:Angles}
+\pdfOnly{
+Access Desmos interactives through the online version of this text at
+ 
+\href{https://www.desmos.com/calculator/cc2vxblkw3}.
+}
+ 
+\begin{onlineOnly}
+    \begin{center}
+\desmos{cc2vxblkw3}{900}{600}
+\end{center}
+\end{onlineOnly}
+\end{exploration}
+
+
+
+
 \begin{question} \label{Q999:Radians}
-The area of a spherical triangle
+The area $A$ of a spherical triangle on a sphere of radius $r$ with angle measures $\alpha$, $\beta$, $\gamma$ is given by the formula
 \[
- A = r^2 (\alpha+\beta+\gamma - \pi)
+ A = r^2 (\alpha+\beta+\gamma - \pi) .
 \]
 
-\href{https://www.desmos.com/3d/78c7e29693}{Spherical Triangle}
+\href{https://www.desmos.com/3d/91881c3088}{Spherical Triangle}
+
+\pskip
+
+(a)
 
 
 \end{question}
