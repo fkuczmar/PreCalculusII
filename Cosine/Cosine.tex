@@ -9,7 +9,57 @@ An introduction to circular trigonometry.
 \end{abstract}
 \maketitle
 
-You might have noticed at the end of the last chapter that we did not parameterize the motion of the bugs crawling around a circle at a constant speed. That was because we did not have the cosine and sine functions and these are needed to parameterize uniform circular motion.
+\section{The Position Problem}
+
+The fundamental idea of this class gives a way to describe how your position changes if you walk some given distance in some fixed direction. For example, you might walk $100$ meters in the direction $40^\circ$ east of north and ask how far north and how far east do you end up relative to your starting point.
+
+Here's a problem like this from the last chapter, but expressed in a more general way.
+
+\pskip
+
+\begin{question} \label{Q2435r6:Cosine}
+
+You stand at the origin facing the direction of the postive $x$ axis. Estimate your coordinates after you turn counterclockwise through an angle of 4 radians and then walk $r$ meters directly away from the origin.
+
+\begin{explanation}
+The idea is to solve the same problem for a circle of some given radius and then scale the solution by the appropriate factor. We'll choose a radius of $r=7$ meters, but any radius will work just as well.
+
+We use the radian protractor to estimate our coordinates if we had walked $7$ meters directly away from the origin.  It looks like the coordinates of the point $P$ below are about $(-4.7, -5.3){\text m}$.
+
+So if we had walked $7$ meters directly away from the origin, we would have ended up at the point $P$ with coordinates about $(-4.7, -5.3)\text{ meters}$. To approximate our coordinates if we walked $r$ meters instead of $7$ meters, we just need to scale these coordinates by a factor of $(r\text{m})/7(\text{m}) = r/7$. Then our coordinates $(x,y)$ would be about
+\[
+   x \sim (-4.7\text{ m}) \left( \frac{r\text{ meters}}{7\text{ meters}} \right) = (r \text{ meters})\left( \frac{-4.7\text{ m}}{7\text{ m}}\right) \sim  -0.67r   \text{ meters}.
+\]
+and
+\[
+   y   \sim (-5.3\text{ m}) \left( \frac{r\text{ meters}}{7\text{ meters}} \right) = (r \text{ meters})\left( \frac{-5.7\text{ m}}{7\text{ m}}\right) \sim   -0.76 r \text{ meters}.
+\]
+
+\pdfOnly{
+Access Desmos interactives through the online version of this text at
+ 
+\href{https://www.desmos.com/calculator/vb1kvzkzlq}.
+}
+ 
+\begin{onlineOnly}
+    \begin{center}
+\desmos{vb1kvzkzlq}{900}{600}
+\end{center}
+\end{onlineOnly}
+
+
+\pskip
+
+
+
+
+\end{explanation}
+
+\end{question}
+
+
+
+
 
 Imagine standing at the origin facing the positive $x$-axis. Now rotate counterclockwise through an angle of $\theta$ radians and walk any distance, say $r$ meters in this direction, and stop at the point $P$ with coordinates $(x,y)$.
 
