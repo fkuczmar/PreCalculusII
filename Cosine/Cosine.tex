@@ -11,7 +11,7 @@ An introduction to circular trigonometry.
 
 \section{The Position Problem}
 
-The fundamental idea of this class gives a way to describe how your position changes if you walk some given distance in some fixed direction. For example, you might walk $100$ meters in the direction $40^\circ$ east of north and ask how far north and how far east do you end up relative to your starting point.
+The fundamental idea of this class gives a way to describe how your position changes if you walk a given distance in a fixed direction. For example, you might walk $100$ meters in the direction $40^\circ$ east of north and ask how far north and how far east do you end up relative to your starting point.
 
 Here's a problem like this from the last chapter, but expressed in a more general way.
 
@@ -19,12 +19,12 @@ Here's a problem like this from the last chapter, but expressed in a more genera
 
 \begin{question} \label{Q2435r6:Cosine}
 
-You stand at the origin facing the direction of the postive $x$ axis. Estimate your coordinates after you turn counterclockwise about the origin through an angle of 4 radians and then walk $r$ meters directly away from the origin.
+You stand at the origin facing the direction of the postive $x$-axis. Estimate your coordinates after you turn counterclockwise about the origin through an angle of 4 radians and then walk $r$ meters directly away from the origin.
 
 \begin{explanation}
-The idea is to solve the same problem for a circle of some given radius and then scale the solution by the appropriate factor. We'll choose a radius of $r=7$ meters, but any radius will work.
+The idea is to solve the same problem for a circle of some specific radius and then scale the solution by the appropriate factor. We'll choose a radius of $r=7$ meters, but any radius will work.
 
-We use the radian protractor to estimate our coordinates if we had walked $7$ meters directly away from the origin.  It looks like the coordinates $(x,y)$ of the point $P$ at the 4 radian mark (see below) are about 
+We use the radian protractor to estimate our coordinates $(x, y)$ if we had walked $7$ meters directly away from the origin.  It looks like the coordinates of the point $P$ at the 4 radian mark (see below) are about 
 \[
    x\sim -4.7 \text{ meters}
 \]
@@ -33,7 +33,7 @@ and
   y\sim -5.3 \text{ meters}.
 \]
 
-So if we had walked $7$ meters directly away from the origin, we would have ended up at the point $P$ with coordinates about $(-4.7, -5.3)\text{ meters}$. To approximate our coordinates if we walked $r$ meters instead of $7$ meters, we just need to scale these coordinates by a factor of $(r\text{ meters})/(7\text{ meters}) = r/7$. Then our coordinates $(x^\prime,y^\prime)$ would be about
+To approximate our coordinates if we walked $r$ meters instead of $7$ meters, we just need to scale these coordinates by a factor of $(r\text{ meters})/(7\text{ meters}) = r/7$. Then our coordinates $(x^\prime,y^\prime)$ would be about
 \[
    x^\prime \sim (-4.7\text{ m}) \left( \frac{r\text{ meters}}{7\text{ meters}} \right) = (r \text{ meters})\left( \frac{-4.7\text{ m}}{7\text{ m}}\right) \sim  -0.67r   \text{ meters}.
 \]
@@ -53,11 +53,11 @@ Access Desmos interactives through the online version of this text at
 \desmos{vb1kvzkzlq}{900}{600}
 \end{center}
 \end{onlineOnly}
-
+\end{explanation}
 
 \pskip
 
-So our coordintes are determined how far we walk and by the two {\bf dimensionless} ratios
+So our coordinates were determined how far we walked and by the two {\bf dimensionless} ratios
 \[
     \frac{x}{r} \sim \frac{-4.7\text{ m}}{7\text{ m}}
 \] 
@@ -67,13 +67,12 @@ and
 \]
 that we approximated from the protractor. These ratios depend on the angle $\theta$ through which we turn but not at all on the radius of the circle that we choose. 
 
-The angle $\theta$, called the {\bf polar angle}, is measured in radians, counterclockwise from the direction of the postive $x$-axis. Choosing a point $P$ at the polar angle $\theta$ with coordinates $(x,y)$ cm on any circle of radius $r$ centimeters, these two ratios are written as
+The angle $\theta$, called the {\bf polar angle}, is measured in radians counterclockwise from the direction of the postive $x$-axis. Choosing a point $P$ at the polar angle $\theta$ with coordinates $(x,y)$ cm on any circle of radius $r$ centimeters, these two \emph{dimensionless} ratios are written as
 
 \[
    \cos \theta = \frac{x \text{ cm}}{r \text{ cm}} = \frac{x}{r} .
 \]
-
-Similarly, the sine of the angle $\theta$ is defined as the \emph{dimensionless} ratio $y/r$, so that
+and as
 \[
    \sin \theta = \frac{y \text{ cm}}{r \text{ cm}} = \frac{y}{r} .
 \]
@@ -83,7 +82,7 @@ There is a third \emph{dimensionless} ratio
   \tan \theta = \frac{y \text{ cm}}{x \text{ cm}} = \frac{y}{x}
 \]
 that gives the slope of our path. 
-\end{explanation}
+
 
 \end{question}
 
@@ -99,7 +98,7 @@ Many of you are probably familiar with the unit circle. But working with the uni
 
 It's one thing to define these functions, but quite another to compute or approximate their values. Much effort and ingenuity has gone into this problem over many centuries. But we can start to get a feel for the sine and cosine functions by using a radian protractor to approximate some of their outputs.
 
-Returning to our problem that started this chapter, the polar angle was $\theta=4$ and now using a caclulator, we find that
+Returning to our problem that started this chapter where the polar angle was $\theta=4$, we can use a caclulator to find that
 \[
   \cos 4 \sim -0.6536
 \]
@@ -122,29 +121,32 @@ Go back to our work from the opening question using the radian protractor and fi
 
 
 \begin{exploration}\label{Exp1:CF}
-Use the radian protractor below to approximate each of the following being sure {\bf not} to change the radius. Show a screenshot and give a complete explanation for each. Include all units in your computations. Then approximate each ratio to the nearest hundredth. You may use a {\bf four-function calculator} for the last two of these questions to do arithmetic.
+Use the radian protractor below with a radius of $5$ cm to approximate each of the following expressions as best you can. Do {\bf not} change the radius. Show a screenshot and give a brief explanation for each. Include all units in your computations. 
 
-(a) $\cos 5$, $\sin 5$  (no calculator)
+Then use a calculator and compare your estimates with the true values.
+%Then approximate each ratio to the nearest hundredth. You may use a {\bf four-function calculator} for the last two of these questions to do arithmetic.
 
-(b) $\cos (-5)$,  $\sin (-5)$ (no calculator)
+(a) $\cos 3.6$, $\sin 3.6$  %(no calculator)
 
-(c) $\cos 2.7$, $\sin 2.7$ (no calculator)
+(b) $\cos (-3.6)$,  $\sin (-3.6)$ %(no calculator)
 
-(d) $\cos (83\pi + 2.7)$, $\sin (83\pi-2.7)$ (no calculator)
+(c) $\cos 0.1$, $\sin 0.1$ %(no calculator)
 
-(e) $\cos 360$, $\sin 360$ (four-function calculator)
+%(d) $\cos (83\pi + 2.7)$, $\sin (83\pi-2.7)$ (no calculator)
 
-(f) $\cos 200^\circ$, $\sin 200^\circ$ (four-function calculator)
+(e) $\cos 360$, $\sin 360$ (use a four-function calculator to help)
+
+(f) $\cos 200^\circ$, $\sin 200^\circ$ (use a four-function calculator to first convert these angles to radians)
 
 \pdfOnly{
 Access Desmos interactives through the online version of this text at
  
-\href{https://www.desmos.com/calculator/kdakzcloqr}.
+\href{https://www.desmos.com/calculator/mpx0pu8w7i}.
 }
  
 \begin{onlineOnly}
     \begin{center}
-\desmos{kdakzcloqr}{900}{600}
+\desmos{mpx0pu8w7i}{900}{600}
 \end{center}
 \end{onlineOnly}
 \end{exploration}
