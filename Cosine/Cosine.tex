@@ -19,20 +19,27 @@ Here's a problem like this from the last chapter, but expressed in a more genera
 
 \begin{question} \label{Q2435r6:Cosine}
 
-You stand at the origin facing the direction of the postive $x$ axis. Estimate your coordinates after you turn counterclockwise through an angle of 4 radians and then walk $r$ meters directly away from the origin.
+You stand at the origin facing the direction of the postive $x$ axis. Estimate your coordinates after you turn counterclockwise about the origin through an angle of 4 radians and then walk $r$ meters directly away from the origin.
 
 \begin{explanation}
-The idea is to solve the same problem for a circle of some given radius and then scale the solution by the appropriate factor. We'll choose a radius of $r=7$ meters, but any radius will work just as well.
+The idea is to solve the same problem for a circle of some given radius and then scale the solution by the appropriate factor. We'll choose a radius of $r=7$ meters, but any radius will work.
 
-We use the radian protractor to estimate our coordinates if we had walked $7$ meters directly away from the origin.  It looks like the coordinates of the point $P$ below are about $(-4.7, -5.3){\text m}$.
-
-So if we had walked $7$ meters directly away from the origin, we would have ended up at the point $P$ with coordinates about $(-4.7, -5.3)\text{ meters}$. To approximate our coordinates if we walked $r$ meters instead of $7$ meters, we just need to scale these coordinates by a factor of $(r\text{m})/7(\text{m}) = r/7$. Then our coordinates $(x,y)$ would be about
+We use the radian protractor to estimate our coordinates if we had walked $7$ meters directly away from the origin.  It looks like the coordinates $(x,y)$ of the point $P$ at the 4 radian mark (see below) are about 
 \[
-   x \sim (-4.7\text{ m}) \left( \frac{r\text{ meters}}{7\text{ meters}} \right) = (r \text{ meters})\left( \frac{-4.7\text{ m}}{7\text{ m}}\right) \sim  -0.67r   \text{ meters}.
+   x\sim -4.7 \text{ meters}
+\]
+and 
+\[
+  y\sim -5.3 \text{ meters}.
+\]
+
+So if we had walked $7$ meters directly away from the origin, we would have ended up at the point $P$ with coordinates about $(-4.7, -5.3)\text{ meters}$. To approximate our coordinates if we walked $r$ meters instead of $7$ meters, we just need to scale these coordinates by a factor of $(r\text{ meters})/(7\text{ meters}) = r/7$. Then our coordinates $(x^\prime,y^\prime)$ would be about
+\[
+   x^\prime \sim (-4.7\text{ m}) \left( \frac{r\text{ meters}}{7\text{ meters}} \right) = (r \text{ meters})\left( \frac{-4.7\text{ m}}{7\text{ m}}\right) \sim  -0.67r   \text{ meters}.
 \]
 and
 \[
-   y   \sim (-5.3\text{ m}) \left( \frac{r\text{ meters}}{7\text{ meters}} \right) = (r \text{ meters})\left( \frac{-5.7\text{ m}}{7\text{ m}}\right) \sim   -0.76 r \text{ meters}.
+   y^\prime   \sim (-5.3\text{ m}) \left( \frac{r\text{ meters}}{7\text{ meters}} \right) = (r \text{ meters})\left( \frac{-5.7\text{ m}}{7\text{ m}}\right) \sim   -0.76 r \text{ meters}.
 \]
 
 \pdfOnly{
@@ -50,20 +57,18 @@ Access Desmos interactives through the online version of this text at
 
 \pskip
 
+So our coordintes are determined how far we walk and by the two {\bf dimensionless} ratios
+\[
+    \frac{x}{r} \sim \frac{-4.7\text{ m}}{7\text{ m}}
+\] 
+and
+\[
+   \frac{y}{r} \sim \frac{-5.7\text{ m}}{7\text{ m}}
+\]
+that we approximated from the protractor. These ratios depend on the angle $\theta$ through which we turn but not at all on the radius of the circle that we choose. 
 
+The angle $\theta$, called the {\bf polar angle}, is measured in radians, counterclockwise from the direction of the postive $x$-axis. Choosing a point $P$ at the polar angle $\theta$ with coordinates $(x,y)$ cm on any circle of radius $r$ centimeters, these two ratios are written as
 
-
-\end{explanation}
-
-\end{question}
-
-
-
-
-
-Imagine standing at the origin facing the positive $x$-axis. Now rotate counterclockwise through an angle of $\theta$ radians and walk any distance, say $r$ meters in this direction, and stop at the point $P$ with coordinates $(x,y)$.
-
-Now the cosine function takes as an input the (dimensionless) angle $\theta$ measured in radians, and returns as an output the \emph{dimensionless} ratio $x/r$. We write this as 
 \[
    \cos \theta = \frac{x \text{ cm}}{r \text{ cm}} = \frac{x}{r} .
 \]
@@ -73,8 +78,19 @@ Similarly, the sine of the angle $\theta$ is defined as the \emph{dimensionless}
    \sin \theta = \frac{y \text{ cm}}{r \text{ cm}} = \frac{y}{r} .
 \]
 
+There is a third \emph{dimensionless} ratio 
+\[
+  \tan \theta = \frac{y \text{ cm}}{x \text{ cm}} = \frac{y}{x}
+\]
+that gives the slope of our path. 
+\end{explanation}
+
+\end{question}
+
+
+
 \begin{question} \label{Q1:Cosine}
-Explain why the values of $\cos \theta$ and $\sin\theta$ do {\bf not} depend on $r$ (ie. on how far you walk away from the origin). 
+Explain why the values of $\cos \theta$, $\sin\theta$, and $\tan\theta$ do {\bf not} depend on the radius $r$ of our circle. 
 \end{question}
 
 
@@ -82,6 +98,27 @@ Explain why the values of $\cos \theta$ and $\sin\theta$ do {\bf not} depend on 
 Many of you are probably familiar with the unit circle. But working with the unit circle makes it seem like the outputs to these functions are lengths. It obscures the key point that the outputs are dimensionless. So do yourself a favor and {\bf forget about the unit circle.} It is also not necessary to waste time memorizing anything about the unit circle. Instead, knowing the definitions of the cosine and sine functions is enough to figure out all you need.
 
 It's one thing to define these functions, but quite another to compute or approximate their values. Much effort and ingenuity has gone into this problem over many centuries. But we can start to get a feel for the sine and cosine functions by using a radian protractor to approximate some of their outputs.
+
+Returning to our problem that started this chapter, the polar angle was $\theta=4$ and now using a caclulator, we find that
+\[
+  \cos 4 \sim -0.6536
+\]
+and
+\[
+   \sin 4 \sim -0.7568
+\]
+So our coordinates after walking $100$ meters directly away from the origin are 
+\[
+     x = r\cos \theta = (100 \text{ m})\cos 4 \sim -65.36\text{ m}
+\]
+and
+\[
+     y = r\cos \theta = (100 \text{ m})\sin 4 \sim -75.68\text{ m} .
+\]
+
+\begin{question}  \label{QWEREWR:Cosine}
+Go back to our work from the opening question using the radian protractor and find our approximate coordinates had we walked $100$ meters directly away from the origin. How do these estimates compare with the estimates from the calculator we just computed?
+\end{question}
 
 
 \begin{exploration}\label{Exp1:CF}
