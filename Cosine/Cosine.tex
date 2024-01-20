@@ -92,6 +92,45 @@ that gives the slope of our path.
 Explain why the values of $\cos \theta$, $\sin\theta$, and $\tan\theta$ do {\bf not} depend on the radius $r$ of our circle. 
 \end{question}
 
+\begin{question} \label{Q234234hg:Cosine}
+(The Pythorean identity) Explain why
+\[
+  \cos^2\theta + \sin^2 \theta = 1
+\]
+for any angle $\theta$. Note that 
+\[
+   \cos^2\theta = (\cos theta)^2  \text{ and } \sin^2\theta = (\sin\theta)^2 .
+\]
+
+\begin{explanation}
+This is really just a statement of the Pythagorean theorem. To see how, do the following.
+\begin{itemize}
+
+\item{Draw the $x$ and $y$-axes of a coordinate system. Label them with their appropriate variable names and units (say cm).}
+
+\item{Draw a point $P$ in the second quadrant. Label its coordinates $(x,y)$.}
+
+\item{Draw the segment $\overline{OP}$ from the origin to $P$.}
+
+\item{Draw a small arc from the positive $x$-axis to $\overline{OP}$ to indicate the angle $\theta$. Label the angle as $\theta$.}
+
+\item{Draw a dashed segment from $P$ to the point $Q$ with coordinates $(x,0)$. Note that $Q$ lies on the $x$-axis directly below $P$.}
+
+\item{Label the lengths of segments $OP$ (let $r$ be the length of this segment), $PQ$, and $OQ$. The latter two lengths should be in terms of $x$ and/or $y$.}
+
+\item{Apply the Pythagorean theorem to right triangle $\Delta OQP$ to write an equations relating $x$, $y$, and $r$.}
+
+\item{Divide both sides of the equation from the previous item by $r^2$.}
+
+\item{Finally, replace the two ratios on one side of the equation with their trigonometric equivalents.}
+
+
+
+\end{itemize}
+\end{explanation}
+
+\end{question}
+
 
 
 Many of you are probably familiar with the unit circle. But working with the unit circle makes it seem like the outputs to these functions are lengths. It obscures the key point that the outputs are dimensionless. So do yourself a favor and {\bf forget about the unit circle.} It is also not necessary to waste time memorizing anything about the unit circle. Instead, knowing the definitions of the cosine and sine functions is enough to figure out all you need.
@@ -121,7 +160,21 @@ Go back to our work from the opening question using the radian protractor and fi
 
 
 \begin{exploration}\label{Exp1:CF}
-Use the radian protractor below with a radius of $5$ cm to approximate each of the following expressions as best you can. Do {\bf not} change the radius. Show a screenshot and give a brief explanation for each. Include all units in your computations. 
+Use the radian protractor below with a radius of $5$ cm to 
+\begin{itemize}
+
+\item{approximate each of the following expressions}
+
+\item{check your approximations with the Pythagorean identity}
+
+\item{check your approximations with a calculator}
+\end{itemize}
+
+\pskip
+
+ Do {\bf not} change the radius. Show a screenshot and give a brief explanation for each. Include all units in your computations. 
+
+
 
 Then use a calculator and compare your estimates with the true values.
 %Then approximate each ratio to the nearest hundredth. You may use a {\bf four-function calculator} for the last two of these questions to do arithmetic.
@@ -138,11 +191,11 @@ First move point $P$ to the $3.6$ radian mark on the protractor below on a circl
 \]
 So 
 \[
-   \cos (4.5) = \frac{x}{r} \sim \frac{-4.5 \text{ cm}}{5 \text{ cm}} = -0.9
+   \cos (3.6) = \frac{x}{r} \sim \frac{-4.5 \text{ cm}}{5 \text{ cm}} = -0.9
 \]
 and 
 \[
-   \sin (4.5) = \frac{y}{r} \sim \frac{-2.2 \text{ cm}}{5 \text{ cm}} = -0.44 .
+   \sin (3.6) = \frac{y}{r} \sim \frac{-2.2 \text{ cm}}{5 \text{ cm}} = -0.44 .
 \]
 
 \pdfOnly{
@@ -157,13 +210,28 @@ Access Desmos interactives through the online version of this text at
 \end{center}
 \end{onlineOnly}
 
+\pskip
 
+To check if our measurements are at least consistent, we compute (with a calculator using our estimates above)
+\[
+   \cos^2 (3.6) + \sin^2 (3.6) \sim (-0.9)^2 + (-0.44)^2  = 1.0036 . 
+\]
+This looks good since the sum is very close to 1.
+
+From a calculator,
+\[
+   \cos (3.6) \sim -0.8968
+\]
+\[
+    \sin(3.6) \sim -0.4425 .
+\]
+Our approximations were correct to two decimal places.
 
 \end{explanation}
 
-(b) $\cos (-3.6)$,  $\sin (-3.6)$ %(no calculator)
+(b) $\cos (-0.4)$,  $\sin (-0.4)$ %(no calculator)
 
-(c) $\cos 0.1$, $\sin 0.1$ %(no calculator)
+(c) $\cos 2.9$, $\sin 2.9$ %(no calculator)
 
 %(d) $\cos (83\pi + 2.7)$, $\sin (83\pi-2.7)$ (no calculator)
 
@@ -186,6 +254,9 @@ Access Desmos interactives through the online version of this text at
 
 \begin{question} \label{Q2:Cosine}
 Approximate the value of $\cos (\pi^\circ)$. Explain your reasoning and include a picture to help with your explanation.
+\begin{hint}
+Keep in mind that the angle is measured in degrees.
+\end{hint}
 \end{question}
 
 
