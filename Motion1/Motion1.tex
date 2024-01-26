@@ -43,24 +43,24 @@ This chapter focuses on the first two.
 
 \begin{exploration}
 
-To move with \emph{uniform circular motion} means to move around a circle at a constant speed. The animation below shows an example where a beetle crawls counterclockwise around a circle of radius $20$cm centered at the origin.
+To move with \emph{uniform circular motion} means to move around a circle at a constant speed. The animation below shows an example where a beetle crawls counterclockwise at a constant speed around a circle of radius $20$cm centered at the origin.
 
 \pdfOnly{
 Access Desmos interactives through the online version of this text at
  
-\href{https://www.desmos.com/calculator/uzyhbw8qw6}.
+\href{https://www.desmos.com/calculator/xxnetzog4j}.
 }
  
 \begin{onlineOnly}
     \begin{center}
-\desmos{uzyhbw8qw6}{900}{600}
+\desmos{xxnetzog4j}{900}{600}
 \end{center}
 \end{onlineOnly}
 \end{exploration}
 
-To parameterize the motion we need more information than just the path. We need enough information to determine the position of the beetle at any time.
+To parameterize the motion we need more information than just the path. We need enough to determine the beetle's position at any time.
 
-So we'll assume that the beetle starts from the point $(20,0)$ at time $t=0$ seconds past noon and that it crawls at the constant speed of $4$ cm/sec. We'll also assume that the beetle crawls around the circle for two minutes. Our problem now is to express the coordinates of the beetle as functions of time, say $t$, measured in the number of seconds past noon. That is, we wish to find \emph{coordinate functions}
+For this we'll assume that the beetle starts from the point $(20,0)$ at time $t=0$ seconds past noon and that it crawls with a constant speed of $4$ cm/sec. We'll also assume that the beetle crawls around the circle for two minutes. Our problem now is to express the coordinates of the beetle as functions of time, say $t$, measured as the number of seconds past noon. That is, we wish to find \emph{coordinate functions}
 \[
    x = f(t) \text{ and } y=g(t) , \text{ for } 0\leq t \leq 120 ,
 \]
@@ -83,8 +83,46 @@ and
 \]
 Remember that $\theta$ is the \emph{polar angle}. It is meaured (in radians) counterclockwise from the positive $x$-axis to the segment $\overline{OB}$ from the origin to $B$.
 
-So to parameterize the beetle's motion, where $r=20$ cm, we need only express the polar angle as a function of time.
- 
+So to parameterize the beetle's motion, where $r=20$ cm, we need only express the polar angle as a function of time. For this, stop the motion in the animation above by pausing the slider $u$. 
+
+Now recall that the beetle crawled with a constant speed of $4$ cm/s.  So during the first $t$ seconds of its motion, the beetle crawls a distance of
+\[
+    s = \left( 4 \frac{\text{cm}}{\text{sec}} \right) (t \text{ sec}) = 4t \text{ meters}  
+\]
+around the circle. And during this time it turned about the origin through the angle
+\[
+    \theta = \frac{s}{r} = \frac{4t \text{ cm}}{20 \text{ cm}} = \frac{1}{5}t \text{ radians}.
+\]
+
+\begin{question}  \label{Qgf45365:Motion1}
+(a) What are the units of the fraction $1/5$ in the above expression for $\theta$?
+
+(b) What does the fraction $1/5$ tell us?
+\end{question}
+
+
+The last step is to realize that since the beetle started on the positive $x$-axis and crawled counterclockwise, the angle $\theta$ is in fact the polar angle that encodes the beetle's position. So the functions
+\[
+    x = r\cos \theta = 20 \cos \left( \frac{1}{5}t \right) , 0\leq t \leq 120
+\]
+\[
+    y = r\cos \theta = 20 \sin \left( \frac{1}{5}t \right) , 0\leq t \leq 120
+\]
+give the beetle's coordinates at time $t$ seconds past noon.
+
+
+\begin{question}  \label{Q345tds5:Motion1}
+An ant crawls clockwise with a constant speed of $3$ cm/sec around a circle of radius $40$ cm centered at the origin. The ant starts at the point $(40,0)$ at time $t=0$ seconds past noon and crawls for $3$ minutes.
+
+Find functions
+\[
+   x = f(t) \text{ and } y=g(t) , \text{ for } 0\leq t \leq 120 ,
+\]
+that express the ant's coordinates (measured in centimeters) in terms of the number of seconds past noon. {\it Hint:} Keep in mind that the ant crawls clockwise around its path.
+
+
+
+\end{question}
 
 
 \end{document}
