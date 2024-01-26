@@ -43,24 +43,48 @@ This chapter focuses on the first two.
 
 \begin{exploration}
 
-To move with \emph{uniform circular motion} means to move around a circle at a constant speed.
+To move with \emph{uniform circular motion} means to move around a circle at a constant speed. The animation below shows an example where a beetle crawls counterclockwise around a circle of radius $20$cm centered at the origin.
 
 \pdfOnly{
 Access Desmos interactives through the online version of this text at
  
-\href{https://www.desmos.com/calculator/lhlfgnrulb}.
+\href{https://www.desmos.com/calculator/uzyhbw8qw6}.
 }
  
 \begin{onlineOnly}
     \begin{center}
-\desmos{lhlfgnrulb}{900}{600}
+\desmos{uzyhbw8qw6}{900}{600}
 \end{center}
 \end{onlineOnly}
 \end{exploration}
 
+To parameterize the motion we need more information than just the path. We need enough information to determine the position of the beetle at any time.
 
+So we'll assume that the beetle starts from the point $(20,0)$ at time $t=0$ seconds past noon and that it crawls at the constant speed of $4$ cm/sec. We'll also assume that the beetle crawls around the circle for two minutes. Our problem now is to express the coordinates of the beetle as functions of time, say $t$, measured in the number of seconds past noon. That is, we wish to find \emph{coordinate functions}
+\[
+   x = f(t) \text{ and } y=g(t) , \text{ for } 0\leq t \leq 120 ,
+\]
+that express the coordinates of the beetle (measured in centimeters) in terms of the number of seconds past noon.
 
+The key to finding these functions is to realize that the defintions
+\[
+    \cos \theta = \frac{x}{r}
+\]
+\[
+    \sin\theta = \frac{y}{r}
+\]
+of the sine and cosine functions tell us the coordinates $(x,y)$ of a point $B$ on the circle of radius $r$ centered at the origin. They are 
+\[
+    x = r\cos\theta
+\]
+and 
+\[
+   y= r\sin \theta .
+\]
+Remember that $\theta$ is the \emph{polar angle}. It is meaured (in radians) counterclockwise from the positive $x$-axis to the segment $\overline{OB}$ from the origin to $B$.
 
+So to parameterize the beetle's motion, where $r=20$ cm, we need only express the polar angle as a function of time.
+ 
 
 
 \end{document}
