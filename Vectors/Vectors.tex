@@ -9,8 +9,232 @@ An introduction to vectors in the plane.
 \end{abstract}
 \maketitle
 
-\section{Vectors}
+\section{Position Vectors}
 
-Nothing yet.
+Position is relative. You describe where something is not in absolute terms but only in relation to something else.
+
+We might say, for example, that Bellevue is 4 miles east and 3 miles north of Akron. Then in a rectangular coordinate system with the $x$-axis pointing due east, the $y$-axis pointing due north, and the coordinates measured in miles, we can represent the position of Bellevue (at point $B$) relative to Akron (at point $A$) by the vector
+\[
+   \overrightarrow{AB} = \langle 4, 3 \rangle .
+\]
+This vector tells how to get from Akron to Bellevue. 
+
+
+Suppose that in our rectangular coordinate sytstem Charleston (point $C$) has coordinates $(-5,-2)$ and Dayton (point $D$) has coordinates $(-1,1)$. Then to get from Charleston to Dayton we would travel east
+\[
+     ( -1 - (-5) ) \text{ miles} = 4 \text{ miles}
+\]
+and north
+\[
+     ( 1 - (-2)) \text{ miles} = 3\text{ miles} .
+\]
+So we can represent the position of Dayton relative to Charleston by the vector
+\[
+  \overrightarrow{CD} =       \langle -1 - (-5) , 1- (-2)  \rangle   =  \langle 4, 3 \rangle .
+\] 
+
+So the directions that tell us how to get from Akron to Bellevue also tell us how to get from Charleston to Dayton. The
+vectors $\overrightarrow{AB}$ and $\overrightarrow{CD}$ are equal and we write 
+\[
+      \overrightarrow{AB} = \overrightarrow{CD} .
+\]
+
+To go the other way and get from Bellevue to Akron or from Dayton to Charleston, we would go 4 miles west and 3 miles south. So the  position of Akron relative to Bellevue, or of Charleston relative to Dayton, is given by the vector
+\[ 
+   \overrightarrow{BA} = - \overrightarrow{AB} = - \langle 4,3 \rangle =  \langle -4,-3 \rangle.
+\]
+
+The distance between Akron and Bellvue is just the length of the vector $\overrightarrow{AB}$, written as
+\[
+    | \overrightarrow{AB}  | =  | \langle 3, 4 \rangle  | \text{ miles} = \sqrt{3^2 + 4^2} \text{miles} = 5 \text{ miles} .
+\] 
+
+
+\section{Adding and Subtracting Vectors}
+
+\begin{question}    \label{Q234234:Vectors}
+Continuing with our example above, suppose that Frankfort (point $F$) is $2$ miles east and $5$ miles south of Bellevue. Then the vector
+\[
+    \overrightarrow{BF}  = \langle \answer{2}, \answer{-5}\rangle
+\]
+gives the position of Frankfort relative to Bellvue. 
+\end{question}
+
+\begin{question} \label{Q233:Vectors}
+(a) Give directions to get from Akron to Frankfort.
+
+(b) Fill in the vector and its components that gives the position of Franfort relative to Akron.
+\[
+       \overrightarrow{\answer{A} \answer{F}}    =  \langle  \answer{6} , \answer{-1}  \rangle 
+\]
+
+(c) Which of the following are correct? Choose all that apply.
+\begin{selectAll}  
+\choice[correct]{$\overrightarrow{AF}   = \overrightarrow{AB} + \overrightarrow{BF}$}  
+\choice{$\overrightarrow{AF}   = \overrightarrow{AB} - \overrightarrow{BF} $}  
+\choice[correct]{$\overrightarrow{AF}   = \overrightarrow{BF} + \overrightarrow{AB} $}  
+\end{selectAll} 
+
+
+\end{question}
+
+
+\begin{question}  \label{Q543:Vectors}
+Let ${\bf v}$ be the vector that gives the position of point $K$ relative to point $G$ and ${\bf w}$ the vector that gives the position of $M$ relative to $K$. 
+
+(a) Express in terms of ${\bf v}$ and ${\bf w}$ each of the following vectors: 
+
+(i) The position of $M$ relative to $G$:  $\overrightarrow{\bf \answer{v}} +  \overrightarrow{\bf \answer{w}} $
+
+(ii) The position of $G$ relative to $M$:  $\overrightarrow{\bf \answer{-v}} +  \overrightarrow{\bf \answer{-w}} $
+
+\pskip
+
+(b) Draw vectors ${\bf v}$ and ${\bf w}$ tail-to-tail. Any choices will do, just make sure the vectors are not parallel. Then draw the vector ${\bf v} + {\bf w}$
+
+(c) Explain the meaning of each of the following in the context of this scenario. Include units. 
+
+(i) $|  {\bf v} |$
+
+(ii) $|  {\bf w} |$
+
+(iii) $|  {\bf v+w} |$
+
+(iv) $|  {\bf v} | + |  {\bf w} | - |  {\bf v+w} |$
+
+\pskip
+
+(d) When would the expression in part (b)(iv) above be positive? Negative? Zero? Explain your reasoning. 
+
+\end{question}
+
+
+\begin{question}  \label{Qsdfsdt4r3:Vectors}
+Suppose
+\[
+ \overrightarrow{AB} = \langle  -3,5 \rangle
+\]
+and
+\[
+   \overrightarrow{AC} = \langle  4,2 \rangle ,
+\]
+where the components are measured in miles.
+
+(a) Give directions to get from $B$ to $C$.
+
+(b) What vector gives the position of $C$ relative to $B$? Choose all that apply.
+\begin{multipleChoice} 
+ \choice[correct]{$\langle  7, -3  \rangle$}  
+ \choice{$\langle  -7, 3  \rangle$}
+\choice{$\overrightarrow{CB}$}  
+\choice[correct]{$\overrightarrow{BC}$} 
+\choice{$\overrightarrow{AB} -\overrightarrow{AC} $} 
+\choice[correct]{$\overrightarrow{AC} -\overrightarrow{AB} $}
+\end{multipleChoice} 
+
+\end{question}
+
+
+
+
+
+\begin{question}  \label{Q234r3:Vectors}
+Let ${\bf v}$ be the vector that gives the position of point $Q$ relative to point $R$ and ${\bf w}$ the vector that gives the position of $S$ relative to $R$. 
+
+(a) Which of the following express the position of $S$ relative to $Q$? Choose all that apply.
+
+\begin{selectAll}  
+\choice{${\bf v} + {\bf w}$}  
+\choice{${\bf v} - {\bf w}$}  
+\choice[correct]{${\bf w} - {\bf v}$}  
+\end{selectAll}
+
+(b) Draw a picture illustrating part (a). Include the vectors ${\bf v}$ and ${\bf w}$ tail-to-tail, and the vector that gives the position of $S$ relative to $R$. That's it. Do not draw a fourth vector like $-{\bf v}$ or $-{\bf w}$.
+
+
+\end{question}
+
+
+
+IGNORE THIS
+
+\pdfOnly{
+Access Desmos interactives through the online version of this text at
+ 
+\href{https://www.www.geogebra.org/classic/e6rsvnsz}.
+}
+ 
+\begin{onlineOnly}
+    \begin{center}
+\geogebra{e6rsvnsz}{900}{600}
+\end{center}
+\end{onlineOnly}
+
+
+
+\section{Computing Coordinates With Vectors}
+
+\begin{question} \label{Q45340:Vectors}
+(a) Explain why the circles with equations
+\[
+   (x-2)^2 + (y+1)^2  = 49
+\]
+and
+\[
+    (x-5)^2 + (y-3)^2 = 4
+\]
+are tangent to each other.
+
+(b) Use vectors, not algebra, to determine the coordinates of the point of tangency.
+
+
+\end{question}
+
+
+\begin{question} \label{Q45323240:Vectors}
+Points $A$ and $B$ have respective coordinates $(5,1)$ and $(17,-15)$. 
+
+(a) Use vectors, not algebra, to determine the coordinates of the point $P$ on segment $\overline{AB}$ that is exactly 17 units from $A$.
+
+(b) Use vectors, not algebra, to determine the coordinates of another point $P$ on the line through $A$ and $B$ that is exactly 17 units from $A$.
+
+(c) Solve questions (a) and (b) simultaneously using algebra, not vectors.
+
+\end{question}
+
+
+\begin{question} \label{Q4df8240:Vectors}
+(a) Use vectors, not algebra, to determine the coordinates of the centers of both circles with radius 6 that are tangent to the line
+\[
+    2x + 5y = 13
+\]
+at the point $P(-1,3)$.
+
+(b) Use the method of part (a) to determine the coordinates of the centers of all circles with radius $r$ that are tangent to the same line at the same point.
+
+(c) Follow the directions in the demonstration below to check your work.
+
+\pdfOnly{
+Access Desmos interactives through the online version of this text at
+ 
+\href{https://www.desmos.com/calculator/aqpedvdawb}.
+}
+ 
+\begin{onlineOnly}
+    \begin{center}
+\desmos{aqpedvdawb}{900}{600}
+\end{center}
+\end{onlineOnly}
+
+\end{question}
+
+
+\begin{question}   \label{Q6547:Vectors}
+(a) Use vectors, not trigonometry, to help find equations of the two lines that bisect the angles between the lines $y=x$ and $y=3x$.
+
+(b) Use part (a) to find equations of the two lines that bisect the angles between the lines $y=x+3$ and $y=3x-5$.
+
+
+\end{question}
 
 \end{document}
