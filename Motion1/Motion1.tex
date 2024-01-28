@@ -58,7 +58,7 @@ Access Desmos interactives through the online version of this text at
 \end{onlineOnly}
 \end{exploration}
 
-To parameterize the motion we need more information than just the path. We need just enough to determine the beetle's position at any time.
+To parameterize the motion it is not enough to know the beetle's path. Rather, we need just enough information to determine the beetle's position at any time.
 
 So we'll assume that the beetle starts from the point $(20,0)$ at time $t=0$ seconds past noon and that it crawls with a constant speed of $4$ cm/sec. We'll also assume that the beetle crawls around the circle for two minutes. Our problem now is to express the coordinates of the beetle as functions of time, say $t$, measured as the number of seconds past noon. That is, we wish to find \emph{coordinate functions}
 \[
@@ -81,25 +81,18 @@ and
 \[
    y= r\sin \theta .
 \]
-Remember that $\theta$ is the \emph{polar angle}. It is meaured (in radians) counterclockwise from the positive $x$-axis to the segment $\overline{OB}$ from the origin to $B$.
+Remember that $\theta$ is the \emph{polar angle}. It is meaured (in radians) counterclockwise from the positive $x$-axis to the segment $\overline{OB}$(this segment runs from the origin to point $B$).
 
 So to parameterize the beetle's motion, where $r=20$ cm, we need only express the polar angle as a function of time. For this, stop the motion in the animation above by pausing the slider $u$. 
 
-Now recall that the beetle crawled with a constant speed of $4$ cm/s.  So during the first $t$ seconds of its motion, the beetle crawls a distance of
+Now recall that the beetle crawls counterclokwise with a constant speed of $4$ cm/s.  So during the first $t$ seconds of its motion, the beetle crawls a signed distance of
 \[
-    s = \left( \frac{4 \text{ cm}}{\text{sec}} \right) (t \text{ sec}) = 4t \text{ cm}  
+   \Delta  s = \left( \frac{4 \text{ cm}}{\text{sec}} \right) (t \text{ sec}) = 4t \text{ cm}  
 \]
-around the circle. And during this time it turned counterclockwise about the origin through the angle
+around the circle (the sign is positive because the beetle turns counterclockwise about the origin). And during this time the beetle turns counterclockwise about the origin through the angle
 \[
-    \Delta \theta = \frac{s}{r} = \frac{4t \text{ cm}}{20 \text{ cm}} = \frac{1}{5}t \text{ radians}.
+    \Delta \theta = \frac{\Delta s}{r} = \frac{4t \text{ cm}}{20 \text{ cm}} = \frac{1}{5}t \text{ radians}.
 \]
-
-\begin{question}  \label{Qgf45365:Motion1}
-(a) What are the units of the fraction $1/5$ in the above expression for $\Delta \theta$?
-
-(b) Explain the meaning of the fraction $1/5$.
-\end{question}
-
 
 The last step is to realize that since the beetle started on the positive $x$-axis, the change $\Delta \theta$  is in fact the polar angle $\theta$ that encodes the beetle's position. So the functions
 \[
@@ -111,15 +104,39 @@ The last step is to realize that since the beetle started on the positive $x$-ax
 give the beetle's coordinates at time $t$ seconds past noon.
 
 
+\begin{question}  \label{Qgf45365:Motion1}
+(a) What are the units of the fraction $1/5$ in the above expression for $\Delta \theta$?
+
+(b) Explain the meaning of the fraction $1/5$.
+
+(c) How long does it take the beetle to crawl once around the circle?
+\end{question}
+
+
 \begin{question}  \label{Q345tds5:Motion1}
 An ant crawls clockwise with a constant speed of $3$ cm/sec around a circle of radius $40$ cm centered at the origin. The ant starts at the point $(40,0)$ at time $t=0$ seconds past noon and crawls for $3$ minutes.
 
-Find functions
+(a) Find functions
 \[
    x = f(t) \text{ and } y=g(t) , \text{ for } 0\leq t \leq 180 ,
 \]
 that express the ant's coordinates (measured in centimeters) in terms of the number of seconds past noon. {\it Hint:} Keep in mind that the ant crawls clockwise around its path.
 
+(b) Check your answer in the demonstration below by inputting your your expressions for the functions $f$ and $g$ in Lines 2 and 3. Then play the animation.
+
+(c) How long doest it take the ant to crawl once around the circle?
+
+\pdfOnly{
+Access Desmos interactives through the online version of this text at
+ 
+\href{https://www.desmos.com/calculator/ke09thyze7}.
+}
+ 
+\begin{onlineOnly}
+    \begin{center}
+\desmos{ke09thyze7}{900}{600}
+\end{center}
+\end{onlineOnly}
 
 
 \end{question}
