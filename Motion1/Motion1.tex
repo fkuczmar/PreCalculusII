@@ -138,8 +138,78 @@ Access Desmos interactives through the online version of this text at
 \end{center}
 \end{onlineOnly}
 
-
 \end{question}
+
+
+
+
+\begin{example} \label{Qdbyp44:Motion}
+Between 12:00pm and 12:05pm a beetle crawls clockwise with a constant speed around a circle of radius $40$cm centered at the origin. At time $t=10$ seconds past noon, the beetle passes the point $Q$ in the second quadrant $70$cm from $A(40,0)$ as measured along the circle. At 12:01pm, without ever having completed a full lap, the beetle passes the point $R$ in the fourth quardrant $20$cm from $A$, the distance also measured along the circle. 
+
+Find functions
+\[
+   x = f(t) \text{ and } y=g(t) , \text{ for } 0\leq t \leq 300 ,
+\]
+that express the beetle's coordinates (measured in centimeters) in terms of the number of seconds past noon. 
+
+
+\begin{explanation}
+Since
+\[
+    x = 40 \cos \theta 
+\]
+\[
+    y = 40\sin\theta
+\]
+where $\theta$ is the polar angle, we need only find a function
+\[
+    \theta = a(t) \, , \, 0\leq t \leq 300 
+\] 
+that expresses the polar angle (measured in radians) in terms of the number of minutes past noon. 
+
+
+\pdfOnly{
+Access Desmos interactives through the online version of this text at
+ 
+\href{https://www.desmos.com/calculator/3iah0ue1ts}.
+}
+ 
+\begin{onlineOnly}
+    \begin{center}
+\desmos{3iah0ue1ts}{900}{600}
+\end{center}
+\end{onlineOnly}
+
+
+Because the beetle crawls with constant speed, it rotates about the origin at a constant rate and the polar angle is a linear function of time. To find this function, we first compute the beetle's (signed) rotation rate about the origin. At time $t=10$, the polar angle is 
+\[
+   a(10) = \frac{70 \text{cm}}{40 \text{cm}} = \frac{7}{4}\text { rad} ,
+\]
+and at time $t=60$, the polar angle is
+\[
+   a(60) = \frac{-20 \text{cm}}{40 \text{cm}} = - \frac{1}{2}\text { rad}. 
+\]
+So the signed rotation rate is
+\[
+   \omega = \frac{\Delta \theta}{\Delta t} = \frac{a(60) - a(10)}{60 - 10 } \frac{\text{rad}}{\text{sec}} = -\frac{9}{200} \frac{\text{rad}}{sec} .
+\]
+
+Now we use point-slope. Since $a(10)=7/4$, our function for the polar angle is
+\[
+    \theta = a(t) = \frac{7}{4} - \frac{9}{200}\left(  t  - 10 \right) \, , \, 0\leq t \leq 300.
+\]
+
+Then the coordinate functions, muesaured in centimeters, are
+\[
+      x = 40 \cos \left(   \frac{7}{4} - \frac{9}{200}\left(  t  - 10 \right)  \right) \, , \, 0\leq t \leq 300
+\] 
+and
+\[
+     y =  40 \sin \left(   \frac{7}{4} - \frac{9}{200}\left(  t  - 10 \right)  \right) \, , \, 0\leq t \leq 300 .
+\] 
+
+\end{explanation}
+\end{example}
 
 
 
@@ -152,7 +222,7 @@ It passes the point $(-20 \text{ cm},20 \text{ cm})$ for the first time at time 
 
 (a) Find the exact radius of the ant's circular path. Do {\bf not} use a calculator.
 
-(b) Determine the exact rate at which the ant turns abou the origin.  Do {\bf not} use a calculator.
+(b) Determine the exact rate at which the ant turns about the origin.  Do {\bf not} use a calculator.
 
 (c) Find a function 
 \[
