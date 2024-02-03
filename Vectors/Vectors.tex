@@ -240,16 +240,16 @@ Access Desmos interactives through the online version of this text at
 
 \section{Bearing}
 
-Bearings are typically measured clockwise from due north. So you might report a fire to be $10$ miles from Miner's Ridge Lookout at a bearing of $100^\circ$. But we'll continue to meaure our angles in radians counterclockwise from the direction of the positive $x$-axis. We'll use polar angle and bearing interchangeably to mean the same thing.
+Bearings are typically measured clockwise from due north. So you might report a fire to be $10$ miles from Miner's Ridge Lookout at a bearing of $100^\circ$. But we'll continue to meaure our angles counterclockwise (in radians) from the direction of the positive $x$-axis. We'll use polar angle and bearing interchangeably to mean the same thing.
 
 \begin{example}  \label{Edsa5454v:Vectors}
-Point $B$ is 4 miles from $A$ at a bearing of $3$ radians. Point $C$ is $7$ miles from $B$ at a bearing of $4.2$ radians. We wish to describe the position of $C$ relative to $B$ in two ways:
+Point $B$ is 4 miles from $A$ at a bearing of $3$ radians. Point $C$ is $7$ miles from $B$ at a bearing of $4.1$ radians. We wish to describe the position of $C$ relative to $B$ in two ways:
 
-i) By giving north-south-east direction. For example, by saying that $C$ is $2$ miles east and $6$ miles south of $A$.
+i) By giving north-south-east direction. For example, by saying that $C$ is $2$ miles east and $6$ miles south of $A$. We'll call this the NESW description.
 
-ii) By giving a distance and a bearing. For example by sahing that $C$ is $5$ miles from $A$ at a bearing (polar angle) of $5.3$ radians.
+ii) By giving a distance and a bearing. For example by saying that $C$ is $5$ miles from $A$ at a bearing (polar angle) of $5.3$ radians. We'll call this the {\bf distance-bearing} description.
 
-Neither of these descriptions is correct for our problem. But we'll now determine the correct descriptions.
+Neither of these descriptions is correct for our problem. But we'll now determine the correct directions.
 
 \begin{explanation}
 
@@ -278,18 +278,54 @@ gives the position of $B$ relative to $A$. Its components are measured in miles.
 
 Similarly, the vector
 \[
-   \overrightarrow{BC} = \langle 7 \cos 4.2, 7 \sin 4.2\rangle
+   \overrightarrow{BC} = \langle 7 \cos 4.2, 7 \sin 4.1\rangle
 \]
 gives the position of $C$ relative to $B$ (in miles).
 
 To find the position of $C$ relative to $A$, we add these vectors. So the position of $C$ relative to $A$ (in miles) is 
 \begin{align*}
 \overrightarrow{AC} &= \overrightarrow{AB} + \overrightarrow{BC} \\
-                              &= \langle 4 \cos 3, 4 \sin 3\rangle + \langle 7 \cos 4.2, 7 \sin 4.2\rangle \\
-                              & =    \langle 4 \cos 3 + 7 \cos 4.2 , 4 \sin 3 + 7 \sin  4.2\rangle   \\
-                              & \sim \langle  -7.4 ,  -5.5  \rangle 
+                              &= \langle 4 \cos 3, 4 \sin 3\rangle + \langle 7 \cos 4.1, 7 \sin 4.1\rangle \\
+                              & =    \langle 4 \cos 3 + 7 \cos 4.1 , 4 \sin 3 + 7 \sin  4.1\rangle   \\
+                              & \sim \langle  -7.98 ,  -5.16  \rangle 
 \end{align*}
 
+So to get from point $A$ to point $C$ you would walk
+\[
+     (4 \cos 3 + 7 \cos 4.1) \text{  miles} \sim 7.98 \text{ miles} 
+\]
+due west and 
+\[
+   (4 \sin 3 + 7 \sin 4.1) \text{  miles} \sim 5.16 \text{ miles} 
+\]
+due south.
+
+\pskip
+
+(c) For the distance-bearing description of how to get from $A$ to $C$, we'll fiirst compute the exact distance between $A$ and $C$. This distance in miles is
+\begin{align*}
+   | \overrightarrow{AB}| &= |   \langle 4 \cos 3 + 7 \cos 4.1 , 4 \sin 3 + 7 \sin  4.1\rangle   |   \\ \\
+                                   & = \sqrt{( 4 \cos 3 + 7 \cos 4.1)^2 + (4 \sin 3 + 7 \sin  4.1)^2}  \\ \\
+                                  & =  \sqrt{16 + 49 + 56 (\cos(3) \cos(4.1) + \sin(3)\sin(4.1))}  \\ \\
+                                  & \sim 9.46
+\end{align*}
+
+We do not know enough yet to get the exact bearing from $A$ to $C$ (we'll need to learn about inverse trig first), but for now we'll just use the radian protractor to estimate the bearing. 
+
+Let's drag the protractor's center to $A$ and first check the distance between $A$ and $C$ by dragging the slider $r$ that controls the protractor's radius. Check that $r\sim 9.4$. Then read off the polar angle of the vector $\overrightarrow{AC}$ from the protractor. 
+
+\begin{question}  \label{Q43656ff:Motion}
+The bearing from $A$ to $C$ is about 
+\begin{multipleChoice}  
+\choice{$3$ radians}  
+\choice[correct]{$3.7$ radians}  
+\choice{$0.7$ radians}  
+\end{multipleChoice} 
+
+\end{question} 
+
+
+So to get directly from $A$ to $C$ we should walk about $9.5$ miles at a bearing of approximately $3.7$ radians (actually closer to $3.6$ radians).
 
 \end{explanation}
 
