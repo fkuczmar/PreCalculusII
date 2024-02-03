@@ -243,7 +243,7 @@ Access Desmos interactives through the online version of this text at
 Bearings are typically measured clockwise from due north. So you might report a fire to be $10$ miles from Miner's Ridge Lookout at a bearing of $100^\circ$. But we'll continue to meaure our angles in radians counterclockwise from the direction of the positive $x$-axis. We'll use polar angle and bearing interchangeably to mean the same thing.
 
 \begin{example}  \label{Edsa5454v:Vectors}
-Point $B$ is 4 miles from $A$ at a bearing of $3$ radians. Point $C$ is $7$ miles from $B$ at a bearing of $4.1$ radians. We wish to describe the position of $C$ relative to $B$ in two ways:
+Point $B$ is 4 miles from $A$ at a bearing of $3$ radians. Point $C$ is $7$ miles from $B$ at a bearing of $4.2$ radians. We wish to describe the position of $C$ relative to $B$ in two ways:
 
 i) By giving north-south-east direction. For example, by saying that $C$ is $2$ miles east and $6$ miles south of $A$.
 
@@ -266,6 +266,30 @@ Access Desmos interactives through the online version of this text at
 \geogebra{bhdsgxtx}{900}{600}
 \end{center}
 \end{onlineOnly}
+
+
+(b) We are given enough information about the vector $\overrightarrow{AB}$ to find its components (measured in miles) in the rectangular coordinate system above, where the unlabeled, positive $x$-axis points due east and the positive $y$-axis due north.
+
+Because the distance from $A$ to $B$ is $r=  |\overrightarrow{AB}| = 4$ miles and $\overrightarrow{AB}$ is inclined at an angle of $3$ radians relative to the positive $x$-axis, the vector
+\[
+       \overrightarrow{AB} = \langle 4 \cos 3, 4 \sin 3\rangle .
+\]
+gives the position of $B$ relative to $A$. Its components are measured in miles.
+
+Similarly, the vector
+\[
+   \overrightarrow{BC} = \langle 7 \cos 4.2, 7 \sin 4.2\rangle
+\]
+gives the position of $C$ relative to $B$ (in miles).
+
+To find the position of $C$ relative to $A$, we add these vectors. So the position of $C$ relative to $A$ (in miles) is 
+\begin{align*}
+\overrightarrow{AC} &= \overrightarrow{AB} + \overrightarrow{BC} \\
+                              &= \langle 4 \cos 3, 4 \sin 3\rangle + \langle 7 \cos 4.2, 7 \sin 4.2\rangle \\
+                              & =    \langle 4 \cos 3 + 7 \cos 4.2 , 4 \sin 3 + 7 \sin  4.2\rangle   \\
+                              & \sim \langle  -7.4 ,  -5.5  \rangle 
+\end{align*}
+
 
 \end{explanation}
 
