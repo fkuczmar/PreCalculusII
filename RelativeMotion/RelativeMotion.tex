@@ -59,24 +59,29 @@ Access Desmos interactive at
 \section{Circles Rolling on Circles}
 
 \begin{exploration}  \label{Edst4hnt}
-The radius of the blue circle is $r_1$ and the radius of the red circle is $r_2$.
- 
-The center $C$ of the red circle rotates counterclockwise about the origin $O$ of the $xy$-plane at the constant rate of $\omega_1$ rad/sec.
+(a) We first explore the composition of two circular motions.
 
-Relative to the $x^\prime y^\prime$ coordinate system, point $P$ rotates counterclockwise about the origin $C$ at the constant
-of $\omega_2$ rad/sec. The distance $|\overrightarrow{CP}|$ is equal to $r_3$.
+Given the following information:
+\begin{itemize}
 
-Ponit $P$ has $xy$-coordinates $(r_1 + r_2 , 0)$ at time $t=0$ seconds past noon.
+\item{Point $C$ rotates counterclockwise  at the constant rate of $\omega_1$ rad/sec about a circle of radius $R$ centered at $O$.}
 
-We wish to parameterize the motion of $P$ relative to the $xy$-coordinate system.
+\item{Point $P$ rotates counterclockwise at the constant rate of $\omega_2$ rad/sec about a circle of radius $r_3$ centered at $C$.}
 
-We proceed as follows:
+
+\item{Point $P$ has $xy$-coordinates $(R , 0)$ at time $t=0$ seconds past noon.}
+
+\end{itemize}
+
+
+We'll parameterize the motion of $P$ by expressing its coordinates in terms of the number of seconds past noon. Here's the method:
 
 \begin{itemize}
 
+\item{Find the components of the vector $\overrightarrow{OC}$ at time $t$ seconds past noon.}
+
 \item{Find the components of the vector $\overrightarrow{CP}$ at time $t$ seconds past noon.}
 
-\item{Find the components of the vector $\overrightarrow{OC}$ at time $t$ seconds past noon.}
 
 %\item{What vector gives the position of $P$ relative to $O$?}
 
@@ -90,22 +95,50 @@ We proceed as follows:
 
 \end{itemize}
 
-Then experiment with the sliders keeping $\omega_1 = 1$ rad/sec. Observe the types of curves traced by $P$.
 
-Then with $r_1$, $r_2$, and $\omega_1=1$ all fixed, try to find the value of $\omega_2$ that makes the red circle roll around the blue circle {\bf without slipping}. Gather some data and try to find a non-slipping formula that expresses $\omega_2$ in terms of $r_1$ and $_2$ when $\omega_1=1$. How would you modify this formula if $\omega_1$ were allowed to vary? That is, try to express $\omega_2$ in terms of $r_1$, $r_2$, and $\omega_1$ to make the red circle roll without slipping.
+Check that your parameterization is correct by inputing the coordinate functions in Lines 11 and 12 of the demonstration below. Then play the animation (Line 1). Vary the parameters and see how the trajectory of $P$ varies.
 
 Access Desmos interactive at
  
-\href{https://www.desmos.com/calculator/5b5u77otbu}{Epicycloid}
+\href{https://www.desmos.com/calculator/c2i8y3oaxe}{Epicycloid}
 
  
 \begin{onlineOnly}
     \begin{center}
-\desmos{5b5u77otbu}{900}{600}
+\desmos{c2i8y3oaxe}{900}{600}
 \end{center}
 \end{onlineOnly}
 
-https://www.desmos.com/calculator/5b5u77otbu
+
+(b) Next we'll put double-rotation in the context of one circle rolling around another.
+
+To see the circles, turn on the Circles folder in Line 14 of the animation.
+
+\begin{itemize}
+
+\item{The blue circle is centered at the origin $O$ and has radius $r_1$.}
+
+\item{The red circle is centered at $C$ and has radius $r_2$.}
+ 
+\item{The distance $R = |\overrightarrow{OC}|$ is equal to the sum $r_1+r_2$ of the two radii.}
+
+\end{itemize}
+
+Our goal is to make the red circle roll around the blue circle {\bf without} slipping. 
+
+\begin{itemize}
+
+\item{ Keep $r_1$, $r_2$, and $\omega_1=1$ all fixed. Then try to find the value of $\omega_2$ that makes the red circle roll around the blue circle without slipping. Gather some data, recording the values of $r_1$, $r_2$, and $\omega_2$.}
+
+\item{Try to find a pattern in the data. That is, try to find non-slipping formula that expresses $\omega_2$ in terms of $r_1$ and $_2$ when $\omega_1=1$.}
+
+\item{Experiment with the sliders, keeping $\omega_1=1$ fixed to check if your condition is correct.}
+
+\item{Modify your expression for $\omega_2$ so that it works for any value of $\omega_1$. That is, find a non-slipping condition that expresses $\omega_2$ in terms of $r_1$, $r_2$, and $\omega_1$ (ie. to make the red circle roll without slipping.)}
+
+\item{Experiment with the sliders to see if your condition is correct.}
+
+\end{itemize}
 
 
 \end{exploration}
