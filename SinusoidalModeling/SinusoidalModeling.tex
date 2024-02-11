@@ -10,7 +10,7 @@ Using the cosine function to model osciallatory behavior.
 \maketitle
 
 \begin{example} \label{Efdgu7u67}
-Suppose that over the course of a 24-hour period, from midnight October 29 to midnight October 30, the depth of the water at the Edmonds Pier is a sinusoidal function of time. Suppose also that a high tide of 21 feet occurs at 2:00am and the following low tide of 5 feet occurs six hours later. 
+Suppose that over the course of a 24-hour period, from midnight October 29 to midnight October 30, the depth of the water at the Edmonds Pier is a sinusoidal function of time. Suppose also that a high tide of 21 feet occurs at 2:00am and the following low tide of 5 feet occurs at 8:00am. 
 
 
 \begin{explanation}
@@ -42,20 +42,63 @@ Desmos activity available at:
 
 
 
-(b) Compute the mean depth of the water over the 24 hours and the maximum deviation of the depth from this mean. Include all units in your computations. Draw on your graph the horizontal line that shows the average depth. Label this line with its equation. Draw also a vertical line that shows the the maximum deviation from the mean.
+(b) Next we'll compute the mean depth of the water over the 24 hours and the maximum deviation of the depth from this mean. Including units in our computation, the mean depth is 
+\[
+    h_{avg} = 0.5 ( 21 \text{ ft } + 5 \text{ ft }) = 13 \text{ ft} . 
+\]
+And the maximum deviation from the mean is
+\[
+     21 \text{ ft } - 13 \text{ ft } = 8 \text{ ft}.
+\]
 
-(c) Use the graph to find the period of oscillation. Then compute the rotation rate of a uniform circular motion that generates the sinusoidal variation in the depth of the water. Include all units.
+Activate the Amplitude folder on Line 5 of the above demonstration to draw the horizontal line showin the average depth. Note this line is labeled with its equation. There is also a vertical line that shows the the maximum deviation from the mean.
 
-(d Use parts (a)-(c) to find an expression for the function 
+(c) Next we'll use the graph to find the period of oscillation. Since high tide occurs at 2:00am and low tide at 8:00am, the period (the time between succesive) high (or low) tides is
+\[
+    2(8 \text{ hours } - 2 \text{ hours } = 12 \text{ hours}
+\]
+
+(d) Now we'll compute the rotation rate of a uniform circular motion that generates the sinusoidal variation in the depth of the water. This rotation rate is
+\[
+  \omega = \frac{2\pi \text{ radians}}{12 \text{ hours}} = \frac{\pi}{6} \text{ radians/hr} .
+\]
+
+(d Next we'll use parts (a)-(d) to find an expression for the function 
 \[
    h = f(t) ,  0\leq t \leq 24, 
 \]
-that gives the depth of the water (in feet) at time $t$ hours past midnight. Use the cosine function.
+that gives the depth of the water (in feet) at time $t$ hours past midnight. Use the cosine function. Keeping in mind that high tide occrs at 2:00am, our function is 
+\[
+   h  = f(t) = 13 + 8 \cos \left(  \frac{\pi}{6} \left( t - 2 \right) \right),  0\leq t \leq 24.
+\]
 
-(e) Check that your function is correct by using the information given in the problem.
 
-(f) Use your function to estimate the depth of the water at midnight, October 29 to the nearest tenth of a foot.
 
+(e) To check that our function is correct, we'll use the given information that the depth of the water is $21$ feet at 2:00am and $5$ feet at 8:00am.
+
+Substituting $t=2$ gives the depth at 2:00am (in feet) as
+\begin{align*}
+   f(2)   & = 13 + 8 \cos \left(  \frac{\pi}{6} \left( 2 - 2 \right) \right) \\ 
+           & = 13 + 8 \cos (0)  \\ 
+           & = 13 + 8 \\
+           & = 21 .
+\end{align*}
+
+Substituting $t=2$ gives the depth at 2:00am (in feet) as
+\begin{align*}
+   f(8)   & = 13 + 8 \cos \left(  \frac{\pi}{6} \left(8 - 2 \right) \right) \\ 
+           & = 13 + 8 \cos (\pi)  \\ 
+           & = 13 + 8(-1) \\
+           & = 5 .
+\end{align*}
+These check out.
+
+(f) Finally, we'll use our function to estimate the depth (in feet) of the water at 5:30am, October 29 to be
+\begin{align*}
+   f(5.5)   & = 13 + 8 \cos \left(  \frac{\pi}{6} \left(5.5 - 2 \right) \right) \\ 
+           & = 13 + 8 \cos (7\pi / 12)  \\ 
+           &  \sim  12.74 \\
+         \end{align*}
 \end{explanation}
 
 \end{example}
