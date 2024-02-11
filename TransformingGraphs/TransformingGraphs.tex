@@ -100,15 +100,16 @@ Access Desmos interactives through the online version of this text at
 \section{Graphing Transformations of the Sine Function}
 \begin{example} \label{Ed7ugg}
 
-We'll think about graphing a tranformation of the sine function, one like
+Our next step is to graph a tranformation of the sine function, one like
 \[
-    g(t) = 1.5\sin (2t) \, , \, t\in \mathbb{R} ,
+    g(t) = 1.5\sin (2t) \, , \, t\in \mathbb{R} .
 \]
-in two ways.
+We'll take two approaches.
 
 Either way, let's suppose the input $t$ is time, meausured in seconds, and the output is measured in meters. 
 
-For the first approach, we'll interpret $g(t)$ as giving the $y$-coordinate of a point moving counterclockwise around a circle at a constant speed and ask ourselves:
+
+{\bf Solution 1:} For the first approach, we'll interpret $g(t)$ as giving the $y$-coordinate of a point moving counterclockwise around a circle at a constant speed and ask ourselves three questions.
 
 \begin{itemize}
 \item{
@@ -132,6 +133,8 @@ What is the rotation rate about the center of the circular path?
 \item{
 \begin{question}  \label{Qdfsdsg56}
 What is the period of the motion? That is, how long does it take the point to move once around its path?
+
+For this, we just divide $2\pi$, the number of radians in one revolution, by the rotation rate. So for our example, the period of the motion is
 \[
     \frac{2\pi \text{ radians}}{\answer{2}\text{ rad/sec}}   = \answer{\pi} \text{ seconds}
 \]
@@ -139,15 +142,55 @@ What is the period of the motion? That is, how long does it take the point to mo
 }
 \end{itemize}
 
+We now have enough information to graph the function 
+\[
+    g(t) = 1.5 \sin (2t) \, , \, t \in \mathbb{R} 
+\]
+as shown below.
 
 Access Desmos interactives through the online version of this text at
  
-\href{https://www.desmos.com/calculator/igqybt79xz}{142:Sine Graphs 2}.
+\href{https://www.desmos.com/calculator/txuiehcciu}{142:Sine Graphs 2}.
 
  
 \begin{onlineOnly}
     \begin{center}
-\desmos{igqybt79xz}{900}{600}
+\desmos{txuiehcciu}{900}{600}
+\end{center}
+\end{onlineOnly}
+
+\pskip
+
+{\bf Solution 2:} For the second approach, we think about the transformations that take the graph of 
+\[
+      y = f(t) = \textcolor{purple}{1} \sin (\textcolor{red}{t}) \, , \, t\in \mathbb{R}
+\]
+to the graph of
+\[
+  y = g(t) = 1.5 \sin (2t) \, , \, t\in \mathbb{R} .
+\]
+The idea is that we get from the function $y=f(t)$ to the function $y=g(t)$ by replacing $y$ with $y/1.5$ and $t$ with $2t$, like this: 
+\[
+  \frac{y}{1.5} = \sin (2t) .
+\]
+And multiplying both sides by $1.5$, we get
+\[
+        y = 1.5 \sin (2t) = g(t) .
+\]
+Now the effect of replacing $y$ with $y/1.5$ is to stretch the graph of $y=f(t)$ about the horizontal ($t$) axis by a factor of $1.5$. And replacing $t$ with 
+\[
+   2t = \frac{t}{1/2}
+\]
+stretches the graph $y=f(t)$ about the vertical ($y$) axis by a factor of $1/2$ (or compresses the graph about that axis by a factor of $2$.)
+
+Access Desmos interactives through the online version of this text at
+ 
+\href{https://www.desmos.com/calculator/qrkgbi3gtr}{142: Transform Sine}.
+
+ 
+\begin{onlineOnly}
+    \begin{center}
+\desmos{qrkgbi3gtr}{900}{600}
 \end{center}
 \end{onlineOnly}
 
