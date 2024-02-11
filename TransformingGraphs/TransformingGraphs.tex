@@ -109,16 +109,16 @@ Access Desmos interactives through the online version of this text at
 \section{Graphing Transformations of the Sine Function}
 \begin{example} \label{Ed7ugg}
 
-Our next step is to graph a tranformation of the sine function, one like
+Our next step is to graph tranformations of the sine function, like
 \[
     g(t) = 1.5\sin (2t) \, , \, t\in \mathbb{R} .
 \]
-We'll take two approaches.
+We'll take two approaches. One is to relate the function to uniform circular motion. The other is to transform the graph of the sine function $f(t) = \sin t$. 
 
-Either way, let's suppose the input $t$ is time, meausured in seconds, and the output is measured in meters. 
+Either way, we'll suppose the input $t$ is time, meausured in seconds, and the output is measured in meters. 
 
 
-{\bf Solution 1:} For the first approach, we'll interpret $g(t)$ as giving the $y$-coordinate of a point moving counterclockwise around a circle at a constant speed and ask ourselves three questions.
+{\bf Solution 1:} For the first approach, we'll interpret $g(t) = 1.5 \sin (2t)$ as giving the $y$-coordinate of a point moving counterclockwise around a circle at a constant speed and ask ourselves three questions.
 
 \begin{itemize}
 \item{
@@ -178,11 +178,23 @@ to the graph of
 \[
   y = g(t) = 1.5 \sin (2t) \, , \, t\in \mathbb{R} .
 \]
-The idea is that we get from the function $y=f(t)$ to the function $y=g(t)$ by replacing $y$ with $y/1.5$ and $t$ with $2t$, like this: 
+
+But first we should clear up a common misconception about transformations. Suppose, for example, we start with an equation 
 \[
-  \frac{y}{1.5} = \sin (2t) .
+   x^2 + y^2 = 1
 \]
-And multiplying both sides by $1.5$, we get
+of the unit circle and replace $x$ with $x/3$ and $y$ with $y/4$. This gives us the equation
+\[
+    \left( \frac{x}{3} \right)^2 + \left( \frac{y}{4} \right)^2 = 1 .
+\]
+How is the graph of this new relation related to the graph of the original? Well, setting $y=0$ and solving for $x$ tells us that the $x$-intercepts of the new curve are $(\pm 3, 0)$. Similarly, the $y$-intercepts are $(0,\pm 4)$. This suggests that to go from the unit circle to the new curve (an ellipse) we stretch horizontally about the $y$-axis by a factor of $3$ and vertically about the $x$-axis by a factor of $4$. So the algebraic substitutions of substituting $x$ with $x/3$ and $y$ with $y/4$ {\bf behave the same way}.
+
+
+Now returning to the problem at hand. We get from the function $y=f(t) = \sin t$ to the function $y=g(t) = 1.5 \sin (2t)$ by replacing $y$ with $y/1.5$ and $t$ with $2t$, like this: 
+\[
+   y = \sin t  \longrightarrow \frac{y}{1.5} = \sin (2t) .
+\]
+And multiplying both sides of the second equation by $1.5$, we get
 \[
         y = 1.5 \sin (2t) = g(t) .
 \]
@@ -192,7 +204,9 @@ Now the effect of replacing $y$ with $y/1.5$ is to stretch the graph of $y=f(t)$
 \]
 stretches the graph $y=f(t)$ about the vertical ($y$) axis by a factor of $1/2$ (or we can say compresses the graph about the vertical axis by a factor of $2$.)
 
-That's all we need to graph $y=1.5 \sin (2t)$. Drag the sliders $b$ and $w$ in the demonstation below to see the transformation of the graph of
+That's all we need to graph $y=1.5 \sin (2t)$. Instead of the outputs oscillating between $y=-1$ and $y=1$ (as they do for $f(t)=\sin t$), they oscillate between $y=-1.5$ and $y=1.5$. And because the graph of $y=\sin t$ gets compressed horizontally about the $y$-axis by a factor of $2$, the function $y=1.5 \sin (2t)$ has period $2\pi / 2 = \pi$.
+
+ Drag the sliders $b$ and $w$ in the demonstation below to see the transformation of the graph of
 \[
   y = \sin (t) \text{ where } a=0, b=1, \text{ and }\omega = 1
 \] 
