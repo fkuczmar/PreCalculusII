@@ -15,11 +15,20 @@ Now you might object and claim that the function $h(x)=\sqrt{x}$ is the inverse 
 \[
     g(x) = x^2 , x\geq 0 .
 \]
-This new function $g$ is \emph{not} the same as $f$. The former is the squaring function with a restricted domain, $x\geq 0$. On this restricted domain, $g$ is one-to-one and its inverse $g^{-1}(x) = \sqrt{x}$ is a function. This is the familiar square-root function. Now if I pick a non-negative number and square it to get 25, there is only one possiblity for my original number, namely $5$. So it is not enough to say, for exampole, that $\sqrt{19}$ is the number whose square is 19. Rather it is the \emph{positive} number whose square is 19.
+This new function $g$ is \emph{not} the same as $f$. The function $g$ is the squaring function with a restricted domain, $x\geq 0$. On this restricted domain, $g$ is one-to-one and its inverse $g^{-1}(x) = \sqrt{x}$ is a function. This is the familiar square-root function. Now if I pick a non-negative number and square it to get 25, there is only one possiblity for my original number, namely $5$. So it is not enough to say, for example, that $\sqrt{19}$ is the number whose square is 19. Rather it is the \emph{positive} number whose square is 19.
 
 The sine and cosine functions work similarly. They are also not one-to-one and so their inverses are not functions. It is only by restricting the domains of these functions that we get \emph{new} functions that are one-to-one. And the inverses of these new functions are what we call the \emph{inverse sine and cosine functions}.
 
-How to restrict the domains? The idea is to restrict the domains of the sine and cosines function so that over these restricted domains the new functions are one-to-one and give all the possible outputs (ie. all the numbers between $-1$ and $1$, endpoints included.) There are infinitley many ways to make such domain restrictions, but by convention mathematicians have arbitrarily decided how.
+How to restrict the domains? The idea is to restrict the domains of the sine and cosines function so that 
+\begin{itemize}
+
+\item{over these restricted domains the new functions are one-to-one and}
+
+\item{over these restricted domains the new functions give all the possible outputs (ie. all the numbers between $-1$ and $1$, endpoints included.)}
+
+\end{itemize}
+
+There are infinitley many ways to make such domain restrictions, but by convention mathematicians have arbitrarily decided how.
 
 For the sine function, the new function with restricted domain is 
 \[
@@ -27,11 +36,13 @@ For the sine function, the new function with restricted domain is
 \]
 
 \begin{question}  \label{Q1:Inverse}
-Explain why the function $f$ is one-to-one and has a range 
+(a) Graph the function $y=f(\theta)$ above.
+
+(b) Explain why the function $f$ is one-to-one and has a range 
 \[
    \{y | -1 \leq y \leq 1\}. 
 \]
-Include a picture of a circle or a graph to help with your explantion.
+%Include a picture of a circle or a graph to help with your explantion.
 \end{question}
 
 The function
@@ -42,7 +53,11 @@ is the inverse of this new sine function $f$ with the above restricted domain. S
 \[
     \arcsin (1/3) = \sin^{-1}(1/3)
 \]
-is the angle \emph{between} $-\pi/2$ and $\pi/2$ whose sine is equal to $1/3$.
+is the angle \emph{between} $-\pi/2$ and $\pi/2$ whose sine is equal to $1/3$. 
+
+\emph{Note:} Just like it is not enough to say that $\sqrt{19}$ is the number whose square is $19$ (since there are two numbers whose squares are $19$), it is also \emph{not} enough to say that $\arcsin (1/3)$ is the angle whose sine is $1/3$. The reason is that there are \emph{infinitely} many angles with a sine equal to $1/3$. The arcsine function returns the \emph{unique} angle between $-\pi/2$ and $\pi/2$ whose sine is $1/3$.
+
+
 
 To get the inverse cosine function we cannot use the same domain restriction.
 
@@ -50,7 +65,7 @@ To get the inverse cosine function we cannot use the same domain restriction.
 Explain why not.
 \end{question}
 
-Rather, the new cosine function with restricted domain is
+To define the inverse cosine function, we first define a \emph{new} cosine function with the restricted domain $\{\theta \, | \, 0\leq \theta \leq \pi \}$ as shown here
 \[
     x  = g(\theta) = \cos \theta , 0 \leq \theta \leq \pi . 
 \]
@@ -63,21 +78,36 @@ Explain why the function $g$ is one-to-one and has a range
 Include a picture of a circle or a graph to help with your explantion.
 \end{question}
 
+
+\begin{exploration}  \label{Esdgtrhnh}
 The function
 \[
    \theta = g^{-1}(x) = \arccos y = \cos^{-1} x , -1\leq x \leq 1 ,
 \]
 is the inverse of this new cosine function $g$ with the restricted domain above. So, for example, 
 \[
-    \arccos(1/3) = \cos^{-1}(1/3)
+    \arccos(1/3) = \cos^{-1}(1/4)
 \]
-is the angle \emph{between} $0$ and $\pi$ whose cosine is equal to $-1/3$.
+is the angle \emph{between} $0$ and $\pi$ whose cosine is equal to $1/4$. We
+
+Access Desmos interactives through the online version of this text at
+ 
+\href{https://www.desmos.com/calculator/9cndqlhfx7}.
+
+ 
+\begin{onlineOnly}
+    \begin{center}
+\desmos{9cndqlhfx7}{900}{600}
+\end{center}
+\end{onlineOnly}
+\end{exploration}
+
 
 
 \begin{question} \label{Q5:Inverse}
-(a) Explain the meaning of $\cos^{-1}(-2/5) = \arccos(-2/5)$. Draw a picture to help with your explanation. Would you expect the value of $\cos^{-1}(-2/5)$ to be positive or negative? Explain.
+(a) Explain the meaning of $\cos^{-1}(-2/5) = \arccos(-2/5)$. Draw an annotated picture of a circle to help with your explanation. Would you expect the value of $\cos^{-1}(-2/5)$ to be positive or negative? Explain.
 
-(b)  Explain the meaning of $\sin^{-1}(-2/5) = \arcsin(-2/5)$. Draw a picture to help with your explanation. Would you expect the value of $\sin^{-1}(-2/5)$ to be positive or negative? Explain.
+(b)  Explain the meaning of $\sin^{-1}(-2/5) = \arcsin(-2/5)$. Draw an annotated picture of a circle to help with your explanation. Would you expect the value of $\sin^{-1}(-2/5)$ to be positive or negative? Explain.
 
 \end{question}
 
