@@ -86,21 +86,51 @@ The function
 \]
 is the inverse of this new cosine function $g$ with the restricted domain above. So, for example, 
 \[
-    \arccos(1/3) = \cos^{-1}(1/4)
+   \theta =  \arccos(1/3) = \cos^{-1}(1/4)
 \]
-is the angle \emph{between} $0$ and $\pi$ whose cosine is equal to $1/4$. We
+is the angle \emph{between} $0$ and $\pi$ whose cosine is equal to $1/4$. 
+
+We can use the radian protractor below to approximate the measure of this angle. 
+To do this, we first need to recognize that we're working on a circle of radius $r=5$cm. Now we'll let $P(x,y)$ be the point on this circle with polar angle $\theta = \arccos(1/4)$. To find where $P$ lies on the circle, we'll find the $x$-coordinate of $P$.
+
+To start, remember that 
+\[
+      \cos \theta = \frac{x}{r} = \frac{x}{5}.
+\]
+And for our particular angle $\theta = \arccos(1/4)$,  
+\[
+   \cos \theta = \cos (\arccos(1/4)) = 1/4.
+\]
+So we know that 
+\[
+    \frac{x}{5} = \frac{1}{4} .
+\] 
+Solve this equation for $x$ to get 
+\[
+  x = \frac{5}{4} = 1.25 .
+\]
+So $P$ has $x$-coordinate $x=1.25$. 
+
+To find where $P$ is on the circle, we draw the line $x=1.25$. This line intersects the circle in two points, $P$ and $Q$, where $P$ is in the first quadrant and $Q$ in the fourth (see demonstration below). Now remember that the arccosine function returns angles bewteen $0$ and $\pi$. But since $Q$ is in the fourth quadrant, there is no way to measure its polar angle to be between $0$ and $\pi$. But there is such a choice for the point $P$ in the first quadrant. We can use the protractor estimate its polar angle to be about $1.3$ radians.
+
+Our conclusion is that 
+\[
+   \cos^{-1}(1/4)  = \arccos(1/4) \sim 1.3.
+\]
+
+
+\begin{onlineOnly}
+    \begin{center}
+\desmos{pzftbzlfkn}{900}{600}
+\end{center}
+\end{onlineOnly}
 
 Access Desmos interactives through the online version of this text at
  
-\href{https://www.desmos.com/calculator/9cndqlhfx7}.
+\href{https://www.desmos.com/calculator/pzftbzlfkn}.
 
- 
-\begin{onlineOnly}
-    \begin{center}
-\desmos{9cndqlhfx7}{900}{600}
-\end{center}
-\end{onlineOnly}
 \end{exploration}
+
 
 
 
