@@ -343,7 +343,51 @@ Access Desmos interactives through the online version of this text at
 
 
 \section{Back to Bearings}
+We can use the inverse trig functions to compute exact bearings instead of relying on the radian protractor to approximate them.
 
+\begin{example}  \label{Ed4t5t4dt44}
+Find the exact bearing of the path that goes directly from the point $A(3,1)$ to the point $B(-2,4)$. Find the least positive bearing, measure counterclockwise from due east (the positive $x$-axis).
+
+\begin{explanation}
+The question is asking us to find the polar angle $\theta$ of the vector
+\[
+      \overrightarrow{AB} = \langle -5, 3  \rangle ,
+\]
+where $0\leq \theta \leq 2\pi$.
+
+We could use any of the three inverse trigonometric functions arccosine, arcsine, and arctangent, and we'll try all three.
+
+(a) The inverse cosine is the easiest because the polar angle $\theta$ of $\overrightarrow{AB}$ is between $0$ and $\pi$. To find the angle we first find the distance between $A$ and $B$. This is 
+\[
+   r =      | \overrightarrow{AB} | = | \langle -5, 3  \rangle | = \sqrt{34} .
+\]
+Now since
+\[
+   \cos\theta = \frac{x}{r} = \frac{-5}{\sqrt{34}}
+\]
+{\bf and}
+\[
+      0< \theta < \pi ,
+\]
+we know that to go directly from $A$ to $B$ we should walk at a bearing of
+\[
+     \theta = \arccos \left(  \frac{-5}{\sqrt{34}}  \right) .
+\]
+Using a calculator gives the bearing to be approximately $2.6$ radians.
+
+(b) For the inverse sine function, we know that
+\[
+   \sin\theta = \frac{y}{r} = \frac{3}{\sqrt{34}}
+\]
+and it would be tempting to think that 
+\[
+  \theta = \arcsin \left(  \frac{3}{\sqrt{34}}  \right) .
+\]
+But this would \emph{not} be correct. The reason is that the arcsine function returns angles between $-\pi/2$ and $\pi/2$ radians. And because the vector $\overrightarrow{AB}$ has a negative $x$-component and a postive $y$-component, we know that its polar angle is between $\pi/2$ and $\pi$ radians.
+
+\end{explanation}
+
+\end{example}
 
 
 
