@@ -316,14 +316,6 @@ Which of the following are possible choices for the coordinates of $P$?
 
 Now move $P$ and use the protractor to estimate its polar angle  $\theta = \arctan(10/7)$. 
 
-
-
-(f) $\tan^{-1}(-10/7)$
-
-(g) $\tan^{-1}(8)$
-
-(h) $\tan^{-1}(-1/8)$
-
 \begin{exploration}\label{Exp3:Comp}
 
 \pdfOnly{
@@ -338,6 +330,14 @@ Access Desmos interactives through the online version of this text at
 \end{center}
 \end{onlineOnly}
 \end{exploration}
+
+(f) $\tan^{-1}(-10/7)$
+
+(g) $\tan^{-1}(8)$
+
+(h) $\tan^{-1}(-1/8)$
+
+
 
 \end{question}
 
@@ -375,17 +375,17 @@ to go directly from $A$ to $B$ we should walk at the {\bf exact} bearing of
 \]
 Using a calculator gives the bearing to be approximately $2.6$ radians.
 
-(b) For the inverse sine function, we know that
+(b) To express the polar angle $\theta$ of $\overrightarrow{AB}$ in terms of the inverse sine function, we start with the fact that
 \[
-   \sin\theta = \frac{y}{r} = \frac{3}{\sqrt{34}}
+   \sin\theta = \frac{y}{r} = \frac{3}{\sqrt{34}} .
 \]
-and it would be tempting to think that 
+While it would be tempting to think that 
 \[
-  \theta = \arcsin \left(  \frac{3}{\sqrt{34}}  \right) .
+  \theta = \arcsin \left(  \frac{3}{\sqrt{34}}  \right) ,
 \]
-But this would \emph{not} be correct. The reason is that the arcsine function returns angles between $-\pi/2$ and $\pi/2$ radians. And because the vector $\overrightarrow{AB}$ has a negative $x$-component and a postive $y$-component, its polar angle lies between $\pi/2$ and $\pi$ radians.
+this would \emph{not} be correct. The reason is that the arcsine function returns angles between $-\pi/2$ and $\pi/2$ radians. And because the vector $\overrightarrow{AB}$ has a negative $x$-component and a postive $y$-component, its polar angle lies between $\pi/2$ and $\pi$ radians.
 
-The angle $\arcsin(3/\sqrt{34})$ is the polar angle of the vector $\overrightarrow{AC} = \langle 5, 3 \rangle$. The key point  (see the demonstration below) is that the vectors $\overrightarrow{AB}$ and $\overrightarrow{AC}$ are symmetric about the $y$-axis. So the angle $\overrightarrow{AB}$ makes with the negative $x$-axis (ie. with the vector $\langle -1,0\rangle$) has a measure of $ \arcsin \left(  \frac{3}{\sqrt{34}}  \right)$. This means the polar angle of $\overrightarrow{AB}$ is
+The angle $\arcsin(3/\sqrt{34})$ is the polar angle of the vector $\overrightarrow{AC} = \langle 5, 3 \rangle$. The key point  (see the demonstration below) is that the vectors $\overrightarrow{AB}$ and $\overrightarrow{AC}$ are symmetric about the $y$-axis. So the angle $\overrightarrow{AB}$ makes with the negative $x$-axis (ie. with the vector $\langle -1,0\rangle$) has a measure of $ \arcsin \left(  \frac{3}{\sqrt{34}}  \right)$. This means $\overrightarrow{AB}$ has a polar angle with a radian measure of 
 \[
    \theta = \pi - \arcsin  \left(  \frac{3}{\sqrt{34}}  \right) .
 \]
@@ -404,12 +404,44 @@ Access Geogebra interactives through the online version of this text at
 \href{https://www.geogebra.org/classic/da2q3jgv}{142: Relative Position 2}.
 \end{exploration}
 
+(c) To express the polar angle $\theta$ of $\overrightarrow{AB}$ in terms of the inverse tangent function, we start with the fact that
+\[
+   \tan\theta  = \frac{y}{x} = \frac{3}{-5} = -\frac{3}{5} .
+\]
+We would be mistaken again to think that 
+\[
+   \theta = \arctan \left(  -\frac{3}{5}  \right) .
+\]
+The reason is that the arctangent function returns angles between $-\pi/2$ and $\pi/2$ radians. So the angle $\arctan(-3/5)$ is actually the polar angle of the vector
+\[
+   \overrightarrow{AC} = \langle 5, -3 \rangle = - \overrightarrow{AB}.
+\]
+Now the vectors $\overrightarrow{AB}$ and $\overrightarrow{AC}$ are symmetric about the origin. This means (picture left for you) that $\overrightarrow{AB}$ has a polar angle with a radian measure of 
+\[
+   \theta = \pi + \arctan  \left( - \frac{3}{5}  \right)  = \pi - \arctan  \left( \frac{3}{5}  \right).
+\] 
+
+
 \end{explanation}
 
 \end{example}
 
 
 \begin{question} \label{Qetfg8uijjg}
+(a) Describe, in the correct order, the transformations that take the unit circle
+\[
+  x^2 +y^2 = 1
+\]
+to the ellipse
+\[
+  \left( \frac{x+6}{4} \right)^2 + \left( \frac{y-4}{3} \right)^2 = 1.
+\]
+
+(b) Use your description from part (a) and the parameterization
+\[
+   ( x, y)  = ( \cos \theta , \sin\theta)  \, , \, 0\leq \theta \leq 2\pi
+\]
+of the unit circle, to parameterize the ellipse in part (a). 
 
 
  \begin{exploration}
