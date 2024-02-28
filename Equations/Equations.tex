@@ -93,7 +93,7 @@ See the Panopto Recording \emph{Solving Trigonometric Equations, Part 1}.
 \begin{example}  \label{Exer67u8gg}
 The function
 \[
-    h  = f(t) = 7 + 5 \cos \left( \frac{\pi}{6.1}(t-2)  \right) \, , \, 0\leq t \leq 96 ,
+    h  = f(t) = 7 + 5 \cos \left( \frac{\pi}{6.1}t  \right) \, , \, 0\leq t \leq 96 ,
 \]
 expresses the depth of the water (in feet) at the Edmonds pier in terms of the number of hours since noon of February 23rd.
 
@@ -133,9 +133,9 @@ expresses the depth of the water (in feet) at the Edmonds pier in terms of the n
 
 \item{reaches its maximum of 
 \[
-   h  = f(2) = 7 + 5 cos(0) = 7 + 5(1) = 12 \text{ feet}
+   h  = f(0) = 7 + 5 cos(0) = 7 + 5(1) = 12 \text{ feet}
 \]
-at time $t=2$ hours.}
+at time $t=0$ hours.}
 
 \end{itemize}
 
@@ -172,11 +172,11 @@ Access this desmos activity at
 
 To solve this equation and find all times when the water is $3$ feet deep, we'll make the substitution
 \[
-    \theta = \frac{\pi}{6.1}(t-2) ,
+    \theta = \frac{\pi}{6.1}t ,
 \]
 so that
 \[
-     h = 7 + 5 \cos \left( \frac{\pi}{6.1}(t-2)  \right) = 7 + 5\cos\theta.
+     h = 7 + 5 \cos \left( \frac{\pi}{6.1}t  \right) = 7 + 5\cos\theta.
 \]  
 Then our first step is to solve the equation 
 \[
@@ -224,22 +224,46 @@ to the equation $\cos\theta = -4/5$.
 
 Remembering that
 \[
-  \theta =  \frac{\pi}{6.1}(t-2) ,
+  \theta =  \frac{\pi}{6.1}t ,
 \]
 we now solve the equation
 \[
-     \frac{\pi}{6.1}(t-2) = \pm \arccos(-4/5)  + 2\pi k , k\in \mathbb{Z},
+     \frac{\pi}{6.1}t = \pm \arccos(-4/5)  + 2\pi k , k\in \mathbb{Z},
 \]
 getting
 \[
-   t = 2 \pm \frac{6.1}{\pi} \arccos(-4/5) + 12.2 k , k\in \mathbb{Z}.
+   t = \pm \frac{6.1}{\pi} \arccos(-4/5) + 12.2 k , k\in \mathbb{Z}.
 \]
 Or that
 \[
-      t  \sim 2 \pm 4.85 + 12.2 k , k\in \mathbb{Z}.
+      t  \sim \pm 4.85 + 12.2 k , k\in \mathbb{Z}.
 \]
-The final step is to choose the appropriate values for $k$ remembering that the domain of the function $f(t)$ is $t\in [0,96]$.
+The final step is to choose the appropriate values for $k$ so that $0\leq t \leq 96$.
 
+For the first family, we need
+\[
+         0 \leq 4.85 + 12.2 k \leq 96
+\]
+so that
+\[
+      -0.40 \leq k \leq 7.45.
+\]
+Remembering that $k$ is an integer tells us
+\[
+   k = 0, 1, 2, \ldots ,7.
+\]
+For the second family,
+\[
+   0 \leq  - 4.85 + 12.2 k \leq 96
+\]
+and
+\[
+       0.40\leq k \leq 8.26 .
+\]
+So for the second family
+\[
+     k = 1, 2, \ldots , 8 .
+\]
 
 \end{explanation}
 
