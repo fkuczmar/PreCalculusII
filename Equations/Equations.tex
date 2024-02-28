@@ -131,32 +131,114 @@ expresses the depth of the water (in feet) at the Edmonds pier in terms of the n
    T =  \frac{2\pi \text{ rad}}{\frac{\pi}{6.1} \frac{ \text{ rad}}{\text{hr}}} = 12.2 \text{ hours and} 
 \]}
 
-\item{reaches its maximum of $h=12$ feet at time $t=2$ hours.}
+\item{reaches its maximum of 
+\[
+   h  = f(2) = 7 + 5 cos(0) = 7 + 5(1) = 12 \text{ feet}
+\]
+at time $t=2$ hours.}
 
 \end{itemize}
 
 \pskip
 
-(b) 
+(c) Using the graph below, the first two times when the water at the pier is $3$ feet deep are approximately
+\[
+  t \sim 4.9, 7.3 .
+\]
 
 \pdfOnly{
 Access Desmos interactives through the online version of this text at
  
-\href{https://www.desmos.com/calculator/qzbr9qysfc}.
+\href{https://www.desmos.com/calculator/3w56sayz2h}.
 }
  
 \begin{onlineOnly}
     \begin{center}
-\desmos{qzbr9qysfc}{900}{600}
+\desmos{3w56sayz2h}{900}{600}
 \end{center}
 \end{onlineOnly}
   
 Access this desmos activity at
  
-\href{https://www.desmos.com/calculator/qzbr9qysfc}{142: Edmonds Pier}
+\href{https://www.desmos.com/calculator/3w56sayz2h}{142: Edmonds Pier}
+
+
+\pskip \pskip
+
+(d), (e) The water is $3$ feet deep when
+\[
+   h = f(t) =3.
+\]
+
+To solve this equation and find all times when the water is $3$ feet deep, we'll make the substitution
+\[
+    \theta = \frac{\pi}{6.1}(t-2) ,
+\]
+so that
+\[
+     h = 7 + 5 \cos \left( \frac{\pi}{6.1}(t-2)  \right) = 7 + 5\cos\theta.
+\]  
+Then our first step is to solve the equation 
+\[
+  7 + 5\cos\theta = 3 ,
+\]
+or equivalently the equation
+\[
+   \cos \theta = -\frac{4}{5} .
+\]
+
+One solution to this equation is the angle (the one between $0$ and $\pi$)
+\[
+   \theta = \arccos(-4/5) .
+\]
+This angle generates a family of angles
+\[
+    \theta = \arccos(-4/5)  + 2\pi k, k\in \mathbb{Z}
+\]
+that are solutions to the equation 
+\[
+   \cos\theta = -\frac{4}{5} .
+\]
+
+To find a member of the second family of solutions, we reason as in Example 1, remembering that since
+\[
+\cos\theta = \frac{x}{r}   = -\frac{4}{5} ,
+\] 
+we can draw a circle of radius $r=5$ feet and draw the vertical line $x=4$. 
+
+\begin{onlineOnly}
+    \begin{center}
+\geogebra{ydhvebag}{900}{600}
+\end{center}
+\end{onlineOnly}
+
+Because the points $G$ and $K$ that generate our two families of solutions are symmetric about the $x$-axis, one possible choice for the polar angle of point $K$ is
+\[
+   \theta=  - \arccos(-4/5) .
+\]
+This angle generates the second family of solutions
+\[
+  \theta = -\arccos(-4/5)  + 2\pi k, k\in \mathbb{Z}
+\]
+to the equation $\cos\theta = -4/5$.
+
+Remembering that
+\[
+  \theta =  \frac{\pi}{6.1}(t-2) ,
+\]
+we now solve the equation
+\[
+     \frac{\pi}{6.1}(t-2) = \pm \arccos(-4/5)  + 2\pi k , k\in \mathbb{Z}
+\]
+We get
+\[
+   t = 2 \pm \frac{6.1}{\pi} \arccos(-4/5) + 12.2 k , k\in \mathbb{Z}.
+\]
+
+The final step is to choose the appropriate values for $k$ remembering that the domain of the function $f(t)$ is $t\in [0,96]$.
+
 
 \end{explanation}
-
 
 \end{example}
 
