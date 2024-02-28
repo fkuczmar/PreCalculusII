@@ -109,7 +109,7 @@ expresses the depth of the water (in feet) at the Edmonds pier in terms of the n
 
 (e) Find all (exact) times when the depth of the water is $3$ feet.
 
-(f) Find all clock times on February 26th when the water at the pier is $3$ feet deep. Use a calculator to approximate these times to the nearest minute. 
+(f) During what fraction of a period of oscillation is the water at most $3$ feet deep?
 
 
 \begin{explanation}
@@ -133,7 +133,7 @@ expresses the depth of the water (in feet) at the Edmonds pier in terms of the n
 
 \item{reaches its maximum of 
 \[
-   h  = f(0) = 7 + 5 cos(0) = 7 + 5(1) = 12 \text{ feet}
+   h  = f(0) = 7 + 5 \cos(0) = 7 + 5(1) = 12 \text{ feet}
 \]
 at time $t=0$ hours.}
 
@@ -204,7 +204,7 @@ To find a member of the second family of solutions, we reason as in Example 1, r
 \[
 \cos\theta = \frac{x}{r}   = -\frac{4}{5} ,
 \] 
-we can draw a circle of radius $r=5$ feet and the vertical line $x=-4$. 
+we can visualize the solutions as the polar angles of the two points where the line $x=4$ intersects a circle of radius $r=5$ feet centered at the origin. 
 
 \begin{onlineOnly}
     \begin{center}
@@ -212,7 +212,7 @@ we can draw a circle of radius $r=5$ feet and the vertical line $x=-4$.
 \end{center}
 \end{onlineOnly}
 
-Because the points $G$ and $K$ are symmetric about the $x$-axis, one possible choice for the polar angle of point $K$ is
+Because the intersection points $G$ and $K$ are symmetric about the $x$-axis, one possible choice for the polar angle of point $K$ is
 \[
    \theta=  - \arccos(-4/5) \sim -2.5 .
 \]
@@ -234,7 +234,7 @@ getting
 \[
    t = \pm \frac{6.1}{\pi} \arccos(-4/5) + 12.2 k , k\in \mathbb{Z}.
 \]
-Or that
+So
 \[
       t  \sim \pm 4.85 + 12.2 k , k\in \mathbb{Z}.
 \]
@@ -265,6 +265,40 @@ So for the second family
      k = 1, 2, \ldots , 8 .
 \]
 
+Summary:
+\begin{itemize}
+\item{There are 16 times (four each day) during the time interval $t\in [0,96]$ when the water is $3$ feet deep. The times are
+\[
+   t = \frac{6.1}{\pi}\arccos(-4/5) + 12.2k  \sim 4.85 + 12.2k ,  k=0, 1, 2, \ldots , 7
+\]
+or
+\[
+      t = -  \frac{6.1}{\pi}\arccos(-4/5) + 12.2k  \sim -4.85 + 12.2k ,  k=1, 1, 2, \ldots , 8.
+\]}
+
+\item{
+The first two times (measured in hours past noon of February 23) are
+\[
+    t =  \frac{6.1}{\pi} \arccos(-4/5) \sim 4.85
+\]
+and 
+\[
+    t = - \frac{6.1}{\pi}\arccos(-4/5) + 12.2 \sim 7.15 .
+\]
+}
+\end{itemize}
+
+\pskip
+
+(f) During a period of $12.2$ hours, the water is at most $3$ feet deep during a time interval of about
+\[
+   (7.15 - 4.85) \text { hours} = 2.23 \text{ hours}
+\]
+or about
+\[
+    \frac{2.23\text{ hrs}}{12.2 \text{ hrs}} \sim 18.85\%
+\]
+of the time.
 \end{explanation}
 
 \end{example}
