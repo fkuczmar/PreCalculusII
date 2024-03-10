@@ -96,33 +96,138 @@ Now we use the law of sines in $\Delta ABC$. Since
    \frac{|\overrightarrow{AB}|}{\sin (\angle BCA)} =\frac{|\overrightarrow{AC}|}{\sin (\angle ABC)} ,
 \]
 \[
-     \frac{6}{\sin (0.5)} =\frac{|\overrightarrow{AC}|}{\sin (\pi - 2.4)},
+     \frac{6}{\sin (0.5)} =\frac{|\overrightarrow{AC}|}{\sin (\pi - 2.4)} .
 \]
-and
+So the the distance between $C$ and $A$ is
 \[
-   |\overrightarrow{AC}| = 6  \left( \frac{\sin (2.4)}{\sin (0.5)} \right)  \sim 8.45 .
+   |\overrightarrow{AC}| = 6  \left( \frac{\sin (2.4)}{\sin (0.5)} \right)  \sim 8.45 \text{ miles}.
 \]
 
 \begin{question}  \label{Q34rg4t5rt}
 Explain why we can replace $\sin (\pi -  2.4)$ with $\sin (2.4)$ in the computation above. Include a picture to help with your explanation.
 \end{question}
 
-Similarly, since
-\[
-   \frac{|\overrightarrow{AB}|}{\sin (\angle BCA)} =\frac{|\overrightarrow{BC}|}{\sin (\angle BAC)} ,
-\]
-\[
-     \frac{6}{\sin (0.5)} =\frac{|\overrightarrow{BC}|}{\sin (1.9)},
-\]
-and
-\[
-   |\overrightarrow{BC}| = 6  \left( \frac{\sin (1.9)}{\sin (0.5)} \right)  \sim 11.84 .
-\]
+\begin{question}   \label{Qd45r5643rs}
+Find the exact distance between $C$ and $B$. Then find the approximate distance to the nearest hundredth of a mile.
+\end{question}
 
-So the approximate distances from $C$ to $A$ and from $C$ to $B$ are respectively $8.45$ miles and $11.84$ miles.
+
+\begin{question}  \label{Qerdef6645yu}
+Explain how this problem differs from the other relative-position problems this quarter, not in terms of the solution, but in terms of the statement of the problem itself.
+\end{question}
+
+
+%Similarly, since
+%\[
+%   \frac{|\overrightarrow{AB}|}{\sin (\angle BCA)} =\frac{|\overrightarrow{BC}|}{\sin (\angle BAC)} ,
+%\]
+%\[
+%     \frac{6}{\sin (0.5)} =\frac{|\overrightarrow{BC}|}{\sin (1.9)},
+%\]
+%and
+%\[
+%   |\overrightarrow{BC}| = 6  \left( \frac{\sin (1.9)}{\sin (0.5)} \right)  \sim 11.84 .
+%\]
+
+%So the approximate distances from $C$ to $A$ and from $C$ to $B$ are respectively $8.45$ miles and $11.84$ miles.
 
 \end{explanation}
 
+
+\end{example}
+
+
+\section{More Applications of the Law of Sines}
+\begin{question}  \label{Q343f44fd}
+At noon a rowboat is $10$ km due east of a sailboat. The sailboat travels at a consant speed of $v$ km/hour at a fixed bearing of $0.4$ radians (measured counterclockwise from the east). The rowboat travels half as fast as the sailboat at some fixed bearing. Sometime later the boats collide.
+
+(a) Find the possible bearing(s) of the rowboat.
+
+(b) When do the boats collide?
+
+(c) Establish a rectangular coordinate system with the positive $x$-axis pointing due east, and the origin at the sailboat's position at noon. Then parameterize the motions of the rowboat and sailboat. Consider all possibilities.
+
+\end{question}
+
+
+
+
+
+\begin{question}  \label{Qercg663}
+At noon a motorboat is $10$ km due east of a sailboat. The sailboat travels at a consant speed of $v$ km/hour at a fixed bearing of $0.4$ radians (measured counterclockwise from the east). The motorboat travels twice as fast as the sailboat at some fixed bearing. Sometime later the boats collide.
+
+(a) Find the possible bearing(s) of the motorboat.
+
+(b) When do the boats collide?
+
+(c) Establish a rectangular coordinate system with the positive $x$-axis pointing due east, and the origin at the sailboat's position at noon. Then parameterize the motions of the motorboat and sailboat. Consider all possibilities.
+
+\end{question}
+
+
+
+\section{The Law of Cosines and Relative Position}
+Earlier in this class we solved problems about relative position by resolving vectors into their $x$ and $y$ components. Here we take a different approach and work with triangles instead.
+
+ \begin{example}  \label{Exergt43tgr}
+Point $B$ is $6$ miles due east of point $A$. Point $C$ is $8$ miles from $A$ at a bearing of $0.4$ radians. Desrcribe the position of $C$ relative to $B$ by giving a distance and a bearing.
+
+\begin{explanation}
+We start by drawing an accurate picture.
+
+\pdfOnly{
+Access Geogebra interactives through the online version of this text at
+ 
+\href{https://www.geogebra.org/classic/kjnatcwc}.
+}
+ 
+\begin{onlineOnly}
+    \begin{center}
+\geogebra{kjnatcwc}{900}{600}
+\end{center}
+\end{onlineOnly}
+
+
+Geogebra activity available at
+
+\href{https://www.geogebra.org/classic/kjnatcwc}{142: Relative Position 4}
+
+
+\pskip \pskip
+
+Next we'll work through the solution as usual, by working with the components of the vectors.
+
+The vector $\overrightarrow{AB}$ has components
+\[
+   \overrightarrow{AB} = \langle 6, 0  \rangle
+\]
+measured in miles.
+
+The vector $\overrightarrow{AC}$ has components
+\[
+    \overrightarrow{AC} = \langle 8 \cos (0.4), 8 \sin(0.4)  \rangle
+\]
+also measured in miles.
+
+The vector $\overrightarrow{BC}$ that gives the position of $C$ relative to $B$ is
+\begin{align*}
+       \overrightarrow{BC} &= \overrightarrow{AC} - \overrightarrow{AB}    \\
+                                    &= \langle 8 \cos (0.4), 8 \sin(0.4)  \rangle - \langle 6, 0  \rangle \\
+                                    &= \langle 8 \cos (0.4) - 6, 8 \sin(0.4)  \rangle
+\end{align*}
+
+We'll now compute the \emph{square} of the distance from $B$ to $C$ as
+\begin{align*}
+         |  \overrightarrow{BC} |^2 &= |    \langle 8 \cos (0.4) - 6, 8 \sin(0.4)  \rangle    |^2  \\
+                                             &= (8 \cos (0.4) - 6)^2 + (8 \sin(0.4))^2   \\
+                                             &=  8^2 + 6^2 - 2(8)(6) \cos(0.4)
+\end{align*}
+
+\begin{question}  \label{Q4r345fg}
+Fill in all the missing steps between the second and third lines in the above computation. 
+\end{question}
+
+\end{explanation}
 
 \end{example}
 
@@ -230,70 +335,6 @@ then
 
 
 
-\section{Relative Position}
-Earlier in this class we solved problems about relative position by resolving vectors into their $x$ and $y$ components. Here we take a different approach and work with triangles instead.
-
- \begin{example}  \label{Exergt43tgr}
-Point $B$ is $6$ miles due east of point $A$. Point $C$ is $8$ miles from $A$ at a bearing of $0.4$ radians. Desrcribe the position of $C$ relative to $B$ by giving a distance and a bearing.
-
-\begin{explanation}
-We start by drawing an accurate picture.
-
-\pdfOnly{
-Access Geogebra interactives through the online version of this text at
- 
-\href{https://www.geogebra.org/classic/kjnatcwc}.
-}
- 
-\begin{onlineOnly}
-    \begin{center}
-\geogebra{kjnatcwc}{900}{600}
-\end{center}
-\end{onlineOnly}
-
-
-Geogebra activity available at
-
-\href{https://www.geogebra.org/classic/kjnatcwc}{142: Relative Position 4}
-
-
-\pskip \pskip
-
-Next we'll work through the solution as usual, by working with the components of the vectors.
-
-The vector $\overrightarrow{AB}$ has components
-\[
-   \overrightarrow{AB} = \langle 6, 0  \rangle
-\]
-measured in miles.
-
-The vector $\overrightarrow{AC}$ has components
-\[
-    \overrightarrow{AC} = \langle 8 \cos (0.4), 8 \sin(0.4)  \rangle
-\]
-also measured in miles.
-
-The vector $\overrightarrow{BC}$ that gives the position of $C$ relative to $B$ is
-\begin{align*}
-       \overrightarrow{BC} &= \overrightarrow{AC} - \overrightarrow{AB}    \\
-                                    &= \langle 8 \cos (0.4), 8 \sin(0.4)  \rangle - \langle 6, 0  \rangle \\
-                                    &= \langle 8 \cos (0.4) - 6, 8 \sin(0.4)  \rangle
-\end{align*}
-
-We'll now compute the \emph{square} of the distance from $B$ to $C$ as
-\begin{align*}
-         |  \overrightarrow{BC} |^2 &= |    \langle 8 \cos (0.4) - 6, 8 \sin(0.4)  \rangle    |^2  \\
-                                             &= (8 \cos (0.4) - 6)^2 + (8 \sin(0.4))^2   \\
-                                             &=  8^2 + 6^2 - 2(8)(6) \cos(0.4)
-\end{align*}
-
-\begin{question}  \label{Q4r345fg}
-Fill in all the missing steps between the second and third lines in the above computation. 
-\end{question}
-
-\end{explanation}
-
-\end{example}
 
 
 
