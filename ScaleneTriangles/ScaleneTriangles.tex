@@ -167,7 +167,7 @@ At noon a motorboat is $10$ km due east of a sailboat. The sailboat travels at a
 
 
 \section{The Law of Cosines and Relative Position}
-Earlier in this class we solved problems about relative position by resolving vectors into their $x$ and $y$ components. Here we take a different approach and work with triangles instead.
+Earlier in this class we solved problems about relative position by resolving vectors into their $x$ and $y$ components. Here we show how to take a different approach by working with triangles instead.
 
  \begin{example}  \label{Exergt43tgr}
 Point $B$ is $6$ miles due east of point $A$. Point $C$ is $8$ miles from $A$ at a bearing of $0.4$ radians. Desrcribe the position of $C$ relative to $B$ by giving a distance and a bearing.
@@ -226,6 +226,23 @@ We'll now compute the \emph{square} of the distance from $B$ to $C$ as
 \begin{question}  \label{Q4r345fg}
 Fill in all the missing steps between the second and third lines in the above computation. 
 \end{question}
+
+\begin{question}  \label{Qer55ft4w}
+Show how the above computation for $|\overrightarrow{BC}|^2$ can be arrived at more directly by using the law of cosines in $\Delta ABC$.
+\end{question}
+
+So the main point here is that we could have skipped the step of writing the vector $\overrightarrow{AC}$ in terms of its components and used the law of cosines in $\Delta ABC$ right from the start to find the distance $BC$. 
+
+So we'll start the solution again by using the law of cosines in $\Delta ABC$. This tells us that
+\begin{align*}
+   |  \overrightarrow{BC} |^2 &=  |\overrightarrow{AB}|^2 + |\overrightarrow{AC}|^2 - 2|\overrightarrow{AB}||\overrightarrow{AC}| \cos (\angle BAC)  \\
+                                          &= 8^2 + 6^2 - 2(8)(6) \cos(0.4)  \\
+                                          &= 100-96 \cos(0.4) .
+\end{align*}
+And so the distance from $C$ to $B$ is
+\[
+   |  \overrightarrow{BC} | = \sqrt{100-96 \cos(0.4)} \sim 3.40 \text{ miles} .
+\]
 
 \end{explanation}
 
