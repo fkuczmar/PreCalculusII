@@ -170,7 +170,7 @@ At noon a motorboat is $10$ km due east of a sailboat. The sailboat travels at a
 Earlier in this class we solved problems about relative position by resolving vectors into their $x$ and $y$ components. Here we show how to take a different approach by working with triangles instead.
 
  \begin{example}  \label{Exergt43tgr}
-Point $B$ is $6$ miles due east of point $A$. Point $C$ is $8$ miles from $A$ at a bearing of $0.4$ radians. Desrcribe the position of $C$ relative to $B$ by giving a distance and a bearing.
+Point $B$ is $10$ miles due east of point $A$. Point $C$ is $8$ miles from $A$ at a bearing of $0.6$ radians. Desrcribe the position of $C$ relative to $B$ by giving a distance and a bearing.
 
 \begin{explanation}
 We start by drawing an accurate picture.
@@ -178,19 +178,19 @@ We start by drawing an accurate picture.
 \pdfOnly{
 Access Geogebra interactives through the online version of this text at
  
-\href{https://www.geogebra.org/classic/kjnatcwc}.
+\href{https://www.geogebra.org/classic/vsdrcnqm}.
 }
  
 \begin{onlineOnly}
     \begin{center}
-\geogebra{kjnatcwc}{900}{600}
+\geogebra{vsdrcnqm}{900}{600}
 \end{center}
 \end{onlineOnly}
 
 
 Geogebra activity available at
 
-\href{https://www.geogebra.org/classic/kjnatcwc}{142: Relative Position 4}
+\href{https://www.geogebra.org/classic/vsdrcnqm}{142: Relative Position 4b}
 
 
 \pskip \pskip
@@ -199,28 +199,28 @@ Next we'll work through the solution as usual, by working with the components of
 
 The vector $\overrightarrow{AB}$ has components
 \[
-   \overrightarrow{AB} = \langle 6, 0  \rangle
+   \overrightarrow{AB} = \langle 10, 0  \rangle
 \]
 measured in miles.
 
 The vector $\overrightarrow{AC}$ has components
 \[
-    \overrightarrow{AC} = \langle 8 \cos (0.4), 8 \sin(0.4)  \rangle
+    \overrightarrow{AC} = \langle 8 \cos (0.6), 8 \sin(0.6)  \rangle
 \]
 also measured in miles.
 
 The vector $\overrightarrow{BC}$ that gives the position of $C$ relative to $B$ is
 \begin{align*}
        \overrightarrow{BC} &= \overrightarrow{AC} - \overrightarrow{AB}    \\
-                                    &= \langle 8 \cos (0.4), 8 \sin(0.4)  \rangle - \langle 6, 0  \rangle \\
-                                    &= \langle 8 \cos (0.4) - 6, 8 \sin(0.4)  \rangle
+                                    &= \langle 8 \cos (0.6), 8 \sin(0.6)  \rangle - \langle 10, 0  \rangle \\
+                                    &= \langle 8 \cos (0.6) - 10, 8 \sin(0.6)  \rangle
 \end{align*}
 
 We'll now compute the \emph{square} of the distance from $B$ to $C$ as
 \begin{align*}
-         |  \overrightarrow{BC} |^2 &= |    \langle 8 \cos (0.4) - 6, 8 \sin(0.4)  \rangle    |^2  \\
-                                             &= (8 \cos (0.4) - 6)^2 + (8 \sin(0.4))^2   \\
-                                             &=  8^2 + 6^2 - 2(8)(6) \cos(0.4)
+         |  \overrightarrow{BC} |^2 &= |    \langle 8 \cos (0.6) - 10, 8 \sin(0.6)  \rangle    |^2  \\
+                                             &= (8 \cos (0.6) - 10)^2 + (8 \sin(0.6))^2   \\
+                                             &=  8^2 + 10^2 - 2(8)(10) \cos(0.6)
 \end{align*}
 
 \begin{question}  \label{Q4r345fg}
@@ -236,13 +236,17 @@ So the main point here is that we could have skipped the step of writing the vec
 So we'll start the solution again by using the law of cosines in $\Delta ABC$. This tells us that
 \begin{align*}
    |  \overrightarrow{BC} |^2 &=  |\overrightarrow{AB}|^2 + |\overrightarrow{AC}|^2 - 2|\overrightarrow{AB}||\overrightarrow{AC}| \cos (\angle BAC)  \\
-                                          &= 8^2 + 6^2 - 2(8)(6) \cos(0.4)  \\
-                                          &= 100-96 \cos(0.4) .
+                                          &= 8^2 + 10^2 - 2(8)(10) \cos(0.6)  \\
+                                          &= 164-160 \cos(0.6) .
 \end{align*}
 And so the distance from $C$ to $B$ is
 \[
-   |  \overrightarrow{BC} | = \sqrt{100-96 \cos(0.4)} \sim 3.40 \text{ miles} .
+   |  \overrightarrow{BC} | = \sqrt{164-160 \cos(0.4)} \sim 5.652 \text{ miles} .
 \]
+
+The second step in describing the position of $C$ relative to $B$ is to determine the polar angle of the vector $\overrightarrow{BC}$. To do this we first find the radian measure of angle $\angle ACB$ in $\Delta ABC$.
+
+ 
 
 \end{explanation}
 
