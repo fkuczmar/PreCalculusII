@@ -12,7 +12,7 @@ Measuring angles in radians.
 \section{Turning in Place}
 
 
-The defintion of a meter is arbitrary and if we lived on a flat world there would be no natural unit of length. But on a perfect sphere, the radius serves as a natural length. A distance equal to the radius measured along the equator of a planet would cover the same fraction of the equator on any planets.
+The definition of a meter is arbitrary and if we lived on a flat world there would be no natural unit of length. But on a perfect sphere, the radius serves as a natural length. A distance equal to the radius measured along the equator of a planet would cover the same fraction of the equator on any planets.
 
 The \emph{nautical mile} was originally defined as the distance along the earth's equator subtended by an angle of $1/60$ degree with its vertex at the earth's center. It is an example of a naturally defined length on an earth assumed to be a perfect sphere.
 
@@ -58,7 +58,7 @@ Here's another version of this same type of question.
 %\end{question}
 
 \begin{question}  \label{Q2543:Angles}
-Two ships start at a longitude of $50^\circ$W and sail due east. One sails 3300 miles along the equator, the other 2100 miles along a circle of latitude with a radius of $2550$ miles. Which ship ends up farther east? Take the earth to be a perfect sphere of radius $3960$ miles.
+Two ships start at a longitude of $50^\circ$W and sail due east. One sails 3300 miles along the equator, the other 2300 miles along a circle of latitude with a radius of $2550$ miles. Which ship ends up farther east? Take the earth to be a perfect sphere of radius $3960$ miles.
 
 \begin{onlineOnly}
     \begin{center}
@@ -71,14 +71,20 @@ Two ships start at a longitude of $50^\circ$W and sail due east. One sails 3300 
 
 \end{question}
 
-Question 1 suggests a natural way to compare turning angles around the centers of different circular tracks by comparing the ratios of the distances travelled along the tracks to the respective radii of the tracks. In that question, for you the ratio is
+Question 1 suggests a natural way to compare turning angles around the centers of different circular tracks by computing the ratios of the distances travelled along the tracks to the respective radii of the tracks. In that question, your ratio is
 \[
     \theta_1 = \frac{\text{distance}}{\text{radius}} = \frac{32 \text{ meters}}{50 \text{ meters}} = 0.64.
 \]
 This means that you walked a distance equal to $0.64$ radii along the track. The ratio, being the quotient of two length, is dimensionless. It measures the angle you turned about the tracks center and we say the angle has a measure of $0.64$ \emph{radians}. This means that the arclength along the track subtended (cut out) by the angle is $64/100$ the radius of the track.  
 
+For your friend, that ratio is
+\[
+       \theta_2 =  \frac{\answer{42} \text{ meters}}{\answer{65} \text{ meters}} \sim \answer{0.646} \text{ radians}.
+\]
 
-So an angle measuring 1 \emph{radian} (from the word radius) placed with its vertex at the center of a circle subtends (cuts out) an arclength equal to the circle's radius. An angle with a measure of 2 radians similarly placed subtends an arclength equal to twice the circle's radius. 
+So your friend turned through a greater angle about the center of her track than did you, but just barely.
+
+An angle measuring 1 \emph{radian} (from the word radius) placed with its vertex at the center of a circle subtends (cuts out) an arclength equal to the circle's radius. An angle with a measure of 2 radians similarly placed subtends an arclength equal to twice the circle's radius. 
 
 To measure an angle in radians do the following. First draw a circle of any radius centered at the angle's vertex. Then measure the arclength along the circumference subtended by the angle. Finally take this arclength and divide it by the radius (measured in the same units). The result gives the measure of the angle in radians. Being the ratio of two lengths, the radian measure is dimensionless.
 
@@ -152,10 +158,11 @@ Access Desmos interactives through the online version of this text at
 How many radians are in 4.5 revolutions?
 
 \begin{explanation}
-Since there are $2\pi$ radians in one revolution,
+Since there are $2\pi$ radians in one revolution, there are 
 \[
-   4.5 \text{ rev} = (4.5 \text{ rev})  \left( \frac{2\pi \text{ rad}}{1 \text{ rev}}  \right)  = 9\pi \text{ rad} .
+   (4.5 \text{ rev})  \left( \frac{2\pi \text{ rad}}{1 \text{ rev}}  \right)  = 9\pi \text{ radians} 
 \]
+in $4.5$ revolutions.
 \end{explanation}
 \end{question}
 
@@ -163,7 +170,7 @@ Since there are $2\pi$ radians in one revolution,
 \begin{question} \label{Q873:Radians}
 What is the length of the arc subtended by a central angle of $100^\circ$ in a circle of radius $8$ meters? Do this in two ways:
 
-(a) Without converting the angle measure to radians. Click the arrow at the lower right for a hint.
+(a) Without converting the angle measure to radians. \emph{Click the arrow at the lower right for a hint.}
 
 \begin{expandable}
 Since there are $360^\circ$ in one revolution, an arc that subtends a central angle of $100^\circ$ has length
@@ -219,6 +226,41 @@ The area $A$ of a spherical triangle on a sphere of radius $r$ with angles $\alp
 
 \begin{onlineOnly}
     \begin{center}
+\desmosThreeD{qh9mexvcv0}{900}{600}
+\end{center}
+\end{onlineOnly}
+
+
+%Click the link below to see an equilateral triangle on a sphere of radius $r$
+
+\href{https://www.desmos.com/3d/qh9mexvcv0}{Area of a Spherical Triangle}
+
+\pskip
+
+Cut a sphere into eight congruent spherical triangles a shown above.
+
+\begin{enumerate}
+
+\item Use the fact that the surface area of a sphere of radius $r$ is $4\pi r^2$ to compute the area of the shaded triangle above.
+
+\item Use the formula for the area of a spherical triangle above to compute the area of the shaded triangle. Do you get the same result as in part (a)?
+
+\item Deactivate the folder in Line 1 by turning off  the camera icon. Activate the three other folders on Lines 9, 19, and 24.
+
+\begin{enumerate}
+
+\item Express the length of the sides of the plane triangle $\Delta ABC$ in terms of the radius $r$ of the sphere.
+
+\item Use the formula $A=s^2\sqrt{3}/4$ for the area of an equilateral triangle with side length $s$ in the plane to compute the area of the plane triangle $\Delta ABC$.
+
+\item Compute the ratio of the areas of the plane and spherical triangles $\Delta ABC$. Does your ratio seem reasonable?
+\end{enumerate}
+
+
+\item Experiment with the slider $\alpha$ in the demonstration below. Then find the area of a spherical triangle with angle measures $\alpha$, $\phi/2$, and $\pi/2$ (in radians). What fraction of the area of the hemisphere northern hemisphere does this triangle cover? Does this agree with what you see in the demonstration? Explain.
+
+\begin{onlineOnly}
+    \begin{center}
 \desmosThreeD{91881c3088}{900}{600}
 \end{center}
 \end{onlineOnly}
@@ -226,23 +268,11 @@ The area $A$ of a spherical triangle on a sphere of radius $r$ with angles $\alp
 
 %Click the link below to see an equilateral triangle on a sphere of radius $r$
 
-\href{https://www.desmos.com/3d/91881c3088}{Spherical Triangle}
+\href{https://www.desmos.com/3d/91881c3088}{Geodesic Triangle}
 
-\pskip
+\item Find an expression for the area of a triangle on a sphere of radius $r$ if the angles $\alpha$, $\beta$, and $\gamma$ of the triangle are measured in degrees instead of radians.  
 
-(a) What is the approximate radian measure of the three equal angles in the triangle?
-
-(b) What fraction of the sphere's surface area does the triangle cover?
-
-(c) Use the formula above to find an expression for the area of triangle. Then use part (b) to find an expression for the surface area of a sphere.
-
-(d) What are the lengths of the sides of the triangle?
-
-(e) Use the formula $A=s^2\sqrt{3}/4$ for the area of an equilateral triangle in the plane to compute the area of such a triangle with the side length from part (d). How does the area of this planar triangle compare with the area of the spherical triangle?
-
-(f) Experiment with the slider $\alpha$ in the desmos demonstration. Then find the area of a spherical triangle with angle measures $\alpha$, $\phi/2$, and $\pi/2$ (in radians). What fraction of the area of the hemisphere northern hemisphere does this triangle cover? Does this agree with what you see in the demonstration? Explain.
-
-(g) Find an expression for the area of a triangle on a sphere of radius $r$ if the angles $\alpha$, $\beta$, and $\gamma$ of the triangle are measured in degrees instead of radians.  
+\end{enumerate}
 
 \end{question}
 
