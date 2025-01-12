@@ -328,7 +328,7 @@ You start at the point $(40,0)$ (coordinates measured in meters) and walk $100$ 
 
 \begin{enumerate}
 
-\item Find your exact coordinates after you walk $100$ meters. Do \emph{not} use a calculator.
+\item Find your exact coordinates. Do \emph{not} use a calculator.
 
 \item Use the radian protractor below to approximate your coordinates after you walk $100$ meters.
  
@@ -343,6 +343,51 @@ You start at the point $(40,0)$ (coordinates measured in meters) and walk $100$ 
 \href{https://www.desmos.com/calculator/lbkveixdno}{142: Radian Protractor 2C}
 
 \end{enumerate}
+
+\begin{explanation}
+
+\begin{enumerate}
+\item In walking $100$ meters around the circle of radius $r = 40$ meters you turn about the origin through the angle
+\[
+   \frac{\answer{100}\text{ meters}}{\answer{40}\text{ meters}} = \answer{2.5}\text{ radians} .
+\]
+
+Since  you started at the point $(40,0)$ and walked counterclockwise, the polar angle $\theta$ of your position relative to the origin is
+\[
+ \theta =  \answer{2.5} \text{ radians} .
+\]
+
+Now let $(x,y)$ be your coordinates, measured in meters. Then since
+\[
+ \cos \theta = \frac{x}{r} = \frac{x}{40} ,  %\hskip 0.5 in   \text{ and}  \sin \theta = \frac{y}{r} = \frac{y}{40}
+\]
+\[
+  x = 40 \cos\theta = 40 \cos (2.5) .
+\]
+Similarly
+\[
+   y = 40 \sin\theta = 40 \sin (2.5) .
+\]
+
+So your coordinates after walking $100$ meters are $(40 \cos (2.5) , 40\sin(2.5))$ meters.
+
+\item To approximate your coordinates with the radian protractor, drag $P$ to the $2.5$ radian mark. Then it looks like $P$ has approximate coordinates $(-4.2 , 2.7)$ meters on a circle of radius $5$ meters. Since our circle has radius $40$ meters, we should scale these coordinates by a factor of 
+\[
+    \frac{40\text{ m}}{5\text{ m}} = 8.
+\]
+So your coordinates are approximately
+\[
+     (x,y) \sim (8(-4.2\text{ m}) , 8(2.7\text{ m })) \sim (-33.6 , 21.6 ) \text{ meters}.
+\]
+
+\item With a calculator and part (a), your coordinates are 
+\[
+   (x,y) = (40 \cos 2.5 , 40 \sin 2.5) \text{ meters} \sim (-32.04, 23.94 )\text{ meters}.
+\]
+
+\end{enumerate}
+
+\end{explanation}
 
 
 \end{example}
