@@ -106,6 +106,92 @@ and
 \]
 that express the beetle's coordinates (measured meters) as a function of the number of minutes past noon. Include a domain for 
 each function.
+
+\begin{explanation}
+\begin{enumerate}
+\item The first step is to find a function
+\[
+     \theta = a(t) \, , \, 3\leq t \leq 60,
+\]
+that expresses the beetle's polar angle (measured in radians) in terms of the number of minutes past noon. This really amounts to using the point-slope equation of a line, but we'll go through the logic in detail.
+
+At 12:13pm we can measure the polar angle as
+\[
+  \theta = a(13) = \frac{90\text{ meters}}{50 \text{ meters}} = 1.8 \text{ radians}.
+\]
+
+Now the beetle rotates about the origin at the \emph{signed} rate of 
+\[
+  \omega = - \frac{7 \text{ meters/min}}{50\text{ meters}} = -0.14 \text{ rad/min} .
+\]
+The \emph{signed} rate is negative because as the beetle turns \emph{clockwise} about the origin its polar angle \emph{decreases}.
+
+So if we wanted to find, for example, the polar angle at 12:30pm, we would first find the change
+\[
+  \Delta \theta = a(30) - a(13)
+\] 
+in the polar angle going forward in time from 12:13pm to 12:30pm. Since the time interval has length 
+\[
+   \Delta t = 30\text{ min} - 13\text{ min} = 17\text{ min} ,
+\]
+\[
+      \Delta \theta = \left( -0.14 \text{ rad/min}  \right)\left( 17 \text{ min} \right) = -2.38\text{ rad} .
+\]
+Adding this change to the polar angle $a(13) = 1.8$ radians at 12:13pm gives us the polar angle (in radians)
+\[
+   \theta = a(30) = 1.8 - 2.38 = -0.58
+\]
+at 12:30pm.
+
+In other words (and omitting the units), 
+\begin{align*}
+       a(\textcolor{red}{30}) &= a(13) - 0.14(\textcolor{red}{30} - 13)   \\
+                &= 1.8  - 0.14(\textcolor{red}{30} - 13) .
+\end{align*}
+
+The same logic tells us the polar angle function is
+\begin{align*}
+ \theta &= a(\textcolor{red}{t}) \\
+           &=   a(13) - 0.14(\textcolor{red}{t} - 13)   \\
+            &= 1.8  - 0.14(\textcolor{red}{t} - 13)   \, , \, 3\leq t \leq 30 .
+\end{align*}
+
+\item Now that we have the polar angle function, it's quick work to find the coordinate functions 
+\[
+       x = f(t) \hskip 0.2in  \text{and} \hskip 0.2in  y=g(t) \, , \, 3\leq t \leq 30 ,
+\] 
+that express the beetle's position (in meters) in terms of the number of minutes past noon.
+
+Since 
+\[
+    \cos\theta = \frac{x}{r} = \frac{x}{50} ,
+\]
+\begin{align*}
+    x        &= 50\cos\theta \\
+       &= 50\cos \left( 1.8  - 0.14(t - 13) \right)  \, , \, 3\leq t \leq 30  .
+\end{align*}
+
+Similarly,
+\begin{align*}
+    y        &= 50\sin\theta \\
+       &= 50\sin \left( 1.8  - 0.14(t - 13) \right)  \, , \, 3\leq t \leq 30  .
+\end{align*}
+
+\item We can check all this by playing the slider $u$ in Line 4 in the demonstration below. Be sure to check that the beetle has the correct position at 12:13pm and that the rotation rate is correct.
+
+\begin{onlineOnly}
+    \begin{center}
+\desmos{h0ojebdzqy}{900}{600}
+\end{center}
+\end{onlineOnly}
+
+\href{https://www.desmos.com/calculator/h0ojebdzqy}{142: Uniform Circular Motion 8}
+
+
+\end{enumerate}
+\end{explanation}
+
+
 \end{question}
 
 
