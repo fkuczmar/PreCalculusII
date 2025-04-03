@@ -313,9 +313,33 @@ Euclid: When a straight line standing on a straight line makes the adjacent angl
 A beetle starts at the point $(20,0)$ (coordinates measured in centimeters) and crawls counterclockwise around the circle of radius $20$ cm centered at the origin. It stops after turning through an angle of $90$ radians about the origin.
 
 \begin{enumerate}
-\item In which quadrant is the beetle after it stops?
+\item In which quadrant is the beetle after it stops? Click on the arrow below for the solution.
 
-\item If the beetle wanted to crawl along the circle back to its starting point, in which sense (clockwise or counterclockwise) should it head to get there as fast as possible? How long would it take if the beetel crawled at the constant rate of $4$ cm/sec?
+\begin{expandable}
+The number of revolutions the beetle turns about the origin is
+\[
+    90 \text{ rad} \left( \frac{1\text{ rev}}{2\pi \text{ rad}} \right) = \frac{45}{\pi} \text{ rev} \sim 14.32 \text{ rev}.
+\]
+Since the beetle turns a bit more than $14.25$ revolutoions it stops in the second quadrant.
+\end{expandable}
+
+\item If the beetle wanted to crawl along the circle back to its starting point, in which sense (clockwise or counterclockwise) should it head to get there as fast as possible? How long would it take the beetle crawling at the constant speed of $4$ cm/sec?  Click on the arrow below for the solution.
+
+\begin{expandable}
+Since the beetle is in the second quadrant, it should crawl clockwise around the circle to return to the point $(20,0)$ as fast as possible. In doing so, it turns about the origin through the angle
+\[
+     \theta = 90\text{ rad} - 14\text{ rev} \left( \frac{2\pi \text{ rad}}{1 \text{ rev}} \right) = 90 - 28\pi \text{ rad} 
+\]
+and crawls through the distance
+\[
+ s =  (  90 - 28\pi \text{ rad}  ) \left( 20 \frac{\text{ cm}}{\text{ rad}} \right) = 20 (90 - 28\pi)\text{ cm} \sim 40.7\text{ cm}.
+\]
+To crawl this distance at a constant speed of $4$ cm/sec takes
+\[
+         \frac{20 (90 - 28\pi)\text{ cm}}{4\text{cm/sec}} = 5(90-28\pi\pi)\text{ sec} \sim 10.18 \text{ sec}.
+\]
+\end{expandable}
+
 \end{enumerate}
 
 \end{question}
