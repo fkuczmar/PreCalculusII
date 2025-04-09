@@ -103,7 +103,32 @@ and
 \]
 
 
-The
+The beetle's coordinates were determined the radius of its path and by the two {\bf dimensionless} ratios
+\[
+    \frac{x_A}{r_A} \sim \frac{-8\text{cm}}{10\text{cm}} = -0.8
+\] 
+and
+\[
+   \frac{y_A}{r_A} \sim \frac{6\text{cm}}{10\text{cm}} = 0.6 
+\]
+we approximated from the protractor. These ratios depend on the angle $\theta$ through which the insects turn but not at all on the radii of their circular paths. 
+
+The angle $\theta$, called the {\bf polar angle}, is measured in radians counterclockwise from the direction of the postive $x$-axis. Choosing a point $P$ at the polar angle $\theta$ with coordinates $(x,y)$ cm on any circle of radius $r$ centimeters, these two \emph{dimensionless} ratios are written as
+
+\[
+   \cos \theta = \frac{x \text{ cm}}{r \text{ cm}} = \frac{x}{r} .
+\]
+and as
+\[
+   \sin \theta = \frac{y \text{ cm}}{r \text{ cm}} = \frac{y}{r} .
+\]
+
+There is a third \emph{dimensionless} ratio 
+\[
+  \tan \theta = \frac{y \text{ cm}}{x \text{ cm}} = \frac{y}{x}
+\]
+that gives the slope of our path. 
+
 
 \end{expandable}
 
@@ -113,23 +138,23 @@ The
 \end{question}
 
 
-Here's a problem to illustrate the second type of question.
+%Here's a problem to illustrate the second type of question.
 
-\begin{question} \label{QBeerteee}
-A beetle starts at the origin facing the positive $x$-axis, turns counterclockwise through an angle of $5$ radians, walks $120$ cm and then stops. Our problem is to use the radian protractor below (\emph{without} changing its radius) to approximate the beetle's coordinates after it stops.
+%\begin{question} \label{QBeerteee}
+%A beetle starts at the origin facing the positive $x$-axis, turns counterclockwise through an angle of $5$ radians, walks $120$ cm and then stops. Our problem is to use the radian protractor below (\emph{without} changing its radius) to approximate the beetle's coordinates after it stops.
 
-\begin{onlineOnly}
-    \begin{center}
-\desmos{kjzez98bqn}{900}{600}
-\end{center}
+%\begin{onlineOnly}
+ %   \begin{center}
+%\desmos{kjzez98bqn}{900}{600}
+%\end{center}
 
-\href{https://www.desmos.com/calculator/jqc8dd0iws}{142: Radian Protractor 28}
+%\href{https://www.desmos.com/calculator/jqc8dd0iws}{142: Radian Protractor 28}
 
-\end{onlineOnly}
+%\end{onlineOnly}
 
 I'll leave this one for you.
 
-\end{question}
+%\end{question}
 
 \iffalse
 
@@ -216,11 +241,14 @@ that gives the slope of our path.
 
 \fi
 
-
-
 \begin{question} \label{Q1:Cosine}
 Explain why the values of $\cos \theta$, $\sin\theta$, and $\tan\theta$ do {\bf not} depend on the radius $r$ of our circle. 
 \end{question}
+
+
+\iffalse
+
+***********************************************************************************
 
 \begin{question} \label{Q234234hg:Cosine}
 (The Pythorean identity) Explain why
@@ -258,11 +286,17 @@ This is really just a statement of the Pythagorean theorem. To see how, do the f
 
 \end{question}
 
+****************************************************************************
+\fi
 
 
 Many of you are probably familiar with the unit circle. But working with the unit circle makes it seem like the outputs to these functions are lengths. It obscures the key point that the outputs are dimensionless. So do yourself a favor and {\bf forget about the unit circle.} It is also not necessary to waste time memorizing anything about the unit circle. Instead, knowing the definitions of the cosine and sine functions is enough to figure out all you need.
 
 It's one thing to define these functions, but quite another to compute or approximate their values. Much effort and ingenuity has gone into this problem over many centuries. But we can start to get a feel for the sine and cosine functions by using a radian protractor to approximate some of their outputs.
+
+
+\iffalse  
+***************************************************************
 
 Returning to our problem that started this chapter where the polar angle was $\theta=4$, we can use a caclulator to find that
 \[
@@ -283,6 +317,18 @@ and
 
 \begin{question}  \label{QWEREWR:Cosine}
 Go back to our work from the opening question using the radian protractor and find our approximate coordinates had we walked $100$ meters directly away from the origin. How do these estimates compare with the estimates from the calculator we just computed?
+\end{question}
+
+************************************************************************************
+\fi
+
+\begin{question} \label{Q2sdfdfdfttg34hg:Cosine}
+(The Pythorean identity) Explain why
+\[
+  \cos^2\theta + \sin^2 \theta = 1
+\]
+for any angle $\theta$. By $\cos^2\theta$ we really mean  $(\cos \theta)^2$ and $\sin^2\theta$ means $(\sin\theta)^2$.
+
 \end{question}
 
 
