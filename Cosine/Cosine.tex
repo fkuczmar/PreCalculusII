@@ -42,6 +42,74 @@ After we learn about vectors, we'll be able to describe the beetle's change in p
 Here's a hint. First think about the angle through which the beetle turns about the origin. Then imagine an ant starting at the point $(10,0)$ and turning counterclockwise through the same angle about the origin  as it crawls around the circle below. Then think proportionately.
 \end{hint}
 
+Click on the arrow below for a solution.
+\begin{expandable}
+In crawling $90$ cm around the circle of radius $36$ meters, the beetle turns about the origin through the angle
+\[
+  \theta = \frac{90 \text{cm}}{36\text{cm}} = 2.5 \text{ radians}.
+\]
+
+Now suppose an ant starts at the point $(10,0)$ (coordinates in cm) and turns about the origin through the same angle of $2.5$ radians. We can approximate the ant's coordinates below.
+
+\begin{onlineOnly}
+    \begin{center}
+\desmos{qgzfms6w0k}{900}{600}
+\end{center}
+
+\href{https://www.desmos.com/calculator/qgzfms6w0k}{142: Radian Protractor 27}
+
+\end{onlineOnly}
+
+It looks like the ant has coordinates
+\[
+ (x_A , y_A) \sim (-8,6).
+\]
+
+Because the beetle turns through the same angle as the ant (and therefore lies on the same ray emanating from the origin), we can approximate the beetle's coordinates by scaling the ants coordinates by some factor. The factor is the dimensionless ratio
+\[
+   \frac{r_B}{r_A} = \frac{36 \text{cm}}{10\text{cm}} = 3.6
+\]
+of the circles' radii.
+
+So the beetle has approximate coordinates
+\[
+   x_B \sim 3.6(-8\text{ cm}) = -28.8 \text{ cm}
+\]
+and
+\[
+  x_B \sim 3.6(6\text{ cm}) = 21.6 \text{ cm}
+\]
+
+Eqivalently, we could have solved two equations. Since the insects lie on the same ray emanating from the origin, we know that
+\[
+  \frac{x_A}{r_A} = \frac{x_B}{r_B}.
+\]
+So with the beetle's $x$-coordinate measured in cm,
+\[
+      \frac{-8\text{cm}}{10\text{cm}} \sim \frac{x_B}{36\text{cm}}.
+\]
+and
+\[
+ x_B \sim (36\text{cm}) \left( \frac{-8\text{cm}}{10\text{cm}} \right) = -28.8\text{ cm} .
+\]
+
+Similarly, with the beetle's $y$-coordinate measured in cm,
+\[
+      \frac{6\text{cm}}{10\text{cm}} \sim \frac{y_B}{36\text{cm}}.
+\]
+and
+\[
+ y_B \sim (36\text{cm}) \left( \frac{6\text{cm}}{10\text{cm}} \right) = 21.6\text{ cm} .
+\]
+
+
+The
+
+\end{expandable}
+
+
+
+
 \end{question}
 
 
@@ -63,7 +131,9 @@ I'll leave this one for you.
 
 \end{question}
 
+\iffalse
 
+***************************************************************************************************
 
 \section{The Position Problem}
 
@@ -141,6 +211,10 @@ that gives the slope of our path.
 
 
 \end{question}
+
+****************************************************************************
+
+\fi
 
 
 
