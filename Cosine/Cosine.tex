@@ -10,7 +10,7 @@ An introduction to circular trigonometry.
 \maketitle
 
 
-\section{Position Problems, Simply Stated}
+\section{The Position Problem}
 
 The fundamental idea of this class gives a way to describe how your position changes if you walk
 
@@ -53,10 +53,10 @@ Now suppose an ant starts at the point $(10,0)$ (coordinates in cm) and turns ab
 
 \begin{onlineOnly}
     \begin{center}
-\desmos{qgzfms6w0k}{900}{600}
+\desmos{3qwx5v0wgi}{900}{600}
 \end{center}
 
-\href{https://www.desmos.com/calculator/qgzfms6w0k}{142: Radian Protractor 27}
+\href{https://www.desmos.com/calculator/3qwx5v0wgi}{142: Radian Protractor 27}
 
 \end{onlineOnly}
 
@@ -72,38 +72,46 @@ Because the beetle turns through the same angle as the ant (and therefore lies o
 of the circles' radii.
 
 So the beetle has approximate coordinates
-\[
-   x_B \sim 3.6(-8\text{ cm}) = -28.8 \text{ cm}
-\]
+\begin{align}
+   x_B &= \left( \frac{r_B}{r_A}\right) x_A  \label{Eq:Prop}\\
+           & \sim 3.6(-8\text{ cm})  \notag \\
+           & = -28.8 \text{ cm}. \notag
+\end{align}
 and
-\[
-  x_B \sim 3.6(6\text{ cm}) = 21.6 \text{ cm}
-\]
+\begin{align}
+   y_B &= \left( \frac{r_B}{r_A}\right) y_A  \label{Eq:Prop2}\\
+           & \sim 3.6(6\text{ cm})  \notag \\
+           & = 21.6\text{ cm}. \notag
+\end{align}
 
-Eqivalently, we could have solved two equations. Since the insects lie on the same ray emanating from the origin, we know that
+From another perspective, we really solved two equations to approximate these coordinates. We can see this by rewriting equation (\ref{Eq:Prop}) as
 \[
   \frac{x_A}{r_A} = \frac{x_B}{r_B}.
 \]
-So with the beetle's $x$-coordinate measured in cm,
+and equation (\ref{Eq:Prop2}) as
 \[
-      \frac{-8\text{cm}}{10\text{cm}} \sim \frac{x_B}{36\text{cm}}.
+  \frac{y_A}{r_A} = \frac{y_B}{r_B}.
 \]
-and
-\[
- x_B \sim (36\text{cm}) \left( \frac{-8\text{cm}}{10\text{cm}} \right) = -28.8\text{ cm} .
-\]
+%So with the beetle's $x$-coordinate measured in cm,
+%\[
+%      \frac{-8\text{cm}}{10\text{cm}} \sim \frac{x_B}{36\text{cm}}.
+%\]
+%and
+%\[
+% x_B \sim (36\text{cm}) \left( \frac{-8\text{cm}}{10\text{cm}} \right) = -28.8\text{ cm} .
+%\]
 
-Similarly, with the beetle's $y$-coordinate measured in cm,
-\[
-      \frac{6\text{cm}}{10\text{cm}} \sim \frac{y_B}{36\text{cm}}.
-\]
-and
-\[
- y_B \sim (36\text{cm}) \left( \frac{6\text{cm}}{10\text{cm}} \right) = 21.6\text{ cm} .
-\]
+%Similarly, with the beetle's $y$-coordinate measured in cm,
+%\[
+%      \frac{6\text{cm}}{10\text{cm}} \sim \frac{y_B}{36\text{cm}}.
+%\]
+%and
+%\[
+% y_B \sim (36\text{cm}) \left( \frac{6\text{cm}}{10\text{cm}} \right) = 21.6\text{ cm} .
+%\]
 
 
-The beetle's coordinates were determined the radius of its path and by the two {\bf dimensionless} ratios
+So the beetle's coordinates were really determined the radius of its path and by the two {\bf dimensionless} ratios
 \[
     \frac{x_A}{r_A} \sim \frac{-8\text{cm}}{10\text{cm}} = -0.8
 \] 
@@ -152,7 +160,7 @@ that gives the slope of our path.
 
 %\end{onlineOnly}
 
-I'll leave this one for you.
+%I'll leave this one for you.
 
 %\end{question}
 
@@ -379,9 +387,10 @@ Access Desmos interactives through the online version of this text at
  
 \begin{onlineOnly}
     \begin{center}
-\desmos{lbkveixdno}{900}{600}
+\desmos{enlot2bcb7}{900}{600}
 \end{center}
 \end{onlineOnly}
+
 
 \pskip
 
@@ -718,6 +727,47 @@ Starting from the point $(80 \text{m},0 \text{m})$ you walk $7200$ meters counte
 (d) Use a calculator to get a better approximation of your coordinates.
 
 \end{question}
+
+
+\begin{question}  \label{QLDKRMERdee}
+Starting from the point $(-40 \text{m},40\text{m})$ you walk $100$ meters counterclockwise around the circle centered at the origin and then stop.
+
+\begin{enumerate}
+
+\item Find an expression for your {\bf exact} coordinates. Do {\bf not} use a calcuator.
+
+\item Use one of the radian protractors above to approximate your coordinates.
+
+\item Use a calculator to get a better approximation of your coordinates.
+
+\end{enumerate}
+\end{question}
+
+\begin{question} \label{Q9er9fggdftgre}
+An ant and a beetle crawl around circles centered at the origin with respective radii $20$ meters and $30$ meters.  The ant starts at $(20,0)$ meters, the beetle at $(30,0)$ meters. The ant crawls counterclockwise about the orign at a speed of $5$ meters/min, the beetle clockwise at a speed of $6$ meters/min. 
+
+\begin{onlineOnly}
+    \begin{center}
+\desmos{4muppiwdb2}{900}{600}
+\end{center}
+\end{onlineOnly}
+
+\href{https://www.desmos.com/calculator/4muppiwdb2}{142: Concentric Circles 3}
+
+\begin{enumerate}
+\item Use the demonstration above to approximate where the insects pass each other for the first time.
+
+\item Find the exact time (no calculator) when the insects pass each other for the first time.
+
+\item Find their exact coordinates (no calculator) when they pass each other for the first time.
+
+\item What about for the second time?
+\end{enumerate}
+ 
+\end{question}
+
+
+
 
 
 \begin{question}  \label{Qfgarg:Cosine}
