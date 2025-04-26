@@ -54,7 +54,7 @@ Access Desmos interactive at
 
 
 \section{Graphing the Sine Function}
-We really just need either the sine or the cosine function to model simple oscillations. In most cases, it's easier to use the cosine function, but we'll start by graphing the sine function because it's easier to see how its graph relates to the circular motion.
+We really just need either the sine or the cosine function to model simple oscillations. In most cases, it's easier to use the cosine function, but we'll start by graphing the sine function because it's easier to see how its graph relates to uniform circular motion.
 
 
 \begin{exploration}  \label{Esdfsatnh4}
@@ -118,7 +118,7 @@ We'll take two approaches. One is to relate the function to uniform circular mot
 Either way, we'll suppose the input $t$ is time, meausured in seconds, and the output is measured in meters. 
 
 
-{\bf Solution 1:} For the first approach, we'll interpret $g(t) = 1.5 \sin (2t)$ as giving the $y$-coordinate of a point moving counterclockwise around a circle at a constant speed and ask ourselves three questions.
+\emph{ Solution 1:} For the first approach, we'll interpret $g(t) = 1.5 \sin (2t)$ as giving the $y$-coordinate of a point moving counterclockwise around a circle at a constant speed and ask ourselves three questions.
 
 \begin{itemize}
 \item{
@@ -187,8 +187,7 @@ of the unit circle and replace $x$ with $x/3$ and $y$ with $y/4$. This gives us 
 \[
     \left( \frac{x}{3} \right)^2 + \left( \frac{y}{4} \right)^2 = 1 .
 \]
-How is the graph of this new relation related to the graph of the original? Well, setting $y=0$ and solving for $x$ tells us that the $x$-intercepts of the new curve are $(\pm 3, 0)$. Similarly, the $y$-intercepts are $(0,\pm 4)$. This suggests that to go from the unit circle to the new curve (an ellipse) we stretch horizontally about the $y$-axis by a factor of $3$ and vertically about the $x$-axis by a factor of $4$. So the algebraic substitutions of substituting $x$ with $x/3$ and $y$ with $y/4$ {\bf behave the same way}.
-
+How is the graph of this new relation related to the graph of the original? Well, setting $y=0$ and solving for $x$ tells us that the $x$-intercepts of the new curve are $(\pm 3, 0)$. Similarly, the $y$-intercepts are $(0,\pm 4)$. This suggests that to go from the unit circle to the new curve (an ellipse) we triple the $y$-coordinate and quadruple the $x$-coordinate of each point on the unit circle. Geometrically, this means we stretch the unit circle horizontally about the $y$-axis by a factor of $3$ and vertically about the $x$-axis by a factor of $4$. This is the effect of substituting $x$ with $x/3$ and $y$ with $y/4$.
 
 Now returning to the problem at hand. We get from the function $y=f(t) = \sin t$ to the function $y=g(t) = 1.5 \sin (2t)$ by replacing $y$ with $y/1.5$ and $t$ with $2t$, like this: 
 \[
@@ -198,13 +197,16 @@ And multiplying both sides of the second equation by $1.5$, we get
 \[
         y = 1.5 \sin (2t) = g(t) .
 \]
-Now the effect of replacing $y$ with $y/1.5$ is to stretch the graph of $y=f(t)$ about the horizontal ($t$) axis by a factor of $1.5$. And replacing $t$ with 
+Now the effect of replacing $y$ with $y/1.5$ is to multiply each $y$-coordinate by 1.5. Geometrically, we stretch the graph of $y=f(t)$ about the horizontal ($t$) axis by a factor of $1.5$. And replacing $t$ with 
 \[
    2t = \frac{t}{1/2}
 \]
-stretches the graph $y=f(t)$ about the vertical ($y$) axis by a factor of $1/2$ (or we can say compresses the graph about the vertical axis by a factor of $2$.)
+halves the $x$-coordinates. It stretches the graph $y=f(t)$ about the vertical ($y$) axis by a factor of $1/2$ (or we can say compresses the graph about the vertical axis by a factor of $2$.)
 
-That's all we need to graph $y=1.5 \sin (2t)$. Instead of the outputs oscillating between $y=-1$ and $y=1$ (as they do for $f(t)=\sin t$), they oscillate between $y=-1.5$ and $y=1.5$. And because the graph of $y=\sin t$ gets compressed horizontally about the $y$-axis by a factor of $2$, the function $y=1.5 \sin (2t)$ has period $2\pi / 2 = \pi$.
+That's all we need to graph $y=1.5 \sin (2t)$. Instead of the outputs oscillating between $y=-1$ and $y=1$ (as they do for $f(t)=\sin t$), they oscillate between $y=-1.5$ and $y=1.5$. And because the graph of $y=\sin t$ gets compressed horizontally about the $y$-axis by a factor of $2$, the function $y=1.5 \sin (2t)$ has period 
+\[
+  \frac{2 \pi \text{ radians}}{2 \text{ rad/sec}} = \pi \text{ sec}.
+\]
 
  Drag the sliders $b$ and $w$ in the demonstation below to see the transformation of the graph of
 \[
@@ -233,6 +235,25 @@ Use the methods of Example 3 to graph the function
    h(t) = 3\sin\left( \frac{\pi}{4}t \right) , t\in \mathbb{R}.
 \]
 \end{question}
+
+
+\section{Graphing the Cosine Function}
+
+\begin{example}  \label{ExPDlreDFer}
+To relate the graph of the cosine function to uniform circular motion it helps to draw the unit circle with the postive $x$-axis pointing upward and the positive $y$-axis pointing to the left as shown below.
+
+\href{https://www.desmos.com/calculator/ro4dbqifwe}{142: Cosine Graph}.
+
+ 
+\begin{onlineOnly}
+    \begin{center}
+\desmos{ro4dbqifwe}{900}{600}
+\end{center}
+\end{onlineOnly}
+\end{example}
+
+
+
 
 
 \end{document}
