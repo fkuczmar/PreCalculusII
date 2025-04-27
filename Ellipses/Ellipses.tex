@@ -85,8 +85,62 @@ and
 that express the beetle's coordinates (in cm) in terms of the number of seconds past noon.
 
 \end{enumerate}
-
 \end{question}
+
+\section{Ellipses}
+\begin{example} \label{Ex:DFDrefdfobbzx}
+Start with the standard parameterization (in terms of the polar angle of the vector $\overrightarrow{OP}$ from the origin to a point $P(x,y)$ on the circle)
+\[
+    (x,y) = (f(\theta) , g(\theta)) =   ( \cos \theta , \sin \theta ) \, , \, 0\leq\theta < 2\pi 
+\]
+of the unit circle centered at the origin.
+
+Now replace $x$ with $x/4$ and $y$ with $y/2$ to get a parameterization
+\[
+  \frac{x}{4} = f(\theta) = \cos\theta \, , \, 0\leq\theta < 2\pi 
+\]
+\[
+  \frac{y}{2} = g(\theta) = \sin \theta \, , \, 0\leq\theta < 2\pi 
+\]
+of a new curve. How is this new curve related to the unit circle?
+
+We might start by rewriting the new parameterization as
+\[
+      x = 4 f(\theta) = 4\cos\theta \, , \, 0\leq\theta < 2\pi 
+\]
+\[ 
+   y = 2 g(\theta) = 3\sin \theta \, , \, 0\leq\theta < 2\pi .
+\]
+
+What this means is that to get the coordinates of the points on the new curve we quadruple the $x$-coordinates and triple the $y$-coordinates of the points on the unit circle. Geometrically, this has the effect of dilating (stretching) the unit circle horizontally by a factor of four about the $y$-axis and vertically by a factor of three about the $x$-axis. 
+
+
+\begin{onlineOnly}
+    \begin{center}
+\desmos{3ibj708prx}{900}{600}
+\end{center}
+\end{onlineOnly}
+
+\href{https://www.desmos.com/calculator/3ibj708prx}{142: Ellipse 1}
+
+\begin{enumerate}
+\item Watch these stretching actions by dragging the dilation factors $k_1$ and $k_2$ in the worksheet above from $k_1=0$ to $k_1=4$ and $k_2=0$ to $k_2 = 4$.
+
+\item If the point $P$ on the unit circle has coordinates $(a,b)$, what are the coordinates of its image $P^\prime$ under the two dilations?
+
+After the two dilations, $P^\prime$ has coordinates
+\[
+    (x,y) = (  \answer{4a} , \answer{2b} ) .
+\]
+\end{enumerate}
+
+
+
+
+\end{example}
+
+
+
 
 
 \end{document}
