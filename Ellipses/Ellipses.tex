@@ -39,11 +39,22 @@ We'll start by letting $P$ be a point on the circle with coordinates $(x,y)$ and
 
 \item Use the results of parts (a) and (b) to express the components of the vector $\overrightarrow{OP}$ in terms of $\theta$.
 
-\item Finally, use the result of part (c) to find functions
+\item Use the result of part (c) to find functions
 \[
     x = f(\theta)  \hskip 0.5 in \text{and} \hskip 0.5in  y=g(\theta) ,
 \]
 that express the coordinates of $P$ in terms of $\theta$. Include appropriate domains for these functions. 
+
+\item One last question. Find equations in Cartesian coordinates of 
+
+\begin{enumerate}
+\item the unit circle centerd at the origin and 
+
+\item The circle of radius $3$ centered at  $C(5,4)$.
+
+These equations express relationships between the $x$ and $y$ coordinates of points on the circles. They do not involve the parameter $\theta$. 
+
+\end{enumerate}
 \end{enumerate}
 
 \end{explanation}
@@ -53,7 +64,7 @@ that express the coordinates of $P$ in terms of $\theta$. Include appropriate do
 \begin{question}  \label{QDF09dfdfLKDD}
 \begin{enumerate}
 
-\item Parametrize the circle in Question \ref{Ex:sdfdsfdfL} by the signed arclength from $A$ of a point $P(x,y)$ on the circle. Measure the signed arclength $s$ from the point $A(8,0)$ along the circle and take the counterclockwise direction to be positive. 
+\item Parametrize the circle in Question \ref{Ex:sdfdsfdfL} by the signed arclength from $A$ of a point $P(x,y)$ on the circle. This means to express the coordinates $(x,y)$ of $P$ in terms of its signed distance from $A$. Measure the signed arclength $s$ from the point $A(8,0)$ along the circle and take the counterclockwise direction to be positive. 
 
 \begin{onlineOnly}
     \begin{center}
@@ -89,7 +100,7 @@ that express the beetle's coordinates (in cm) in terms of the number of seconds 
 
 \section{Ellipses}
 \begin{example} \label{Ex:DFDrefdfobbzx}
-Start with the standard parameterization (in terms of the polar angle of the vector $\overrightarrow{OP}$ from the origin to a point $P(x,y)$ on the circle)
+Start with the standard parameterization (in terms of the polar angle of the vector $\overrightarrow{OP}$ from the origin to a point $P(x,y)$)
 \[
     (x,y) = (f(\theta) , g(\theta)) =   ( \cos \theta , \sin \theta ) \, , \, 0\leq\theta < 2\pi 
 \]
@@ -109,10 +120,10 @@ We might start by rewriting the new parameterization as
       x = 4 f(\theta) = 4\cos\theta \, , \, 0\leq\theta < 2\pi 
 \]
 \[ 
-   y = 2 g(\theta) = 3\sin \theta \, , \, 0\leq\theta < 2\pi .
+   y = 2 g(\theta) = 2\sin \theta \, , \, 0\leq\theta < 2\pi .
 \]
 
-What this means is that to get the coordinates of the points on the new curve we quadruple the $x$-coordinates and triple the $y$-coordinates of the points on the unit circle. Geometrically, this has the effect of dilating (stretching) the unit circle horizontally by a factor of four about the $y$-axis and vertically by a factor of three about the $x$-axis. 
+What this means is that to get the coordinates of points on the new curve we quadruple the $x$-coordinates and triple the $y$-coordinates of the points on the unit circle. Geometrically, this has the effect of dilating (stretching) the unit circle horizontally by a factor of four about the $y$-axis and vertically by a factor of two about the $x$-axis. 
 
 
 \begin{onlineOnly}
@@ -124,23 +135,106 @@ What this means is that to get the coordinates of the points on the new curve we
 \href{https://www.desmos.com/calculator/3ibj708prx}{142: Ellipse 1}
 
 \begin{enumerate}
-\item Watch these stretching actions by dragging the dilation factors $k_1$ and $k_2$ in the worksheet above from $k_1=0$ to $k_1=4$ and $k_2=0$ to $k_2 = 4$.
+\item Watch these stretching actions by dragging the dilation factors $k_1$ and $k_2$ in the worksheet above from $k_1=1$ to $k_1=4$ and $k_2=1$ to $k_2 = 2$.
 
-\item If the point $P$ on the unit circle has coordinates $(a,b)$, what are the coordinates of its image $P^\prime$ under the two dilations?
+\item If the point $P$ on the unit circle has coordinates $(a,b)$, what are the coordinates of its image $P^\prime$ after these dilations?
 
 After the two dilations, $P^\prime$ has coordinates
 \[
-    (x,y) = (  \answer{4a} , \answer{2b} ) .
+    (a^\prime, b^\prime) = (  \answer{4a} , \answer{2b} ) .
 \]
+
+\item Find an equation in Cartesian coordinates of the new curve (an ellipse). This equation gives a relationship between the $x$ and $y$ coordinates of a point $P(x,y)$ on the ellipse. It does not involve the parameter $\theta$.
+
+\item Find the exact coordinates of the points where the line $x=3$ intersects the ellipse. Rely on the worksheet only to check your coordinates.
+
+\item Find the exact coordinates of the points where the line $y=2x$ intersects the ellipse. Rely on the worksheet only to check your coordinates.
+
+\item Working from the parameterization 
+\[
+     x = f_2 (\theta) = 4\cos\theta \, , \, 0\leq \theta <2\pi
+\]
+\[
+   x = g_2 (\theta) = 2\sin\theta \, , \, 0\leq \theta <2\pi ,
+\]
+of the ellipse, let's replace $x$ with $x-5$ and $y$ with $y-4$ to get a parameterization of a new curve.
+
+\begin{enumerate}
+\item Sketch by hand the new curve.
+
+\item Find an equation of the new curve in Cartesian coordinates.
+
+\item Remember our point $P$ with coordinates $(a,b)$ on the unit circle. Replacing $x$ with $x/4$ and $y$ with $y/2$ in the parameterization of the unit circle sent the point $P$ to the point $P^\prime$ with coordinates $(4a, 2b)$ on the ellipse
+\[
+  \left( \frac{x}{4} \right)^2 + \left( \frac{y}{2} \right)^2 = 1.
+\]
+What are the points of the corresponding point $P^{\prime\prime}$ on the new curve?
+
+The coordinates are 
+\[
+   (a^{\prime\prime} , b^{\prime\prime}) = (\answer{4a+5} , \answer{2b+4} ) .
+\]
+
+
+\end{enumerate}
+
+\end{enumerate}
+\end{example}
+
+\begin{example}
+Returning now to the ellipse with paramterization
+\[
+      (x,y) = (4\cos \theta , 2\sin\theta) \, , \, 0\leq theta <2\pi
+\]
+and Cartesian equation
+\[
+     \left( \frac{x}{4} \right)^2 + \left( \frac{y}{2} \right)^2 = 1.
+\]
+\end{example}
+
+Our aim in this problem is to parameterize this ellipse by the polar angle $\phi$ of the vector $\overrightarrow{OP^\prime}$ from the origin to the point $P^\prime$ on the ellipse.
+
+\begin{onlineOnly}
+    \begin{center}
+\desmos{nbdmgb1nbv}{900}{600}
+\end{center}
+\end{onlineOnly}
+
+\href{https://www.desmos.com/calculator/nbdmgb1nbv}{142: Ellipse 2}
+
+
+\begin{enumerate}
+\item First drag the slider $u$ on Line 2 of the worksheet above to convince yourself that the parameter $\theta$ in the parameterization 
+\[
+    (x,y) = (\cos \theta , \sin\theta ) \, , \, 0 \leq \theta <2\pi .
+\]
+is \emph{not} the polar angle of the vector $\overrightarrow{OP^\prime}$. Explain how you know.
+
+\begin{freeResponse}
+\end{freeResponse}
+
+\item Now let $\phi$ be the polar angle of the vector $\overrightarrow{OP^\prime}$ from the origin to the point $P^\prime$ with coordinates
+\[
+        (x,y) = (4\cos \theta , 2\sin\theta) \, , \, 0\leq \theta <2\pi .
+\]
+To parameterize the ellipse in terms of $\phi$ we need to first express the polar radius  
+\[
+   r = \Big| \overrightarrow{OP^\prime}  \Big|
+\]
+in terms of $\phi$. For this:
+
+\begin{enumerate}
+\item First express the coordinates of $P^\prime$ in terms of $r$ and $\phi$.
+
+\item Then use algebra and the Cartesian equation of the ellipse to find an equation relating $r$ and $\phi$.
+
+\item Next solve this equation for $r$ in terms of $\phi$. 
+
+\item Finally, use the results of parts (i) and (iii) to parameterize the ellipse in terms of the polar angle $\phi$.
 \end{enumerate}
 
 
-
-
-\end{example}
-
-
-
+\end{enumerate}
 
 
 \end{document}
