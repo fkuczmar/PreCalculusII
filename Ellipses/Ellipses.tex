@@ -146,7 +146,7 @@ After the two dilations $P^\prime$ has coordinates
 
 \item Find an equation in Cartesian coordinates of the new curve (an ellipse). This equation gives a relationship between the $x$ and $y$ coordinates of a point $P(x,y)$ on the ellipse. It does not involve the parameter $\theta$.
 
-\item Find the exact coordinates of the point on the ellipse with parameter $\theta=\pi/4$. Then use a calculator to approximate these coordinates and the worksheet above as a check (drag the slider $u$ on Line 6 to $u=pi/4 \sim 0.785$).
+\item Find the exact coordinates of the point on the ellipse with parameter $\theta=\pi/4$. Then use a calculator to approximate these coordinates and the worksheet above as a check (drag the slider $u$ on Line 6 to $u=\pi/4 \sim 0.785$).
 
 \item Find the exact coordinates of the point on the ellipse with polar angle $\pi/4$. Then find the exact polar radius (ie. the distance between this point and the origin). Use the worksheet above to check your coordinates.
 
@@ -168,7 +168,11 @@ of the ellipse, let's replace $x$ with $x-5$ and $y$ with $y-4$ to get a paramet
 \[
   \left( \frac{x}{4} \right)^2 + \left( \frac{y}{2} \right)^2 = 1.
 \]
-What are the points of the corresponding point $P^{\prime\prime}$ on the new curve?
+Now replacing $x$ wiht $x-5$ and $y$ with $y-4$ gives us a new ellipse with equation
+\[
+  \left( \frac{x-5}{4} \right)^2 + \left( \frac{y-4}{2} \right)^2 = 1
+\]
+and sends $P^\prime(4a,2b)$ to a new point $P^{\prime\prime}$ on the new ellipse. What are the coordinates of $P^{\prime\prime}$?
 
 The coordinates are 
 \[
@@ -182,17 +186,26 @@ The coordinates are
 \end{example}
 
 \begin{example} \label{EX:9dfrebbvcxbfg}
-Returning now to the ellipse with paramterization
+Return now to the ellipse with paramterization
 \[
-      (x,y) = (4\cos \theta , 2\sin\theta) \, , \, 0\leq \theta <2\pi
+      (x,y) = (4\cos \theta , 2\sin\theta) \, , \, 0\leq \theta <2\pi ,
 \]
 and Cartesian equation
 \[
      \left( \frac{x}{4} \right)^2 + \left( \frac{y}{2} \right)^2 = 1.
 \]
 
+While $\theta$ is the polar angle of the point $(\cos\theta, \sin\theta)$ on the unit circle, it is \emph{not} the polar angle of the point $(4\cos \theta , 2\sin\theta)$ on the ellipse. We saw this in the previous question where the parameter $\theta=pi/4$ was not the polar angle of the point $(4\cos (\pi/4) , 2\sin (\pi/4))$ on the ellipse.
 
-Our aim in this problem is to parameterize this ellipse by the polar angle $\phi$ of the vector $\overrightarrow{OP^\prime}$ from the origin to the point $P^\prime$ on the ellipse.
+But just to make sure you understand this, drag the slider $u$ on Line 2 of the worksheet below to convince yourself that the parameter $\theta$ in the parameterization 
+\[
+    (x,y) = (4\cos \theta , 2\sin\theta ) \, , \, 0 \leq \theta <2\pi 
+\]
+of the ellipse is \emph{not} the polar angle of the vector $\overrightarrow{OP^\prime}$. Explain how you know.
+
+\begin{freeResponse}
+\end{freeResponse}
+
 
 \begin{onlineOnly}
     \begin{center}
@@ -202,18 +215,10 @@ Our aim in this problem is to parameterize this ellipse by the polar angle $\phi
 
 \href{https://www.desmos.com/calculator/nbdmgb1nbv}{142: Ellipse 2}
 
+Our aim in this problem is to parameterize this ellipse by its polar angle. We'll call this angle $\phi$. It is the polar angle of the vector $\overrightarrow{OP^\prime}$ from the origin to the point $P^\prime$ on the ellipse.
+
 
 \begin{enumerate}
-\item First drag the slider $u$ on Line 2 of the worksheet above to convince yourself that the parameter $\theta$ in the parameterization 
-\[
-    (x,y) = (\cos \theta , \sin\theta ) \, , \, 0 \leq \theta <2\pi .
-\]
-is \emph{not} the polar angle of the vector $\overrightarrow{OP^\prime}$. Explain how you know.
-
-\begin{freeResponse}
-\end{freeResponse}
-
-
 
 \item Now let $\phi$ be the polar angle of the vector $\overrightarrow{OP^\prime}$ from the origin to the point $P^\prime$ with coordinates $(x,y)$ on the ellipse (see the worksheet below). To parameterize the ellipse in terms of $\phi$ means to express $x$ and $y$ in terms of $\phi$. To do this, we need to first express the polar radius  
 \[
@@ -223,11 +228,11 @@ in terms of $\phi$. Here are the steps:
 
 \begin{onlineOnly}
     \begin{center}
-\desmos{rpzwhkhwlh}{900}{600}
+\desmos{w2cgxaftoz}{900}{600}
 \end{center}
 \end{onlineOnly}
 
-\href{https://www.desmos.com/calculator/rpzwhkhwlh}{142: Ellipse 3}
+\href{https://www.desmos.com/calculator/w2cgxaftoz}{142: Ellipse 3}
 
 
 \begin{enumerate}
