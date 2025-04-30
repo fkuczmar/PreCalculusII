@@ -13,18 +13,18 @@ Transformations
 
 We are accustomed to parameterizing the motion of a beetle crawling around a circle centered at the origin at a constant speed. This means that we find functions that express the beetle's coordinates in terms of time. These functions tell us its coordinates at any time in the domain. Input a time and the functions spit out the coordinates.
 
-There are two parts behind this type of parameterization. The first is to express the beetle's polar angle (really the polar angle of the vector from the origin to the beetle) in terms of sine. The second is to use this polar angle function together with the definitions of the cosine and sine functions to express the coordinates as functions of time.
+There are two steps behind this type of parameterization. The first is to express the beetle's polar angle (really the polar angle of the vector from the origin to the beetle) in terms of time. The second is to use this polar angle function together with the definitions of the cosine and sine functions to express the coordinates as functions of time.
 
 One key point, the main idea of our entire class, is that with $(x,y)$ the coordinates of the beetle and $\theta$ its polar angle, we know (by definition) that
 \[
    \cos\theta = \frac{x}{r} \hskip 0.5 in \text{ and } \hskip 0.5 in \sin\theta = \frac{y}{r},
 \] 
-where $r\sqrt{x^2+y^2}$ is the radius of the circular path. This tells us
+where $r = \sqrt{x^2+y^2}$ is the radius of the circular path. This tells us
 \[
    x = r \cos \theta \hskip 0.5 in \text{ and } \hskip 0.5 in  y = r\sin \theta.
 \]
 
-These equations parameterize the circle of radius $r$ centered at the origin in terms of the polar angle $\theta$ of the vector $\overrightarrow{OP}$ from the origin to the beetle with coordinates $(x,y)$. Input a polor angle $\theta$ and the functions spit out the $x$ and $y$ coordinates.
+These equations parameterize the circle of radius $r$ centered at the origin in terms of the polar angle $\theta$ of the vector $\overrightarrow{OP}$ from the origin to the beetle. Input a polar angle $\theta$ and the functions give the beetle's $x$ and $y$ coordinates.
 
 \begin{question} \label{Q9edDEFRLERr3}
 Suppose $r=10$ cm. Use the above parameterization to find the coordinates of the beetle when it has polar angle
@@ -45,7 +45,7 @@ But what if the circular path is not centered at the origin? We address this que
 
 \section{Circles Not Centered at the Origin}
 
-Parameterize a circle with radius $3$ cm centered at the point $C(5,4)$ (coordinates measured in cm) in terms of the polar angle of the vector from $C$ to a point $P(x,y)$ on the circle. Do this by following the directions below.
+We'll parameterize a circle with radius $3$ cm centered at the point $C(5,4)$ (coordinates measured in cm) in terms of the polar angle of the vector from $C$ to a point $P(x,y)$ on the circle. The steps are outlined below.
 
 \begin{onlineOnly}
     \begin{center}
@@ -65,7 +65,7 @@ We'll start by letting $P$ be a point on the circle with coordinates $(x,y)$ and
 \begin{enumerate}
 \item First express the components of the vector $\overrightarrow{CP}$ in terms its polar angle $\theta$.
 
-\item Next express the vector $\overrightarrow{OP}$ giving the position of $P$ relative to the origin in terms of $\overrightarrow{CP}$ and one other vector.
+\item Next express the vector $\overrightarrow{OP}$ giving the position of $P$ relative to the origin in terms of $\overrightarrow{CP}$ and the vector $\overrightarrow{OC}$.
 
 \item Use the results of parts (a) and (b) to express the components of the vector $\overrightarrow{OP}$ in terms of $\theta$.
 
@@ -132,7 +132,7 @@ that express the beetle's coordinates (in cm) in terms of the number of seconds 
 
 Look at a soccer ball on a sunny day and you'll see an ellipse. It's the boundary of the ball's shadow. Or cut a circlular cylinder with a plane. A horizontal plane gives a circle, but tilting the plane gives an ellipse.
 
-This section explores two ways to parameterize an ellipse. The key idea is that we get an ellipse by dilating (ie. stretching or compressing) a circle about one of its diameters. To make things simple, we'll start with the unit circle (radius one, centered at the origin). To see an example of this stretching action, first drag the slider $k_1$ below from $k_1=1$ to $k_1=4$. Then drag the slider $k_2$ from $k_2=1$ to $k_2=2$.
+This section explores two ways to parameterize an ellipse. We first need to know what an ellipse is. One way to get an ellipse is by dilating (ie. stretching or compressing) a circle about one of its diameters. To make things simple, we'll start with the unit circle (radius one, centered at the origin). To see an example of this stretching action, first drag the slider $k_1$ below from $k_1=1$ to $k_1=4$. Then drag the slider $k_2$ from $k_2=1$ to $k_2=2$.
 
 \begin{onlineOnly}
     \begin{center}
@@ -261,59 +261,59 @@ and Cartesian equation
      \left( \frac{x}{4} \right)^2 + \left( \frac{y}{2} \right)^2 = 1.
 \]
 
-While $\theta$ is the polar angle of the point $(\cos\theta, \sin\theta)$ on the unit circle, it is \emph{not} the polar angle of the point $(4\cos \theta , 2\sin\theta)$ on the ellipse. We saw this in the previous question where the parameter $\theta=pi/4$ was not the polar angle of the point $(4\cos (\pi/4) , 2\sin (\pi/4))$ on the ellipse.
+While $\theta$ is the polar angle of the point $(\cos\theta, \sin\theta)$ on the unit circle, it is \emph{not} the polar angle of the point $(4\cos \theta , 2\sin\theta)$ on the ellipse. We saw this in the previous question where the parameter $\theta=\pi/4$ was not the polar angle of the point $P^\prime(4\cos (\pi/4) , 2\sin (\pi/4))$ on the ellipse.
 
-But just to make sure you understand this, drag the slider $u$ on Line 2 of the worksheet below to convince yourself that the parameter $\theta$ in the parameterization 
-\[
-    (x,y) = (4\cos \theta , 2\sin\theta ) \, , \, 0 \leq \theta <2\pi 
-\]
-of the ellipse is \emph{not} the polar angle of the vector $\overrightarrow{OP^\prime}$. Explain how you know.
+%But just to make sure you understand this, drag the slider $u$ on Line 2 of the worksheet below to convince yourself that the parameter $\theta$ in the parameterization 
+%\[
+%    (x,y) = (4\cos \theta , 2\sin\theta ) \, , \, 0 \leq \theta <2\pi 
+%\]
+%of the ellipse is \emph{not} the polar angle of the vector $\overrightarrow{OP^\prime}$. Explain how you know.
 
-\begin{freeResponse}
-\end{freeResponse}
+%\begin{freeResponse}
+%\end{freeResponse}
 
 
 \begin{onlineOnly}
     \begin{center}
-\desmos{nbdmgb1nbv}{900}{600}
+\desmos{3skcbdibwx}{900}{600}
 \end{center}
 \end{onlineOnly}
 
-\href{https://www.desmos.com/calculator/nbdmgb1nbv}{142: Ellipse 2}
+\href{https://www.desmos.com/calculator/3skcbdibwx}{142: Ellipse 2B}
 
-Our aim in this problem is to parameterize this ellipse by its polar angle. We'll call this angle $\phi$. It is the polar angle of the vector $\overrightarrow{OP^\prime}$ from the origin to the point $P^\prime$ on the ellipse.
+Our aim in this problem is to parameterize this ellipse by its polar angle $\theta$.  It is the polar angle of the vector $\overrightarrow{OQ}$ from the origin to the point $Q$ on the ellipse shown above. We wish to express the coordinates $(x,y)$ of $Q$ in terms of $\theta$.
 
 
 \begin{enumerate}
 
-\item Now let $\phi$ be the polar angle of the vector $\overrightarrow{OP^\prime}$ from the origin to the point $P^\prime$ with coordinates $(x,y)$ on the ellipse (see the worksheet below). To parameterize the ellipse in terms of $\phi$ means to express $x$ and $y$ in terms of $\phi$. To do this, we need to first express the polar radius  
+\item To parameterize the ellipse in terms of the polar angle $\theta$ means to express $x$ and $y$ in terms of $theta$. To do this, we need to first express the polar radius  
 \[
    r = \Big| \overrightarrow{OP^\prime}  \Big|
 \]
-in terms of $\phi$. Here are the steps:
+in terms of $\theta$. Here are the steps:
 
-\begin{onlineOnly}
-    \begin{center}
-\desmos{le8nhq7iwq}{900}{600}
-\end{center}
-\end{onlineOnly}
+%\begin{onlineOnly}
+%    \begin{center}
+%\desmos{le8nhq7iwq}{900}{600}
+%\end{center}
+%\end{onlineOnly}
 
-\href{https://www.desmos.com/calculator/le8nhq7iwq}{142: Ellipse 3}
+%\href{https://www.desmos.com/calculator/le8nhq7iwq}{142: Ellipse 3}
 
 
 \begin{enumerate}
-\item First express the coordinates of $P^\prime$ in terms of $r$ and $\phi$.
+\item First express the coordinates of $P^\prime$ in terms of $r$ and $\theta$.
 
-\item Then use algebra and the Cartesian equation of the ellipse to find an equation relating $r$ and $\phi$.
+\item Then use algebra and the Cartesian equation of the ellipse to find an equation relating $r$ and $\theta$.
 
-\item Next solve this equation for $r$ in terms of $\phi$ keeping in mind that $r>0$.
+\item Next solve this equation for $r$ in terms of $\theta$ keeping in mind that $r>0$.
 
 The result is that
 \[
-  r = \answer{\frac{8}{\sqrt{4\cos^2\phi + 16\sin^2\phi }}} .
+  r = \answer{\frac{8}{\sqrt{4\cos^2\theta + 16\sin^2\theta }}} .
 \]
 
-\item Finally, use the results of parts (i) and (iii) to parameterize the ellipse in terms of the polar angle $\phi$.
+\item Finally, use the results of parts (i) and (iii) to parameterize the ellipse in terms of the polar angle $\theta$.
 \end{enumerate}
 
 \end{enumerate}
