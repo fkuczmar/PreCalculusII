@@ -74,7 +74,7 @@ Suppose that over the course of a 24-hour period, from midnight October 29 to mi
 We'll ask two questions:
 
 \begin{enumerate}
-\item Use circular interpolation with the protractor below to approximate the depth of the water at 5:30am.
+\item Use circular interpolation with the protractor below to approximate the depth of the water at 5:30am on October 29.
 
 \item Use the circular protractor to approximate the first two times after midnight when the water is $18$ feet deep.
 
@@ -96,12 +96,119 @@ Explain your reasoning and include screenshots to help with your explanations.
 \end{example}
 
 
+\section{Circular Interpolation using the Sine Function}
+
+\begin{example}  \label{EDFredsfRRER}
+This is a continuation of Example 1. To simplify things, we'll assume each month has $30$ days and that the number of hours of daylight per day in Seattle is a sinuosoidal function of time as described above.
+
+Our goal is to find a function 
+\[
+  h = f(t) \, , \, t\in \mathbb{R},
+\] 
+that expresses the number of hours of daylight per day in Seattle in terms of the number of months since the spring equinox.
+
+
+Here are the steps.
+
+\begin{enumerate}
+
+\item  First we'll use the information above to sketch by hand a graph of the function $f$. Label the axes with the appropriate variable names and units. Label the coordinates of four key points on the graph.
+
+\href{https://www.desmos.com/calculator/gw4xkdcvhi}{142: Hours of Daylight 2}.
+
+ 
+\begin{onlineOnly}
+    \begin{center}
+\desmos{gw4xkdcvhi}{900}{600}
+\end{center}
+\end{onlineOnly}
+
+\item Next we'll compute the mean number of hours of daylight per day over the course of a year and the maximum deviation from this mean. Including units in our computation, the mean is 
+\[
+    h_{avg} = 0.5 ( 16 \text{ hours/day } + 8 \text{ hours/day}) = 12 \text{ hours/day} . 
+\]
+And the maximum deviation from the mean is
+\[
+     16 \text{ hours/day } - 12 \text{ hours/day } = 8 \text{ hours/day}.
+\]
+
+Activate the Amplitude folder on Line 5 of the above demonstration to draw the horizontal line showing the average depth. Note this line is labeled with its equation. There is also a vertical line that shows the the maximum deviation from the mean.
+
+\item Next we'll use the graph to find the period of oscillation. We can just see from the graph (or use common sense) that the period of oscillation is
+\[
+     12 \text{ months}.
+\]
+Activate the Period folder on Line 11 to show the period on the graph.
+
+\item Now we'll compute the rotation rate of a uniform circular motion that drives the sinusoidal variation in the number of hours of daylight per day. This rotation rate is
+\[
+  \omega = \frac{2\pi \text{ radians}}{12 \text{ months}} = \frac{\pi}{6} \text{ months/hr} .
+\]
+Now we'll take the polar angle to be $\theta=0$ radians on March 21 when the number of daylight hours/day ($12$) is equal to the mean.  The because the signed rotation rate is $\pi/6$ rad/month and $theta = 0$ when $t=0$, our polar angle function is
+\[
+   \theta = a(t) = \frac{\pi}{6}t.
+\]
+
+Activate the Uniform Circular Motion folder on Line 18 to show the period on the graph.
+
+\item Next we'll use parts (a)-(d) to find an expression for the function
+\[
+           h = f(t) \, , \, 0\leq t \leq 24
+\]
+that gives the number of hours of daylight per day at time $t$ months since March 21. Using our polar angle function $\theta = a(t)$ with the cosine function gives 
+\[
+   h  = f(t) = 12 + 4 \sin \left(  \frac{\pi}{6} t \right), t\in\mathbb{R} .
+\]
+
+
+
+\item To check that our function is correct, we'll use the given information that on June 21 ($t=3$) Seattle gets $16$ hours of daylight/day at2:00am and $5$ feet at 8:00am.
+
+Substituting $t=3$ gives
+\begin{align*}
+   f(3)   & = 12 + 4 \sin \left(  \frac{\pi}{6} \left( 3 \right) \right) \\ 
+           & = 12 + 4 \sin (\frac{\pi}{2})  \\ 
+           & = 12 + 4 \\
+           & = 16 .
+\end{align*}
+
+Substituting $t=9$ (December 21) gives 
+\begin{align*}
+   f(9)   & = 12 + 4 \sin \left(  \frac{\pi}{6} \left(9 \right) \right) \\ 
+           & = 12 + 4 \sin \left( \frac{3\pi}{2} \right)  \\ 
+           & = 12 + 4(-1) \\
+           & = 8 .
+\end{align*}
+These check out.
+
+\item Finally, we'll use our function to estimate the number of hours of daylight per day on April 21 as
+\begin{align*}
+   f(1)   & = 12 + 4 \sin \left(  \frac{\pi}{6} \left(1 \right) \right) \\ 
+           & = 12 +4 \sin (\pi / 6)  \\ 
+           &  = 14 . \\ 
+         \end{align*}
+
+\item Check if this estimate is reasonable by finding the times of sunrise and sunset on April 21. What's the result?
+\begin{freeResponse}
+\end{freeResponse}
+
+%\item Enter the coordinates of the appropriate point in Line 27 of the Desmos Activity above to check that the depth at 5:30am is reasonable.
+
+\end{enumerate}
+\end{example}
+
+
+
+
+
+
+
 \section{Circular Interpolation using the Cosine Function}
 
 \begin{example} \label{EODOFDSFSD}
 
 
-This is a continuation of the previous example.
+This is a continuation of Example 2.
 
 Our aim is to find a sinusoidal function
 \[
@@ -122,12 +229,12 @@ Here are the steps.
 
 Desmos activity available at:
 
-\href{https://www.desmos.com/calculator/x2kocpkcfm}{142: Edmonds Pier}.
+\href{https://www.desmos.com/calculator/cxybepr3od}{142: Edmonds Pier 2}.
 
  
 \begin{onlineOnly}
     \begin{center}
-\desmos{x2kocpkcfm}{900}{600}
+\desmos{cxybepr3od}{900}{600}
 \end{center}
 \end{onlineOnly}
 
