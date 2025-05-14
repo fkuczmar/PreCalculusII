@@ -191,7 +191,11 @@ For each of the following expressions:
 
 \item $\arccos (\cos (7\pi/5))$
 
-\item $\arccos (\cos (9\pi/5))$
+\item $\arcsin (\sin (7\pi/5))$
+
+\item $\arccos (\cos (16\pi/9))$
+
+\item $\arcsin (\sin (16\pi/9))$
 
 \item $\arcsin(\sin (23\pi /7))$
 
@@ -222,14 +226,11 @@ We should point out that because $7\pi/5$ is \emph{not} between $0$ and $\pi$,
    \theta =   \arccos (\cos (7\pi/5)) \neq 7\pi/5 .
 \]
 
-To determine the value of $\theta$, we'll work on the unit circle and start by stetching the angle
+To determine the value of $\theta$, we'll work on the unit circle and start by stetching the point $P$ on the unit circle with coordinates $(\cos (7\pi/5), \sin(7\pi/5))$ and polar angle 
 \[
-     \frac{7\pi}{5} = \pi + \frac{2\pi}{5}
+     \angle AOP =  \frac{7\pi}{5} = \pi + \frac{2\pi}{5} .
 \]
-and the vertical line
-\[
-   x = \cos(7\pi/5).
-\]
+
 See the picture below.
 
 \href{https://www.desmos.com/calculator/wzxssez3fu}{142: Inverse Trig Composition}
@@ -241,19 +242,39 @@ See the picture below.
 \end{center}
 \end{onlineOnly}
 
-This vertical line intersects the circle in two points, $P$ and $Q$. Because $Q$ is in the third quadrant, we cannot measure the polar angle of the vector $\overrightarrow{OP}$ to be between $0$ and $\pi$.
+Now there are infinitely many other choices for the polar angle of $P$ (or to be more precise, for the polar angle of $\overrightarrow{OP}$), but because $P$ is in the third quadrant, none of these choices lies between $0$ and $\pi$. 
 
-So we should focus our attention on point $Q$, the other point where the line $x = \cos(7\pi/5)$ intersects the unit circle. We have infinitely many choices for the polar angle of the vector $\overrightarrow{OQ}$, but because $P$ and $Q$ have the same $x$-coordinate, each of these choices has the same cosine as the angle $7\pi/5$. We need to choose the one angle, the marked angle $\angle AOQ$, that is between $0$ and $\pi$. We can do this because $Q$ is in the second quadrant.
+So we must find another family of angles with the same cosine as $7\pi/5$. To do this we draw the vertical line
+\[
+   x = \cos(7\pi/5)
+\]
+through $P$ and see where it intersects the unit circle a second time. We'll call this point $Q$. Now since $P$ and $Q$ share the same $x$-coordinate (and because $\cos\theta = x/r$), w know that
+\[
+ \cos (\angle AOP) = \cos (\angle AOQ).
+\]
+The angle $\angle AOQ$ is the one we're looking for. It has the same cosine as $\angle AOP = 7\pi/5$ and its measure is between $0$ and $\pi$. 
 
-Because $P$ and $Q$ are symmetric about the $x$-axis, this measure of the angle $\angle AOQ$ is
+
+%This vertical line intersects the circle in two points, $P$ and $Q$. Because $Q$ is in the third quadrant, we cannot measure the polar angle of the vector $\overrightarrow{OP}$ to be between $0$ and $\pi$.
+
+%So we should focus our attention on point $Q$, the other point where the line $x = \cos(7\pi/5)$ intersects the unit circle. We have infinitely many choices for the polar angle of the vector $\overrightarrow{OQ}$, but because $P$ and $Q$ have the same $x$-coordinate, each of these choices has the same cosine as the angle $7\pi/5$. We need to choose the one angle, the marked angle $\angle AOQ$, that is between $0$ and $\pi$. We can do this because $Q$ is in the second quadrant.
+
+Because $P$ and $Q$ are symmetric about the $x$-axis, this measure of angle $\angle AOQ$ is
 \[
    \angle AOQ = 2\pi - \frac{7\pi}{5} = \frac{3\pi}{5}.
 \]
  
 So our conclusion is that
 \[
- \arccos (\cos (7\pi/5)) = 2\pi -  \frac{7\pi}{5} = \frac{3\pi}{5}.
+     \arccos (\cos (7\pi/5)) = \frac{3\pi}{5}.
 \]
+
+If we wanted to summarize our reasoning, we could give more detail like this:
+\begin{align*}
+ \arccos (\cos (7\pi/5)) &= \arccos (\cos (2\pi - 7\pi/5)) \\
+                                 &= \arccos (\cos (3\pi/5)) \\
+                                 & = 3\pi/5 .
+\end{align*}
 
 \end{explanation}
 
