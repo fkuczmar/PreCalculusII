@@ -185,11 +185,13 @@ For each of the following expressions:
 \begin{enumerate}
 \item $\cos (\arccos(-3/8))$
 
-\item $\arccos (\cos (4\pi/5)$
+\item $\arccos (\cos (4\pi/5))$
 
-\item $\arccos (\cos (7\pi/5)$
+\item $\arccos (\cos (7\pi))$
 
-\item $\arccos (\cos (9\pi/5)$
+\item $\arccos (\cos (7\pi/5))$
+
+\item $\arccos (\cos (9\pi/5))$
 
 \item $\arcsin(\sin (23\pi /7))$
 
@@ -199,6 +201,59 @@ For each of the following expressions:
 
 \item $\cos(\arcsin(-3/4))$
 \end{enumerate}
+
+\begin{explanation}
+(d) The expression $\arccos (\cos (7\pi/5))$ is the angle between $0$ and $\pi$ that has the same cosine as the angle $7\pi/5$.
+
+To evaluate this expression, we'll let 
+\[
+   \theta = \arccos (\cos (7\pi/5)).
+\] 
+
+From our description, we know
+\begin{enumerate}
+\item $0 \leq \theta \leq \pi$, and
+
+\item $\cos \theta =  \cos(7\pi/5))$.
+\end{enumerate}
+
+We should point out that because $7\pi/5$ is \emph{not} between $0$ and $\pi$,
+\[
+   \theta =   \arccos (\cos (7\pi/5)) \neq 7\pi/5 .
+\]
+
+To determine the value of $\theta$, we'll work on the unit circle and start by stetching the angle
+\[
+     \frac{7\pi}{5} = \pi + \frac{2\pi}{5}
+\]
+and the vertical line
+\[
+   x = \cos(7\pi/5).
+\]
+See the picture below.
+
+\href{https://www.desmos.com/calculator/wzxssez3fu}{142: Inverse Trig Composition}
+
+ 
+\begin{onlineOnly}
+    \begin{center}
+\desmos{wzxssez3fu}{900}{600}
+\end{center}
+\end{onlineOnly}
+
+We should now focus our attention on point $Q$, the other point where the line $x = \cos(7\pi/5)$ intersects the unit circle. We have infinitely many choices for the polar angle of the vector $\overrightarrow{OQ}$, but because $P$ and $Q$ have the same $x$-coordinate, each of these choices has the same cosine as the angle $7\pi/5$. We need to choose the one angle, the marked angle $\angle AOQ$, that is between $0$ and $\pi$. %We can do this because $Q$ is in the second quadrant.
+
+Because $P$ and $Q$ are symmetric about the $x$-axis, this measure of the angle $\angle AOQ$ is
+\[
+   \angle AOQ = 2\pi - \frac{7\pi}{5} = \frac{3\pi}{5}.
+\]
+ 
+So our conclusion is that
+\[
+ \arccos (\cos (7\pi/5)) = 2\pi -  \frac{7\pi}{5} = \frac{3\pi}{5}.
+\]
+
+\end{explanation}
 
 
 \end{question}
