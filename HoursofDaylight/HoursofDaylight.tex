@@ -1,0 +1,152 @@
+\documentclass{ximera}
+\title{Hours of Daylight}
+
+\newcommand{\pskip}{\vskip 0.1 in}
+
+\begin{document}
+\begin{abstract}
+Modeling the number of hours of daylight.
+\end{abstract}
+\maketitle
+
+
+\begin{question}  \label{Qdf4ppp3455}
+The function
+\[
+    h = f(\delta) = \frac{24}{\pi} \arccos(-\tan\phi \tan\delta) \, , \, -\pi/2+\phi < \delta < \pi/2-\phi ,
+\]
+expresses the number of hours of daylight per day at latitude $\phi$ in terms of the declination of the sun. The declination of the sun ($\delta$) is the angle the sun's rays make with the plane of the equator, taken to be positive between the spring and fall equinoxes in the northern hemisphere. The latitude $\phi$, $-\pi/2 \leq \phi \leq \pi/2$, is positive at points in the northern hemipshere. The graph of the function $h=f(\delta)$ for latitude $\phi\sim 1.1$ is shown below.
+
+Don't be confused by the angle $\delta$ (delta). It's just the lower case Greek letter for $\Delta$.
+
+\begin{onlineOnly}
+    \begin{center}
+\desmos{ifomatkcta}{900}{600}
+\end{center}
+\end{onlineOnly}
+
+Desmos activity available at \href{https://www.desmos.com/calculator/ifomatkcta}{151: Length of Day 1}
+
+\begin{enumerate}
+\item Use the graph to approximate the number of hours of daylight/day at a latitude of $\phi=1.1$ radians on March 1, when the sun is about $8^\circ$ below the plane of the equator. What about at our latitude? At the equator?
+
+\item Evaluate the derivative %On March 1, the line of sight to the sun sun is about $8^\circ$ below the equator. Find the value of the derivative
+\[
+  \frac{dh}{d\delta} \Big|_{\delta = 0} .
+\]
+
+\item What are the units of the derivative above? Interpret its meaning.
+
+\item Suppose now that each month has 30 days so that there are 360 days in one year. Suppose also that the declination of the sun varies sinusoidally as a function of time, that the maximum declination of $\delta = 23.5^\circ$ occurs on the summer solstice (say June 21st) and the minimum declination $\delta = -23.5^\circ$ occurs on the winter solstice (December 21st). 
+
+\begin{enumerate}
+\item Find an expression for a function
+\[
+     \delta = k(t) \, , \, t\geq 0,
+\]
+that gives the declination of the sun (measured in radians) in terms of the number of days since the spring equinox. 
+
+\item Evaluate the derivative
+\[
+  \frac{d}{dt}\left( f(k(t))  \right)\Big|_{t= 0} =    \frac{dh}{dt} \Big|_{t= 0} .
+\]
+
+\item What are the units of the derivative above? Interpret its meaning. 
+
+\end{enumerate}
+\end{enumerate}
+
+
+\end{question}
+
+
+
+
+
+
+
+
+\begin{question}  \label{Q:er43455}
+The function
+\[
+    h = f(\delta) = \frac{24}{\pi} \arccos(-\tan\phi \tan\delta) \, , \, -\pi/2+\phi < \delta < \pi/2-\phi ,
+\]
+expresses the number of hours of daylight per day at latitude $\phi$ in terms of the declination of the sun. The declination of the sun ($\delta$) is the angle the sun's rays make with the plane of the equator, taken to be positive between the spring and fall equinoxes in the northern hemisphere. The latitude $\phi$, $-\pi/2 \leq \phi \leq \pi/2$, is positive at points in the northern hemipshere.
+
+\begin{onlineOnly}
+    \begin{center}
+\geogebra{vnhrutwu}{900}{600}
+\end{center}
+\end{onlineOnly}
+
+Geogebra activity available at \href{https://www.geogebra.org/classic/vnhrutwu}{151: Declination of Sun 2}
+
+\begin{enumerate}
+\item Use the graph of the function $f$ below (at latitude $\phi \sim 1.1$) to sketch a graph of the derivative
+\[
+   \frac{dh}{d\delta} = f^\prime(\delta) .
+\]
+
+\item Suppose the latitude $\phi$ is held constant and find an expression for the derivative 
+\[
+   \frac{dh}{d\delta} %= \frac{d}{d\delta} \left(  -\tan\phi \tan \delta    \right).
+\]
+
+\item What are the units of the derivative in part (b)?
+
+\item Input your expression for the derivative in Line 4 of the worksheet below (follow the directions there). Then vary the slider $\phi$ to see how the function $f$ and its derivative vary with latitude. Summarize your observations.
+
+\item Find an expression for the derivative 
+\[
+   \frac{dh}{d\delta}\Big|_{\delta = 0} %=  \frac{d}{d\delta} \left(  -\tan\phi \tan \delta    \right)\Big|_{\delta =0}
+\]
+in terms of the latitude $\phi$. 
+
+\item Evaluate the derivative in part (e) at a latitude of $\phi =\pi/4$. Interpret its meaning in terms of small changes.
+
+\begin{onlineOnly}
+    \begin{center}
+\desmos{ifomatkcta}{900}{600}
+\end{center}
+\end{onlineOnly}
+
+Desmos activity available at \href{https://www.desmos.com/calculator/ifomatkcta}{151: Length of Day 1}
+
+\pskip 
+
+\item Suppose now that each month has 30 days so that there are 360 days in one year. Suppose also that the declination of the sun varies sinusoidally as a function of time, that the maximum declination of $\delta = 23.5^\circ$ occurs on the summer solstice (say June 21st) and the minimum declination $\delta = -23.5^\circ$ occurs on the winter solstice (December 21st). 
+
+Find an expression for a function
+\[
+     \delta = k(t) \, , \, t\geq 0,
+\]
+that gives the declination of the sun (measured in radians) in terms of the number of days since the spring equinox. 
+
+\item Find a function
+\[
+   r = g(\phi) \, , \, -\pi/2 < \phi < \pi ,
+\]
+that expresses the rate of change in the number of hours of daylight per day (measured in (hours of daylight/day)/day)) on the spring equinox in terms of the latitude $\phi$. Input this function in Line 1 of the demonstration below.
+
+\item On the spring equinox, all latitudes receive $12$ hours of daylight/day. Use the result of part (h) to approximate how many extra minutes of daylight we would get on the following day living in 
+
+\begin{enumerate}
+\item Shoreline, latitude $47.75^\circ$N
+
+\item Fairbanks, Alaska, latitude $64.8^\circ$N
+
+\end{enumerate}
+
+\begin{onlineOnly}
+    \begin{center}
+\desmos{nf8n5uphhl}{900}{600}
+\end{center}
+\end{onlineOnly}
+
+Desmos activity available at \href{https://www.desmos.com/calculator/nf8n5uphhl}{151: Length of Day 2}
+
+\end{enumerate}
+
+\end{question}
+
+\end{document}
