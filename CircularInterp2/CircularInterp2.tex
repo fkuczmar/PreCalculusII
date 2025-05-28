@@ -1,0 +1,393 @@
+\documentclass{ximera}
+\title{Circular Interpolation, Part 2}
+
+\newcommand{\pskip}{\vskip 0.1 in}
+
+\begin{document}
+\begin{abstract}
+Circular Interpolation
+\end{abstract}
+\maketitle
+
+
+\section{Circular Interpolation with a Protractor}
+
+\begin{example}  \label{Ex:Lsdf4LL}
+We just completed the first third of spring and you've probably noticed how many more hours of daylight we get than we did than just a few months ago. On the vernal equinox (the first day of spring, usually March 21), Seattle gets 12 hours of daylight/day. And on the summer solstice (the first day of summer) we'll get just over 16 hours of daylight/day. 
+
+The question is this. On April 21st, one-third of the way into spring, about how many hours of daylight per day do we get? Or more to the point, thinking proportionally and asking a question that would have the almost same answer for all latitudes, when we're one-third of the way through spring, through what fraction of the way from 12 hours/day to the maximum number of hours of daylight/day are we? One-third? Halfway? Two-thirds? What do you think?
+
+The simplest way to approach this problem would be with a linear interpolation. Then when we're one-third of the way through spring in Seattle, we would be 1/3 of the way from $12$ to $16$ hours of daylight/day. So on April 21st we would expect to get about
+\[
+    12 \text{ hrs/day} + \frac{1}{3}(4 \text{ hrs/day}) = 13 \frac{1}{3}\text{ hrs/day}
+\]
+hours of daylight/day as illustrated in the graph below.
+
+
+\begin{onlineOnly}
+    \begin{center}
+\desmos{esj3yytaug}{900}{600}
+\end{center}
+\end{onlineOnly}
+
+\href{https://www.desmos.com/calculator/esj3yytaug}{142: Hours of Daylight per Day}
+
+But this kind of piece-wise linear thinking does not seem quite right. We should not expect such abrupt transitions on the winter and summer solstices.
+
+Instead of linear interpolation, we would do better to use \emph{circular interpolation}. For this, draw a circle of radius 
+\[
+     (16 - 12) \text{ hours of daylight/day} = 4 \text{ hours of daylight/day}
+\]
+centered at a point with $h$-coordinate $h=12$ as shown below. Now go $1/3$ of the way along the circle from point $A$ (corresponding to March 21, when we get $12$ hours of daylight/day) to point $M$ (corresponding to June 21, when we get $16$ hours of daylight/day).
+
+ 
+\begin{onlineOnly}
+    \begin{center}
+\desmos{nfsifbppzz}{900}{600}
+\end{center}
+\end{onlineOnly}
+
+\href{https://www.desmos.com/calculator/nfsifbppzz}{142: Circular Interpolation}
+
+\begin{enumerate}
+\item Drag point $B$ above so that point $P$ lies $1/3$ of the way around the circle from $A$ to $M$. Then approximate how many hours of daylight/day we get on April 21st.
+\begin{freeResponse} 
+\end{freeResponse}
+
+\item Use the worksheet above to approximate what days of the year we get $15$ hours of daylight/day. Explain your reasoning.
+\begin{freeResponse}
+\end{freeResponse}
+\end{enumerate}
+
+This kind of circular interpolation is more accurate and gives a smoother function $h=g(t)$ for the number of hours of daylight/day. Graph this function by activating the Folder \emph{Circular interpolation} in the first worksheet.
+
+\end{example}
+
+%What is usually called \emph{sinusoidal modeling} is kind of a misnomer. First, it's usually easier to model osciallatory behavior with a cosine function. Second, and more importantly, the name \emph{sinusuoidal modeling} fails to convey the main idea of replacing linear interpolation with circular interpolation.
+
+Here's another example.
+
+
+\begin{example}  \label{E888GGGbdsdsf}
+Suppose that over the course of a 24-hour period, from midnight October 29 to midnight October 30, the depth of the water at the Edmonds Pier is a sinusoidal function of time. Suppose also that a high tide of 21 feet occurs at 2:00am and the following low tide of 5 feet occurs at 8:00am. 
+
+We'll ask two questions:
+
+\begin{enumerate}
+\item Use circular interpolation with the protractor below to approximate the depth of the water at 5:30am on October 29.
+
+\item Use the circular protractor to approximate the first two times after midnight when the water is $18$ feet deep.
+
+Explain your reasoning and include screenshots to help with your explanations.
+\begin{freeResponse}
+\end{freeResponse}
+
+\begin{onlineOnly}
+    \begin{center}
+\desmos{0wxwmkzvky}{900}{600}
+\end{center}
+\end{onlineOnly}
+
+\href{https://www.desmos.com/calculator/0wxwmkzvky}{142: Circular Interpolation Tides}
+
+\emph{Keep in mind that high tide occurs at 2:00am and low tide at 8:00am.}
+
+\end{enumerate}
+\end{example}
+
+
+\section{Circular Interpolation using the Sine Function}
+
+\begin{example}  \label{EDFrGGRGdsfRRER}
+This is a continuation of Example 1. To simplify things, we'll assume each month has $30$ days and that the number of hours of daylight per day in Seattle is a sinuosoidal function of time as described above.
+
+Our goal is to find a function 
+\[
+  h = f(t) \, , \, t\in \mathbb{R},
+\] 
+that expresses the number of hours of daylight per day in Seattle in terms of the number of months since the spring equinox.
+
+
+Here are the steps.
+
+\begin{enumerate}
+
+\item  First we'll use the information above to sketch by hand a graph of the function $f$. Label the axes with the appropriate variable names and units. Label the coordinates of four key points on the graph.
+
+\href{https://www.desmos.com/calculator/gw4xkdcvhi}{142: Hours of Daylight 2}.
+
+ 
+\begin{onlineOnly}
+    \begin{center}
+\desmos{gw4xkdcvhi}{900}{600}
+\end{center}
+\end{onlineOnly}
+
+\item Next we'll compute the mean number of hours of daylight per day over the course of a year and the maximum deviation from this mean. Including units in our computation, the mean is 
+\[
+    h_{avg} = 0.5 ( 16 \text{ hours/day } + 8 \text{ hours/day}) = 12 \text{ hours/day} . 
+\]
+And the maximum deviation from the mean is
+\[
+     16 \text{ hours/day } - 12 \text{ hours/day } = 4 \text{ hours/day}.
+\]
+
+Activate the Amplitude folder on Line 5 of the above demonstration to draw the horizontal line showing the average depth. Note this line is labeled with its equation. There is also a vertical line that shows the the maximum deviation from the mean.
+
+\item Next we'll use the graph to find the period of oscillation. We can just see from the graph (or use common sense) that the period of oscillation is
+\[
+     12 \text{ months}.
+\]
+Activate the Period folder on Line 11 to show the period on the graph.
+
+\item Now we'll compute the rotation rate of a uniform circular motion that drives the sinusoidal variation in the number of hours of daylight per day. This rotation rate is
+\[
+  \omega = \frac{2\pi \text{ radians}}{12 \text{ months}} = \frac{\pi}{6} \text{ months/hr} .
+\]
+Now we'll take the polar angle to be $\theta=0$ radians on March 21 when the number of daylight hours/day ($12$) is equal to the mean.  Then because the signed rotation rate is $\pi/6$ rad/month and $theta = 0$ when $t=0$, our polar angle function is
+\[
+   \theta = a(t) = \frac{\pi}{6}t.
+\]
+
+Activate the Uniform Circular Motion folder on Line 18 to show the period on the graph.
+
+\item Next we'll use parts (a)-(d) to find an expression for the function
+\[
+           h = f(t) \, , \, 0\leq t \leq 24
+\]
+that gives the number of hours of daylight per day at time $t$ months since March 21. Using our polar angle function $\theta = a(t)$ with the cosine function gives 
+\[
+   h  = f(t) = 12 + 4 \sin \left(  \frac{\pi}{6} t \right), t\in\mathbb{R} .
+\]
+
+
+
+\item To check that our function is correct, we'll use the given information that on June 21 ($t=3$) Seattle gets $16$ hours of daylight/day at2:00am and $5$ feet at 8:00am.
+
+Substituting $t=3$ gives
+\begin{align*}
+   f(3)   & = 12 + 4 \sin \left(  \frac{\pi}{6} \left( 3 \right) \right) \\ 
+           & = 12 + 4 \sin (\frac{\pi}{2})  \\ 
+           & = 12 + 4 \\
+           & = 16 .
+\end{align*}
+
+Substituting $t=9$ (December 21) gives 
+\begin{align*}
+   f(9)   & = 12 + 4 \sin \left(  \frac{\pi}{6} \left(9 \right) \right) \\ 
+           & = 12 + 4 \sin \left( \frac{3\pi}{2} \right)  \\ 
+           & = 12 + 4(-1) \\
+           & = 8 .
+\end{align*}
+These check out.
+
+\item Finally, we'll use our function to estimate the number of hours of daylight per day on April 21 as
+\begin{align*}
+   f(1)   & = 12 + 4 \sin \left(  \frac{\pi}{6} \left(1 \right) \right) \\ 
+           & = 12 +4 \sin (\pi / 6)  \\ 
+           &  = 14 . \\ 
+         \end{align*}
+
+\item Check if this estimate is reasonable by finding the times of sunrise and sunset on April 21. What's the result?
+\begin{freeResponse}
+\end{freeResponse}
+
+%\item Enter the coordinates of the appropriate point in Line 27 of the Desmos Activity above to check that the depth at 5:30am is reasonable.
+
+\end{enumerate}
+\end{example}
+
+
+
+
+
+
+
+\section{Circular Interpolation using the Cosine Function}
+
+\begin{example} \label{EODGrgrgrFDSFSD}
+
+
+This is a continuation of Example 2.
+
+Our aim is to find a sinusoidal function
+\[
+    h = f(t) , 0\leq t \leq 24, 
+\]
+that expresses the depth of the water (in feet) in terms of the number of hours past midnight, October 29. 
+
+\pskip
+
+Note that to say \emph{sinusoidal function}, an unfortunate name, means that the graph of $f$ is generated by uniform circular motion. But the graphs of the sine and cosine functions are both generated this way, so it is ok to express $f(t)$ in terms of the cosine function, and we will do just that.
+
+\begin{explanation}
+Here are the steps.
+
+\begin{enumerate}
+
+\item  First we'll use the information above to sketch by hand a graph of the function $f$. Label the axes with the appropriate variable names and units. Label the coordinates of two key points on the graph.
+
+Desmos activity available at:
+
+\href{https://www.desmos.com/calculator/cxybepr3od}{142: Edmonds Pier 2}.
+
+ 
+\begin{onlineOnly}
+    \begin{center}
+\desmos{cxybepr3od}{900}{600}
+\end{center}
+\end{onlineOnly}
+
+
+
+\item Next we'll compute the mean depth of the water over the 24 hours and the maximum deviation of the depth from this mean. Including units in our computation, the mean depth is 
+\[
+    h_{avg} = 0.5 ( 21 \text{ ft } + 5 \text{ ft }) = 13 \text{ ft} . 
+\]
+And the maximum deviation from the mean is
+\[
+     21 \text{ ft } - 13 \text{ ft } = 8 \text{ ft}.
+\]
+
+Activate the Amplitude folder on Line 5 of the above demonstration to draw the horizontal line showing the average depth. Note this line is labeled with its equation. There is also a vertical line that shows the the maximum deviation from the mean.
+
+\item Next we'll use the graph to find the period of oscillation. Since high tide occurs at 2:00am and low tide at 8:00am, the period (the time between succesive) high (or low) tides is
+\[
+    2(8 \text{ hours } - 2 \text{ hours }) = 12 \text{ hours}
+\]
+Activate the Period folder on Line 11 to show the period on the graph.
+
+\item Now we'll compute the rotation rate of a uniform circular motion that drives the sinusoidal variation in the depth of the water. This rotation rate is
+\[
+  \omega = \frac{2\pi \text{ radians}}{12 \text{ hours}} = \frac{\pi}{6} \text{ radians/hr} .
+\]
+Now we'll take the polar angle to be $\theta=0$ radians at 2am when the depth is a maximum. The because the rotation rate is $\pi/6$ rad/hour, our polar angle function is
+\[
+   \theta = a(t) = \frac{\pi}{6} \left(  t - 2  \right) .
+\]
+
+Activate the Uniform Circular Motion folder on Line 18 to show the period on the graph.
+
+\item Next we'll use parts (a)-(d) to find an expression for the function
+\[
+           h = f(t) \, , \, 0\leq t \leq 24
+\]
+that gives the depth of the water (in feet) at time $t$ hours past midnight. Using our polar angle function $\theta = a(t)$ with the cosine function gives 
+\[
+   h  = f(t) = 13 + 8 \cos \left(  \frac{\pi}{6} \left( t - 2 \right) \right),  0\leq t \leq 24.
+\]
+
+
+
+\item To check that our function is correct, we'll use the given information that the depth of the water is $21$ feet at 2:00am and $5$ feet at 8:00am.
+
+Substituting $t=2$ gives the depth at 2:00am (in feet) as
+\begin{align*}
+   f(2)   & = 13 + 8 \cos \left(  \frac{\pi}{6} \left( 2 - 2 \right) \right) \\ 
+           & = 13 + 8 \cos (0)  \\ 
+           & = 13 + 8 \\
+           & = 21 .
+\end{align*}
+
+Substituting $t=2$ gives the depth at 2:00am (in feet) as
+\begin{align*}
+   f(8)   & = 13 + 8 \cos \left(  \frac{\pi}{6} \left(8 - 2 \right) \right) \\ 
+           & = 13 + 8 \cos (\pi)  \\ 
+           & = 13 + 8(-1) \\
+           & = 5 .
+\end{align*}
+These check out.
+
+\item Finally, we'll use our function to estimate the depth (in feet) of the water at 5:30am, October 29 to be
+\begin{align*}
+   f(5.5)   & = 13 + 8 \cos \left(  \frac{\pi}{6} \left(5.5 - 2 \right) \right) \\ 
+           & = 13 + 8 \cos (7\pi / 12)  \\ 
+           &  \sim  10.92 \\
+         \end{align*}
+
+\item Enter the coordinates of the appropriate point in Line 27 of the Desmos Activity above to check that the depth at 5:30am is reasonable.
+
+\end{enumerate}
+
+\end{explanation}
+
+\end{example}
+
+
+
+\section{Exercises}
+\begin{exercise} \label{ExPOfdgryreer}
+
+Suppose that over the course of a $24$-hour period in Seattle, from midnight July 12 to midnight July 13, the temperature is a sinusoidal function of time. Suppose also that the minimum temperature of $58^\circ$F occurs at 5am and the maximum temperature of $82^\circ$F occurs at 5pm. 
+
+\begin{enumerate}
+\item Find a function
+\[
+ T = f(h) \, , \, 0\leq h \leq 24,
+\]
+that expresses the temperature (in Fahrenheit degrees) in terms of the number of hours since midnight, July 12. {\bf Use the cosine function, not the sine function.}
+
+\item Use your function to approximate the temperature at noon.
+
+%\item  Follow \emph{all} the steps in the solutions to Examples 3 and 4 above. Do not skip any steps. Give your own explanations in your own words. Do not copy the explanations above.
+
+\end{enumerate}
+
+
+
+Follow all the steps in Examples 3 and 4 above.  Do not skip any steps. Give your own explanations in your own words. Do not copy the explanations above.
+
+\end{exercise}
+
+
+\section{Discussion Questions}
+\begin{question} \label{QLDfFFdRE}
+
+\begin{enumerate}
+
+\item Parameterize the circle of radius $7$ meters centered at the point $C(4,-4)$ in terms of the polar angle of the vector $\overrightarrow{CP}$ from the center $C$ to a point $P$ on the circle.
+
+This means to find functions
+\[
+    x = f(\theta) \hskip 0.5 in \text{and} \hskip 0.5 in y=g(\theta)
+\]
+that express the coordinates of $P$ in terms of the polar angle. Include an appropriate domain for these functions.
+
+\item Use the geometry of the circle to sketch by hand a graph of the $x$-coordinate function $x=f(\theta)$.
+
+\item The animation below shows a motion around this circle. Watch the animation by playing the slider $u$ (another name for time $t$)
+
+\begin{onlineOnly}
+    \begin{center}
+\desmos{esr4pacqae}{900}{600}
+\end{center}
+\end{onlineOnly}
+
+\href{https://www.desmos.com/calculator/esr4pacqae}{142: Watch this motion}
+
+\begin{enumerate}
+\item Use the animation to graph by hand the function
+\[
+  h = k(t) \, , \, 0\leq t \leq 24,
+\]
+that expresses the $x$-coordinate of the beetle (in meters) in terms of the number of seconds since the motion began. If you need help activate the folders in Lines 3 and 9.
+
+\item Activate the folder in Line 17 to see how you did.
+
+\item Find an expression for the function $h=k(t)$. Do this by first finding a function 
+\[
+ \theta = a(t), 0\leq t \leq 24, 
+\]
+that expresses the polar angle (in radians) of the vector $\overrightarrow{CP}$ in terms of $t$.
+
+
+
+\end{enumerate}
+\end{enumerate}
+
+
+\end{question} 
+
+
+
+\end{document}
