@@ -31,14 +31,40 @@ One way to model the number of hours/day of daylight over the course of a year i
 
 Assuming the piecewise-linear function above, use algebra (\emph{not} the worksheet above) to predict 
 \begin{enumerate}
-\item the number of hours of daylight/day on July 1, August 1, and June 1.
+\item the number of hours of daylight/day on July 21, August 21, and May 21.
 
 \item the day(s) of the year when we get $10$ hours of daylight/day.
 \end{enumerate}
 
-But this kind of piece-wise linear model is not accurate. Unlike now, near the fall equinox when we're losing daylight at a rapid rate, near the summer solstice, the long days linger and it takes a while for them to get perceptively shorter. So our function should not decrease at a constant rate between June 21 and September 21.
+But this kind of piece-wise linear model is not accurate. Unlike now, when near the fall equinox  we're losing daylight at a rapid rate, near the summer solstice, the long days linger. So during the summer our function should not decrease at a constant rate but at a decreasing rate.
 
-A more accurate way to model the number of hours of daylight/day would be to use \emph{circular interpolation} instead. What this means is   
+A more accurate way to model the number of hours of daylight/day would be to use \emph{circular interpolation} instead. To do this geometrically, we start by drawing a circle of radius 
+\[
+     (16 - 12) \text{ hours of daylight/day} = 4 \text{ hours of daylight/day}
+\]
+centered at a point with $h$-coordinate $h=12$ as shown below. To approximate, for example, the number of hours of daylight/day on July 21, we move $1/3$ of the way along the circle from point $M$ (corresponding to June 21, when we get $16$ hours of daylight/day) to point $A$ (corresponding to September 21, when we get $12$ hours of daylight/day). Do this by dragging point $B$ in the worksheet below so that $P$ lies $1/3$ of the way around the circle from $M$ to $A$ and approximate how many hours of daylight/day we get on July 21.
+
+ 
+\begin{onlineOnly}
+    \begin{center}
+\desmos{nfsifbppzz}{900}{600}
+\end{center}
+\end{onlineOnly}
+
+\href{https://www.desmos.com/calculator/nfsifbppzz}{142: Circular Interpolation}
+
+\begin{enumerate}
+\item Use the worksheet above to approximate how many hours of daylight/day we get on April 11, August 21, and March 1. Explain your reasoning.
+\begin{freeResponse} 
+\end{freeResponse}
+
+\item Use the worksheet above to approximate what days of the year we get $9$ hours of daylight/day. Explain your reasoning.
+\begin{freeResponse}
+\end{freeResponse}
+\end{enumerate}
+
+This kind of circular interpolation is more accurate and gives a smoother function $h=g(t)$ for the number of hours of daylight/day. Graph this function by activating the Folder \emph{Circular interpolation} in the first worksheet above.
+
 
 
 \end{question}
