@@ -1,0 +1,100 @@
+\documentclass{ximera}
+\title{Introduction to Circular Interpolation}
+
+\newcommand{\pskip}{\vskip 0.1 in}
+
+\begin{document}
+\begin{abstract}
+Circular Interpolation
+\end{abstract}
+\maketitle
+
+\section{Circular Interpolation with a Variable Protractor}
+
+\begin{example}  \label{Ex:LLL}
+We just completed the first third of spring and you've probably noticed how many more hours of daylight we get than we did than just a few months ago. On the vernal equinox (the first day of spring, usually March 21), Seattle gets 12 hours of daylight/day. And on the summer solstice (the first day of summer) we'll get just over 16 hours of daylight/day. 
+
+The question is this. On April 21st, one-third of the way into spring, about how many hours of daylight per day do we get? Or more to the point, thinking proportionally and asking a question that would have the almost same answer for all latitudes, when we're one-third of the way through spring, through what fraction of the way from 12 hours/day to the maximum number of hours of daylight/day are we? One-third? Halfway? Two-thirds? What do you think?
+
+The simplest way to approach this problem would be with a linear interpolation. Then when we're one-third of the way through spring in Seattle, we would be 1/3 of the way from $12$ to $16$ hours of daylight/day. So on April 21st we would expect to get about
+\[
+    12 \text{ hrs/day} + \frac{1}{3}(4 \text{ hrs/day}) = 13 \frac{1}{3}\text{ hrs/day}
+\]
+hours of daylight/day as illustrated in the graph below.
+
+
+\begin{onlineOnly}
+    \begin{center}
+\desmos{esj3yytaug}{900}{600}
+\end{center}
+\end{onlineOnly}
+
+\href{https://www.desmos.com/calculator/esj3yytaug}{142: Hours of Daylight per Day}
+
+But this kind of piece-wise linear thinking does not seem quite right. We should not expect such abrupt transitions on the winter and summer solstices.
+
+Instead of linear interpolation, we would do better to use \emph{circular interpolation}. For this, draw a circle of radius 
+\[
+     (16 - 12) \text{ hours of daylight/day} = 4 \text{ hours of daylight/day}
+\]
+centered at a point with $h$-coordinate $h=12$ as shown below. Now go $1/3$ of the way along the circle from point $A$ (corresponding to March 21, when we get $12$ hours of daylight/day) to point $M$ (corresponding to June 21, when we get $16$ hours of daylight/day).
+
+ 
+\begin{onlineOnly}
+    \begin{center}
+\desmos{nfsifbppzz}{900}{600}
+\end{center}
+\end{onlineOnly}
+
+\href{https://www.desmos.com/calculator/nfsifbppzz}{142: Circular Interpolation}
+
+\begin{enumerate}
+\item Drag point $B$ above so that point $P$ lies $1/3$ of the way around the circle from $A$ to $M$. Then approximate how many hours of daylight/day we get on April 21st.
+\begin{freeResponse} 
+\end{freeResponse}
+
+\item Use the worksheet above to approximate what days of the year we get $15$ hours of daylight/day. Explain your reasoning.
+\begin{freeResponse}
+\end{freeResponse}
+\end{enumerate}
+
+This kind of circular interpolation is more accurate and gives a smoother function $h=g(t)$ for the number of hours of daylight/day. Graph this function by activating the Folder \emph{Circular interpolation} in the first worksheet.
+
+\end{example}
+
+%What is usually called \emph{sinusoidal modeling} is kind of a misnomer. First, it's usually easier to model osciallatory behavior with a cosine function. Second, and more importantly, the name \emph{sinusuoidal modeling} fails to convey the main idea of replacing linear interpolation with circular interpolation.
+
+Here's another example.
+
+
+\begin{example}  \label{E888b0bbdsdsf}
+Suppose that over the course of a 24-hour period, from midnight October 29 to midnight October 30, the depth of the water at the Edmonds Pier is a sinusoidal function of time. Suppose also that a high tide of 21 feet occurs at 2:00am and the following low tide of 5 feet occurs at 8:00am. 
+
+We'll ask two questions:
+
+\begin{enumerate}
+\item Use circular interpolation with the protractor below to approximate the depth of the water at 5:30am on October 29.
+
+\item Use the circular protractor to approximate the first two times after midnight when the water is $18$ feet deep.
+
+Explain your reasoning and include screenshots to help with your explanations.
+\begin{freeResponse}
+\end{freeResponse}
+
+\begin{onlineOnly}
+    \begin{center}
+\desmos{0wxwmkzvky}{900}{600}
+\end{center}
+\end{onlineOnly}
+
+\href{https://www.desmos.com/calculator/0wxwmkzvky}{142: Circular Interpolation Tides}
+
+\emph{Keep in mind that high tide occurs at 2:00am and low tide at 8:00am.}
+
+\end{enumerate}
+\end{example}
+
+
+
+
+\end{document}
