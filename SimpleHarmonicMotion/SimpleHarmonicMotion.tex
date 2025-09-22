@@ -1,0 +1,36 @@
+\documentclass{ximera}
+\title{Simple Harmonic Motion}
+
+\newcommand{\pskip}{\vskip 0.1 in}
+
+\begin{document}
+\begin{abstract}
+Simple harmonic motion, an introduction.
+\end{abstract}
+\maketitle
+
+\section{Circular Interpolation with a Protractor}
+
+\begin{example}  \label{Ex:LLL}
+We just completed the first third of spring and you've probably noticed how many more hours of daylight we get than we did than just a few months ago. On the vernal equinox (the first day of spring, usually March 21), Seattle gets 12 hours of daylight/day. And on the summer solstice (the first day of summer) we'll get just over 16 hours of daylight/day. 
+
+The question is this. On April 21st, one-third of the way into spring, about how many hours of daylight per day do we get? Or more to the point, thinking proportionally and asking a question that would have the almost same answer for all latitudes, when we're one-third of the way through spring, through what fraction of the way from 12 hours/day to the maximum number of hours of daylight/day are we? One-third? Halfway? Two-thirds? What do you think?
+
+The simplest way to approach this problem would be with a linear interpolation. Then when we're one-third of the way through spring in Seattle, we would be 1/3 of the way from $12$ to $16$ hours of daylight/day. So on April 21st we would expect to get about
+\[
+    12 \text{ hrs/day} + \frac{1}{3}(4 \text{ hrs/day}) = 13 \frac{1}{3}\text{ hrs/day}
+\]
+hours of daylight/day as illustrated in the graph below.
+
+
+\begin{onlineOnly}
+    \begin{center}
+\desmos{dcba538898}{900}{600}
+\end{center}
+\end{onlineOnly}
+
+\href{https://www.desmos.com/calculator/dcba538898}{151: Simple Harmonic Motion}
+
+\end{example}
+
+\end{document}
