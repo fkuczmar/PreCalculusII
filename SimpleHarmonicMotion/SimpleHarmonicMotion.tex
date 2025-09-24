@@ -20,7 +20,7 @@ Such oscillatory motion is common and one primary aim of this class is to descri
 
 
 \begin{example}  \label{Ex:LLL}
-A mass at the end of a spring oscillates in simple harmonic motion on a frictionless surface as shown below. The spring is stretched two meters from beyond its relaxed (ie. unstretched)(length and then released from rest, completing one oscillation about the origin every $5$ seconds.
+A mass $M$ at the end of a spring oscillates in simple harmonic motion on a frictionless surface as shown below. The spring is stretched two meters from beyond its relaxed (ie. unstretched)(length and then released from rest (at $x=2$ cm), completing one oscillation about the origin every $5$ seconds.
 
 \begin{onlineOnly}
     \begin{center}
@@ -31,22 +31,22 @@ A mass at the end of a spring oscillates in simple harmonic motion on a friction
 \href{https://www.desmos.com/calculator/dcba538898}{151: Simple Harmonic Motion}
 
 \begin{enumerate}
-\item Is the speed of the mass constant? If not, describe how it varies.
+\item Is the speed of the mass constant? If not, describe how it varies. You can get some sense of this from the animation where the mass leaves behind green tracks every $1/8$ of a second.
 
 \item What is the spring's relaxed length? How do you know?
 
 \item Activate the folder \emph{Circle} in Line 2 above. Describe what you see. In particular,
 \begin{enumerate}
-\item Describe the relationship between point $P$ and the mass.
+\item Describe the relationship between the positions of point $P$ and the mass.
 
 \item Describe the motion of $P$ around the circle. Does its speed appear to be constant?
 
 \item Explain what it means for a mass to oscillate in simple harmonic motion. 
 \end{enumerate}
 
-\item Use the animation above to apprimate the \emph{displacement} of the mass from the origin at times $t=0, 1, 2, 3, 4$ seconds. The displacement (relative position) is positive when the mass is to the right of the origin, negative to the left.
+\item Use the animation above to apprimate the \emph{displacement} of the mass from the origin (ie. its $x$-coordinate) at times $t=0, 1, 2, 4$ seconds. The displacement (ie. $x$-coordinate) is positive when the mass is to the right of the origin, negative to the left. 
 
-\item Use the animation to approximate the displacement from the origin at time $t=26.5$.
+\item Use the animation to approximate the displacement from the origin at time $t=26.5$ seconds.
 
 \item Use the animation to approximate the first four times when the mass is $3$ meters to the left of the origin.
 
@@ -54,7 +54,7 @@ A mass at the end of a spring oscillates in simple harmonic motion on a friction
 \end{enumerate}
 \end{example}
 
-The key takeaway from the previous example is that \emph{the projection of constant speed motion around a circle along a diameter gives simple harmonic motion along that diameter}.  
+The key takeaway from the previous example is that \emph{projecting a constant speed motion around a circle onto a diameter results in simple harmonic motion along that diameter}.  
 
 The next example takes the first step toward an algebraic description of simple harmonic motion by replacing an animation with a protractor.
 
@@ -82,6 +82,54 @@ A mass oscillates along the the $x$-axis in simple harmonic motion  about the or
 
 \item When is the mass  at position $x = -3$? Approximate the first four times.  
 \end{enumerate}
+
+
+
+
+\begin{explanation}
+
+To approximate the position of the mass at time $t=1.25$ seconds, we first find the position of the point $P$ on the circle at this time. The key, as is often the case in this class, is to think about ratios. Since the mass oscillates with a period of $3$ seconds, during the first $1.25$ seconds of the motion $P$ has made
+\[
+    \frac{1.25 \text{ sec}}{3 \text{ sec/rev}} = \frac{1.25(8)}{3(8)}\text{ rev} = \frac{10}{24} \text{ rev}
+\]
+around the circumference of the circle of radius $10$ cm centered at the origin. We multiplied both the numerator and denominator of the fraction $1.25/3$ by 8 to get an equivalent fraction with a denominator of $24$. Why $24$? Because in the protractor above there are $24$ equally-spaced long tic marks. 
+
+So at time $t=1.25$ seconds, $P$ is on the 10th tic mark. Now drag the slider $v$ in Line 2 to $v=10/24\sim 0.42$ to put $P$ on this mark and read off the $x$-coordinate of the mass $M$ to be about $x\sim -0.6$ cm.
+
+Approximating the position of the mass at time $t=13.8$ seconds is similar. But to make our life easier note that since the period of oscillation is $3$ seconds, the mass has the same position at time
+\[
+t = 13.8\text{ sec} - (3 \text{ sec/rev})(4\text{ rev}) = 1.8\text{ sec}.
+\]
+as it does at time $t=13.8$ seconds. Then continue the solution as before.
+
+To determine the first time the mass is at position $x=8$ cm we reverse the above process. First drag the slider $v$ to put $M$ at position $x=8$. At the first time, $P$ is in Quadrant I at about tick mark $2.5$, having completed about 
+\[
+     \frac{2.5 \text{ tics}}{24 \text{ tics/rev}} = \frac{25}{240}\text{ rev}
+\]
+around the circle. Since $P$ moves at a constant speed and completes one revolution every $3$ seconds, it takes $P$ about
+\[
+     \left( \frac{25}{240} \text{ rev}\right) (3\text{ sec/rev}) \sim 0.31 \text{ sec}
+\]
+to reach this position. So the mass is at position $x=8$ cm for the fist time at about time $t=0.31$ seconds.
+
+For the second time, $P$ is in Quadrant IV, and is about $0.31$ seconds from completing one revolution. Since one revolution takes $3$ seconds, the mass is at position $x=8$ cm for the second time at approximately 
+\[
+   t\sim (3 - 0.31)\text{ sec} = 2.69 \text{ sec}.
+\]
+
+To approximate the $25$th time the mass is at this same position, note two things. First, that since $25$ is odd, $P$ will be in Quadrant I at this time. Second, that for the 24th time, $P$ will have completed almost $12$ revolutions around the circle. So the $25$ time the mass has position $x=8$ is approximately when
+\begin{align*}
+  t  &\sim (12\text{rev})(3\text{ rev/sec}) + 0.31\text{ sec} \\
+      &= 12.31 \text{ sec}.
+\end{align*}
+
+
+\end{explanation}
+
+
+
+
+
 
 \item Use the protractor above to answer the questions in part (a) if instead the mass oscillates about the origin with an amplitude of $20$ cm and a period of $3$ seconds. \emph{Do not change the protractor's radius.}
 
