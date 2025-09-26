@@ -146,16 +146,16 @@ We'll make the same assumptions as in Example 1, as well as assuming the number 
 
 \begin{onlineOnly}
     \begin{center}
-\desmos{rqdenajviu}{900}{600}
+\desmos{nfihqizmdm}{900}{600}
 \end{center}
 \end{onlineOnly}
 
-\href{https://www.desmos.com/calculator/rqdenajviu}{142: Mass on Spring 2}
+\href{https://www.desmos.com/calculator/nfihqizmdm}{142: Fairbanks 1}
 
 Use \emph{only the protractor above} to help answer the following questions. \emph{Do not change its radius.}
 
 \begin{enumerate}
-\item Approximatlely how many hours of daylight/day does Fairbanks get on January 15th?
+\item Approximatlely how many hours of daylight/day does Fairbanks get on January 21st?
 
 \item On approximately what days of the year does Fairbanks get $18$ hours of daylight/day? 
 
@@ -164,6 +164,58 @@ Use \emph{only the protractor above} to help answer the following questions. \em
 \item Approximately what fraction of the winter does Fairbanks get a most $8$ hours of daylight/day?
 
 \end{enumerate}
+
+\begin{explanation}
+
+
+In Fairbanks the number of hours of daylight/day oscillates with a maximum variation of
+\[
+  \frac{1}{2}\left(20 \text{ hrs} - 4\text{ hrs}  \right) = 8 \text{ hrs}
+\]
+about a mean of
+\[
+       \frac{1}{2}\left(4 \text{ hrs} + 20\text{ hrs}  \right) = 12 \text{ hrs} .    
+\]
+
+Ideally, we would like a circle of radius $8$ hours centered at $(0,12)$ (or at some other point with the same $y$-coordinate). We'll need to scale the information we can read from the given circle of radius $10$cm centered at the origin by the factor
+\[
+   \frac{8 \text{ hrs/day}}{10 \text{ cm}} .
+\] 
+
+\begin{enumerate}
+
+\item To determine how many hours of daylight/day Fairbanks gets in January 21st, we first use the protractor to approximate the variation 
+\[
+    \Delta h = h - 12
+\]
+from the mean in the number of hours of daylight/day on January 21st. In the equation above $h$ is what we're looking for; it is the number of hours of daylight/day on January 21st.
+
+We'll think of the low point $(0,-10)$ of the protractor as representing the winter solstice (when Fairbanks gets $4$ hours of daylight/day). Now January 21st is one month, or $1/12$ of a year after the winter solstice. So we drag point $P$ to one of the two points $1/12 = 2/24$ of a revolution from $(0,-10)$ as shown below.
+
+
+\begin{onlineOnly}
+    \begin{center}
+\desmos{4xsc9i7i4s}{900}{600}
+\end{center}
+\end{onlineOnly}
+
+\href{https://www.desmos.com/calculator/4xsc9i7i4s}{142: Fairbanks 2}
+
+Now point $R$ (the projection of $P$ onto the $y$-axis) has approximate $y$-coordinate $y\sim-8.6$ cm. Using the factor above, we convert this distance to hours. This tells us that
+\[
+  \Delta h \sim (-8.6 \text{ cm})\left( \frac{8 \text{ hrs/day}}{10 \text{ cm}} \right) \sim -6.9\text{ hrs/day}.
+\] 
+
+In other words, on January 21st, Fairbanks gets about $6.9$ hours/day of daylight less than its mean of $12$ hours/day. So on this date, Fairbanks gets about
+\[
+   h = 12  + \Delta h \sim 5.1 \text{ hrs/day} 
+\]
+of daylight.
+
+%we first use the protractor to approximate how many hours of daylight/day more than the minimum of $4$ hours/day
+
+\end{enumerate}
+\end{explanation}
 
 \end{example}
 
