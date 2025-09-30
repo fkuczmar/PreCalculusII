@@ -177,11 +177,11 @@ about a mean of
        \frac{1}{2}\left(4 \text{ hrs} + 20\text{ hrs}  \right) = 12 \text{ hrs} .    
 \]
 
-Ideally, we would like a circle of radius $8$ hours centered at $(0,12)$ (or at some other point with the same $y$-coordinate). We'll need to scale the information we can read from the given circle of radius $10$cm centered at the origin by the factor
+Ideally, we would like a circle of radius $8$ hours centered at $(0,12)$ (or at some other point with the same $y$-coordinate). We'll need to translate the information we can read from the given circle of radius $10$cm centered at the origin to get information about the number of hours of daylight/day, and vice-versa. The key idea is to convert centimeters to hours/day by scaling the $10$cm circle by the factor
 \[
-   \frac{8 \text{ hrs/day}}{10 \text{ cm}} .
+   \frac{8 \text{ hrs/day}}{10 \text{ cm}} 
 \] 
-
+to get a circle of radius $8$ hours/day. 
 \begin{enumerate}
 
 \item To determine how many hours of daylight/day Fairbanks gets in January 21st, we first use the protractor to approximate the variation 
@@ -256,12 +256,12 @@ Here's another example.
 \begin{example}  \label{E888b0bbdsdsf}
 Suppose that over the course of a 24-hour period, from midnight October 29 to midnight October 30, the depth of the water at the Edmonds Pier is a sinusoidal function of time. Suppose also that a high tide of 21 feet occurs at 2:00am and the following low tide of 5 feet occurs at 8:00am. 
 
-We'll ask two questions:
+%We'll ask two questions:
 
 \begin{enumerate}
-\item Use circular interpolation with the protractor in \emph{Example 3} (\emph{Do not change its radius.}) to approximate the depth of the water at 5:30am on October 29. \emph{Use the protractor below only if you get stuck.}
+\item Use circular interpolation with the protractor below to approximate the depth of the water at 5:30am on October 29.
 
-\item Use the circular protractor  in \emph{Example 3} (\emph{Do not change its radius.}) to approximate the first two times after midnight when the water is $18$ feet deep.  \emph{Use the protractor below only if you get stuck.}
+\item Use circular interpolation with the protractor below to approximate the first two times after midnight when the water is $18$ feet deep. 
 
 Explain your reasoning and include screenshots to help with your explanations.
 \begin{freeResponse}
@@ -275,9 +275,65 @@ Explain your reasoning and include screenshots to help with your explanations.
 
 \href{https://www.desmos.com/calculator/0wxwmkzvky}{142: Circular Interpolation Tides}
 
-\emph{Keep in mind that high tide occurs at 2:00am and low tide at 8:00am.}
+%\emph{Keep in mind that high tide occurs at 2:00am and low tide at 8:00am.}
+
+\item Now answer parts (a) and (b) (forgetting what you just did) by using circular interpolation with the protractor of radius $10$ cm below. Do \emph{not} change its radius.
+
+\begin{onlineOnly}
+    \begin{center}
+\desmos{xvy6s6aw41}{900}{600}
+\end{center}
+\end{onlineOnly}
+
+\href{https://www.desmos.com/calculator/xvy6s6aw41}{142: Fairbanks 3}
+\end{enumerate}
+
+\begin{explanation}
+\begin{enumerate}
+\item I'll leave this one for you.
+
+\item And this one as well.
+
+\item The key idea is to translate information we get from the radius $10$cm circle centered at the origin to information about the tides on the circle of radius $8$ feet centered at $(0,13)$. To do this, we'll think vertically and identify the top point $(0,10)$ on the $10$cm circle with a high tide of $21$ feet, the center $(0,0)$ with the mean tide of $13$ feet, and the low point $(0,-10)$ with a low tide of $5$ feet. Now we'll find a function
+\[
+ h = f(y)
+\]
+that expresses the depth of the water (in feet) in terms of the $y$-coordinate of the corresponding point on the circle of radius $10$cm.
+
+The easiest way to do this is to think geometrically. We first scale the radius $10$cm circle by a factor of 
+\[
+   \frac{8\text{ ft}}{10\text{ cm}}
+\]
+to get a circle of radius $8$ feet centered at the origin. Now move this circle up $13$ feet by adding $13$ to all its $y$-coordinates to get the circle of radius $8$ feet centered at $(0,13)$. This tells us that
+\[   
+    h = f(y) = \frac{4}{5}y + 13.
+\]
+
+Now to approximate the depth of the water at 5:30am using the $10$cm circle, we start as before and first determine the fraction of the period (12 hours) taken up by the time interval from high tide at 2:00am to 5:30am. Since there are $3.5$ hours from 2:00am to 5:30am, the point $P$ on either circle moves through 
+\[
+  \frac{3.5\text{ hrs}}{12 \text{ hrs/rev}} = \frac{7}{24} \text{ rev}
+\]
+along the circumference.
+
+So in the $10$cm circle above (where there are $24$ long ticks, spaced $1/2$ hour apart), drag the slider $v$ so that $P$ is at the seventh tick mark measured from the top. You shoud find that $R$ has approximate $y$-coordinate
+\[
+  y \sim -2.5 \text{ cm}.
+\] 
+Now we use our function 
+\[
+  h = \frac{4}{5}y + 13
+\]
+with $y=-2.5 = -5/2$ to compute the depth of the water at 5:30am to be approximately
+\begin{align*}
+ h  &= \left(\frac{4 \text{ ft}}{5\text{ cm}}\right)\left( -\frac{5}{2} \text{ cm}\right) + 13\text{ ft} \\
+     &= 11 \text{ ft}.
+\end{align*}
+
+To approximate the first two times after midnight when the water is $18$ feet deep, we first use our function to convert a depth of $h=18$ to a $y$-coordinate on the circle of radius $10$cm centered at the origin. You should get $y=25/4$ cm. Then use that $y$-coordinate to approximate the times. I'll leave the details to you.
 
 \end{enumerate}
+\end{explanation}
+
 \end{example}
 
 \begin{example} \label{Ex:L3rdsfr43r}
