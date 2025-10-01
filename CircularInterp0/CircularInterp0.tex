@@ -296,11 +296,30 @@ Explain your reasoning and include screenshots to help with your explanations.
 
 \item The key idea is to translate information we get from the radius $10$cm circle centered at the origin to information about the tides on the circle of radius $8$ feet centered at $(0,13)$. To do this, we'll think vertically and identify the top point $(0,10)$ on the $10$cm circle with a high tide of $21$ feet, the center $(0,0)$ with the mean tide of $13$ feet, and the low point $(0,-10)$ with a low tide of $5$ feet. Now we'll find a function
 \[
- h = f(y)
+ h = f(y) \, , \, -10 \leq y \leq 10
 \]
 that expresses the depth of the water (in feet) in terms of the $y$-coordinate of the corresponding point on the circle of radius $10$cm.
 
-The easiest way to do this is to think geometrically. We first scale the radius $10$cm circle by a factor of 
+The easiest way to do this is to recognize that the function $h=f(y)$ is linear. Now because a $y$-coordinate of $y=0$ cm corresonds to a depth of $h=13$ feet, we know that $f(0)=13$. And because $y=10$ cm corresponds to $h=21$ feet, we know also that $f(10)=13$ So the graph of the function $h = f(y)$ is the line segment below.
+
+\begin{onlineOnly}
+    \begin{center}
+\desmos{vauspsqfnc}{900}{600}
+\end{center}
+\end{onlineOnly}
+
+\href{https://www.desmos.com/calculator/vauspsqfnc}{142: Translating Information}
+
+The slope is 
+\[
+   \frac{\Delta h}{\Delta x} = \frac{(21-13)\text{ ft}}{(10-0) \text{ cm}} = \frac{4}{5} \frac{\text{ ft}}{\text{ cm}}. 
+\]
+And since the segment passes through the point $(0,13)$, 
+\[
+  h = f(y) = 13 + \frac{4}{5}y \, , \, -10 \leq y \leq 10 .
+\]
+
+Another way to get the same result is to think geometrically. We first scale the radius $10$cm circle by a factor of 
 \[
    \frac{8\text{ ft}}{10\text{ cm}}
 \]
