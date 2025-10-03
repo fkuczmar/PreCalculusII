@@ -1,0 +1,685 @@
+\documentclass{ximera}
+\title{Rotation Rates Discussion Questions}
+
+\newcommand{\pskip}{\vskip 0.1 in}
+
+\begin{document}
+\begin{abstract}
+Measuring rates of rotation.
+\end{abstract}
+\maketitle
+
+
+
+
+\section{Rotation Rates}
+\begin{question}  \label{Q245: Angles}
+Find the exact rotation rates of the following:
+
+(a) the minute hand of a clock: $\answer{\frac{1}{60}} \text{ rev/min} = \answer{\frac{\pi}{30}}$ rad/min. 
+
+(b) the hour hand of a clock: $\answer{\frac{1}{720}} \text{ rev/min} =\answer{\frac{\pi}{360}}$ rad/min. 
+
+(c) the second hand of a clock: $\answer{1} \text{ rev/min} =\answer{2\pi}$ rad/min. 
+
+(d) the earth about its axis (assume the earth takes 24 hours to rotate once about its axis) : $\answer{\frac{1}{24}} \text{ rev/hour} =\answer{\frac{\pi}{12}}$ rad/hr.
+
+\end{question}
+
+\section{Running in Circles}
+\begin{exploration}
+\pdfOnly{
+Access Desmos interactives through the online version of this text at
+ 
+\href{https://www.desmos.com/calculator/mjs5mwp827}.
+}
+ 
+\begin{onlineOnly}
+    \begin{center}
+\desmos{mjs5mwp827}{900}{600}
+\end{center}
+\end{onlineOnly}
+
+
+\begin{question} \label{Q72:Angles}
+Which of the points above is rotating about $O$ at the greatest rate? Explain your reasoning.
+\begin{multipleChoice}  
+\choice{$A$}  
+\choice{$B$}  
+\choice{$C$}  
+\choice[correct]{They are all rotating at the same rate.}
+\end{multipleChoice}  
+\end{question}
+
+\begin{question} \label{Q74353452:Angles}
+Which of the points above has the greatest speed? Explain your reasoning.
+\begin{multipleChoice}  
+\choice{$A$}  
+\choice{$B$}  
+\choice[correct]{$C$}  
+\choice{They are all have the same speed.}
+\end{multipleChoice}  
+\end{question}
+\end{exploration}
+
+
+\begin{question}  \label{Q2675: Angles}
+You run around a circular track with radius $30$ meters while turning about the track's center at a constant rate of $0.2$ rad/sec. What is your speed?
+
+\begin{explanation}
+We'll find our speed by thinking about what happens during a time interval of one second. 
+
+Because our rotation rate is $0.2$ rad/sec, in one second we turn through an angle of
+\[
+    \theta =  \left( 0.2 \frac{\text{ radians}}{\text{ sec}}\right) (1 \text{ sec}) = 0.2 \text{ radians}
+\]
+about the track's center.
+
+To determine how far we ran during this one second, we need to remember that a central angle measuring 1 radian subtends an distance along the track equal to the track's radius (in this case $30$ meters). So in turning about the track's center through an angle of $0.2$ radians, we ran a distance of
+\[
+    (0.2 \text{ radians}) \left( 30 \frac{\text{ meters}}{\text{ radian}}\right) = 6 \text{ meters}.
+\]
+Since it took us one second to run $6$ meters and our speed is constant, our speed is $6$ meters/sec.
+
+All we really did here was to convert the rotation rate of $0.2$ rad/sec to a speed by multiplying the rotation rate by the track's radius. So in one line, our speed is
+\[
+   v = \left( 0.2 \frac{\text{ radians}}{\text{ sec}}\right) \left( 30 \frac{\text{ meters}}{\text{ radian}}\right) = 6 \frac{\text{ meters}}{\text{ sec}}.
+\]
+
+Nevertheless, I think the first explanation is more thorough. It reminds us of what it means to measure an angle in radians.
+
+
+
+The same reasoning shows that as you run around a circlular track of radius $r$ meters while turning about its center at the constant rate of $\omega$ rad/sec, your speed is
+\[
+   v = \left( \omega \frac{\text{ radians}}{\text{ sec}}\right) \left( r \frac{\text{ meters}}{\text{ radian}}\right) = \omega r \frac{\text{ meters}}{\text{ sec}}.
+\]
+
+
+\end{explanation}
+\end{question}
+
+
+\begin{question} \label{Qdft677788877}
+\begin{enumerate}
+
+\item You jog around a circular track with radius $50$ feet at the constant speed of $10$ ft/sec. At what rate are you rotating about the track's center?
+
+\item You jog around a circular track at the constant speed of $15$ ft/sec while rotating about the track's center at the rate of $0.10$ rad/sec. Find the radius of the track.
+
+
+\end{enumerate}
+\end{question}
+
+\begin{question}  \label{Q5g4yth4yghy}
+\begin{enumerate}
+
+\item A sleeping beetle rests on the second hand of a clock, $4$ feet from the clock's center. Find the beetle's speed.
+
+\item A sleeping ant rests on the minute hand of a clock, $3$ feet from the clock's center. Find the ant's speed.
+
+\end{enumerate}
+\end{question}
+
+
+
+
+\begin{question}  \label{Q255: Angles}
+At what speed are people at the equator moving due to the rotation of the earth about its axis? Assume the earth to be a perfect sphere of radius $3960$ miles. Assume also that the earth takes 24 hours to rotate once about its axis.
+
+Do this in two ways:
+
+\begin{enumerate}
+\item Without using the above formula or thinking about radians in any way.
+
+\begin{hint}
+Because the speed is constant, %we can compute the speed as
+\[
+     \text{speed} = \frac{\text{distance}}{{time}} ,
+\]
+over any time interval. Pick a time interval of 24 hours to compute the speed.
+\end{hint}
+
+\item By using the above formula
+
+\end{enumerate}
+\end{question}
+
+\begin{question}  \label{Q2455: Angles}
+Back to the formula $v=\omega r$ that expresses your speed (in ft/sec) running around a circluar track in terms of the track's radius (in feet) and your rotation rate about the track's center (measured in rad/sec).
+
+\begin{enumerate}
+\item Rewrite this formula if the rotation rate is measured in degrees/sec instead of rad/sec. Explain your reasoning.
+
+\item Which choice gives the simpler formula, measuring the rotation rate in rad/sec or in deg/sec?
+\end{enumerate}
+\end{question}
+
+
+
+
+\section{Rolling Wheels}
+
+\begin{exploration}\label{exp:angles2}
+Two wheels with the same radius rotate at the same rate. The first turns about its center, the second rolls on a road without slipping.
+
+\begin{enumerate}
+\item Use the animation below to compare the speed of point $P$ (attached to the first wheel) and and the speed of point $C$ (the center of the second wheel). Explain your reasoning. %Include a screenshot to help with your explanation.
+
+\item If the wheels turn at the constant rate of $0.45$ rad/s and have a radius of 10 cm, find the speed of the center of the rolling wheel. %Do not use a  formula. Instead, do this logically and explain your reasoning. 
+
+\item Turn on the folder in Line 21 by clicking on the circle at the left of the line and play the animation. Then sketch graphs (on the same coordinate system) that show the speeds of points $P^\prime$ and $C$ as functions of time. No need for scales on the axes, but pay particular attention to the ratios of the speeds in drawing  your graphs.
+
+\end{enumerate}
+
+\pdfOnly{
+Access Desmos interactives through the online version of this text at
+ 
+\href{https://www.desmos.com/calculator/cwaasmghns}.
+}
+ 
+\begin{onlineOnly}
+    \begin{center}
+\desmos{jkcjrnavxp}{900}{600}
+\end{center}
+\end{onlineOnly}
+\end{exploration}
+
+\href{https://www.desmos.com/calculator/jkcjrnavxp}{142:Rolling Stationary Wheels 2}
+
+\begin{question} \label{Qdsfdsf4rt5yy55t}
+A pebble is stuck in the tire of a bicycle wheel with a radius of $0.8$ feet. 
+\begin{enumerate}
+\item Find the speed of the pebble if you hold the axle of the wheel in place and turn the wheel at the constant rate of $5$ rev/sec.
+
+\item At what speed does the bike move if the wheels rotate at a constant rate of $5$ rev/sec as you ride the bike down the street?
+
+\item At what rate are the wheels rotating if you ride at a constant speed of $20$ ft/sec?
+
+\end{enumerate}
+
+\end{question}
+
+
+\begin{question} \label{Q9596090}
+There is a subtle assumption in the previous question, that the wheel rolls on a flat road. But what if the wheel rolls on a hill as illustrated below?  % where the wheel rolls through its circumference at a constant rate?
+
+\begin{onlineOnly}
+    \begin{center}
+\desmos{quh7pod92f}{900}{600}   % zvcpnzqqrj
+\end{center}
+\end{onlineOnly}
+
+
+\href{https://www.desmos.com/calculator/quh7pod92f}{142: Wheel Rolling on a Hill 2}
+
+\begin{enumerate}
+\item Does the center of the rolling wheel move at a constant speed? How can you tell?
+
+\item At what point(s) on the hill does the wheel's center seem to be moving the slowest? The fastest?
+
+\item How do the speeds of $P$ and $C$ compare?
+\end{enumerate}
+\end{question}
+
+
+
+
+
+\begin{exploration}\label{exp:angles2}
+Experiment with the desmos activity below to determine an expression in $a$ and $b$ that gives the radian measure of the angle through which the rolling circle turns during the time it takes point $P$ to return to its intial position. Try to explain the logic behind the expression.
+
+
+\pdfOnly{
+Access Desmos interactives through the online version of this text at
+ 
+\href{https://www.desmos.com/calculator/g8rjobapit}.
+}
+ 
+\begin{onlineOnly}
+    \begin{center}
+\desmos{g8rjobapit}{900}{600}
+\end{center}
+\end{onlineOnly}
+\end{exploration}
+
+
+\section{Thinking Proportionately, Part 1}
+
+\begin{question}  \label{Q6521:Angles}
+You replace  your truck's $25$ inch diameter tires with $35$ inch diameter tires without recalibrating the odometer and speedometer.
+
+(a) You go on a trip that your odometer records as $200$ miles. How far did you actually drive.
+
+(b) On the way you get pulled over for speeding. The officer clocked you at going $70$ miles/hour in a $60$ mile/hour zone. What did your speedometer read?
+
+\begin{hint}
+(a) The key point is that the car records, either mechanically or electrically, the angle through which the wheels turn. It then converts the change in this angle to a distance by using the radius of the wheels. Let the radian measure of the change in this angle over the course of the trip be $\theta$. Let the radius of the $25$-inch diameter wheels be $r_1$ miles, and let the radius of the $35$-inch diameter wheels be $r_2$ miles. 
+
+Then the trip odometer records a trip distance (in miles) of 
+\[
+   s_1 = r_1\theta =200.
+\]
+But the actual distance (in miles) was
+\[
+  s_2 = r_2\theta .
+\]
+This tells us that
+\[
+    \frac{s_2}{s_1} = \frac{r_2\theta}{r_1 \theta} = \frac{r_2}{r_1} = \frac{35}{25}.
+\]
+So the length of the trip was actually
+\[
+   s_2 = \left( \frac{35}{25}\right) s_1 = \left(\frac{35\text{ in}}{25\text{ in}} \right) (200 \text{ miles}) = 280 \text{ miles}.
+\]
+
+\pskip
+
+(b) This part works much the same way as part (a). The key point is that the car measures the rotation rate of the wheels and converts this to a speed using the radius of the wheels. Let this rotation rate be $\omega$ rad/sec at the moment you were clocked at $70$ miles/hour. Also let $v_1$ and $v_2$ be  your recorded (as on the speedometer) and actual speeds, respectively, both measured in miles/hour.
+
+Then since
+\[
+  v_1 = \omega r_1
+\]
+and 
+\[
+  v_2 = \omega r_2 ,
+\]
+we know that
+\[
+    \frac{v_1}{v_2} =  \frac{r_1}{r_2} = \frac{25}{35}. 
+\]
+So when you were clocked going $70$ miles/hour, your speedometer showed a speed of
+\[
+   v_1 = \left( \frac{25}{35}\right) v_2 = \left(\frac{25\text{ in}}{35\text{ in}} \right) (70 \text{ miles/hr}) = 50 \text{ miles/hr}.
+\]
+
+\end{hint}
+
+\end{question}
+
+
+\begin{question} \label{Q6721:Angles}
+Kryptonites living at a latitude of $20^\circ$N move at a speed of $2000$ miles/hour due to the rotation of the planet about its axis.
+
+Use the radian protractor below to help find approximate answers to the following questions.
+
+\begin{enumerate}
+\item  At what speed do the Kryptonites living at a latitude of $40^\circ$S move due to the rotation of the planet about its axis?
+\begin{hint}
+Start by converting the angle $40^\circ$ to radians.
+\end{hint}
+
+\item At what latitude(s) is the speed $500$ miles/hour?
+\end{enumerate}
+
+\begin{exploration}
+\pdfOnly{
+Access Desmos interactives through the online version of this text at
+ 
+\href{https://www.desmos.com/calculator/kdakzcloqr}.
+}
+ 
+\begin{onlineOnly}
+    \begin{center}
+\desmos{kdakzcloqr}{900}{600}
+\end{center}
+\end{onlineOnly}
+\end{exploration}
+
+\end{question}
+
+
+\section{Measuring the Radius of the Earth}
+
+\begin{question} \label{Q793:Angles}
+You are due west of your friend on the spring eqiunox. Both of you are on the equator. 
+
+On the spring equinox at the equator the sun rises due east at 6:00am local time, passes directly overhead at noon, and sets due west at 6:00pm local time. You both watch the sun set into the ocean. Being west of your friend, you see the sun set later. How much later? Well it depends on the distance between you and your friend.
+
+(a) Experiment with the sliders $\phi$ and $n$ in the demonstration below.
+
+(i) Explain what the demonstration illustrates.
+
+(ii) Which of the two points represents you? How do you know?
+
+(iii) When $\phi=0$, what is your local time? 
+
+\pdfOnly{
+Access Desmos interactives through the online version of this text at
+ 
+\href{https://www.desmos.com/calculator/jmslo0laqz}.
+}
+ 
+\begin{onlineOnly}
+    \begin{center}
+\desmos{jmslo0laqz}{900}{600}
+\end{center}
+\end{onlineOnly}
+
+
+
+(b) Find a function 
+\[
+   T = f(s) \, , \, 0\leq s \leq 1000 ,
+\]
+that expresses the time difference in the observed sunsets (measured in minutes) in terms of the distance (measured in miles) between you and your friend. Take the earth to be a perfect sphere of radius $R$ miles.
+
+(c) Suppose you are $100$ miles west of your friend and that the radius of the earth is $3960$ miles. How much later do you see the sun set? Round your answer to the nearest second.
+
+(d) This problem suggests a way to measure the radius of the earth. How?
+
+\end{question}
+
+
+
+
+
+
+
+\begin{question} \label{Q35yt6344bnxx}
+\begin{enumerate}
+\item Find the distance between two ships on the equator at longitudes $20^\circ$W and $50^\circ$W. Measure the distance along the shorter arc of the equator between the points. Take the radius of the earth to be $3960$ miles.
+
+\item Use the radian protractor above to approximate the distance between two ships on the circle of latitude $55^\circ$N at longitudes $20^\circ$W and $50^\circ$W. Measure the distance along the shorter arc of the circle of latitude through the ships.  Take the radius of the earth to be $3960$ miles.
+\end{enumerate}
+
+\pdfOnly{
+Access Desmos interactives through the online version of this text at
+ 
+\href{https://www.desmos.com/calculator/kdakzcloqr}.
+}
+ 
+\begin{onlineOnly}
+    \begin{center}
+\desmos{vb1kvzkzlq}{900}{600}
+\end{center}
+\end{onlineOnly}
+
+
+\end{question}
+
+
+
+
+\iffalse
+************************************************************************************
+**************************************************************************************
+
+
+
+\section{Rotating Gears}
+
+\begin{question}  \label{Q3242:Angles}
+Experiment with the desmos demonstration below. 
+
+Given the radii $r_1$, $r_2$ cm of the blue and red wheels respectively, and the rotation rate $\omega_1$ rad/sec of the blue gear, find an expression for the rotation rate (say $\omega_2$ rad/sec) of the red gear. Explain your logic.
+
+\pdfOnly{
+Access Desmos interactives through the online version of this text at
+ 
+\href{https://www.desmos.com/calculator/4vuc86pxwo}.
+}
+ 
+\begin{onlineOnly}
+    \begin{center}
+\desmos{4vuc86pxwo}{900}{600}
+\end{center}
+\end{onlineOnly}
+
+
+\begin{hint}
+The key point is that the gears are assumed to roll on each other without slipping. Because of this, the speed of two points on the outer rims of the two gears are equal (to see this compare the distances traveled by the two black tick marks on the gears over some time interval). These speeds (in cm/sec) are 
+\[
+   v_1 = \omega_1 r_1
+\]
+for the blue wheel, and
+\[
+   v_2 = \omega_2 r_2
+\]
+for the red wheel.
+
+Now since the two speeds are equal,
+\[
+   \omega_1 r_1 = \omega_2 r_2
+\]
+and so the rotation rate of the red wheel (in rad/sec) is
+\[
+  \omega_2 = \left( \frac{r_1}{r_2} \right) \omega_1 .
+\]
+\end{hint}
+
+\end{question}
+
+
+
+
+\begin{question}  \label{Q1764:Angles}
+Experiment with the desmos demonstration below where the black gear is welded to the red. The black gear pushes a chain.  
+
+Given the radii of the three gears and the rotation rate of the blue gear, how can you determine the speed of the chain? Explain your logic.
+
+\pdfOnly{
+Access Desmos interactives through the online version of this text at
+ 
+\href{https://www.desmos.com/calculator/6nxze8ikhg}.
+}
+ 
+\begin{onlineOnly}
+    \begin{center}
+\desmos{6nxze8ikhg}{900}{600}
+\end{center}
+\end{onlineOnly}
+\end{question}
+
+
+
+
+
+
+
+\begin{question}  \label{Q323342:Angles}
+The wheels of a car have a diameter of two feet. A gear mechanism with four gears connects one of the car's wheels to the wheel that spins the tenth of a mile reading on the odometer. %When you mow the lawn, the spindle turns four times as fast as the wheels. 
+
+(a) What gear ratio does this?
+
+(b) Design such a gear train.
+
+(c) Investigate how the other digits of the odometer reading turn.
+\end{question}
+
+
+\begin{question}    \label{Q850:Angles}
+The photo below shows a mechanical mower. The wheels have a radius $AQ$ of 9 inches. The distance $AB$ between the center of each wheel and the center of the spindle is 2.25 inches. The radius of the blade wheel is also approximately 2.25 inches.
+
+\pdfOnly{
+Access Desmos interactives through the online version of this text at
+ 
+\href{https://www.desmos.com/calculator/ryxfilsnef}.
+}
+ 
+\begin{onlineOnly}
+    \begin{center}
+\desmos{ryxfilsnef}{900}{600}
+\end{center}
+\end{onlineOnly}
+
+The diagram below shows the inner workings of the mower.
+\begin{onlineOnly}
+\begin{center}
+\desmos{lsxarkvo6r}{900}{600}
+\end{center}
+\end{onlineOnly}
+
+\href{https://www.desmos.com/calculator/lsxarkvo6r}{142: Mechanical Mower}
+
+The animation below shows the  mower in motion.
+
+\begin{onlineOnly}
+\begin{center}
+\desmos{3yjpzc2s1s}{900}{600}
+\end{center}
+\end{onlineOnly}
+
+\href{https://www.desmos.com/calculator/3yjpzc2s1s}{142: Push Mower}
+
+
+
+\begin{enumerate}
+\item Relate the walking speed to the speed of the cutting edge of the blade as observed in the reference frame of the moving mower. Start by defining the appropriate parameters.
+\end{enumerate}
+
+\end{question}
+
+************************************************************************************
+**************************************************************************************
+
+\fi
+
+
+\section{Discussion Questions}
+
+\begin{question} \label{Qldsfsda4trgfvbvb}
+You jog around a circular track of radius $40$ feet at the constant speed of $8$ ft/sec. As your friend jogs around a circular track of radius $50$ feet, she turns about the track's center at the constant rate of $0.17$ rad/sec.
+
+\begin{enumerate}
+\item Who is jogging faster?
+
+\item Who is turning faster about the center of their track? 
+
+\end{enumerate}
+\end{question}
+
+\begin{question} \label{Qodfdstr43}
+An figure skater rotates at the constant rate of $10$ rad/sec. 
+\begin{enumerate}
+\item How long does it take her to turn through an angle of $30$ radians?
+
+\item How long does it take her to turn turn through one revolution?
+
+\end{enumerate}
+\end{question}
+
+
+\begin{question} \label{QOLfdfdthnhgfg}
+
+\begin{enumerate}
+\item You and your friend jog in opposite directions around a circular track at the respective speeds of $3$ m/sec and $5$ m/s. You run in the inner lane, a circle with radius $40$ meters, while your friend runs in the outer lane, a circle with radius $44$ meters. Play the slider $u$ (time, measured in seconds) in the animation below to watch the motions.
+
+\begin{onlineOnly}
+\begin{center}
+\desmos{a1jmg3x2mz}{900}{600}
+\end{center}
+\end{onlineOnly}
+
+\href{https://www.desmos.com/calculator/a1jmg3x2mz}{142: Concentric Circles 2}
+
+\begin{enumerate}
+\item At what rate does the angle $\angle OAF$ subtended at the track's center by you and your friend increase?
+
+\item How often do you and your friend pass each other?
+
+\end{enumerate}
+
+
+\item Now suppose you and your friend jog in the same direction around a circular track at the respective speeds of $3$ m/sec and $5$ m/s. You run in the inner lane, a circle with radius $40$ meters, while your friend runs in the outer lane, a circle with radius $44$ meters. Play the slider $u$ (time, measured in seconds) in the animation below to watch the motions.
+
+\begin{onlineOnly}
+\begin{center}
+\desmos{s8ua80pw91}{900}{600}
+\end{center}
+\end{onlineOnly}
+
+\href{https://www.desmos.com/calculator/s8ua80pw91}{142: Concentric Circles}
+
+\begin{enumerate}
+\item At what rate does the angle $\angle OAF$ subtended at the track's center by you and your friend increase?
+
+\item How often do you and your friend pass each other?
+
+\end{enumerate}
+\end{enumerate}
+\end{question}
+
+\begin{question} \label{Q9df9sttr4rt}
+\begin{enumerate}
+\item You jog around a circlular track with radius $25$ meters while turning about the track's center at a constant rate of $0.3$ radians/sec. What is your speed? Explain your logic. Include units for all numbers in your calculation(s). 
+
+\item Your friend jogs around the same track while turning about the track's center at a constant rate of $20^\circ$/sec. What is her speed?
+
+\end{enumerate}
+\end{question}
+
+
+
+\begin{question}  \label{Q3245rghh5ty5t}
+\begin{enumerate}
+
+\item Play the slider $u$ in Line 1 of the worksheet below. Then \emph{without} stopping the motion, approximate the rate (in rad/sec) at which $P$ rotates about $O$. The clock shows the motion of a second hand in real time.
+
+\begin{onlineOnly}
+\begin{center}
+\desmos{9on2xpcvta}{900}{600}
+\end{center}
+\end{onlineOnly}
+
+\href{https://www.desmos.com/calculator/9on2xpcvta}{142: Rotation Rates 5}
+
+\item Turn off the folder \emph{Point P Motion} in Line 19 by clicking off the camera tab at the left of the line. Then turn on the camera tab on Line 23 (Point Q Motion). Play the slider $u$ and approximate the rate (in rad/sec) at which $Q$ rotates about $O$ without stopping the slider.
+
+\item Suppose the distance $OQ$ is $5$ cm and approximate the speed of $Q$ as it rotates about $A$.
+
+\item Activate the folder \emph{Point R Motion} on Line 36. Find the exact speed of $R$ if the distance $AR$ is $3$ cm. 
+
+\end{enumerate}
+
+\end{question}
+
+
+\begin{question} \label{QLkfdktrtrgvb}
+Use the radian protractor below to help find approximate answers to the following question. Do \emph{not} use any trigonometry you might happen to know. Think proportionately instead.
+
+\begin{enumerate}
+\item At what speed are people on the earth at a latitude of $50^\circ$N moving due to the rotation of the earth about its axis? Take the earth to be a perfect sphere of radius $4000$ miles.
+
+\item At what latitude in the northern hemisphere of the planet Krytpon are the Kryptonites moving twice as fast due to the rotation of the planet about its axis as they are at a latitude of $70^\circ$N?
+
+\end{enumerate}
+
+
+\begin{onlineOnly}
+\begin{center}
+\desmos{kjzez98bqn}{900}{600}
+\end{center}
+\end{onlineOnly}
+
+\href{https://www.desmos.com/calculator/kjzez98bqn}{142: Radian Protractor 29}
+
+\end{question}
+
+
+
+
+\begin{question}  \label{QOFIGDIDeer3gg}
+Assume for this problem that the planets in our solar system revolve about the sun in coplanar circular orbits, all with the same sense of rotation.
+
+Then Kepler's third law states that the product $\omega^2 r^3$ is equal to a constant, where $\omega$ is the rotation rate of a planet about the sun and $r$ its orbital radius.
+
+\begin{enumerate}
+\item Find a function $P=f(r)$ that expresses the synodic period (measured in earth days) of a planet in terms of its orbital radius $r$ (measured in astronomical units.) Note that the earth has orbital radius $1$ AU.
+
+The \emph{synodic period} is the time it takes for the planet and the earth to pass each other in their orbits.
+
+\item Find the synodic period of Mars (with an orbtital radius of 1.524 AU).
+\end{enumerate}
+
+\end{question}
+
+
+
+
+
+
+
+
+\end{document}
