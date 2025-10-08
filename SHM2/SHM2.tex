@@ -1,0 +1,87 @@
+\documentclass{ximera}
+\title{Simple Harmonic Motion, Part 2}
+
+\newcommand{\pskip}{\vskip 0.1 in}
+
+\begin{document}
+\begin{abstract}
+Parameterizing motion around a circle at a constant speed.
+\end{abstract}
+\maketitle
+
+
+
+\begin{example}  \label{Exp89dfe94tf4}
+
+A beetle crawls around the circle of radius $40$ meters centered at the origin at a constant speed of $8$ meters/min, starting from the point $(40,0)$ at noon and making $5$ complete revolutions before stopping.
+
+\begin{enumerate}
+
+\item Use the protractor below to estimate the beetle's coordinates at 12:12pm. Explain your reasoning.
+
+\begin{onlineOnly}
+    \begin{center}
+\desmos{lbkveixdno}{900}{600}
+\end{center}
+\end{onlineOnly}
+
+\href{https://www.desmos.com/calculator/lbkveixdno}{142: Radian Protractor 2C}
+
+\item Find the beetle's exact coordinates at 12:12pm \emph{without} using a calculator.
+
+\item Use a calculator to approximate the coordinates from part (b) and compare this estimate with your original estimate from part (a).
+
+\end{enumerate}
+
+\end{example}
+
+
+\begin{example} \label{Edfhg]hghgdfg}
+A beetle crawls counterclockwise around the circle of radius $40$ meters centered at the origin at a constant speed of $8$ meters/min, starting from the point $(40,0)$ (coordinates in meters) at noon and making $5$ complete revolutions before stopping.
+
+\begin{enumerate}
+
+\item Find a function
+\[
+    \theta = b(t)
+\]
+that expresses the beetle's polar angle in terms of the number of minutes past noon. Include the appropriate domain.
+
+The polar angle function is
+\[
+   \theta = b(t) = \answer{t/5} \, , \, 0 \leq t \leq \answer{50\pi} .
+\]
+
+\item At what rate does the beetle turn about the origin?  $\answer{1/5}$ rad/min
+
+
+
+\item Find functions
+\[
+   x = f_1(t) \text{ and } y=g_1(t)
+\]
+that express the beetle's coordinates (in meters)  in terms of the number of minutes past noon. Include the appropriate domains.
+
+The coordinate functions are
+\[
+    x = f_1(t) = \answer{40\cos(\frac{1}{5}t)} \, , \, 0 \leq t \leq \answer{50\pi} 
+\]
+and 
+\[
+    y = f_1(t) = \answer{40\sin(\frac{1}{5}t)} \, , \, 0 \leq t \leq \answer{50\pi} .
+\]
+
+\item Enter these coordinate functions on Lines 3 and 4 of the worksheet below. Then play the slider $u$ (the number of minutes past noon) to check if they are correct.
+
+\begin{onlineOnly}
+    \begin{center}
+\desmos{pygmcbcogi}{900}{600}
+\end{center}
+\end{onlineOnly}
+
+\href{https://www.desmos.com/calculator/pygmcbcogi}{142: Beetle 1}
+
+\end{enumerate}
+\end{example}
+
+\end{document}
