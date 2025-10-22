@@ -43,6 +43,11 @@ We'll start by letting $P$ be a point on the circle with coordinates $(x,y)$ and
 \]
 that express the coordinates of $P$ in terms of $\theta$. Include appropriate domains for these functions. 
 
+\item Use part (d) to find the coordinates of $P$ when $\theta=\pi/2, 3\pi/4, \pi$. Check that these results are correct.
+
+\item Use part (d) to find the exact and approximate coordinates of $P$ when $\theta =4$. Use the worksheet above to check that the coordinates are reasonable (the slider $u$ in Line 1 is another name for the polar angle $\theta$.) 
+
+
 \item One last question. Find equations in Cartesian coordinates of 
 
 \begin{enumerate}
@@ -62,7 +67,7 @@ These equations express relationships between the $x$ and $y$ coordinates of poi
 \begin{question}  \label{QDF09555dfdfLKDD}
 \begin{enumerate}
 
-\item Parametrize the circle in Question \ref{Ex:sdfdsfdfL} by the signed arclength from $A$ of a point $P(x,y)$ on the circle. This means to express the coordinates $(x,y)$ of $P$ (measured in cm) in terms of its signed distance from $A$. Measure the signed arclength $s$ (in cm)  from the point $A(8,0)$ along the circle and take the counterclockwise direction to be positive. 
+\item Parametrize the circle in Question 1 by the signed arclength from $A$ of a point $P(x,y)$ on the circle. This means to express the coordinates $(x,y)$ of $P$ (measured in cm) in terms of its signed distance from $A$. Measure the signed arclength $s$ (in cm)  from the point $A(8,0)$ along the circle and take the counterclockwise direction to be positive. 
 
 \begin{onlineOnly}
     \begin{center}
@@ -98,15 +103,6 @@ that express the beetle's coordinates (in cm) in terms of the number of seconds 
 
 
 
-
-
-
-
-
-
-
-
-
 \begin{question}  \label{QDfg554egsE}
 A beetle starts from the point $A(8,3)$, crawls $s$ meters counterclockwise around the circle centered at $Q(2,3)$ and stops at point $B$. All coordinates measured in meters.
 
@@ -126,12 +122,42 @@ A beetle starts from the point $A(8,3)$, crawls $s$ meters counterclockwise arou
 \section{General Starting Points}
 
 \begin{question} \label{QIDdfdseIFDfeD}
-A beetle starts at point $A(3,5)$ (coordinates in meters), crawls $s$ meters around the circle centered at the origin $O$ and stops at $B$.
+A beetle starts at point $A(3,5)$ (coordinates in meters), crawls $s$ meters counterclockwise around the circle through $A$ centered at the origin $O$ and stops at $P$.
+
+\begin{onlineOnly}
+    \begin{center}
+\desmos{ufyt7kkxc0}{900}{600}
+\end{center}
+\end{onlineOnly}
+
+\href{https://www.desmos.com/calculator/ufyt7kkxc0}{142: Vectors and Circular Motion 1}
+
 
 \begin{enumerate}
-\item Express the vector $\overrightarrow{OB}$ in terms of $s$. No inverse trig.
+\item Express the vector $\overrightarrow{OP}$ in terms of $s$. Do this as follows.
 
-\item Express the coordinates of $B$ in terms of $s$.
+\begin{enumerate}
+\item Find the components of the vector $\overrightarrow{OA}$ from the origin to $A$.
+
+\item Find the coordinates of the point $B$ on the circle $pi/2$ radians counterclockwise from $A$. Then find the components of the vector $\overrightarrow{OB}$.
+
+\item Express the radian measure of the angle $\theta = \angle AOP$ in terms of $s$.
+\[
+   \theta = \answer{s/\sqrt{34}} .
+\]
+
+\item Express the vector $\overrightarrow{OP}$ in terms $s$ and the vectors $\overrightarrow{OA}$ and $\overrightarrow{OB}$.
+\[
+      \overrightarrow{OP} = \answer{\cos (s/\sqrt{34})} \overrightarrow{OA} + \answer{\sin (s/\sqrt{34})} \overrightarrow{OB} . 
+\]
+
+\end{enumerate}
+
+\item Use the result of the previous part to find functions
+\[
+ x = f(s)  \text{ and } y=g(s)
+\]
+that express the coordinates of $P$ in terms of $s$.
 \end{enumerate}
 \end{question}
 
