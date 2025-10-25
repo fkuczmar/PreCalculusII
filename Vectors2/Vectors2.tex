@@ -239,12 +239,66 @@ and
 
 \item Find the exact (without a calculator) and approximate coordinates of the point on the circle $20$cm from point $A$. The $20$cm is measured counterclockwise along the circle.
 
-
-
 \end{enumerate}
 \end{question}
 
 
+\begin{question} \label{QWEercfe341}
+
+The aim of this problem is to parameterize a circle by arclength.
+
+This particular circle has center at the point $C$ with coordinates $(5,4)$cm and it passes through the point $A$ with coordinates $(9,2)$cm. 
+
+We wish to express the coordinates of a point $P$ on the circle in terms of its distance from $A$, measured counterclockwise around the circle. In the worksheet below, for example, $P$ is 14cm from $A$. But we'll work in general and assume the (signed) distance between $P$ and $A$ is $s$ cm. 
+
+\begin{onlineOnly}
+    \begin{center}
+\desmos{kuwm2chgyu}{900}{600}
+\end{center}
+\end{onlineOnly}
+
+\href{https://www.desmos.com/calculator/kuwm2chgyu}{142: Circle Arc Length Parameterization}
+
+\begin{enumerate}
+\item The first step is to find the components of the vector $\overrightarrow{CP}$ that gives the position of $P(x,y)$ relative to $C$. For this do the following.
+
+\begin{enumerate}
+\item Find the components of the vectors $\overrightarrow{CA}$ and $\overrightarrow{CB}$.  Here $B$ is the point on the circle rotated counterclockwise from $A$ through the angle $\pi/2$ radians. Activate the folder \emph{vector $CB$} in Line 1 above if you need help.
+
+\item Next express the vector $\overrightarrow{CP}$ in terms of the angle $\theta$ and the vectors $\overrightarrow{CA}$, $\overrightarrow{CB}$.
+\[
+       \overrightarrow{CP} = (\answer{\cos \theta}) \overrightarrow{CA} + (\answer{\sin \theta}) \overrightarrow{CB} .
+\]
+
+\item Then express the angle $\theta$ in terms of the arclength $s$ from $A$ to $P$.
+
+\item Finally, express  the vector $\overrightarrow{CP}$ in terms of $s$ and the vectors $\overrightarrow{CA}$, $\overrightarrow{CB}$.
+
+\[
+       \overrightarrow{CP} = (\answer{\cos (s/\sqrt{20})}) \overrightarrow{CA} + (\answer{\sin (s/\sqrt{20})}) \overrightarrow{CB} .
+\]
+\end{enumerate}
+
+\item The second step is to express the vector  $\overrightarrow{OP}$ giving the position of $P$ relative to the origin, in terms of
+the vectors $\overrightarrow{CA}$, $\overrightarrow{CB}$ and $s$.
+
+\item Finally, use the result of part (b) to find functions
+\[
+    x = f(s) \text{ and } y=g(s) , s\in \mathbb{R}
+\]
+that express the coordinates $(x,y)$ of $P$ in terms of $s$.
+
+The coordinate functions are
+\[
+    x = f(s) = \answer{5 + 4\cos (s/\sqrt{20}) +2\sin (s/\sqrt{20}) }
+\]
+and
+\[
+  x = g(s) = \answer{4 - 2\cos (s/\sqrt{20}) +4\sin (s/\sqrt{20}) } .
+\]
+\end{enumerate}
+
+\end{question}
 
 
 \end{document}
