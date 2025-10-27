@@ -262,6 +262,16 @@ We wish to express the coordinates of a point $P$ on the circle in terms of its 
 \href{https://www.desmos.com/calculator/kuwm2chgyu}{142: Circle Arc Length Parameterization}
 
 
+We'll take two steps:
+
+\begin{enumerate}
+\item First express the coordinates $(x,y)$ of $P$ (measured in cm) in terms of the marked angle $\theta$ from $\overrightarrow{CA}$ to $\overrightarrow{CP}$.
+
+\item Then express the coordinates $(x,y)$ of $P$ (measured in cm) in terms of the signed arclength $AP$ measured counterclockwise around the circle from $A$ in cm. 
+\end{enumerate}
+
+You can try these problems on your own, but click the arrow at the bottom right if you need help.
+
 \begin{expandable}
 
 \begin{enumerate}
@@ -276,6 +286,9 @@ We wish to express the coordinates of a point $P$ on the circle in terms of its 
 \]
 
 \item Then express the angle $\theta$ in terms of the arclength $s$ from $A$ to $P$.
+\[
+     \theta  =\answer{s/\sqrt{20}} .
+\]
 
 \item Finally, express  the vector $\overrightarrow{CP}$ in terms of $s$ and the vectors $\overrightarrow{CA}$, $\overrightarrow{CB}$.
 
@@ -286,6 +299,10 @@ We wish to express the coordinates of a point $P$ on the circle in terms of its 
 
 \item The second step is to express the vector  $\overrightarrow{OP}$ giving the position of $P$ relative to the origin, in terms of
 the vectors $\overrightarrow{CA}$, $\overrightarrow{CB}$ and $s$.
+
+\[
+  \overrightarrow{OP} = \overrightarrow{\answer{OC}} +  (\answer{\cos (s/\sqrt{20})}) \overrightarrow{CA} + (\answer{\sin (s/\sqrt{20})}) \overrightarrow{CB} .
+\]
 
 \item Finally, use the result of part (b) to find functions
 \[
@@ -307,6 +324,35 @@ and
 
 \end{expandable}
 
+\end{question}
+
+
+\begin{question} \label{QLdferr444}
+Between noon and 12:15pm an ant turns counterclockwise in a circle about the point $C(2,-3)$ at the constant rate of $3/4$ rad/sec. It passes the point $A(-1,4)$ at 12:05m. All coordinates are measured in cm.
+
+\begin{onlineOnly}
+    \begin{center}
+\desmos{genxpc7blg}{900}{600}
+\end{center}
+\end{onlineOnly}
+
+\href{https://www.desmos.com/calculator/genxpc7blg}{142: Ant General Circle}
+
+
+\begin{enumerate}
+\item Find functions
+\[
+   x = f(t) \text{ and } y=g(t) \, , \, 0\leq t \leq 15,
+\]
+that express the ant's coordinates (in cm) in terms of the number of minutes past noon.
+
+\item Enter the coordinate functions in Lines 42 and 43 of the worksheet above. Then drag the slider $t_1$ (another name for $t$) in Line 2 to check your work.
+
+\item Find (without a calculator) the ant's exact coordinates at noon. Then (with a calculator) the approximate coordinates. Use the worksheet above to check your work.
+
+\item How would your coordinate functions change if the ant crawled clockwise around the circle instead (all other given information being identical)?
+
+\end{enumerate}
 \end{question}
 
 
