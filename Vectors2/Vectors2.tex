@@ -245,6 +245,49 @@ and
 \end{question}
 
 
+Before parameterizing a general circle by arclength, we need to know how to rotate a vector counterclockwise by $\pi/2$ radians.
+That's the goal of the following problem.
+
+
+\begin{question} \label{Q77ee333}
+
+\begin{onlineOnly}
+    \begin{center}
+\desmos{in7whvqoay}{900}{600}
+\end{center}
+\end{onlineOnly}
+
+\href{https://www.desmos.com/calculator/in7whvqoay}{142: Vectors Arithmetic 5}
+
+
+\begin{enumerate}
+\item Drag point $R$ in the worksheet below so that
+\begin{enumerate}
+\item $\left|\overrightarrow{OR}\right| = \left|\overrightarrow{OQ}\right|$ and
+\item the sense of rotation from $\overrightarrow{OQ}$ to $\overrightarrow{OR}$ is $\pi/2$ radians counterclockwise.
+\end{enumerate}
+Then record the components of $\overrightarrow{OQ}$ and $\overrightarrow{OR}$.
+
+\item Move point $Q$ to the second, third, and then fourth quadrants, each time repeating part (a).
+
+\item What do you notice about the relationship between the components of the vectors $\overrightarrow{OQ}$ and $\overrightarrow{OR}$?
+
+\item The conclusion is this:
+
+Rotating the vector 
+\[
+  \overrightarrow{OQ} = \langle a, b\rangle
+\]
+counterclockwise by $\pi/2$ radians gives the vector $\overrightarrow{OR}$ with components
+\[
+  \overrightarrow{OQ} = \langle \answer{-b}, \answer{a}\rangle .
+\] 
+
+\end{enumerate}
+
+\end{question}
+
+
 \begin{question} \label{QWEercfe341}
 
 The aim of this problem is to parameterize a circle by arclength.
@@ -278,7 +321,7 @@ You can try these problems on your own, but click the arrow at the bottom right 
 \item The first step is to find the components of the vector $\overrightarrow{CP}$ that gives the position of $P(x,y)$ relative to $C$. For this do the following.
 
 \begin{enumerate}
-\item Find the components of the vectors $\overrightarrow{CA}$ and $\overrightarrow{CB}$.  Here $B$ is the point on the circle rotated counterclockwise from $A$ through the angle $\pi/2$ radians. Activate the folder \emph{vector $CB$} in Line 1 above if you need help.
+\item Find the components of the vectors $\overrightarrow{CA}$ and $\overrightarrow{CB}$.  Here $B$ is the point on the circle rotated counterclockwise from $A$ through the angle $\pi/2$ radians. Use the result of Question 7 to find the components of $\overrightarrow{CB}$. But if you need help, activate the folder \emph{vector $CB$} in Line 1.
 
 \item Next express the vector $\overrightarrow{CP}$ in terms of the angle $\theta$ and the vectors $\overrightarrow{CA}$, $\overrightarrow{CB}$.
 \[
@@ -300,8 +343,13 @@ You can try these problems on your own, but click the arrow at the bottom right 
 \item The second step is to express the vector  $\overrightarrow{OP}$ giving the position of $P$ relative to the origin, in terms of
 the vectors $\overrightarrow{CA}$, $\overrightarrow{CB}$ and $s$.
 
+First, since
 \[
-  \overrightarrow{OP} = \overrightarrow{\answer{OC}} +  (\answer{\cos (s/\sqrt{20})}) \overrightarrow{CA} + (\answer{\sin (s/\sqrt{20})}) \overrightarrow{CB} .
+    \overrightarrow{OP} = \overrightarrow{\answer{OC}} + \overrightarrow{\answer{CP}},
+\]
+we know
+\[
+  \overrightarrow{OP} = \langle \answer{5}, \answer{4}\rangle +   \cos \left( \frac{s}{\sqrt{20}} \right) \langle \answer{4} , \answer{-2} \rangle + \sin \left( \frac{s}{\sqrt{20}} \right) \langle \answer{2} , \answer{4} \rangle .
 \]
 
 \item Finally, use the result of part (b) to find functions
