@@ -240,8 +240,55 @@ and
 \item Enter the expressions for the coordinate functions $f$ and $g$ in Lines 34 and 35 of the worksheet above as a check.
 
 \item Find the exact (without a calculator) and approximate coordinates of the point on the circle $20$cm from point $A$. The $20$cm is measured counterclockwise along the circle.
-
 \end{enumerate}
+
+\begin{explanation}
+Since the point $A$ has coordinates $(3,5)$ and $O$ is the origin,
+\[
+    \overrightarrow{OA} = \langle 3, 5 \rangle.
+\]
+Similarly,
+\[
+    \overrightarrow{OB} = \langle -5,3 \rangle.
+\]
+
+Note this key point. The vectors $\overrightarrow{OA}$ and $\overrightarrow{OB}$ are perpendicular and have the same length. And the sense of rotation from $\overrightarrow{OA}$ to $\overrightarrow{OB}$ is counterclockwise.
+
+So because the angle $\theta$ measures the counterclockwise angle from $\overrightarrow{OA}$ to $\overrightarrow{OP}$,
+\begin{align*}
+  \overrightarrow{OP} &= (\cos \theta) \overrightarrow{OA} + (\sin\theta) \overrightarrow{OB} \\
+                                 &=\cos\theta \langle 3, 5 \rangle + \sin \theta \langle -5, 3 \rangle \\
+                                 &=\langle 3 \cos\theta , 5\cos\theta \rangle + \langle -5\sin \theta, 3 \sin\theta \rangle \\
+                                 &= \langle 3 \cos\theta - 5\sin\theta , 5\cos\theta + 3\sin\theta \rangle.
+\end{align*}
+
+This tells us (since $O$ is the origin) that $P$ has coordinates
+\[
+  x = 3 \cos\theta - 5\sin\theta
+\]
+and
+\[ 
+    y = 5\cos\theta + 3\sin\theta .
+\]
+
+To express these coordinates in terms of the counterclockwise arclength $s$ from $A$ to $P$, note that
+But 
+\[
+  \theta =    \frac{s}{\left|  \overrightarrow{OA} \right|}  = \frac{s}{\sqrt{34}} .
+\]
+
+So $P$ has coordinates
+\[
+      x = f(s) = 3 \cos\left( \frac{s}{\sqrt{34}} \right) - 5\sin\left( \frac{s}{\sqrt{34}} \right)
+\]
+and
+\[
+      y = g(s) = 5 \cos\left( \frac{s}{\sqrt{34}} \right) +3\sin\left( \frac{s}{\sqrt{34}} \right) .
+\]
+ 
+
+\end{explanation}
+
 \end{question}
 
 
