@@ -1,0 +1,256 @@
+\documentclass{ximera}
+\title{Inverse Trigonometric Functions CW}
+
+\newcommand{\pskip}{\vskip 0.1 in}
+
+\begin{document}
+\begin{abstract}
+Introduction to inverse trig.
+\end{abstract}
+\maketitle
+
+\section{Inverse Functions and Solving Equations}
+
+\begin{question} \label{QPfer3rr3fd}
+
+Let
+\[
+    f(x) = x^3 .
+\]
+
+\begin{enumerate}
+
+\item Solve the equation
+\[
+   f(x) =25 .
+\]
+
+\item Find an expression for the inverse of the function
+\[
+   f(x) = x^3 .
+\]
+
+
+
+\item Describe the relationship between parts (a) and (b).
+
+\item Repeat parts (a)-(c) for the function
+\[
+  f(x) = 2^x .
+\]
+
+\end{enumerate}
+\end{question}
+
+
+\begin{question} \label{QF3err3wefr}
+Let 
+\[
+    f(x) = x^2.
+\]
+\begin{enumerate}
+
+\item Solve the equation
+\[
+  f(x) = 5 .
+\]
+
+\item Is the inverse of the function
+\[
+    f(x) = x^2
+\]
+also a function? Explain.
+
+\item Find the inverse of the function
+\[
+      g(x) = x^2 \, , \, x\geq 0.
+\]
+
+\item  Find the inverse of the function
+\[
+      h(x) = x^2 \, , \, x\leq 0.
+\]
+\end{enumerate}
+\end{question}
+
+
+\section{The Inverse Sine and Inverse Cosine Functions}
+
+\begin{question} \label{Ex1dsfgt4hh:Inverse}
+For each of the following expressions, do the following.
+
+\begin{itemize}
+
+\item Explain its meaning in a complete sentence.
+
+\item Use the radian protractor below to approximate the expression. Explain your reasoning. 
+
+\end{itemize}
+
+\begin{enumerate}
+\item $\cos^{-1}(0.6)$
+
+\item $\cos^{-1}(-0.6)$
+
+\item $\sin^{-1}(0.6)$
+
+\item $\sin^{-1}(-0.6)$
+
+\item $\sin^{-1}(-4)$
+
+\end{enumerate}
+
+\begin{exploration}\label{Exp3:Comp}
+
+\pdfOnly{
+Access Desmos interactives through the online version of this text at
+ 
+\href{https://www.desmos.com/calculator/kf29wdiej0}.
+}
+ 
+\begin{onlineOnly}
+    \begin{center}
+\desmos{kf29wdiej0}{900}{600}
+\end{center}
+\end{onlineOnly}
+\end{exploration}
+
+\end{question}
+
+
+\begin{question} \label{Q34d4r34tgFG}
+For each of the following expressions:
+\begin{itemize}
+\item Explain its meaning in a complete sentence.
+
+\item Evaluate the expression without using a caclulator. Draw a picture to help with your explanation.
+\end{itemize}
+
+\begin{enumerate}
+\item $\cos (\arccos(-3/8))$
+
+\item $\arccos (\cos (4\pi/5))$
+
+\item $\arccos (\cos (7\pi))$
+
+\item $\arccos (\cos (7\pi/5))$
+
+\item $\arcsin (\sin (7\pi/5))$
+
+\item $\arccos (\cos (16\pi/9))$
+
+\item $\arcsin (\sin (16\pi/9))$
+
+\item $\arcsin(\sin (23\pi /7))$
+
+\item $\arcsin(\sin (-23\pi /7))$
+
+\item $\arccos(\sin (\pi /7))$
+
+\item $\arccos(\sin (12\pi /7))$
+
+\item $\sin(\arccos(-3/4))$
+
+\item $\cos(\arcsin(-3/4))$
+\end{enumerate}
+
+\begin{explanation}
+(d) The expression $\arccos (\cos (7\pi/5))$ is the angle between $0$ and $\pi$ that has the same cosine as the angle $7\pi/5$.
+
+To evaluate this expression, we'll let 
+\[
+   \theta = \arccos (\cos (7\pi/5)).
+\] 
+
+From our description, we know
+\begin{enumerate}
+\item $0 \leq \theta \leq \pi$, and
+
+\item $\cos \theta =  \cos(7\pi/5))$.
+\end{enumerate}
+
+We should point out that because $7\pi/5$ is \emph{not} between $0$ and $\pi$,
+\[
+   \theta =   \arccos (\cos (7\pi/5)) \neq 7\pi/5 .
+\]
+
+To determine the value of $\theta$, we'll work on the unit circle and start by stetching the point $P$ on the unit circle with coordinates $(\cos (7\pi/5), \sin(7\pi/5))$ and polar angle 
+\[
+     \angle AOP =  \frac{7\pi}{5} = \pi + \frac{2\pi}{5} .
+\]
+
+See the picture below.
+
+\href{https://www.desmos.com/calculator/wzxssez3fu}{142: Inverse Trig Composition}
+
+ 
+\begin{onlineOnly}
+    \begin{center}
+\desmos{wzxssez3fu}{900}{600}
+\end{center}
+\end{onlineOnly}
+
+Now there are infinitely many other choices for the polar angle of $P$ (or to be more precise, for the polar angle of $\overrightarrow{OP}$), but because $P$ is in the third quadrant, none of these choices lies between $0$ and $\pi$. 
+
+So we must find another family of angles with the same cosine as $7\pi/5$. To do this we draw the vertical line
+\[
+   x = \cos(7\pi/5)
+\]
+through $P$ and see where it intersects the unit circle a second time. We'll call this point $Q$. Now since $P$ and $Q$ share the same $x$-coordinate (and because $\cos\theta = x/r$), w know that
+\[
+ \cos (\angle AOP) = \cos (\angle AOQ).
+\]
+The angle $\angle AOQ$ is the one we're looking for. It has the same cosine as $\angle AOP = 7\pi/5$ and its measure is between $0$ and $\pi$. 
+
+
+%This vertical line intersects the circle in two points, $P$ and $Q$. Because $Q$ is in the third quadrant, we cannot measure the polar angle of the vector $\overrightarrow{OP}$ to be between $0$ and $\pi$.
+
+%So we should focus our attention on point $Q$, the other point where the line $x = \cos(7\pi/5)$ intersects the unit circle. We have infinitely many choices for the polar angle of the vector $\overrightarrow{OQ}$, but because $P$ and $Q$ have the same $x$-coordinate, each of these choices has the same cosine as the angle $7\pi/5$. We need to choose the one angle, the marked angle $\angle AOQ$, that is between $0$ and $\pi$. We can do this because $Q$ is in the second quadrant.
+
+Because $P$ and $Q$ are symmetric about the $x$-axis, this measure of angle $\angle AOQ$ is
+\[
+   \angle AOQ = 2\pi - \frac{7\pi}{5} = \frac{3\pi}{5}.
+\]
+ 
+So our conclusion is that
+\[
+     \arccos (\cos (7\pi/5)) = \frac{3\pi}{5}.
+\]
+
+If we wanted to summarize our reasoning, we could give more detail like this:
+\begin{align*}
+ \arccos (\cos (7\pi/5)) &= \arccos (\cos (2\pi - 7\pi/5)) \\
+                                 &= \arccos (\cos (3\pi/5)) \\
+                                 & = 3\pi/5 .
+\end{align*}
+
+
+(e) The expression $\arcsin (\sin (7\pi/5))$ means the angle between $-\pi/2$ and $\pi/2$ that has the same sine as the angle $7\pi/5$.
+
+To find this angle we use reasoning much like we did to evaluate $\arccos (\cos (7\pi/5))$. But we need to make some adjustments to account for replacing the cosine and arccosine functions with sine and cosine.
+
+I'll leave the details for you to fill in, but here's the picture we need.
+
+\href{https://www.desmos.com/calculator/ilztfm9da1}{142: Inverse Trig Composition 2}
+
+ 
+\begin{onlineOnly}
+    \begin{center}
+\desmos{ilztfm9da1}{900}{600}
+\end{center}
+\end{onlineOnly}
+
+You should finally conclude that
+\begin{align*}
+ \arcsin (\sin (7\pi/5)) &= \arcsin (\sin (\pi - 7\pi/5)) \\
+                                 &= \arcsin (\sin (-2\pi/5)) \\
+                                 & = -2\pi/5 .
+\end{align*}
+
+\end{explanation}
+
+\end{question}
+
+
+\end{document}
+
