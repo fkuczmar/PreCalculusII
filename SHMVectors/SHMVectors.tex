@@ -10,6 +10,82 @@ Using vectors to paramaterize simple harmonic motion.
 \maketitle
 
 
+\begin{question} \label{Qoer333fr}
+Suppose that between consecutive noons on July 21 and July 22 the depth of the water at the Edmonds pier oscillates in simple harmonic motion between $9$ feet and $17$ feet with a period of $12$ hours. Suppose also that at 3am on July 21 the water is $11$ feet deep and falling.
+
+Use vectors to find a function
+\[
+  h = f(t) \, , \, 0\leq t \leq 24
+\]
+that expresses the depth of the water in terms of the number of hours since noon on July 21.
+
+Solution:
+
+Remember the key idea. That a constant speed motion around a circle drives simple harmonic motion along a diameter of that circle. So to model the depth of the water we need only choose the right circle and a diameter of that circle.
+
+I like to imagine the water oscillating vertically, so I'll label the upward-pointing axis as the positive $h$-axis and keep the $x$-axis horizontal.
+
+%In the standard $xy$-coordinate system with the positive $y$-axis pointing upward, we'll relabel the $y$-axis as the $h$-axis and imagine the water to oscillate vertically.
+
+We now describe our circle of motion.
+
+
+Its center is at a point with $h$-coordinate
+\[
+   h  =  \frac{1}{2}\left( 17 \text{ ft} + 9 \text{ ft} \right) = 13 \text{ ft}
+\]
+equal to the average depth of the water over a 12-hour period.
+
+It has radius
+\[
+   \frac{1}{2} \left( 17 \text{ ft} - 9 \text{ ft} \right) = 8\text{ ft} ,
+\]
+equal to the maximum deviation from the average depth.
+
+The $x$-coordinate of this circle is immaterial and we'll suppose the circle is centered at the point $C$ with coordinates $(0,13)$ (all coordinates in ft) as shown below.
+
+
+\begin{onlineOnly}
+    \begin{center}
+\desmos{mo7ekjkp2s}{900}{600}
+\end{center}
+\end{onlineOnly}
+
+\href{https://www.desmos.com/calculator/mo7ekjkp2s}{142: SHM Vectors}
+
+
+
+Now let $A$ be one of the two points on the circle of motion with $h$ coordinate $h=11$. We'll arbitrarily choose the point in the first quadrant and focus our attention on the vector $\overrightarrow{CA}$. Since $C$ has coordinates $(0,13)$, $\overrightarrow{CA}$ has $h$-component
+\[
+    h = 11 - 13 = -2 .
+\]
+Let $x$ be the $x$-component of $\overrightarrow{CA}$. Then since $|\overrightarrow{CA}| = 8$,
+\[
+x^2 + (-2)^2 = 8^2
+\]
+and 
+\[
+  x = \pm \sqrt{60}.
+\]
+But because $A$ is in the first quadrant 
+\[
+    x = \sqrt{60}
+\]
+and
+\[
+\overrightarrow{CA} = \langle \sqrt{60},-2\rangle.
+\]
+
+We'll ignore time for now and express the components of the vector $\overrightarrow{CP}$ in terms of the clockwise angle from $\overrightarrow{CA}$ to $\overrightarrow{CP}$. 
+
+
+Since the period of oscillation is $12$ hours, the point $P$ that drives the oscillation rotates about the center of its circle at the constant rate of
+\[
+      \frac{2\pi \text{ rad}}{12\text{ hrs}} = \frac{\pi}{6} \frac{\text{rad}}{\text{hr}} .
+\]
+
+
+\end{question}
 
 
 \end{document}
