@@ -1,0 +1,138 @@
+\documentclass{ximera}
+\title{Simple Harmonic Motion with Inverse Trig}
+
+\newcommand{\pskip}{\vskip 0.1 in}
+
+\begin{document}
+\begin{abstract}
+Using inverse trigonometry to paramaterize simple harmonic motion.
+\end{abstract}
+\maketitle
+
+
+\begin{question} \label{Qoer333fr}
+Suppose that between consecutive noons on July 21 and July 22 the depth of the water at the Edmonds pier oscillates in simple harmonic motion between $9$ feet and $17$ feet with a period of $12$ hours. Suppose also that at 3am on July 21 the water is $11$ feet deep and falling.
+
+Use inverse trigonometry to help find a function
+\[
+  h = f(t) \, , \, 0\leq t \leq 24
+\]
+that expresses the depth of the water in terms of the number of hours since noon on July 21.
+
+Solution:
+
+Remember the key idea. That a constant speed motion around a circle drives simple harmonic motion along a diameter of that circle. So to model the depth of the water we start by choosing the circle of motion and a diameter of that circle.
+
+I like to imagine the water oscillating vertically, so I'll label the upward-pointing axis as the positive $h$-axis and keep the $x$-axis horizontal. Both are measured in feet.
+
+%In the standard $xy$-coordinate system with the positive $y$-axis pointing upward, we'll relabel the $y$-axis as the $h$-axis and imagine the water to oscillate vertically.
+
+We now describe our circle of motion.
+
+
+Its center is at a point with $h$-coordinate
+\[
+   h  =  \frac{1}{2}\left( 17 \text{ ft} + 9 \text{ ft} \right) = 13 \text{ ft}
+\]
+equal to the average depth of the water over a 12-hour period.
+
+It has radius
+\[
+   \frac{1}{2} \left( 17 \text{ ft} - 9 \text{ ft} \right) = 8\text{ ft} ,
+\]
+equal to the maximum deviation from the average depth.
+
+The $x$-coordinate of this circle is immaterial and we'll suppose the circle is centered at the point $C$ with coordinates $(0,13)$ (all coordinates in ft) as shown below.
+
+
+\begin{onlineOnly}
+    \begin{center}
+\desmos{mo7ekjkp2s}{900}{600}
+\end{center}
+\end{onlineOnly}
+
+\href{https://www.desmos.com/calculator/mo7ekjkp2s}{142: SHM Vectors}
+
+
+
+Now let $A$ be one of the two points on the circle of motion with $h$ coordinate $h=11$. We'll arbitrarily choose the point in the first quadrant and focus our attention on the vector $\overrightarrow{CA}$. Since $C$ has coordinates $(0,13)$, $\overrightarrow{CA}$ has $h$-component
+\[
+    h = 11 - 13 = -2 .
+\]
+Let $x$ be the $x$-component of $\overrightarrow{CA}$. Then $\overrightarrow{CA} = \langle x, -2 \rangle$. And since $|\overrightarrow{CA}| = 8$,
+\[
+x^2 + (-2)^2 = 8^2
+\]
+and 
+\[
+  x = \pm \sqrt{60}.
+\]
+But because $A$ is in the first quadrant 
+\[
+    x = \sqrt{60}
+\]
+and
+\[
+\overrightarrow{CA} = \langle \sqrt{60},-2\rangle.
+\]
+
+
+
+Now let $P$ be the point on the circle that drives the oscillation of the tides. We'll ignore time for now and express the components of the vector $\overrightarrow{CP}$ in terms of the \emph{clockwise} angle $\theta$ from $\overrightarrow{CA}$ to $\overrightarrow{CP}$. The reason for measuring the angle clockwise is that we are told the water is \emph{falling} at 3:00am when the depth is 11 feet.
+
+So we'll need to find the components of the vector $\overrightarrow{CB}$ we get by rotating $\overrightarrow{CA}$ clockwise by $\pi/2$ radians. This vector has components
+\[
+  \overrightarrow{CB}  = \langle -2, -\sqrt{60}\rangle .
+\]
+
+Now
+\begin{align*}
+      \overrightarrow{CP} & = (\cos \theta)\overrightarrow{CA} + (\sin\theta) \overrightarrow{CB} \\
+                                    & = \cos\theta \langle \sqrt{60},-2 \rangle  + \sin \theta \langle -2, -\sqrt{60} \rangle \\
+                                    & =  \langle \sqrt{60}\cos\theta,-2\cos\theta \rangle  +  \langle -2\sin \theta, -\sqrt{60}\sin \theta \rangle\\
+                                    & = \langle \sqrt{60}\cos\theta - 2 \sin \theta,  -2\cos\theta -\sqrt{60}\sin \theta \rangle .
+\end{align*}
+So relative to the origin $O$, the driving point $P$ has position
+\begin{align*}
+  \overrightarrow{OP} & = \overrightarrow{OC} + \overrightarrow{CP}  \\
+                                & = \langle 0, 13 \rangle +  \langle \sqrt{60}\cos\theta - 2 \sin \theta,  -2\cos\theta -\sqrt{60}\sin \theta \rangle \\
+                               & =  \langle \sqrt{60}\cos\theta - 2 \sin \theta,  13-2\cos\theta -\sqrt{60}\sin \theta \rangle .
+\end{align*}
+
+The last step is to express the angle $\theta$ in terms of the number of hours $t$ past midnight, July 21.
+
+Since the period of oscillation is $12$ hours, the point $P$ that drives the oscillation rotates about the center of its circle at the constant rate of
+\[
+      \frac{2\pi \text{ rad}}{12\text{ hrs}} = \frac{\pi}{6} \frac{\text{rad}}{\text{hr}} .
+\]
+And since $\theta=0$ at time $t=3$ hours past midnight,
+\[
+  \theta = a(t) = \frac{\pi}{6} \left(t-3\right) \, , \, 0\leq t \leq 24.
+\]
+
+So
+\begin{align*}
+    \overrightarrow{OP} & = \langle \sqrt{60}\cos\theta - 2 \sin \theta,  13-2\cos\theta -\sqrt{60}\sin \theta \rangle \\
+                                  & = \langle \sqrt{60}\cos\left(  \frac{\pi}{6} \left(t-3\right)\right) - 2 \sin \left(  \frac{\pi}{6} \left(t-3\right)\right),  \\
+                                  & 13-2\cos\left(  \frac{\pi}{6} \left(t-3\right)\right) -\sqrt{60}\sin \left(  \frac{\pi}{6} \left(t-3\right)\right) \rangle .
+\end{align*}
+
+But remember, it's the $h$-component of this vector that expresses the depth of the water as a function of time. So the function 
+\[
+   h = f(t) = 13-2\cos\left(  \frac{\pi}{6} \left(t-3\right)\right) -\sqrt{60}\sin \left(  \frac{\pi}{6} \left(t-3\right)\right) \, , \, 0\leq t \leq  24,
+\]
+expresses the depth of the water (in feet) in terms of the number of hours past midnight, July 21.
+
+You should check this by 
+\begin{enumerate}
+
+\item checking that $f(3) = 11$ and
+
+\item by inputting this function (named $f_1(t)$ in Line 4 of the worksheet above.
+
+\end{enumerate}
+\end{question}
+
+
+\end{document}
+
