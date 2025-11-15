@@ -109,7 +109,7 @@ For this, we need to find a polar angle for the vector $\overrightarrow{OA}$. We
     \sin \alpha = -\frac{2}{8} ,
 \] 
 \[
- \alpha = \arctan \left(-\frac{1}{4}\right) .
+ \alpha = \arcsin \left(-\frac{1}{4}\right) .
 \]
 
 Now since the tide is falling at 3:00am, the point $P$ that drives the oscillation rotates clockwise about the center of its circle. And since the period of oscillation is $12$ hours, $P$ rotates about the center of its circle at the signed rate of
@@ -118,22 +118,22 @@ Now since the tide is falling at 3:00am, the point $P$ that drives the oscillati
 \]
 And since 
 \[
-  \theta=\arctan \left(-\frac{1}{4}\right)
+  \theta=\arcsin \left(-\frac{1}{4}\right)
 \]
 at time $t=3$ hours past midnight,
 \[
-  \theta = a(t) = \arctan \left(-\frac{1}{4}\right) -  \frac{\pi}{6} \left(t-3\right) \, , \, 0\leq t \leq 24.
+  \theta = a(t) = \arcsin \left(-\frac{1}{4}\right) -  \frac{\pi}{6} \left(t-3\right) \, , \, 0\leq t \leq 24.
 \]
 
 So
 \begin{align*}
     \overrightarrow{OP} & = \langle  8\cos\theta, 13 + 8 \sin\theta \rangle \\
-                                  & = \langle  8\cos \left(  \arctan \left(-\frac{1}{4}\right) -  \frac{\pi}{6} \left(t-3\right) \right), 13 + 8 \sin \left( \arctan \left(-\frac{1}{4}\right) -  \frac{\pi}{6} \left(t-3\right) \right) \rangle .
+                                  & = \langle  8\cos \left(  \arcsin \left(-\frac{1}{4}\right) -  \frac{\pi}{6} \left(t-3\right) \right), 13 + 8 \sin \left( \arcsin \left(-\frac{1}{4}\right) -  \frac{\pi}{6} \left(t-3\right) \right) \rangle .
 \end{align*}
 
 But remember, it's the $h$-component (ie. the second component) of this vector that expresses the depth of the water as a function of time. So the function 
 \[
-   h = f(t) =  13 + 8 \sin \left( \arctan \left(-\frac{1}{4}\right) -  \frac{\pi}{6} \left(t-3\right) \right) \, , \, 0\leq t \leq  24,
+   h = f(t) =  13 + 8 \sin \left( \arcsin \left(-\frac{1}{4}\right) -  \frac{\pi}{6} \left(t-3\right) \right) \, , \, 0\leq t \leq  24,
 \]
 expresses the depth of the water (in feet) in terms of the number of hours past midnight, July 21.
 
