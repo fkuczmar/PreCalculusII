@@ -9,6 +9,13 @@ Using inverse trigonometry to paramaterize simple harmonic motion.
 \end{abstract}
 \maketitle
 
+Here's a problem we solved earlier using vectors. 
+
+\href{https://ximera.osu.edu/precalc2/PreCalculus2/SHMVectors/SHMVectors}{Simple Harmonic Motion with Vectors}
+
+Now we'll solve the same problem using vectors and inverse trigonometry.
+
+You should compare the two solutions.
 
 \begin{question} \label{Qoer333fr}
 Suppose that between consecutive noons on July 21 and July 22 the depth of the water at the Edmonds pier oscillates in simple harmonic motion between $9$ feet and $17$ feet with a period of $12$ hours. Suppose also that at 3am on July 21 the water is $11$ feet deep and falling.
@@ -47,11 +54,11 @@ The $x$-coordinate of this circle is immaterial and we'll suppose the circle is 
 
 \begin{onlineOnly}
     \begin{center}
-\desmos{mo7ekjkp2s}{900}{600}
+\desmos{mytmutzt73}{900}{600}
 \end{center}
 \end{onlineOnly}
 
-\href{https://www.desmos.com/calculator/mo7ekjkp2s}{142: SHM Vectors}
+\href{https://www.desmos.com/calculator/mytmutzt73}{142: SHM Inverse Trig}
 
 
 
@@ -77,40 +84,39 @@ and
 \]
 
 
+Up to this point, the solution has been identical to what we did before. But here's where the change comes. We'll let $P$ be the point on the circle that drives the oscillation of the tides. Now we'll express the components of the vector $\overrightarrow{CP}$ in terms of the  \emph{polar} angle $\theta$ of the vector $\overrightarrow{CP}$, measured in the usual way from $\overrightarrow{CW}$ (pointing in the direction of the positive $x$-axis) to $\overrightarrow{CP}$. 
 
-Now let $P$ be the point on the circle that drives the oscillation of the tides. We'll ignore time for now and express the components of the vector $\overrightarrow{CP}$ in terms of the \emph{clockwise} angle $\theta$ from $\overrightarrow{CA}$ to $\overrightarrow{CP}$. The reason for measuring the angle clockwise is that we are told the water is \emph{falling} at 3:00am when the depth is 11 feet.
+How is this strategy different from our prior solution?
+\begin{freeResponse}
+\end{freeResponse}
 
-So we'll need to find the components of the vector $\overrightarrow{CB}$ we get by rotating $\overrightarrow{CA}$ clockwise by $\pi/2$ radians. This vector has components
+This is much easier.
+
+For this, we need to find a polar angle for the vector $\overrightarrow{OA}$. We'll call this angle $\alpha$. From the picture we can take $-\pi/2 < \alpha < 0$. Then since
 \[
-  \overrightarrow{CB}  = \langle -2, -\sqrt{60}\rangle .
+    \sin \alpha = -\frac{2}{8} ,
+\] 
+\[
+ \alpha = \arctan \left(-\frac{1}{4}\right) .
 \]
 
-Now
-\begin{align*}
-      \overrightarrow{CP} & = (\cos \theta)\overrightarrow{CA} + (\sin\theta) \overrightarrow{CB} \\
-                                    & = \cos\theta \langle \sqrt{60},-2 \rangle  + \sin \theta \langle -2, -\sqrt{60} \rangle \\
-                                    & =  \langle \sqrt{60}\cos\theta,-2\cos\theta \rangle  +  \langle -2\sin \theta, -\sqrt{60}\sin \theta \rangle\\
-                                    & = \langle \sqrt{60}\cos\theta - 2 \sin \theta,  -2\cos\theta -\sqrt{60}\sin \theta \rangle .
-\end{align*}
-So relative to the origin $O$, the driving point $P$ has position
-\begin{align*}
-  \overrightarrow{OP} & = \overrightarrow{OC} + \overrightarrow{CP}  \\
-                                & = \langle 0, 13 \rangle +  \langle \sqrt{60}\cos\theta - 2 \sin \theta,  -2\cos\theta -\sqrt{60}\sin \theta \rangle \\
-                               & =  \langle \sqrt{60}\cos\theta - 2 \sin \theta,  13-2\cos\theta -\sqrt{60}\sin \theta \rangle .
-\end{align*}
-
-The last step is to express the angle $\theta$ in terms of the number of hours $t$ past midnight, July 21.
-
-Since the period of oscillation is $12$ hours, the point $P$ that drives the oscillation rotates about the center of its circle at the constant rate of
+Now since the tide is falling at 3:00am, the point $P$ that drives the oscillation rotates clockwise about the center of its circle. And since the period of oscillation is $12$ hours, $P$ rotates about the center of its circle at the signed rate of
 \[
-      \frac{2\pi \text{ rad}}{12\text{ hrs}} = \frac{\pi}{6} \frac{\text{rad}}{\text{hr}} .
+     - \frac{2\pi \text{ rad}}{12\text{ hrs}} = - \frac{\pi}{6} \frac{\text{rad}}{\text{hr}} .
 \]
-And since $\theta=0$ at time $t=3$ hours past midnight,
+And since 
 \[
-  \theta = a(t) = \frac{\pi}{6} \left(t-3\right) \, , \, 0\leq t \leq 24.
+  \theta=\arctan \left(-\frac{1}{4}\right)
+\]
+at time $t=3$ hours past midnight,
+\[
+  \theta = a(t) = \arctan \left(-\frac{1}{4}\right) -  \frac{\pi}{6} \left(t-3\right) \, , \, 0\leq t \leq 24.
 \]
 
-So
+Because 
+
+
+So the function that 
 \begin{align*}
     \overrightarrow{OP} & = \langle \sqrt{60}\cos\theta - 2 \sin \theta,  13-2\cos\theta -\sqrt{60}\sin \theta \rangle \\
                                   & = \langle \sqrt{60}\cos\left(  \frac{\pi}{6} \left(t-3\right)\right) - 2 \sin \left(  \frac{\pi}{6} \left(t-3\right)\right),  \\
