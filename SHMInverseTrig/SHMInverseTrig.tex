@@ -90,7 +90,19 @@ How is this strategy different from our prior solution?
 \begin{freeResponse}
 \end{freeResponse}
 
-This is much easier.
+This way makes it easier to get the components of $\overrightarrow{CP}$. Because $\theta$ is the polar angle of $\overrightarrow{CP}$, we know
+\begin{align*}
+ \overrightarrow{CP} &=  \left| \overrightarrow{CP} \right| \langle \cos\theta , \sin\theta  \rangle    \\
+                               &= \langle 8\cos\theta, 8 \sin\theta   \rangle .
+\end{align*}
+and
+\begin{align*}
+ \overrightarrow{OP}  &= \overrightarrow{OC} + \overrightarrow{CP} \\
+                                &=\langle 0, 13\rangle + \langle 8\cos\theta, 8 \sin\theta   \rangle \\
+                                & = \langle 8\cos\theta, 13 + 8 \sin\theta   \rangle . 
+\end{align*}
+
+Now the last step is to express $\theta$ as a function of time.
 
 For this, we need to find a polar angle for the vector $\overrightarrow{OA}$. We'll call this angle $\alpha$. From the picture we can take $-\pi/2 < \alpha < 0$. Then since
 \[
@@ -113,19 +125,15 @@ at time $t=3$ hours past midnight,
   \theta = a(t) = \arctan \left(-\frac{1}{4}\right) -  \frac{\pi}{6} \left(t-3\right) \, , \, 0\leq t \leq 24.
 \]
 
-Because 
-
-
-So the function that 
+So
 \begin{align*}
-    \overrightarrow{OP} & = \langle \sqrt{60}\cos\theta - 2 \sin \theta,  13-2\cos\theta -\sqrt{60}\sin \theta \rangle \\
-                                  & = \langle \sqrt{60}\cos\left(  \frac{\pi}{6} \left(t-3\right)\right) - 2 \sin \left(  \frac{\pi}{6} \left(t-3\right)\right),  \\
-                                  & 13-2\cos\left(  \frac{\pi}{6} \left(t-3\right)\right) -\sqrt{60}\sin \left(  \frac{\pi}{6} \left(t-3\right)\right) \rangle .
+    \overrightarrow{OP} & = \langle  8\cos\theta, 13 + 8 \sin\theta \rangle \\
+                                  & = \langle  8\cos \left(  \arctan \left(-\frac{1}{4}\right) -  \frac{\pi}{6} \left(t-3\right) \right), 13 + 8 \sin \left( \arctan \left(-\frac{1}{4}\right) -  \frac{\pi}{6} \left(t-3\right) \right) \rangle .
 \end{align*}
 
-But remember, it's the $h$-component of this vector that expresses the depth of the water as a function of time. So the function 
+But remember, it's the $h$-component (ie. the second component) of this vector that expresses the depth of the water as a function of time. So the function 
 \[
-   h = f(t) = 13-2\cos\left(  \frac{\pi}{6} \left(t-3\right)\right) -\sqrt{60}\sin \left(  \frac{\pi}{6} \left(t-3\right)\right) \, , \, 0\leq t \leq  24,
+   h = f(t) =  13 + 8 \sin \left( \arctan \left(-\frac{1}{4}\right) -  \frac{\pi}{6} \left(t-3\right) \right) \, , \, 0\leq t \leq  24,
 \]
 expresses the depth of the water (in feet) in terms of the number of hours past midnight, July 21.
 
@@ -134,7 +142,7 @@ You should check this by
 
 \item checking that $f(3) = 11$ and
 
-\item by inputting this function (named $f_1(t)$ in Line 4 of the worksheet above.
+\item by inputting this function (named $f_1(t)$) in Line 4 of the worksheet above.
 
 \end{enumerate}
 \end{question}
