@@ -13,29 +13,42 @@ Introduction to solving trigonometric equations.
 
 \begin{exercise}  \label{Ex:44r4nj3r33g3e}
 
-A block at the end of a spring oscillates in simple harmonic motion on a frictionless surface as shown below. The spring is stretched two meters from beyond its relaxed (ie. unstretched) length and then released from rest at $x=2$ m, completing one oscillation about the origin every 5 seconds. The block makes four complete oscillations before a dog intervenes and the problem ends.
+A block at the end of a spring oscillates in simple harmonic motion between positions $x=\pm 3$ as shown below. The block reaches the extreme position $x=3$m at time $t=2$ seconds and completes one oscillation about the origin every 5 seconds. The block makes four complete oscillations before a dog swallows the block and the problem ends.
 
 \begin{onlineOnly}
     \begin{center}
-\desmos{shbymucxq6}{900}{600}
+\desmos{83lf5m446b}{900}{600}
 \end{center}
 \end{onlineOnly}
 
-\href{https://www.desmos.com/calculator/shbymucxq6}{142: Simple Harmonic motion 53}
+\href{https://www.desmos.com/calculator/83lf5m446b}{142: Simple Harmonic motion 54B}
 
 \begin{enumerate}
 
 \item Find a function 
 \[
-  x=f(\theta) \, , \, 0 \leq \theta \leq \answer{8\pi}
+  x=f(\theta)  %\, , \, 0 \leq \theta \leq \answer{8\pi}
 \]
 that express the position (ie. the $x$-coordinate) of the block in terms of the polar angle $\theta$ of the vector $\overrightarrow{OP}$ from the origin to the point $P$ that drives the simple harmonic motion.
 
+The function (\emph{leave the domain blank for now}) is
+\[
+  x = f(\theta) = \answer{3\cos\theta} \, , \, \answer{-4\pi/5} \leq \theta \leq \answer{36\pi/5}.
+\]
+
+
 \item Find a function 
 \[
- \theta = a(t) \, , \, 0 \leq t \leq \answer{20} , 
+ \theta = a(t) 
 \]
 that expesses the  polar angle in terms of the number of seconds since the mass was released.
+
+The function is
+\[
+   \theta = a(t) =  \answer{\frac{2\pi}{5} \left(  t-2 \right)} \, , \, 0 \leq t \leq \answer{20} .
+\]
+
+\item Use your expression for the function $\theta = a(t)$ to find the domain of the function $x=f(\theta)$ in part (a).
 
 \item Then find a function
 \[
@@ -43,15 +56,44 @@ that expesses the  polar angle in terms of the number of seconds since the mass 
 \]
 that expresses the position (in meters) of the mass in terms of the number of seconds since the mass was released.
 
+The function is
+\[
+      x = g(t) = \answer{3\cos(\frac{2\pi}{5} \left(  t-2 \right))} \, , \, 0 \leq t \leq \answer{20}.
+\]
+
 \item What equation would you solve to find all times when the block has position $x=1.4$ meters?
 
-\item To solve the equation in part (d), first make the substitution $\theta = (2\pi/5) t$ and then find the \emph{exact} polar angles of the driving point when the block has position $x=1.4$ meters. Do \emph{not} use a calculator.
+\item To solve the equation in part (e), first make the substitution 
+\[
+        \theta =  \frac{2\pi}{5} \left(  t-2 \right)
+\]
+and find the \emph{exact} polar angles of the driving point when the block has position $x=1.4$ meters. Do \emph{not} use a calculator.
+
+The polar angles are
+\[
+   \theta = \answer{\arccos ( 1.4/3 )} + 2\pi n \, , \, n=\answer{0} , \answer{1} , \answer{2}, \answer{3} 
+\]
+or
+\[
+     \theta = \answer{-\arccos ( 1.4/3 )} + 2\pi n \, , \, n=1, 2, 3, 4.
+\]
 
 \item Then find the \emph{exact} times when the block has position $x=1.4$ meters. Do \emph{not} use a calculator.
 
-\item Use the radian protractor above to approximate the two smallest angles in part (e). Then use these to approximate the first two times the block has position $x=1.4$ meters.
+The times are 
+\[
+   t = \answer{2+ \frac{5}{2\pi}\arccos ( 1.4/3 )} + \answer{5}n \, , \, n=\answer{0} , \answer{1} , \answer{2}, \answer{3} 
+\]
+or
+\[
+     t = \answer{2-\frac{5}{2\pi}\arccos ( 1.4/3 )} + \answer{5}n \, , \, n=1, 2, 3, 4.
+\]
 
-\item Use a calculator and the results of part (f) to approximate the first two times the block has position $x=1.4$ meters.
+
+
+\item Use the radian protractor above to approximate the two smallest angles in part (f). Then use these to approximate the first two times the block has position $x=1.4$ meters.
+
+\item Use a calculator and the results of part (g) to approximate the first two times the block has position $x=1.4$ meters.
 
 \item When does the block have position $x=1.4$ meters for the \emph{last} time? Give the exact time and then a decimal approximation.
 
