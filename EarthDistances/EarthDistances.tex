@@ -1,0 +1,83 @@
+\documentclass{ximera}
+\title{Measuring Distances on the Earth}
+
+\newcommand{\pskip}{\vskip 0.1 in}
+
+\begin{document}
+\begin{abstract}
+Shortest paths on the earth.
+\end{abstract}
+\maketitle
+
+
+\section{Trigonometry: Along a Circle of Latitude}
+
+\begin{question} \label{Q34dgbnhhtrg}
+
+Pick points $A$ and $B$ at the same latiitude $\phi$ on the earth's surface and let $\theta$ (measured in radians) be the difference in their longitudes, with $0<\theta \leq \pi$.
+
+\begin{onlineOnly}
+   \begin{center}
+\desmosThreeD{hhpog6ijnr}{900}{600}
+\end{center}
+\end{onlineOnly}
+
+\href{https://www.desmos.com/3d/hhpog6ijnr}{151: Distances on Earth}
+
+The purpose of this problem is to compare two distances in traveling from $A$ to $B$, one along their common circle of latitude, the other along the great circle through $A$ and $B$. We'll assume the earth is a sphere of radius $R$ miles.
+
+To compute each distance, we need to see inside the earth. You can do this by deactivating the \emph{Sphere} folder in Line 3.
+
+\begin{enumerate}
+\item First the distance along the circle of latitude.
+
+\begin{enumerate}
+\item Start by expressing the radius of the circle of latitude in terms of the latitude $\phi$ and the radius of earth $R$. Work in general, not with the specific values in the worksheet above.
+
+\item Then express the distance between $A$ and $B$ along the circle of latitude in terms of $\phi$, $R$, and $\theta$.
+\end{enumerate}
+
+\item Next we'll compute the distance along the great circle through $A$ and $B$. The center of this circle coincides with the center of the sphere.
+
+\begin{enumerate}
+\item Try to do this on your own. Here are two triangles (from inside the sphere as illustrated above) shown in two dimensions to help.
+
+\begin{onlineOnly}
+   \begin{center}
+\desmos{wkdhhbojii}{900}{600}
+\end{center}
+\end{onlineOnly}
+
+\href{https://www.desmos.com/calculator/wkdhhbojii}{151: Distances Earth 2D}
+
+
+\end{enumerate}
+
+\item Use the results of parts (a) and (b) to compare these two distances betweeen San Francisco (latitude $38^\circ$N, longtitude $122^\circ$W) and Washington DC  (latitude $38^\circ$N, longtitude $77^\circ$W). Take the radius of the earth to be $3960$ miles.
+
+\item Find two other locations at approximately the same latitude and compare the two distances.
+
+\end{enumerate}
+
+\end{question}
+
+\section{Calculus: Along a Circle of Latitude}
+This is a continuation of the previous problem.
+
+The question is this: Fix the difference in longitude $\theta$ between two points at the same latitude and determine an expression for the latitude at which the postive difference in the two distances (one along the circle of latitude, the other along the great circle through the points) is a maximum.
+
+\begin{onlineOnly}
+   \begin{center}
+\desmos{muhahdawza}{900}{600}
+\end{center}
+\end{onlineOnly}
+
+\href{https://www.desmos.com/calculator/muhahdawza}{151: Distances Earth 2D Part 2}
+
+The difference in the two distances is a maximum at latitude
+\[
+   \phi = \answer{\arccos\left( \sqrt{\csc^2 \left(\frac{\theta}{2}\right) - \frac{4}{\theta^2}} \right)} .
+\]
+
+\end{document}
+
