@@ -99,21 +99,28 @@ Pick points $A$ and $B$ at the same latiitude $\phi$ on the earth's surface and 
 
 The purpose of this problem is to compare two distances in traveling from $A$ to $B$, one along their common circle of latitude, the other along the great circle through $A$ and $B$. We'll assume the earth is a sphere of radius $R$ miles.
 
-To compute each distance, we need to see inside the earth. You can do this by deactivating the \emph{Sphere} folder in Line 3.
+We saw in Question 2 (a) above, that the distance (in miles) along their common circle of latitude is
+\[
+      d_1 = R \Delta \theta \cos\phi .
+\] 
 
-\begin{enumerate}
-\item First the distance along the circle of latitude.
+To compute the distance along the shorter arc of the great circle we need to see inside the earth. Do this by deactivating the \emph{Sphere} folder in Line 3.
 
-\begin{enumerate}
-\item Start by expressing the radius of the circle of latitude in terms of the latitude $\phi$ and the radius of earth $R$. Work in general, not with the specific values in the worksheet above.
+%\begin{enumerate}
+%\item First the distance along the circle of latitude.
 
-\item Then express the distance between $A$ and $B$ along the circle of latitude in terms of $\phi$, $R$, and $\Delta \theta$.
-\end{enumerate}
+%\begin{enumerate}
+%\item Start by expressing the radius of the circle of latitude in terms of the latitude $\phi$ and the radius of earth $R$. Work in %general, not with the specific values in the worksheet above.
 
-\item Next we'll compute the distance along the great circle through $A$ and $B$. The center of this circle coincides with the center of the sphere.
+%\item Then express the distance between $A$ and $B$ along the circle of latitude in terms of $\phi$, $R$, and $\Delta \theta$.
+%\end{enumerate}
 
-\begin{enumerate}
-\item Try to do this on your own. Here are two triangles (from inside the sphere as illustrated above) shown in two dimensions to help.
+
+
+%\begin{enumerate}
+%\item Try to do this on your own. Here are two triangles (from inside the sphere as illustrated above) shown in two dimensions to help.
+
+The center of the great circle (blue) coincides with the center $O$ of the sphere. To compute the distance along the shorter arc of this great circle, we need to measure the angle $\alpha = \angle AOB$. The two-dimensional figure below can help.  
 
 \begin{onlineOnly}
    \begin{center}
@@ -123,14 +130,19 @@ To compute each distance, we need to see inside the earth. You can do this by de
 
 \href{https://www.desmos.com/calculator/wkdhhbojii}{151: Distances Earth 2D}
 
+\begin{enumerate}
 
-\end{enumerate}
+\item Use the two-dimensional figure above to find an expression for the measure $\alpha$ of $\angle AOB$. 
 
+\emph{Hint:} Use right triangle $\Delta QMB$ to first find an expression for the length of $\overline{BM}$ in terms of $R$, $\phi$, and $\Delta \theta$. Then use right triangle $\Delta OMB$ to find an expression for $\alpha/2 = \angle MOB$.
+
+ 
 \item Use the results of parts (a) and (b) to compare these two distances betweeen San Francisco (latitude $38^\circ$N, longtitude $122^\circ$W) and Washington DC  (latitude $38^\circ$N, longtitude $77^\circ$W). Take the radius of the earth to be $3960$ miles.
 
 \item Find two other locations at approximately the same latitude and compare the two distances.
 
 \end{enumerate}
+
 
 \end{question}
 
