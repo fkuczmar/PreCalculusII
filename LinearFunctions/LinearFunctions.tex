@@ -14,12 +14,21 @@ Review of linear functions in the context of motion and rotation.
 \section{Motion Along a Line}
 \emph{Position} and \emph{velocity} are vectors and we'll learn more about vectors later in the class. But for now we'll confine our attention to motion along a straight line where position and velocity are scalars. Put a one-dimensional coordinate system on this line and you have a number line, say the $s$-axis. We can now regard the position of a beetle on the number line as \emph{scalar} (ie. a number). It's just the $s$-coordinate of the beetle and it might be positive or negative. The $s$-coordinate measures position of the beetle relative to the origin, $s=0$.
 
-\emph{Velocity} is the rate of change of position with respect to time. For our beetle crawling along a line, velocity is also a scalar. It is positive when the beetle is moving in the positve direction of the number line (ie. if its $s$-coordinate increases). The beetle's velocity is negative when its $s$-coordinate decreases.
+\emph{Velocity} is the rate of change of position with respect to time. For our beetle crawling along a line, velocity is also a scalar. It is positive when the beetle is moving in the positive direction of the number line (ie. when its $s$-coordinate increases). The beetle's velocity is negative when its $s$-coordinate decreases.
 
 We'll start with a special case, where the beetle's velocity is \emph{constant}. Here's an example.
 
 \begin{example} \label{Ex:lfle0311}
 Between noon and 1:00pm a beetle crawls along the $s$-axis with a constant velocity, passing position $s=5$cm at 12:23pm and position $s=-12$cm at 12:30pm.
+
+\begin{onlineOnly}
+    \begin{center}
+\desmos{ddf6exycnx}{900}{600}
+\end{center}
+\end{onlineOnly}
+
+\href{https://www.desmos.com/calculator/ddf6exycnx}{142: Beetle on a Line}
+
 
 \begin{enumerate}
 \item Find the beetle's position at 12:51pm.
@@ -34,31 +43,31 @@ that expresses the beetle's position (in cm) in terms of the number of minutes p
 
 \begin{explanation}
 \begin{enumerate}
-\item We start by finding the beetle's velocity. Since the velocity is constant, the velocity is the change in position divided by the change in time. In this example, the beetle's velocity is
+\item We start by finding the beetle's velocity. Since the velocity is constant, the velocity is the beetle's change in position divided by the change in time. In this example, the beetle's velocity is
 \[
-  v = \frac{\Delta s}{\Delta t} = \frac{(-12 - 5) \text{ cm}}{(30-23)\text{ sec}} = \frac{-17}{7} \, \frac{\text{cm}}{\text{sec}}. 
+  v = \frac{\Delta s}{\Delta t} = \frac{(-12 - 5) \text{ cm}}{(30-23)\text{ min}} = \frac{-17}{7} \, \frac{\text{cm}}{\text{min}}. 
 \]
 
 To find the beetle's position at 12:51pm, we first find its change in position during the time from 12:23pm to 12:51pm. To do this we multiply its velocity by the number of minutes $51 - 23 = 28$ between these times. So the change in position is
 \begin{align*}
-      f(51) - f(23) &= \left(  \frac{-17}{7} \, \frac{\text{cm}}{\text{sec}} \right) \left( 51 - 23\right) \text{ sec} \\
-                        &= \left(  \frac{-17}{7} \, \frac{\text{cm}}{\text{sec}} \right) \left( 28 \text{ sec} \right)  \\
+      f(51) - f(23) &= \left(  \frac{-17}{7} \, \frac{\text{cm}}{\text{min}} \right) \left( 51 - 23\right) \text{min} \\
+                        &= \left(  \frac{-17}{7} \, \frac{\text{cm}}{\text{min}} \right) \left( 28 \text{ min} \right)  \\
                         &= -68 \text{ cm}.
 \end{align*}
 
-Now to get the beetle's position at 12:51pm we add this change in position between 12:23pm and 12:30pm to its position at 12:23pm. This gives the beetle's position at 12:51pm to be
+Now to get the beetle's position at 12:51pm we add this change in position to its position at 12:23pm. This gives the beetle's position at 12:51pm to be
 \begin{align*}
-    f(51) &= f(23) + (f(51) - f(23) \\
-            &= 5 \text{ cm} + \left(  \frac{-17}{7} \, \frac{\text{cm}}{\text{sec}} \right) \left( 28 \text{ sec} \right)  \\
+    f(51) &= f(23) + (f(51) - f(23))\\
+            &= 5 \text{ cm} + \left(  \frac{-17}{7} \, \frac{\text{cm}}{\text{min}} \right) \left( 28 \text{ min} \right)  \\
             &= 5 \text{ cm} + -68 \text{ cm} \\
             &= -63 \text{ cm}
 \end{align*}
 
-\item To find the beetle's position at time $t$ minutes past noon, we use the same idea as in part (a). The only difference is that we replace time $t=51$ minutes past noon with time $t$ minutes past noon. So the beetle's position (in cm) at time $t$ minutes past noon is
+\item To find the beetle's position at time $t$ minutes past noon, we use the same idea as in part (a). The only difference is that we replace the time $51$ minutes past noon with the time $t$ minutes past noon. So the beetle's position (in cm) at time $t$ minutes past noon is
 \begin{align*}
      s &= f(t) \\
         &= f(23) + (f(t) -  f(23)) \\
-        &=  5 \text{ cm} + \left(  \frac{-17}{7} \, \frac{\text{cm}}{\text{sec}} \right) \left( t - 23 \right) \text{ sec} \\
+        &=  5 \text{ cm} + \left(  \frac{-17}{7} \, \frac{\text{cm}}{\text{min}} \right) \left( t - 23 \right) \text{min} \\
         &=  5 \text{ cm} + \left(  \frac{-17}{7} \right) \left(t - 23 \right) \text{ cm} .
 \end{align*}
 
@@ -67,86 +76,91 @@ Usually we supress the units, include the domain, and write the position functio
     s = f(t) =  5 - \frac{17}{7}\left(t - 23  \right) \, , \, 0\leq t \leq 60.
 \]
 
+Explain the logic behind this expression. Include units in your explanation.
+\begin{freeResponse}
+\end{freeResponse}
+
 \end{enumerate}
 \end{explanation}
 
 \end{example}
 
+\section{Uniform Circular Motion}
+
+Uniform circular motion is the basis of much of trigonometry. Uniform here means constant speed. So a beetle moving in uniform circular motion crawls around a circle at a constant speed.
+
+For a circle in an $xy$-coordinate system, we'll want to keep track of the beetle's \emph{polar angle}. This is the angle the segment $\overline{OB}$ from the center of the circular path to the beetle makes with the positive $x$-axis. The angle is measured positively in the counterclockwise direction. For now, we'll measure the polar angle in revolutions. Here's an example.
+
+\begin{example} \label{Ex:88df83mmaz}
+Between noon and 1:00pm a beetle crawls counterclockwise around a circle of radius $5$cm at a constant speed. It passes the point $(0,5)$ at 12:23pm and (without completing a full revolution) passes the point $(0,-5)$ at 12:30pm.
 
 \begin{onlineOnly}
     \begin{center}
-\desmos{9xuhmux5qr}{900}{600}
+\desmos{zdwkilkten}{900}{600}
 \end{center}
 \end{onlineOnly}
 
-\href{https://www.desmos.com/calculator/9xuhmux5qr}{142: Revolution Protractor 2}
+\href{https://www.desmos.com/calculator/zdwkilkten}{142: Beetle on a Circle}
 
-
-\begin{question} \label{Qpdf30r3mmm}
-
-A mass hanging from a spring oscillates in simple harmonic motion about its equilibrium position between displacements $s=-16$cm and $s=16$cm from equilibrium with a period of $4$ seconds. The mass is released from rest at $s=-16$cm.
-
-A point $P$ on the circle of radius $16cm$ centered at the equilibrium position drives the simple harmonic motion. The point $Q$ on the circle of radius $5$cm moves in tandem with $P$, having the same polar angle (meausred in revolutions from the positive $x$-axis) at all times. 
-
-\begin{onlineOnly}
-    \begin{center}
-\desmos{tskmnyezxz}{900}{600}
-\end{center}
-\end{onlineOnly}
-
-\href{https://www.desmos.com/calculator/tskmnyezxz}{142: Vertical Spring}
 
 \begin{enumerate}
+\item Find the beetle's polar angle (measured in revolutions) at 12:51pm.
+
 \item Find a function 
 \[
-    \theta = a(t) \, , \, t \geq 0 ,
+ \theta =a(t) \, , \, 0\leq t \leq 60, 
 \]
-that expresses the polar angles of $P$ and $Q$, measured counterclockwise from the positive $x$-axis in \emph{revolutions}, in terms of the number of seconds since the mass was released.
+that expresses the beetle's polar angle (in revolutions) in terms of the number of minutes past noon.
+\end{enumerate}
 
-\item Find a function
-\[
-    s = f(x) \, , \, -5 \leq x \leq 5 ,
-\]
-that expresses the displacement from equilibrium of the oscillating mass in terms of the $x$-coordinate of point $Q$.
 
-\item Let $x = g(\theta)$, $\theta \geq 0$, be the function that expresses the $x$-coordinate of point $Q$ in terms of the polar angle $\theta$. Express the function
-\[
-   s = h(t) \, , \, t\geq 0,
-\]
-that gives the position of the mass relative to its equilibrium position (in cm) in terms of the number of seconds since the mass was released in terms of the functions $a$, $f$, and $g$. Work in general. Do \emph{not} use your specific expressions for the functions $a$ and $f$.
 
-\item Sketch a rough graph of the function $s=f(t)$, $t\geq 0$. Label the coordinates of at least four key points on the graph.
 
-\item Use the protractor and your functions from parts (a) and (b) to find approximate answers to each of the following questions.
-
+\begin{explanation}
 \begin{enumerate}
-\item Find the position of the mass at time $t=1.75$ seconds after being released.
+\item We start by find the beetle's signed rotation rate about the circle's center. Because the beetle's speed is constant, so is this rotation rate. The rate is positive since the beetle turns counterclockwise about the center of its path. 
 
-\item Approximate the first two times when the mass is at position $s=-9$cm.
+At 12:23pm, when the beetle has coordinates $(0,5)$, the polar angle is
+\[
+ \theta = a(23) = \frac{1}{4}\text{ rev}
+\] 
+and at 12:30pm when the beetl has coordinates $(0,-5)$, the polar angle is
+\[
+  \theta = a(30) = \frac{3}{4}\text{ rev}.
+\]
+So the beetle rotation rate about the center of its path is
+\begin{align*}
+   \omega &= \frac{\Delta \theta}{\Delta t} \\
+               &= \frac{(a(30) - a(23))\text{ rev}}{(30 - 23)\text{ min}} \\
+               &= \frac{\left( \frac{3}{4} - \frac{1}{4}\right) \text{rev}}{7 \text{ min}} \\
+               &= \frac{1}{14} \frac{\text{rev}}{\text{min}}.
+\end{align*}
 
-\item Approximate the twentieth time the mass is at position $s=3$cm.
+So the beetle's polar angle at 12:51pm is
+\begin{align*}
+   a(51) &= a(23) + (a(51) - a(23))\\
+           &=\frac{1}{4} \text{ rev} + \left(  \frac{1}{14} \, \frac{\text{rev}}{\text{min}} \right) \left( 51-23 \right) \text{min}  \\
+            &=\frac{1}{4} \text{ rev} + \left(  \frac{1}{14} \, \frac{\text{rev}}{\text{min}} \right) \left( 28 \text{ min} \right)  \\
+            &= \frac{1}{4} \text{ rev} + 2 \text{ rev} \\
+            &= 2.25 \text{ rev}.
+\end{align*}
+
+\item The beetle's polar angle (in revolutions) at time $t$ minutes past noon is
+\begin{align*}
+  a(t) &= a(23) + (a(t) - a(23))\\
+           &=\frac{1}{4} \text{ rev} + \left(  \frac{1}{14} \, \frac{\text{rev}}{\text{min}} \right) \left( t-23 \right) \text{min}  \\
+            &=\frac{1}{4} \text{ rev} +  \frac{1}{14}  \left( t-23\right) \text{ rev} .
+           \end{align*}
+
+Omitting units and including the domain, the polar angle function is
+\[
+  \theta = a(t) = \frac{1}{4} + \frac{1}{14}  \left( t-23\right) \, , \, 0\leq t\leq 60.
+\]
 \end{enumerate}
 
-\end{enumerate}
+\end{explanation}
 
-\end{question}
-
-
-
-\begin{question} \label{Qdlferermm}
-
-Between consecutive midnights the depth of the water at Edmond's pier oscillates in simple harmonic motion about its mean, reaching a maximum depth of $17$ feet at 2:00am and a minimum depth of $8$ feet at 7:30am. 
- 
-\begin{enumerate}
-\item Repeat parts (a)-(d) of Question 1, appropriately modified.
-
-\item Approximate the water's depth at 5am and at 3pm.
-
-\item Approximate all times when the water is $15$ feet deep.
-
-\item Approximate the depth of the water $30$ minutes after the depth is $10$ feet. Give all possibilities.
-\end{enumerate}
-\end{question}
+\end{example}
 
 
 
