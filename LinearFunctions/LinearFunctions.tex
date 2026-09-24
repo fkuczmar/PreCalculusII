@@ -1,0 +1,154 @@
+\documentclass{ximera}
+\title{Linear Functions}
+
+
+\newcommand{\pskip}{\vskip 0.1 in}
+
+\begin{document}
+\begin{abstract}
+Review of linear functions in the context of motion and rotation.
+\end{abstract}
+\maketitle
+
+
+\section{Motion Along a Line}
+\emph{Position} and \emph{velocity} are vectors and we'll learn more about vectors later in the class. But for now we'll confine our attention to motion along a straight line where position and velocity are scalars. Put a one-dimensional coordinate system on this line and you have a number line, say the $s$-axis. We can now regard the position of a beetle on the number line as \emph{scalar} (ie. a number). It's just the $s$-coordinate of the beetle and it might be positive or negative. The $s$-coordinate measures position of the beetle relative to the origin, $s=0$.
+
+\emph{Velocity} is the rate of change of position with respect to time. For our beetle crawling along a line, velocity is also a scalar. It is positive when the beetle is moving in the positve direction of the number line (ie. if its $s$-coordinate increases). The beetle's velocity is negative when its $s$-coordinate decreases.
+
+We'll start with a special case, where the beetle's velocity is \emph{constant}. Here's an example.
+
+\begin{example} \label{Ex:lfle0311}
+Between noon and 1:00pm a beetle crawls along the $s$-axis with a constant velocity, passing position $s=5$cm at 12:23pm and position $s=-12$cm at 12:30pm.
+
+\begin{enumerate}
+\item Find the beetle's position at 12:51pm.
+
+\item Find a function
+\[
+      s= f(t) \, , \, 0\leq t \leq 60,
+\] 
+that expresses the beetle's position (in cm) in terms of the number of minutes past noon.
+
+\end{enumerate}
+
+\begin{explanation}
+\begin{enumerate}
+\item We start by finding the beetle's velocity. Since the velocity is constant, the velocity is the change in position divided by the change in time. In this example, the beetle's velocity is
+\[
+  v = \frac{\Delta s}{\Delta t} = \frac{(-12 - 5) \text{ cm}}{(30-23)\text{ sec}} = \frac{-17}{7} \, \frac{\text{cm}}{\text{sec}}. 
+\]
+
+To find the beetle's position at 12:51pm, we first find its change in position during the time from 12:23pm to 12:51pm. To do this we multiply its velocity by the number of minutes $51 - 23 = 28$ between these times. So the change in position is
+\begin{align*}
+      f(51) - f(23) &= \left(  \frac{-17}{7} \, \frac{\text{cm}}{\text{sec}} \right) \left( 51 - 23\right) \text{ sec} \\
+                        &= \left(  \frac{-17}{7} \, \frac{\text{cm}}{\text{sec}} \right) \left( 28 \text{ sec} \right)  \\
+                        &= -68 \text{ cm}.
+\end{align*}
+
+Now to get the beetle's position at 12:51pm we add this change in position between 12:23pm and 12:30pm to its position at 12:23pm. This gives the beetle's position at 12:51pm to be
+\begin{align*}
+    f(51) &= f(23) + (f(51) - f(23) \\
+            &= 5 \text{ cm} + \left(  \frac{-17}{7} \, \frac{\text{cm}}{\text{sec}} \right) \left( 28 \text{ sec} \right)  \\
+            &= 5 \text{ cm} + -68 \text{ cm} \\
+            &= -63 \text{ cm}
+\end{align*}
+
+\item To find the beetle's position at time $t$ minutes past noon, we use the same idea as in part (a). The only difference is that we replace time $t=51$ minutes past noon with time $t$ minutes past noon. So the beetle's position (in cm) at time $t$ minutes past noon is
+\begin{align*}
+     s &= f(t) \\
+        &= f(23) + (f(t) -  f(23)) \\
+        &=  5 \text{ cm} + \left(  \frac{-17}{7} \, \frac{\text{cm}}{\text{sec}} \right) \left( t - 23 \right) \text{ sec} \\
+        &=  5 \text{ cm} + \left(  \frac{-17}{7} \right) \left(t - 23 \right) \text{ cm} .
+\end{align*}
+
+Usually we supress the units, include the domain, and write the position function as
+\[
+    s = f(t) =  5 - \frac{17}{7}\left(t - 23  \right) \, , \, 0\leq t \leq 60.
+\]
+
+\end{enumerate}
+\end{explanation}
+
+\end{example}
+
+
+\begin{onlineOnly}
+    \begin{center}
+\desmos{9xuhmux5qr}{900}{600}
+\end{center}
+\end{onlineOnly}
+
+\href{https://www.desmos.com/calculator/9xuhmux5qr}{142: Revolution Protractor 2}
+
+
+\begin{question} \label{Qpdf30r3mmm}
+
+A mass hanging from a spring oscillates in simple harmonic motion about its equilibrium position between displacements $s=-16$cm and $s=16$cm from equilibrium with a period of $4$ seconds. The mass is released from rest at $s=-16$cm.
+
+A point $P$ on the circle of radius $16cm$ centered at the equilibrium position drives the simple harmonic motion. The point $Q$ on the circle of radius $5$cm moves in tandem with $P$, having the same polar angle (meausred in revolutions from the positive $x$-axis) at all times. 
+
+\begin{onlineOnly}
+    \begin{center}
+\desmos{tskmnyezxz}{900}{600}
+\end{center}
+\end{onlineOnly}
+
+\href{https://www.desmos.com/calculator/tskmnyezxz}{142: Vertical Spring}
+
+\begin{enumerate}
+\item Find a function 
+\[
+    \theta = a(t) \, , \, t \geq 0 ,
+\]
+that expresses the polar angles of $P$ and $Q$, measured counterclockwise from the positive $x$-axis in \emph{revolutions}, in terms of the number of seconds since the mass was released.
+
+\item Find a function
+\[
+    s = f(x) \, , \, -5 \leq x \leq 5 ,
+\]
+that expresses the displacement from equilibrium of the oscillating mass in terms of the $x$-coordinate of point $Q$.
+
+\item Let $x = g(\theta)$, $\theta \geq 0$, be the function that expresses the $x$-coordinate of point $Q$ in terms of the polar angle $\theta$. Express the function
+\[
+   s = h(t) \, , \, t\geq 0,
+\]
+that gives the position of the mass relative to its equilibrium position (in cm) in terms of the number of seconds since the mass was released in terms of the functions $a$, $f$, and $g$. Work in general. Do \emph{not} use your specific expressions for the functions $a$ and $f$.
+
+\item Sketch a rough graph of the function $s=f(t)$, $t\geq 0$. Label the coordinates of at least four key points on the graph.
+
+\item Use the protractor and your functions from parts (a) and (b) to find approximate answers to each of the following questions.
+
+\begin{enumerate}
+\item Find the position of the mass at time $t=1.75$ seconds after being released.
+
+\item Approximate the first two times when the mass is at position $s=-9$cm.
+
+\item Approximate the twentieth time the mass is at position $s=3$cm.
+\end{enumerate}
+
+\end{enumerate}
+
+\end{question}
+
+
+
+\begin{question} \label{Qdlferermm}
+
+Between consecutive midnights the depth of the water at Edmond's pier oscillates in simple harmonic motion about its mean, reaching a maximum depth of $17$ feet at 2:00am and a minimum depth of $8$ feet at 7:30am. 
+ 
+\begin{enumerate}
+\item Repeat parts (a)-(d) of Question 1, appropriately modified.
+
+\item Approximate the water's depth at 5am and at 3pm.
+
+\item Approximate all times when the water is $15$ feet deep.
+
+\item Approximate the depth of the water $30$ minutes after the depth is $10$ feet. Give all possibilities.
+\end{enumerate}
+\end{question}
+
+
+
+
+\end{document}
