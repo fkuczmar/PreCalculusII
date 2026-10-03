@@ -1,0 +1,76 @@
+\documentclass{ximera}
+\title{Quiz Problems and Solutions F26}
+
+\newcommand{\pskip}{\vskip 0.1 in}
+
+\begin{document}
+\begin{abstract}
+Quiz problems and solutions.
+\end{abstract}
+\maketitle
+
+\section{Quiz 1B}
+
+\begin{question}
+Between 12:30pm and 1:00pm a beetle crawls clockwise around a circle of radius $5$ meters centered at the origin at a constant speed. It crosses the negative $y$-axis at 12:27pm, makes one complete rotation about the origin, and then crosses the line $y=x$ in the first quadrant at 12:43pm. 
+
+{\bf Use the methods of this class} to find an expression for the function 
+\[
+   \theta = a(t) \, , \, 30\leq t \leq 60,
+\]
+that expresses the polar angle of the segment from the origin to the beetle, measured in revolutions, in terms of the number of  minutes past noon. The angle is measured postively in the counterclockwise sense from the positive $x$-axis.
+
+
+\begin{itemize}
+\item Explain your reasoning thoroughly and in complete sentences.
+
+\item Draw a graph of the polar angle function to help with your explanation.
+
+\item Include units for all numbers in all computations.
+
+\end{itemize}
+
+\begin{explanation}
+I'll leave the graph for you, but because the beetle crawls at a constant speed, its polar angle changes at a constant rate. So the polar angle function is linear and its graph is a line \emph{segment}.  Be sure to label the axes with the appropriate variable names and units.
+
+Both the graph and the expression for the polar angle function depend on our choice of the polar angle at 12:27pm. One possibility for the polar angle at 12:27pm is
+\[
+  \theta = a(27) = -1/4 \text{ rev}.
+\] 
+There are infinitely many other possibilities, such as $\theta=3/4$ rev. 
+
+In any case, the change in the polar angle from 12:27pm to 12:43pm is
+\[
+  \Delta \theta = a(43) - a(27) = -(1+5/8) \text{ rev}= -13/8 \text{ rev}.
+\]
+The change is negative because the beetle turns clockwise about the origin.
+
+So the beetle rotates about the orgin at the signed rate of 
+\begin{align*}
+  \omega &= \frac{\Delta \theta}{\Delta t} \\
+               &= \frac{(a(43)-a(27))\text{ rev}}{(43 - 27) \text{ sec}} \\
+              &=-\frac{13/8 \text{ rev}}{16 \text{ sec}} \\
+              &= -\frac{13}{128} \frac{\text{rev}}{\text{sec}}.
+\end{align*}
+
+The change in its polar angle from 12:27pm to time $t$ minutes past noon is therefore
+\begin{align*}
+  \Delta \theta &= a(t) - a(27) \\
+                     &=  \left( -\frac{13}{128} \frac{\text{rev}}{\text{sec}} \right) \left(t - 27  \right)\text{sec} \\
+                     &=    -\frac{13}{128} \left(t-27 \right) \text{ rev}.      
+\end{align*}
+
+To get the polar angle at time $t$ minutes past noon, we add this change to the polar angle at 12:27pm. Omitting units from the expression, the beetle's polar angle (measured in revolutions) at time $t$ minutes past noon is therefore
+\begin{align*}
+ \theta &= a(t)  \\
+          &= a(27) + (a(t) - a(27)) \\
+          &= -\frac{1}{4} - \frac{13}{128} \left(t-27 \right) \, , \, 30 \leq t \leq 60.
+\end{align*}
+\end{explanation}
+
+Find another possible expression for the polar angle function.
+\begin{freeResponse}
+\end{freeResponse}
+\end{question}
+
+\end{document}
