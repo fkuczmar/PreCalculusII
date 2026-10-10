@@ -1,0 +1,208 @@
+\documentclass{ximera}
+\title{Describing Simple Harmonic Motion}
+
+\newcommand{\pskip}{\vskip 0.1 in}
+
+\begin{document}
+\begin{abstract}
+Using the sine and cosine functions to describe simple harmonic motion.
+\end{abstract}
+\maketitle
+
+
+
+
+
+\begin{example}  \label{E8bdsdsf}
+Suppose that over the course of a 24-hour period, from midnight October 29 to midnight October 30, the depth of the water at the Edmonds Pier varies in simple harmonic motion about its mean. Suppose also that a high tide of 21 feet occurs at 2:00am and the following low tide of 5 feet occurs at 8:00am. 
+
+We'll ask two questions:
+
+\begin{enumerate}
+\item Use circular interpolation with the protractor below to approximate the depth of the water at 3:00am on October 29.
+
+\item Use circular interpolation with the protractor below to approximate the depth of the water at 5:30pm on October 29.
+
+%\item %Use the circular protractor to approximate the first two times after midnight when the water is $18$ feet deep.
+
+Explain your reasoning and include screenshots to help with your explanations. 
+\begin{freeResponse}
+\end{freeResponse}
+
+\begin{onlineOnly}
+    \begin{center}
+\desmos{0wxwmkzvky}{900}{600}
+\end{center}
+\end{onlineOnly}
+
+\href{https://www.desmos.com/calculator/0wxwmkzvky}{142: Circular Interpolation Tides}
+
+%\emph{Keep in mind that high tide occurs at 2:00am and low tide at 8:00am.}
+
+\end{enumerate}
+\end{example}
+
+
+
+
+\section{Circular Interpolation using the Sine Function}
+
+
+
+\begin{example} \label{Efoe34r}
+This is a contintuation of Example 1. Our goal now is to find a function
+\[
+     h = f(t) \, , \, 0\leq t \leq 24,
+\]
+that expresses the depth of the water (in feet) at the Edmonds pier in terms of the number of hours past midnight, October 29.
+
+Here are the steps.
+
+\begin{enumerate}
+
+\item  First we'll use the information above to sketch by hand a graph of the function $f$. Label the axes with the appropriate variable names and units. Label the coordinates of four key points on the graph.
+
+Then activate the folder \emph{Graph} in Line 2 of the worksheet below to check your graph.
+
+\begin{onlineOnly}
+    \begin{center}
+\desmos{jqmcce5as4}{900}{600}
+\end{center}
+\end{onlineOnly}
+
+\href{https://www.desmos.com/calculator/jqmcce5as4}{142: Edmonds Pier 2a}.
+
+\item Next we'll compute the mean (average) depth of the water over the course of a $12$-hour and the maximum deviation from this mean. Including units in our computation, the mean depth is 
+\[
+    h_{avg} = 0.5 ( 21 \text{feet } + 5 \text{feet}) = 13 \text{ feet} . 
+\]
+And the maximum deviation from the mean is
+\[
+    r = 0.5 ( 21 \text{feet } - 5 \text{feet}) = 8 \text{ feet} ..
+\]
+
+Activate the \emph{Amplitude} folder on Line 8 of the above demonstration to draw the horizontal line showing the average depth. Note this line is labeled with its equation. There is also a vertical line that shows the the maximum deviation from the mean.
+
+\item Next we'll draw a circle on a new $x,y$-coordinate system centered at any point with $h$-coordinate $h_{\text{avg}}=13$ feet equal to the mean depth and radius $r=8$ feet equal to the maximum deviation from the mean.
+
+Activate the folders \emph{Uniform circular motion} and \emph{Polar angle} on Lines 21 and 29 to see the circle and coordinate system.
+
+\item Now the key point: The constant-speed motion of point $Q$ around this circle drives the variation of the water's depth. As point $Q$ turns about the circle's center at a constant rate, the point $P$ moves along the graph of the function $h=f(t)$.
+
+To start, we'll forget about time and express the depth of the water (in feet) in terms of the polar angle $\theta$ of $Q$. There are two steps.
+
+First we express the $y$-coordinate of $Q$ in terms of $\theta$. This is quick. Since the circle has radius $8$ feet, $Q$ has $y$-coordinate (in feet),
+\[
+     y = 8\sin\theta .
+\]
+Then since the circle is centered at the mean depth $h_{\text{avg}}=13$ feet, the depth as a function of the polar angle is
+\[
+     h =g(\theta) = 13 +  8\sin\theta \, , \, 0\leq \theta \leq 4\pi. 
+\]
+
+\item Finally, to express the depth as a function of time, we need only find a function
+\[
+     \theta = a(t) \, , \, 0\leq t \leq 24,
+\]
+that expresses the polar angle (in radians) in terms of the number of hours past midnight.
+
+We do this in the usual way.  First we compute the rotation rate of the driving point $Q$ about circle's center. The polar angle at the high tide at 2:00am is
+\[
+   a(2) = \pi/2 \text{ radians}.
+\]
+At the following low tide (8am), the polar angle is
+\[
+  a(8) = 3\pi/2 \text{ radians}.
+\]
+So $Q$ rotates about the origin of the $xy$-coordinate system at the constant rate of
+
+The rotation rate is
+\begin{align*}
+    \frac{\Delta \theta}{\Delta t} &= \frac{\left( \frac{3\pi}{2} - \frac{\pi}{2}\right)\text{ radians}}{(8-2)\text{ hrs}} \\
+                                              &= \frac{\pi}{6} \text{ radians/hr}.
+\end{align*}
+
+Since $a(2) = \pi/2$, the polar angle function is
+\[
+   \theta = a(t) = \frac{\pi}{2} + \frac{\pi}{6} \left(  t-2 \right) .
+\]
+Substituting this expression for the polar angle in the function
+\[
+ h = g(\theta) = 13 + 8\sin\theta \, , \, 0\leq \theta \leq 24,
+\]
+we get
+\begin{align*}
+ h  &= f(t) \\
+     &= g(a(t)) \\
+     &= g\left( \frac{\pi}{2} + \frac{\pi}{6} \left(  t-2 \right) \right) \\
+     &= 13 + 8 \sin\left( \frac{\pi}{2} + \frac{\pi}{6} \left(  t-2 \right) \right) \, , \, 0\leq \theta \leq 24,
+\end{align*}
+for the function that expresses the water's depth (in feet) in terms of the number of hours past midnight, October 29.
+
+\item To check that our function is correct, we'll use the given information that at 2am ($t=2$) the depth is $21$ feet and  $5$ feet at 8:00am.
+
+Substituting $t=2$, we get
+\begin{align*}
+   f(2)   & = 13 + 8 \sin \left(\frac{\pi}{2}  \frac{\pi}{6} \left( 2-2 \right) \right) \\ 
+           & = 13 + 8 \sin (\frac{\pi}{2})  \\ 
+           & = 13 + 8 \\
+           & = 21 .
+\end{align*}
+
+Substituting $t=8$, we get
+\begin{align*}
+   f(8)   & = 13 + 8 \sin \left(\frac{\pi}{2}  \frac{\pi}{6} \left( 8-2 \right) \right) \\ 
+           & = 13 + 8 \sin \left( \frac{3\pi}{2} \right)  \\ 
+           & = 13 + 8(-1) \\
+           & = 5 .
+\end{align*}
+These check out.
+
+\end{enumerate}
+\end{example}
+
+
+\section{Circular Interpolation Using the Coine Function}
+\begin{example} \label{Ex:lfffme3f}
+This is a continuation of Example 1, but now we use the cosine function instead to find an expression for the function
+\[
+     h = f(t) \, , \, 0\leq t \leq 24,
+\]
+that expresses the depth of the water (in feet) at the Edmonds pier in terms of the number of hours past midnight, October 29. This way is a bit easier.
+
+The first change is to rotate the axes of the $x,y$-coordinate system so that the $x$-axis points vertically upward, in the same direction as the $h$-axis. This, while not strictly necessary, makes it easier to see the relationship between the $x$-coordinate of the driving point and the depth of the water. But as always, we measure the polar angle counterclockwise from the positive $x$-axis.
+
+\begin{onlineOnly}
+    \begin{center}
+\desmos{caylccjijk}{900}{600}
+\end{center}
+\end{onlineOnly}
+
+\href{https://www.desmos.com/calculator/caylccjijk}{142: Edmonds Pier 2c}.
+
+To find the depth of the water as a function of the polar angle, we start with the mean depth of 13 feet and add to that the $8$-foot oscillation, this time using the cosine function. So (omitting the domain) the depth as a function of the polar angle is
+\[
+    h = g(\theta) = 13 + 8\cos\theta .
+\]
+The rotation rate of the driving point is still $\pi/6$ radians/hour. All that's changed is the values of the polar angle. At high tide ($t=2)$ the polar angle is now $a(2) = 0$. So the polar angle function is
+\[
+    \theta = a(t) = \frac{\pi}{6} \left( t - 2 \right) \, , \, 0\leq t \leq 24.
+\]  
+And the depth (in feet) as a function of the number of hours past midnight is
+\begin{align*}
+     h &= f(t)  \\
+         & = g(a(t)) \\
+         &= g\left(\frac{\pi}{6} \left( t - 2 \right) \right)  \\
+         &= 13 + 8\cos \left(  \frac{\pi}{6} \left( t - 2 \right) \right) \, , \, 0\leq t \leq 24.
+\end{align*}
+
+\end{example}
+
+
+
+
+
+
+
+
+\end{document}
