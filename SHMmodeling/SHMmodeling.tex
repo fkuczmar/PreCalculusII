@@ -11,7 +11,7 @@ Using the sine and cosine functions to describe simple harmonic motion.
 
 
 
-
+\section{Circular Interpolation with a Protractor}
 
 \begin{example}  \label{E8bdsdsf}
 Suppose that over the course of a 24-hour period, from midnight October 29 to midnight October 30, the depth of the water at the Edmonds Pier varies in simple harmonic motion about its mean. Suppose also that a high tide of 21 feet occurs at 2:00am and the following low tide of 5 feet occurs at 8:00am. 
@@ -19,9 +19,9 @@ Suppose that over the course of a 24-hour period, from midnight October 29 to mi
 We'll ask two questions:
 
 \begin{enumerate}
-\item Use circular interpolation with the protractor below to approximate the depth of the water at 3:00am on October 29.
+\item Use circular interpolation with the protractor below to approximate the depth of the water at 4:30am on October 29.
 
-\item Use circular interpolation with the protractor below to approximate the depth of the water at 5:30pm on October 29.
+\item Use circular interpolation with the protractor below to approximate the depth of the water at 7:00pm on October 29.
 
 %\item %Use the circular protractor to approximate the first two times after midnight when the water is $18$ feet deep.
 
@@ -62,7 +62,7 @@ Here are the steps.
 
 \item  First we'll use the information above to sketch by hand a graph of the function $f$. Label the axes with the appropriate variable names and units. Label the coordinates of four key points on the graph.
 
-Then activate the folder \emph{Graph} in Line 2 of the worksheet below to check your graph.
+Then activate the folder \emph{Graph} in Line 3 of the worksheet below to check your graph.
 
 \begin{onlineOnly}
     \begin{center}
@@ -72,7 +72,7 @@ Then activate the folder \emph{Graph} in Line 2 of the worksheet below to check 
 
 \href{https://www.desmos.com/calculator/jqmcce5as4}{142: Edmonds Pier 2a}.
 
-\item Next we'll compute the mean (average) depth of the water over the course of a $12$-hour and the maximum deviation from this mean. Including units in our computation, the mean depth is 
+\item Next we'll compute the mean (average) depth of the water over the course of a $12$-hour period and the maximum deviation from this mean. Including units in our computation, the mean depth is 
 \[
     h_{avg} = 0.5 ( 21 \text{feet } + 5 \text{feet}) = 13 \text{ feet} . 
 \]
@@ -83,21 +83,21 @@ And the maximum deviation from the mean is
 
 Activate the \emph{Amplitude} folder on Line 8 of the above demonstration to draw the horizontal line showing the average depth. Note this line is labeled with its equation. There is also a vertical line that shows the the maximum deviation from the mean.
 
-\item Next we'll draw a circle on a new $x,y$-coordinate system centered at any point with $h$-coordinate $h_{\text{avg}}=13$ feet equal to the mean depth and radius $r=8$ feet equal to the maximum deviation from the mean.
+\item Next we'll draw a \emph{tracking circle} on a new $x,y$-coordinate system centered at any point with $h$-coordinate $h_{\text{avg}}=13$ feet equal to the mean depth and radius $r=8$ feet equal to the maximum deviation from the mean.
 
-Activate the folders \emph{Uniform circular motion} and \emph{Polar angle} on Lines 21 and 29 to see the circle and coordinate system.
+Activate the folders \emph{Uniform circular motion} and \emph{Polar angle} on Lines 21 and 30 to see the circle and coordinate system.
 
-\item Now the key point: The constant-speed motion of point $Q$ around this circle drives the variation of the water's depth. As point $Q$ turns about the circle's center at a constant rate, the point $P$ moves along the graph of the function $h=f(t)$.
+\item Now the key point: The constant-speed motion of point $Q$ around the tracking circle drives the variation of the water's depth. As point $Q$ with coordinates $(x,y)$ turns about the circle's center at a constant rate, the point $P$ with coordinates $(t,h) = (t,f(t))$ moves along the graph of the function $h=f(t)$.
 
-To start, we'll forget about time and express the depth of the water (in feet) in terms of the polar angle $\theta$ of $Q$. There are two steps.
+Let's temporarily ignore time and express the depth of the water (in feet) in terms of the polar angle $\theta$ of $Q$. There are two steps.
 
 First we express the $y$-coordinate of $Q$ in terms of $\theta$. This is quick. Since the circle has radius $8$ feet, $Q$ has $y$-coordinate (in feet),
 \[
      y = 8\sin\theta .
 \]
-Then since the circle is centered at the mean depth $h_{\text{avg}}=13$ feet, the depth as a function of the polar angle is
+Then since the circle is centered at the mean depth $h_{\text{avg}}=13$ feet, the water's depth as a function of the polar angle is
 \[
-     h =g(\theta) = 13 +  8\sin\theta \, , \, 0\leq \theta \leq 4\pi. 
+     h =g(\theta) = 13 +  8\sin\theta . 
 \]
 
 \item Finally, to express the depth as a function of time, we need only find a function
@@ -106,7 +106,7 @@ Then since the circle is centered at the mean depth $h_{\text{avg}}=13$ feet, th
 \]
 that expresses the polar angle (in radians) in terms of the number of hours past midnight.
 
-We do this in the usual way.  First we compute the rotation rate of the driving point $Q$ about circle's center. The polar angle at the high tide at 2:00am is
+We do this in the usual way.  First we compute the rotation rate of the driving point $Q$ about center of the tracking circle. The polar angle at the high tide at 2:00am is
 \[
    a(2) = \pi/2 \text{ radians}.
 \]
@@ -115,17 +115,17 @@ At the following low tide (8am), the polar angle is
   a(8) = 3\pi/2 \text{ radians}.
 \]
 So $Q$ rotates about the origin of the $xy$-coordinate system at the constant rate of
-
-The rotation rate is
 \begin{align*}
     \frac{\Delta \theta}{\Delta t} &= \frac{\left( \frac{3\pi}{2} - \frac{\pi}{2}\right)\text{ radians}}{(8-2)\text{ hrs}} \\
                                               &= \frac{\pi}{6} \text{ radians/hr}.
 \end{align*}
 
 Since $a(2) = \pi/2$, the polar angle function is
-\[
-   \theta = a(t) = \frac{\pi}{2} + \frac{\pi}{6} \left(  t-2 \right) .
-\]
+\begin{align*}
+   \theta &= a(t)    \\
+             &= a(2) + \frac{\Delta \theta}{\Delta t} \left( t-2 \right) \\
+              &= \frac{\pi}{2} + \frac{\pi}{6} \left(  t-2 \right) .
+\end{align*}
 Substituting this expression for the polar angle in the function
 \[
  h = g(\theta) = 13 + 8\sin\theta \, , \, 0\leq \theta \leq 24,
@@ -143,7 +143,7 @@ for the function that expresses the water's depth (in feet) in terms of the numb
 
 Substituting $t=2$, we get
 \begin{align*}
-   f(2)   & = 13 + 8 \sin \left(\frac{\pi}{2}  \frac{\pi}{6} \left( 2-2 \right) \right) \\ 
+   f(2)   & = 13 + 8 \sin \left(\frac{\pi}{2} + \frac{\pi}{6} \left( 2-2 \right) \right) \\ 
            & = 13 + 8 \sin (\frac{\pi}{2})  \\ 
            & = 13 + 8 \\
            & = 21 .
@@ -151,7 +151,7 @@ Substituting $t=2$, we get
 
 Substituting $t=8$, we get
 \begin{align*}
-   f(8)   & = 13 + 8 \sin \left(\frac{\pi}{2}  \frac{\pi}{6} \left( 8-2 \right) \right) \\ 
+   f(8)   & = 13 + 8 \sin \left(\frac{\pi}{2} + \frac{\pi}{6} \left( 8-2 \right) \right) \\ 
            & = 13 + 8 \sin \left( \frac{3\pi}{2} \right)  \\ 
            & = 13 + 8(-1) \\
            & = 5 .
@@ -162,9 +162,9 @@ These check out.
 \end{example}
 
 
-\section{Circular Interpolation Using the Coine Function}
+\section{Circular Interpolation Using the Cosine Function}
 \begin{example} \label{Ex:lfffme3f}
-This is a continuation of Example 1, but now we use the cosine function instead to find an expression for the function
+This is a continuation of Example 1, but now we use the cosine function instead of the sine function. We still want to find an expression for the function
 \[
      h = f(t) \, , \, 0\leq t \leq 24,
 \]
@@ -184,7 +184,7 @@ To find the depth of the water as a function of the polar angle, we start with t
 \[
     h = g(\theta) = 13 + 8\cos\theta .
 \]
-The rotation rate of the driving point is still $\pi/6$ radians/hour. All that's changed is the values of the polar angle. At high tide ($t=2)$ the polar angle is now $a(2) = 0$. So the polar angle function is
+The rotation rate of the driving point is still $\pi/6$ radians/hour. But the values of the polar angle have all decreased by $\pi/2$ radians. At high tide ($t=2)$ the polar angle is now $a(2) = 0$. So the polar angle function is
 \[
     \theta = a(t) = \frac{\pi}{6} \left( t - 2 \right) \, , \, 0\leq t \leq 24.
 \]  
@@ -198,7 +198,29 @@ And the depth (in feet) as a function of the number of hours past midnight is
 
 \end{example}
 
+\section{Exercises}
 
+\begin{exercise} \label{Edfefefe911}
+We're just 3 weeks into fall and you've probably noticed we are losing daylight at a rapid pace. To model the number of hours of daylight/day as a function of time, we'll assume each month has 30 days, so that there are exactly $360$ days in a year. On the fall equinox (the first day of fall, usually September 21), Shoreline gets 12 hours of daylight/day. And on the winter solstice (the first day of winter, usually December 21) we get 8 hours of daylight/day. 
+
+We'll also assume the number of hours of daylight/day oscillates in simple harmonic motion about the yearly mean.
+
+\begin{enumerate}
+\item Follow all the steps of Example 2 exactly to find a function
+\[
+  h = f(t) \, , \, 0\leq t \leq 360,
+\]
+that expresses the number of hours of daylight/day in terms of the number of \emph{days} since the start of the year. Check your work as in that example. Draw your graph and tracking circle by hand.
+
+\item Follow the steps of Example 3 exactly to find another expression for the same function with the cosine function.
+
+\item Use either function to approximate the number of  hours of daylight/day in Shoreline today, the day you're doing this assignment. Check your approximation with the actual number (find this online).
+
+\item Use the other function to approximate the number of  hours of daylight/day in Shoreline tomorrow. Check your approximation with the actual number (find this online). 
+
+\item According to our model, find the average rate of change in the number of \emph{minutes} of daylight/day with respect to time (measured in days) between the first and second days of fall. Compare this with the average rate of change over the three months of fall. Be sure to include units.
+\end{enumerate}
+\end{exercise}
 
 
 
