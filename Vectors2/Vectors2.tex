@@ -53,21 +53,53 @@ We'll start by letting $P$ be a point on the circle with coordinates $(x,y)$ and
 \[
     x = f(\theta)  \hskip 0.5 in \text{and} \hskip 0.5in  y=g(\theta) ,
 \]
-that express the coordinates of $P$ in terms of $\theta$. Include appropriate domains for these functions. 
+that express the coordinates of $P$ (measured in cm) in terms of $\theta$ (measured in radian). Include appropriate domains for these functions. 
+
+The coordinate functions are
+\[
+ x = f(\theta) = \answer{5 + 3\cos\theta} \, , \, 0\leq \theta < \answer{2\pi}
+\]
+and
+\[
+  y =g(\theta) = \answer{4 + 3\sin\theta} \, , \, 0\leq \theta < \answer{2\pi}
+\]
 
 \item Use part (d) to find the coordinates of $P$ when $\theta=\pi/2, 3\pi/4, \pi$. Check that these results are correct.
 
 \item Use part (d) to find the exact and approximate coordinates of $P$ when $\theta =4$. Use the worksheet above to check that the coordinates are reasonable (the slider $u$ in Line 1 is another name for the polar angle $\theta$.) 
 
 
-\item One last question. Find equations in Cartesian coordinates of 
+\item One last question. 
 
 \begin{enumerate}
-\item the unit circle centered at the origin and 
+\item Find an equation in Cartesian coordinates of the unit circle centered at the origin.
 
-\item The circle of radius $3$ centered at  $C(5,4)$.
+An equation is
+\[
+     x^2 + y^2 = \answer{1}.
+\]
 
-These equations express relationships between the $x$ and $y$ coordinates of points on the circles. They do not involve the parameter $\theta$. 
+\item Find an equation in Cartesian coordinates of the circle of radius $3$ centered at  $C(5,4)$. This equation expresses a relationship between the $x$ and $y$ coordinates of points on the circle. It does not involve the parameter $\theta$. 
+
+Since 
+\[
+ x = 5 + 3\cos\theta,
+\]
+\[
+   \cos\theta = \frac{x-5}{3}.
+\]
+Similarly,
+\[
+  \sin\theta = \frac{y-4}{3}.
+\]
+Then since
+\[
+  \cos^2\theta + \sin^2 \theta = 1,
+\]
+a Cartesian equation of the circle of radius $3$ centered at $(5,4)$ is
+\[
+  \left( \answer{\frac{x-5}{3}} \right)^2 + \left( \answer{\frac{y-4}{3}} \right)^2 = 1.
+\]
 
 \end{enumerate}
 \end{enumerate}
@@ -89,9 +121,11 @@ These equations express relationships between the $x$ and $y$ coordinates of poi
 
 \href{https://www.desmos.com/calculator/pubvk2lmci}{142: Circle Arclength Parameterization 2}
 
-
-
-The coordinate functions (in cm) are 
+The first step is to express the polar angle $\theta$ in terms of $s$. Since
+\[
+  \theta = \answer{s/3},
+\]
+we can substitute this expression for $\theta$ in the coordinate functions from Question 1. This gives the coordinate functions (in cm) in terms of the arclength $s$ to be
 \[
   x = f_1(s) = \answer{5 + 3 \cos(s/3)} \, , \, s\in \mathbb{R}
 \]
