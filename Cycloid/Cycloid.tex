@@ -26,14 +26,84 @@ From these defintions it follows immediately that
 
 The change in perspective is to think of vectors instead of coordinates and write
 \[
-    \langle x , y \rangle = \cos\theta \left \langle 1,0 \right\rangle + \sin\theta \left\langle 0 ,1\right\rangle ,
+    \langle x , y \rangle = \cos\theta \left \langle r,0 \right\rangle + \sin\theta \left\langle 0 ,r\right\rangle ,
 \]
 where $\langle x,y \rangle$ is the position of the point $(x,y)$ relative to the origin.
 
-Now suppose instead we let $\phi$ be the angle from the vector $\langle 0,1\rangle$ to the vector $\langle x, y \rangle$, measured counterclockwise. Then the same geometry shows that
+\begin{question}\label{Q3rmn8lzz}
+\begin{enumerate}
+\item Suppose we let $\phi$ be the angle from the vector $\langle 0,1\rangle$ to the vector $\langle x, y \rangle$, measured counterclockwise. With $r=\sqrt{x^2+y^2}$, the same geometry shows that
 \[
-   \langle x , y \rangle = \cos\theta \left \langle 1,0 \right\rangle  + \sin\theta \left\langle  \answer{-1},0  \right\rangle.
+   \langle x , y \rangle = \cos\theta \left \langle r,0 \right\rangle  + \sin\theta \left\langle  \answer{-r},0  \right\rangle.
 \] 
+\item Let $\alpha$ be the angle from the vector $\langle 1,0\rangle$ to the vector $\langle x, y \rangle$, measured clockwise. Then
+\[
+   \langle x , y \rangle = \cos\theta \left \langle 0,r \right\rangle  + \sin\theta \left\langle  \answer{r},0  \right\rangle.
+\] 
+\item Let $\beta$ be the angle from the vector $\langle 0,-1\rangle$ to the vector $\langle x, y \rangle$, measured clockwise. Then
+\[
+   \langle x , y \rangle = \cos\theta \left \langle 0,-r \right\rangle  + \sin\theta \left\langle  \answer{-r},0  \right\rangle.
+\] 
+\end{enumerate}
+\end{question}
+
+
+
+
+
+\section{The Cycloid}
+
+\begin{question}  \label{Exhjjjjnbbbbbr}
+
+A wheel of radius $r=3$ meters rolls without slipping on the $x$-axis as a pebble $P$ attached to the wheel traces out a curve (drag the slider $u$ in the demonstration below). The wheel's axle $C$ moves  at a constant speed of $v=6$ meters/sec. Our aim is to parameterize the motion of the pebble.
+
+
+%\href{https://www.geogebra.org/classic/vxbjccpa}{Cycloid}
+
+ 
+\begin{onlineOnly}
+    \begin{center}
+\geogebra{vxbjccpa}{900}{600}
+\end{center}
+\end{onlineOnly}
+
+
+\pdfOnly{Access the desmos workhseet at \href{https://www.desmos.com/calculator/57fg1na7yl}{Cycloid 25}}.
+
+\begin{onlineOnly}
+    \begin{center}
+\desmos{57fg1na7yl}{900}{600}
+\end{center}
+\end{onlineOnly}
+
+\href{https://www.desmos.com/calculator/57fg1na7yl}{Cycloid 25}
+
+
+\begin{enumerate}
+\item Use the ideas in Section 1 to express the components of the vector $\overrightarrow{OC}$ in terms of the rotation angle $\phi$ of the wheel, taking $\theta=0$ when the pebble is at the origin.
+
+\item Activate the folder \emph{uv coordinates sytsem} in Line 4. Then express the components of the vector $\overrightarrow{CP}$ in terms of the vectors $\langle 0,-r \rangle$, $\langle -r,0 \rangle $, and the rotation angle $\phi$.
+
+\item Activate the folder \emph{position vectors} in Line 12. Then express the position of $P$ relative to the origin in terms of the vectors $\overrightarrow{OC}$ and $\overrightarrow{CP}$.
+
+\item Use part (c) to express the components of the vector $\overrightarrow{OP}$ in terms of $\phi$.
+
+\item Find a function 
+\[
+   \phi = h(t)  \, , \, t\geq 0, 
+\]
+that expresses the rotation angle in terms of the number of seconds since the pebble left the origin.
+
+\item Express the components of $\overrightarrow{OP}$ in terms of $t$.
+
+\item Find coordinate functions
+\[
+    x=f(t)   \hskip 0.5in \text{and} \hskip 0.5in y=g(t) \, , \, t\geq 0 ,
+\]
+that express the coordinates of $P$ in terms of the number of seconds since the pebble left the origin.
+\end{enumerate}
+\end{question}
+
 
 \section{Rotating Vectors in the Plane}
 
@@ -69,61 +139,6 @@ The key ideas are these. At any moment, the instantaneous velocity of a point ma
 A beetle crawls 
 \end{question}
 
-
-\section{The Cycloid}
-
-\begin{exploration}  \label{Exhjjjjnbbbbbr}
-
-A wheel of radius $r=3$ meters rolls without slipping on the $x$-axis as a pebble $P$ attached to the wheel traces out a curve (drag the slider $u$ in the demonstration below). The wheel's axle $C$ moves  at a constant speed of $v=6$ meters/sec. Our aim is to parameterize the motion of the pebble.
-
-
-%\href{https://www.geogebra.org/classic/vxbjccpa}{Cycloid}
-
- 
-\begin{onlineOnly}
-    \begin{center}
-\geogebra{vxbjccpa}{900}{600}
-\end{center}
-\end{onlineOnly}
-
-
-\pdfOnly{Access the desmos workhseet at \href{https://www.desmos.com/calculator/57fg1na7yl}{Cycloid 25}}.
-
-\begin{onlineOnly}
-    \begin{center}
-\desmos{57fg1na7yl}{900}{600}
-\end{center}
-\end{onlineOnly}
-
-\href{https://www.desmos.com/calculator/57fg1na7yl}{Cycloid 25}
-
-
-\begin{enumerate}
-\item Express the components of the vector $\overrightarrow{OC}$ in terms of the rotation angle $\phi$ of the wheel, taking $\theta=0$ when the pebble is at the origin.
-
-\item Activate the folder \emph{uv coordinates sytsem} in Line 4. Then express the components of the vector $\overrightarrow{CP}$ in terms of the vectors $\langle 0,-r \rangle$, $\langle -r,0 \rangle $, and the rotation angle $\phi$.
-
-\item Activate the folder \emph{position vectors} in Line 12. Then express the position of $P$ relative to the origin in terms of the vectors $\overrightarrow{OC}$ and $\overrightarrow{CP}$.
-
-\item Use part (c) to express the components of the vector $\overrightarrow{OP}$ in terms of $\phi$.
-
-\item Find a function 
-\[
-   \phi = h(t)  \, , \, t\geq 0, 
-\]
-that expresses the rotation angle in terms of the number of seconds since the pebble left the origin.
-
-\item Express the components of $\overrightarrow{OP}$ in terms of $t$.
-
-\item Find coordinate functions
-\[
-    x=f(t)   \hskip 0.5in \text{and} \hskip 0.5in y=g(t) \, , \, t\geq 0 ,
-\]
-that express the coordinates of $P$ in terms of the number of seconds since the pebble left the origin.
-\end{enumerate}
-
-
-\end{exploration}
 
 \section{Inclined Cycloids}
 
