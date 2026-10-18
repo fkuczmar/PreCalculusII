@@ -1,4 +1,4 @@
-\documentclass{ximera}
+\documentclass[handout]{ximera}
 \title{Inclined Cycloids}
 
 \newcommand{\pskip}{\vskip 0.1 in}
@@ -9,14 +9,75 @@ Inclinded cycloids.
 \end{abstract}
 \maketitle
 
-\section{Introduction}
+
+\section{Linear Combinations of Vectors, Part 1}
+First a different way of looking at something we already know.
+
+The basis of our entire course is the definition of the cosine and sine functions:
+\[
+     \cos\theta = x/r  \hskip 0.3in \sin\theta=y/r ,
+\]
+where $\theta$ is the polar angle of the point $(x,y)\neq 0$ and $r=\sqrt{x^2+y^2}$. Of course, the polar angle is measured counterclockwise from the positive $x$-axis.
+
+From these defintions it follows immediately that
+\[
+   (x,y) = ( r\cos \theta , r\sin\theta ).
+\]
+
+The change in perspective is to think of vectors instead of coordinates and write
+\[
+    \langle x , y \rangle = \cos\theta \left \langle 1,0 \right\rangle + \sin\theta \left\langle 0 ,1\right\rangle ,
+\]
+where $\langle x,y \rangle$ is the position of the point $(x,y)$ relative to the origin.
+
+Now suppose instead we let $\phi$ be the angle from the vector $\langle 0,1\rangle$ to the vector $\langle x, y \rangle$, measured counterclockwise. Then the same geometry shows that
+\[
+   \langle x , y \rangle = \cos\theta \left \langle 1,0 \right\rangle  + \sin\theta \left\langle  \answer{-1},0  \right\rangle.
+\] 
+
+\section{Rotating Vectors in the Plane}
+
+We will have need in this and later chapters to rotate a vector in the plane through $\pi/2$ radians either clockwise or counterclockwise. One way is to think about this geometrically. Another is to think about slopes.
+
+\begin{question} \label{Qodf3r3r}
+Let 
+\[
+     {\bf u} = \langle 5, 2 \rangle.
+\]
+\begin{enumerate}
+\item Find the components of the vector ${\bf v}$ obtained by rotating ${\bf v}$ counterclockwise through an angle of $\pi/2$ radians.
+
+\item Find the components of the vector ${\bf w}$ obtained by rotating ${\bf v}$ clockwise through an angle of $\pi/2$ radians.
+
+\item Repeat parts (a) and (b) for the vector ${\bf u} = \langle a,b \rangle$.
+\end{enumerate}
+\end{question}
+
+\section{Linear Combinations of Vectors, Part 2}
+
+
+\section{The Velocity Vector}
+\emph{Velocity} is the rate of change of position with respect to time. Since position is relative, so is velocity. 
+
+There are two types of velocity. Average velocity and instantaneous vecocity. You calculate average velocity as you would any average rate of change, here as the change in position divided by the change in time.
+
+Calculating instantaneous velocity usually requires ideas of differential calculus. But in the special case of uniform circular motion, we do not need calculus.
+
+The key ideas are these. At any moment, the instantaneous velocity of a point mass points in the direction of motion and has length equal to the speed of the mass.  
+
+\begin{question} \label{Qdf3er3rbnnn}
+A beetle crawls 
+\end{question}
+
+
+\section{The Cycloid}
 
 \begin{exploration}  \label{Exhjjjjnbbbbbr}
 
-A wheel of radius $R$ meters rolls without slipping on the $x$-axis as a pebble $P$ attached to the wheel traces out a curve (drag the slider $u$ in the demonstration below). The wheel's axle $C$ moves  at a constant speed of $v$ meters/sec. Our aim is to parameterize the motion of the pebble.
+A wheel of radius $r=3$ meters rolls without slipping on the $x$-axis as a pebble $P$ attached to the wheel traces out a curve (drag the slider $u$ in the demonstration below). The wheel's axle $C$ moves  at a constant speed of $v=6$ meters/sec. Our aim is to parameterize the motion of the pebble.
 
 
-\href{https://www.geogebra.org/classic/vxbjccpa}{Cycloid}
+%\href{https://www.geogebra.org/classic/vxbjccpa}{Cycloid}
 
  
 \begin{onlineOnly}
@@ -26,20 +87,31 @@ A wheel of radius $R$ meters rolls without slipping on the $x$-axis as a pebble 
 \end{onlineOnly}
 
 
+\pdfOnly{Access the desmos workhseet at \href{https://www.desmos.com/calculator/57fg1na7yl}{Cycloid 25}}.
+
+\begin{onlineOnly}
+    \begin{center}
+\desmos{57fg1na7yl}{900}{600}
+\end{center}
+\end{onlineOnly}
+
+\href{https://www.desmos.com/calculator/57fg1na7yl}{Cycloid 25}
+
+
 \begin{enumerate}
-\item Express the components of the vector $\overrightarrow{OC}$ in terms of the rotation angle $\theta$ of the wheel, taking $\theta=0$ when the pebble is at the origin.
+\item Express the components of the vector $\overrightarrow{OC}$ in terms of the rotation angle $\phi$ of the wheel, taking $\theta=0$ when the pebble is at the origin.
 
-\item Turn on the \emph{axes} box in the upper left corner of the workseet. Then express the components of the vector $\overrightarrow{CP}$ in terms of $\theta$.
+\item Activate the folder \emph{uv coordinates sytsem} in Line 4. Then express the components of the vector $\overrightarrow{CP}$ in terms of the vectors $\langle 0,-r \rangle$, $\langle -r,0 \rangle $, and the rotation angle $\phi$.
 
-\item Express the position of $P$ relative to the origin in terms of the vectors $\overrightarrow{OC}$ and $\overrightarrow{CP}$.
+\item Activate the folder \emph{position vectors} in Line 12. Then express the position of $P$ relative to the origin in terms of the vectors $\overrightarrow{OC}$ and $\overrightarrow{CP}$.
 
-\item Use part (c) to express the components of the vector $\overrightarrow{OP}$ in terms of $\theta$.
+\item Use part (c) to express the components of the vector $\overrightarrow{OP}$ in terms of $\phi$.
 
 \item Find a function 
 \[
-   \theta = h(t)  \, , \, t\geq 0, 
+   \phi = h(t)  \, , \, t\geq 0, 
 \]
-that expresses the rotation angle in terms of $t$ (the number of seconds since the pebble left the origin).
+that expresses the rotation angle in terms of the number of seconds since the pebble left the origin.
 
 \item Express the components of $\overrightarrow{OP}$ in terms of $t$.
 
@@ -47,12 +119,9 @@ that expresses the rotation angle in terms of $t$ (the number of seconds since t
 \[
     x=f(t)   \hskip 0.5in \text{and} \hskip 0.5in y=g(t) \, , \, t\geq 0 ,
 \]
-that express the coordinates of $P$ in terms of $t$.
+that express the coordinates of $P$ in terms of the number of seconds since the pebble left the origin.
 \end{enumerate}
 
-
-
-the number of seconds $t$ since the the pebble left the origin.
 
 \end{exploration}
 
