@@ -1,4 +1,4 @@
-\documentclass[handout]{ximera}
+\documentclass{ximera}
 \title{Inclined Cycloids}
 
 \newcommand{\pskip}{\vskip 0.1 in}
@@ -30,19 +30,19 @@ The change in perspective is to think of vectors instead of coordinates and writ
 \]
 where $\langle x,y \rangle$ is the position of the point $(x,y)$ relative to the origin.
 
-\begin{question}\label{Q3rmn8lzz}
+\begin{question} \label{Q3rmn8lzz}
 \begin{enumerate}
-\item Suppose we let $\phi$ be the angle from the vector $\langle 0,1\rangle$ to the vector $\langle x, y \rangle$, measured counterclockwise. With $r=\sqrt{x^2+y^2}$, the same geometry shows that
+\item For the non-zero vector $\langle x, y \rangle$ and $r=\sqrt{x^2+y^2}$, let $\phi$ be the angle from the vector $\langle 0,r\rangle$ to the vector $\langle x, y \rangle$, measured counterclockwise. The same geometry shows that
 \[
-   \langle x , y \rangle = \cos\theta \left \langle 0,r \right\rangle  + \sin\theta \left\langle  \answer{-r},0  \right\rangle.
+   \langle x , y \rangle = \cos\phi \left \langle 0,r \right\rangle  + \sin\phi \left\langle  \answer{-r},0  \right\rangle.
 \] 
-\item Let $\alpha$ be the angle from the vector $\langle 0,1 \rangle$ to the vector $\langle x, y \rangle$, measured clockwise. Then
+\item Let $\alpha$ be the angle from the vector $\langle 0,r \rangle$ to the vector $\langle x, y \rangle$, measured clockwise. Then
 \[
-   \langle x , y \rangle = \cos\theta \left \langle 0,r \right\rangle  + \sin\theta \left\langle 0, \answer{r},0  \right\rangle.
+   \langle x , y \rangle = \cos\alpha \left \langle 0,r \right\rangle  + \sin\alpha \left\langle \answer{r},0  \right\rangle.
 \] 
-\item Let $\beta$ be the angle from the vector $\langle 0,-1\rangle$ to the vector $\langle x, y \rangle$, measured clockwise. Then
+\item Let $\beta$ be the angle from the vector $\langle 0,-r\rangle$ to the vector $\langle x, y \rangle$, measured clockwise. Then
 \[
-   \langle x , y \rangle = \cos\theta \left \langle 0,-r \right\rangle  + \sin\theta \left\langle  \answer{-r},0  \right\rangle.
+   \langle x , y \rangle = \cos\beta \left \langle 0,-r \right\rangle  + \sin\beta \left\langle  \answer{-r},0  \right\rangle.
 \] 
 \end{enumerate}
 \end{question}
@@ -78,21 +78,33 @@ A wheel of radius $r=3$ meters rolls without slipping on the $x$-axis as a pebbl
 
 \href{https://www.desmos.com/calculator/57fg1na7yl}{Cycloid 25}
 
+Here are the steps to express the coordinates (in meters) of the pebble $P$ in terms of the number of seconds since it left the origin.
 
 \begin{enumerate}
-\item Express the components of the vector $\overrightarrow{OC}$ in terms of the rotation angle $\phi$ of the wheel, taking $\phi=0$ when the pebble is at the origin $O$.
+\item First express the components of the vector $\overrightarrow{OQ}$ from the origin to the point where the wheel makes contact with the $x$-axis in terms of the rotation angle $\phi$ of the wheel. Take $\phi=0$ when the pebble is at the origin $O$.
 
-\item Activate the folder \emph{uv coordinates sytsem} in Line 4. Then use the ideas of Section 1 to express the components of the vector $\overrightarrow{CP}$ in terms of the vectors $\langle 0,-r \rangle$, $\langle -r,0 \rangle $, and the rotation angle $\phi$.
+The key idea for this is that since the wheel rolls without slipping, the length of segment $\overrightarrow{OQ}$ is equal to the length of the arc $QP$ (both shaded orange) on the wheel. Since the wheel has radius $r=3$ meters,
+\[
+  \overrightarrow{OQ} = \langle  \answer{3\phi} , \answer{0} \rangle. 
+\]
 
-\item Activate the folder \emph{position vectors} in Line 12. Then express the position of $P$ relative to the origin(what vector is this?) in terms of the vectors $\overrightarrow{OC}$ and $\overrightarrow{CP}$.
+\item Next, express the position of the circle's center $C$ relative to the origin in terms of the rotation angle $\phi$.
+\[
+        \overrightarrow{OC} =  \langle  \answer{3\phi} , \answer{r} \rangle. 
+\]
 
-\item Use part (c) to express the components of the vector $\overrightarrow{OP}$ in terms of $\phi$.
+
+\item Now use the ideas of Section 1 to express the components of the vector $\overrightarrow{CP}$ in terms of the vectors ${\bf v}=\langle 0,-r \rangle$, ${\bf u}=\langle -r,0 \rangle $, and the rotation angle $\phi$.
+
+\item Activate the folder \emph{position vectors} in Line 14. Then express the position of $P$ relative to the origin (write this as a vector) in terms of the vectors $\overrightarrow{OC}$ and $\overrightarrow{CP}$.
+
+\item Now express the components of the vector $\overrightarrow{OP}$ in terms of $\phi$.
 
 \item Find a function 
 \[
    \phi = h(t)  \, , \, t\geq 0, 
 \]
-that expresses the rotation angle in terms of the number of seconds since the pebble left the origin.
+that expresses the rotation angle $\phi$ in terms of the number of seconds since the pebble left the origin. Keep in mind the center of the wheel moves at a constant speed of $v=6$ m/sec.
 
 \item Express the components of $\overrightarrow{OP}$ in terms of $t$.
 
@@ -101,6 +113,8 @@ that expresses the rotation angle in terms of the number of seconds since the pe
     x=f(t)   \hskip 0.5in \text{and} \hskip 0.5in y=g(t) \, , \, t\geq 0 ,
 \]
 that express the coordinates of $P$ in terms of the number of seconds since the pebble left the origin.
+
+\item Repeat part (h) in general, where the wheel has radius $r$ meters and its center moves with constant speed $v$ m/sec.
 \end{enumerate}
 \end{question}
 
