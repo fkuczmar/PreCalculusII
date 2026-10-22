@@ -267,12 +267,35 @@ The questions are the same, with the goal being to parameterize the pebble's mot
 \pdfOnly{Access the desmos worksheet at \href{https://www.desmos.com/calculator/bbfxfk47vu}{142: Inclined Cycloid 25}}
 
 \begin{explanation}
+\begin{enumerate}
 We'll work in general with a circle of radius $r$ meters and a speed of $v$ meters/sec for the axle.
 
 \item Since $\alpha$ is the polar angle of the point $Q$ in the $xy$-coordinate system and $|\overrightarrow{OQ}| = r\phi$, point $Q$ has coordinates
 \[
    (x,y) = (r\phi \answer{\cos\alpha} , r\phi \answer{\sin\alpha}).
 \]
+
+\item The get the vector $\overrightarrow{QC}$, we take the unit vector $\langle \cos\alpha, \sin \alpha \rangle$ in the direction of $\overrightarrow{OQ}$, rotate it $\pi/2$ radians counterclockwise to get the vector $\langle -\sin \alpha, \cos \alpha \rangle$, and then scale this vector by $r$. So
+\[
+   \overrightarrow{QC} = \langle \answer{-r \sin\alpha} , \answer{r\cos\alpha}  \rangle .
+\]
+
+\item To get the position of $P$ relative to $C$, we use the vector
+\[
+  {\bf u} = \overrightarrow{CQ} = - \overrightarrow{QC} = \langle  \answer{r \sin\alpha} , \answer{-r\cos\alpha}  \rangle .
+\]
+and the vector
+\[
+ {\bf v} = \langle  \answer{-r \cos\alpha} , \answer{-r\sin\alpha}  \rangle 
+\]
+of length $r$ that points in the direction opposite the vector $\langle \cos\alpha , \sin\alpha \rangle$. Then
+\begin{align*}
+ \overrightarrow{CP} &= (\cos \phi) {\bf u} + (\sin\phi) {\bf v} \\
+                               &= (\cos \phi)  \langle  r \sin\alpha , -r\cos\alpha \rangle - (\sin\phi)\langle r\cos\alpha, r\sin\alpha \rangle \\
+                               &= \langle r \cos\phi \sin \alpha - r\sin \phi \cos\alpha , -r\cos\phi\cos\alpha - r \sin\phi \sin\alpha \rangle .
+\end{align*}
+\end{enumerate}
+
 \end{explanation}
 
 
