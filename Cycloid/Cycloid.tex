@@ -84,17 +84,11 @@ Here are the steps to express the coordinates (in meters) of the pebble $P$ in t
 \item First express the components of the vector $\overrightarrow{OQ}$ from the origin to the point where the wheel makes contact with the $x$-axis in terms of the rotation angle $\phi$ of the wheel. Take $\phi=0$ when the pebble is at the origin $O$.
 
 The key idea for this is that since the wheel rolls without slipping, the length of segment $\overrightarrow{OQ}$ is equal to the length of the arc $QP$ (both shaded orange) on the wheel. Since the wheel has radius $r=3$ meters,
-\[
-  \overrightarrow{OQ} = \langle  \answer{3\phi} , \answer{0} \rangle. 
-\]
 
 \item Next, express the position of the circle's center $C$ relative to the origin in terms of the rotation angle $\phi$.
-\[
-        \overrightarrow{OC} =  \langle  \answer{3\phi} , \answer{r} \rangle. 
-\]
 
+\item Now use the ideas of Section 1 to express the components of the vector $\overrightarrow{CP}$ in terms of the vectors ${\bf u}=\langle 0,-r \rangle$, ${\bf v}=\langle -r,0 \rangle $, and the rotation angle $\phi$.
 
-\item Now use the ideas of Section 1 to express the components of the vector $\overrightarrow{CP}$ in terms of the vectors ${\bf v}=\langle 0,-r \rangle$, ${\bf u}=\langle -r,0 \rangle $, and the rotation angle $\phi$.
 
 \item Activate the folder \emph{position vectors} in Line 14. Then express the position of $P$ relative to the origin (write this as a vector) in terms of the vectors $\overrightarrow{OC}$ and $\overrightarrow{CP}$.
 
@@ -104,7 +98,7 @@ The key idea for this is that since the wheel rolls without slipping, the length
 \[
    \phi = h(t)  \, , \, t\geq 0, 
 \]
-that expresses the rotation angle $\phi$ in terms of the number of seconds since the pebble left the origin. Keep in mind the center of the wheel moves at a constant speed of $v=6$ m/sec.
+that expresses the rotation angle $\phi$ (measured in radians) in terms of the number of seconds since the pebble left the origin. Keep in mind the center of the wheel moves at a constant speed of $v=6$ m/sec.
 
 \item Express the components of $\overrightarrow{OP}$ in terms of $t$.
 
@@ -116,6 +110,72 @@ that express the coordinates of $P$ in terms of the number of seconds since the 
 
 \item Repeat part (h) in general, where the wheel has radius $r$ meters and its center moves with constant speed $v$ m/sec.
 \end{enumerate}
+
+\begin{explanation}
+\begin{enumerate}
+\item The position of $Q$ relative to the origin is
+\[
+  \overrightarrow{OQ} = \langle  3\phi , \answer{0} \rangle. 
+\]
+
+\item The position of $C$ relative to the origin is
+\begin{align*}
+        \overrightarrow{OC} &= \overrightarrow{OQ} + \overrightarrow{QC} \\     
+                                      &=  \langle  3\phi , 0 \rangle + \langle 0,r \rangle \\
+                                      &= \langle  3\phi , 3 \rangle  .
+\end{align*}
+
+\item The position of $P$ relative to $C$ is
+\begin{align*}
+ \overrightarrow{CP} &= (\cos\phi) {\bf u} + (\sin\phi){\bf v} \\
+                               &=  (\cos\phi) \langle 0,-3 \rangle + (\sin\phi) \langle -3, 0  \rangle \\
+                               &= \langle -3\sin\phi , -3\cos\phi \rangle .
+\end{align*}
+
+\item The position of $P$ relative to the origin is
+\[
+   \overrightarrow{OP} =  \overrightarrow{OC} +  \overrightarrow{CP}.
+\]
+
+\item In terms of $\phi$, the position of $P$ relative to the origin is
+\begin{align*}
+   \overrightarrow{OP} &=  \overrightarrow{OC} +  \overrightarrow{CP} \\
+                                 &= \langle  3\phi , 3 \rangle +  \langle -3\sin\phi , -3\cos\phi \rangle \\
+                                 &= \langle 3\phi - 3\sin\phi , 3 - 3\cos\phi \rangle.
+\end{align*}
+
+\item Since the wheel's axle moves at the constant speed of $6$ m/s, it travels $6t$ meters in $t$ seconds. So the arclength $PQ$ of the rolling circle has length $6t$ meters equal to the distance $OQ$ from the origin to $Q$. Therefore, the rotation angle $\phi$ 
+has radian measure
+\[
+      \phi = h(t) = \frac{6t \text{ m}}{3\text{ m}} = 2t \text{ radians} \, , \, t\geq 0.
+\]
+
+\item The position of $P$ relative to the origin is
+\begin{align*}
+   \overrightarrow{OP} &= \langle 3\phi - 3\sin\phi , 3 - 3\cos\phi \rangle \\
+                                 &= \langle 3\left( 2t \right) - 3\sin\left( 2t\right) , 3 - 3\cos (2t) \rangle \\
+                                  &= \langle 6t - 3\sin\left( 2t\right) , 3 - 3\cos (2t) \rangle .
+\end{align*}
+
+\item The coordinate functions for $P$ are
+\[
+    x = f(t) = 6t - 3\sin\left( 2t\right) \, , \, t\geq 0,
+\]
+and
+\[
+   y = g(t) = 3 - 3\cos (2t)  \, , \, t\geq 0.
+\]
+
+\item The coordinate functions for $P$ are
+\[
+    x = f(t) = vt - r\sin\left( \frac{v}{r}t\right) \, , \, t\geq 0,
+\]
+and
+\[
+   y = g(t) = r - r\cos \left( \frac{v}{r}t \right)  \, , \, t\geq 0.
+\]
+\end{enumerate}
+\end{explanation}
 \end{question}
 
 
@@ -129,13 +189,32 @@ Let
      {\bf u} = \langle 5, 2 \rangle.
 \]
 \begin{enumerate}
-\item Find the components of the vector ${\bf v}$ obtained by rotating ${\bf v}$ counterclockwise through an angle of $\pi/2$ radians. Draw a picture
+\item Find the components of the vector ${\bf v}_1$ obtained by rotating ${\bf u}$ counterclockwise through an angle of $\pi/2$ radians. Draw a picture.
 
-\item Find the components of the vector ${\bf w}$ obtained by rotating ${\bf v}$ clockwise through an angle of $\pi/2$ radians. Draw a picture.
+\[
+     {\bf v}_1 = \langle \answer{-2}, \answer{5} \rangle.             
+\]    
+
+\item Find the components of the vector ${\bf v}_2$ obtained by rotating ${\bf v}$ clockwise through an angle of $\pi/2$ radians. Draw a picture.
+
+\[
+     {\bf v}_2 = \langle \answer{2}, \answer{-5} \rangle.             
+\]    
 
 \item Repeat parts (a) and (b) for the vector ${\bf u} = \langle a,b \rangle$.
+
+Rotating ${\bf u}$ counterclockwise by $\pi/2$ radians gives the vector
+\[
+    {\bf v}_1 = \langle \answer{-b} , \answer{a} \rangle
+\]
+and by $\pi/2$ radians clockwise the vector
+\[
+  {\bf v}_1 = \langle \answer{b} , \answer{-a} \rangle .
+\]
 \end{enumerate}
 \end{question}
+
+
 
 \begin{question} \label{Q4nvnef3ef}
 \begin{enumerate} 
@@ -143,9 +222,19 @@ Let
 \[
      {\bf u} = \langle 5, 2 \rangle.
 \]
-to the vector $\langle {\bf p}= x, y\rangle$, measured counterclockwise. Suppose $|{\bf p}| = |{\bf u}|$ and express the components of ${\bf p}$ in terms of $\phi$.
+to the vector ${\bf w}= \langle x, y\rangle$, measured counterclockwise. Suppose $|{\bf w}| = |{\bf u}|$ and express the components of ${\bf w}$ in terms of $\phi$.
+
+\begin{align*}
+      {\bf w} &= (\cos\phi) \langle \answer{5} , \answer{2} \rangle  + (\sin\phi) \langle \answer{-2} , \answer{5}  \rangle \\
+                 &= \langle \answer{5}\cos\phi - \answer{2}\sin\phi , \answer{2}\cos\phi + \answer{5}\sin \phi  \rangle .  
+\end{align*}
 
 \item Repeat part (a) but assume the angle $\phi$ is measured clockwise instead.
+
+\begin{align*}
+      {\bf w} &= (\cos\phi) \langle \answer{5} , \answer{2} \rangle  + (\sin\phi) \langle \answer{2} , \answer{-5}  \rangle \\
+                 &= \langle \answer{5}\cos\phi + \answer{2}\sin\phi , \answer{2}\cos\phi - \answer{5}\sin \phi  \rangle .  
+\end{align*}
 \end{enumerate}
 \end{question}
 
@@ -176,6 +265,15 @@ The questions are the same, with the goal being to parameterize the pebble's mot
 
 
 \pdfOnly{Access the desmos worksheet at \href{https://www.desmos.com/calculator/bbfxfk47vu}{142: Inclined Cycloid 25}}
+
+\begin{explanation}
+We'll work in general with a circle of radius $r$ meters and a speed of $v$ meters/sec for the axle.
+
+\item Since $\alpha$ is the polar angle of the point $Q$ in the $xy$-coordinate system and $|\overrightarrow{OQ}| = r\phi$, point $Q$ has coordinates
+\[
+   (x,y) = (r\phi \answer{\cos\alpha} , r\phi \answer{\sin\alpha}).
+\]
+\end{explanation}
 
 
 \end{question}
