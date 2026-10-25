@@ -16,17 +16,19 @@ The velocity vector.
 
 There are two types of velocity. Average velocity and instantaneous vecocity. You calculate average velocity as you would any average rate of change, here as the change in position divided by the change in time.
 
-Calculating instantaneous velocity usually requires ideas of differential calculus. But in the special case of uniform circular motion, we do not need calculus.
+Calculating instantaneous velocity usually requires ideas of differential calculus. But in the special case of uniform circular motion, there is another way.
 
 The key ideas are these. At any moment, the instantaneous velocity of a point mass points in the direction of motion and has length equal to the speed of the mass.
 
-For a beetle moving around a circle at a constant speed, because the velocity vector is tangent to the path, it is always perpendicular to the position vector of the beetle relative to the center of its path.
+For a beetle moving around a circle at a constant speed, because the velocity vector is tangent to the path, the velocity is always perpendicular to the position vector of the beetle relative to the center of its path.
 
+
+\section{Uniform Circular Motion}
 \begin{question} \label{Qe3r3rbnnn}
 \begin{enumerate}
 \item A beetle crawls counterclockwise around a circle centered at the point $A(3,1)$ at a constant speed of $12$ cm/sec. Find the velocity of the beetle as it passes the point $P(-8,4)$. All coordinates are measured in cm.
 
-\item As an ant rotates about the origin at a constant rate of $1/5$ rad/sec as it crawls clockwise around a circle centered at the origin. Find the velocity of the ant as it passes the point $(7,-10)$.  All coordinates are measured in cm.
+\item As an ant rotates about the point $A(3,-2)$ at a constant rate of $1/5$ rad/sec as it crawls clockwise around a circle centered at the origin. Find the velocity of the ant as it passes the point $P(7,-10)$.  All coordinates are measured in cm.
 
 \end{enumerate}
 
@@ -55,8 +57,86 @@ So the beetle's velocity as it passes the point $P$ is
                &= \left \langle  \answer{\frac{-36}{\sqrt{130}}} ,  \answer{\frac{-132}{\sqrt{130}}}\right \rangle \frac{\text{cm}}{\text{sec}}.
 \end{align*}
 
+\item This one is easier since the ant's speed is equal to the product of its rotation rate about the center of its circular path and the radius of that path.
+
+As the ant passes the point $P$, the vector
+\[
+ {\bf w} = \langle  \answer{-8} , {-4} \rangle \text{ cm}
+\]
+points in the direction of its motion and has length equal to the radius of the path. So the ant has velocity
+\begin{align*}
+   {\bf v} &= \left( \frac{1}{5} \frac{\text{ rad}}{\text{sec}}\right)  \langle  \answer{-8} , {-4} \rangle \text{ cm}  \\
+              &= \langle \answer{-1.6} , \answer{-0.8} \rangle \text{ cm/sec} 
+\end{align*}
+as it passes $P$.
 \end{enumerate}
 \end{explanation}
+\end{question}
+
+
+\section{Motion Along a Cycloid}
+We saw in Question 2 of the chapter \href{https://ximera.osu.edu/precalc2/PreCalculus2/Cycloid/Cycloid}{Inclined Cycloid} that the vector
+\begin{align*}
+  \overrightarrow{OP}  &= \langle x , y \rangle  \\
+                                  &= \overrightarrow{OC} + \overrightarrow{CP}  \\
+                             &= \langle vt , r\rangle + \left \langle   - r\sin\left( \frac{v}{r}t \right)    ,   -  r\cos\left( \frac{v}{r}t \right) \right \rangle 
+\end{align*}
+expresses the position (in meters) of a pebble attached to a wheel of radius $r$ meters rolling on the $x$-axis at a constant speed of $v$ meters/sec in terms of the number of seconds since the pebble passes the origin. Here $C$ is the center of the rolling wheel.
+
+\begin{onlineOnly}
+    \begin{center}
+\desmos{gxryrk97bf}{900}{600}
+\end{center}
+\end{onlineOnly}
+
+\href{https://www.desmos.com/calculator/dvxeho1urz}{Cycloid Velocity Vector 2}
+
+Our aim in the next question is to find an expression for the pebble's velocity. The idea is to compute two velocities:
+
+\begin{enumerate}
+\item the velocity ${\bf v}_{C/O}$ of the wheel's center $C$ relative to the origin $O$ and
+
+\item the velocity ${\bf v}_{P/C}$ of the pebble relative to the wheel's center $C$.
+\end{enumerate} the velocity ${\bf v}_{C/O}$ of the wheel's center $C$ relative to the origin $O$
+
+Then the sum
+\[
+   {\bf v}_{P/O} = {\bf v}_{P/C} + {\bf v}_{C/O}
+\] 
+of these velocities gives the velocity of the pebble relative to the origin.
+
+\begin{question} \label{Qpew3r3r}
+\begin{enumerate}
+\item Find the components of the velocity ${\bf v}_{C/O}$ of the wheel's center $C$ relative to the origin $O$.
+
+The velocity (in meters/sec) is 
+\[
+  {\bf v}_{C/O} = \langle \answer{v}, \answer{0} \rangle.
+\]
+
+\item Express the components of the velocity ${\bf v}_{P/C}$ of the pebble relative to the wheel's center $C$ in terms of $r$, $v$, and $t$. 
+
+\emph{Hint:} Find the direction ${\bf v}_{P/C}$ and the speed of $P$ in the $uv$-coordinate system attached to the rolling wheel
+
+The velocity (in meters/sec) of the pebble relative to the center of the rolling wheel is
+\[
+   {\bf v}_{P/C} = \left \langle \answer{v \cos\left( \frac{v}{r}t \right)} , \answer{v \sin\left( \frac{v}{r}t \right)} \right \rangle .
+\]
+
+\item Now add the velocities in parts (a) and (b) to find the pebble's velocity ${\bf v}_{P/O}$ relative to the origin of the $xy$-coordinate system.
+
+\item Find the speed and the velocity of the pebble when it is at its high point.
+
+\item Find the speed and the velocity of the pebble when it is at its low point.
+
+\item Find all possibilities for the wheel's rotation angle $\phi$, $0\leq \phi\leq 2\pi$, when the pebble's speed equals the speed of the wheel's center.
+
+\item Show the velocity of the pebble relative to the origin of the $xy$-coordinate system is perpendicular to the vector $\overrightarrow{QP}$ from the point of contact of the wheel with the $x$-axis to the pebble.
+
+\item Show the speed of the pebble in the $xy$-coordinate system is equal to the product of the wheel's rotation rate and teh distance $|\overrightarrow{QP}|$.
+
+
+\end{enumerate}
 \end{question}
 
 \end{document}
