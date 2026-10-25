@@ -24,17 +24,37 @@ For a beetle moving around a circle at a constant speed, because the velocity ve
 
 \begin{question} \label{Qe3r3rbnnn}
 \begin{enumerate}
-\item A beetle crawls counterclockwise around a circle centered at the point $A(3,1)$ at a constant speed of $12$ cm/sec. Find the velocity of the beetle as it passes the point $P(-8,4)$.
+\item A beetle crawls counterclockwise around a circle centered at the point $A(3,1)$ at a constant speed of $12$ cm/sec. Find the velocity of the beetle as it passes the point $P(-8,4)$. All coordinates are measured in cm.
 
-\item As an ant rotates about the origin at a constant rate of $1/5$ rad/sec as it crawls clockwise around a circle centered at the origin. Find the velocity of the ant as it passes the point $(7,-10)$.
+\item As an ant rotates about the origin at a constant rate of $1/5$ rad/sec as it crawls clockwise around a circle centered at the origin. Find the velocity of the ant as it passes the point $(7,-10)$.  All coordinates are measured in cm.
+
 \end{enumerate}
 
 \begin{explanation}
 \begin{enumerate}
-\item Since the velocity vector is tangent to the circular path and in the direction of motion, we can find its direction by rotating the position vector
+\item Since the velocity vector is tangent to the circular path and in the direction of motion, we can find its direction by rotating the position vector (coordinates in cm)
+\begin{align*}
+  \overrightarrow{AP} &= \overrightarrow{\answer{OP}} - \overrightarrow{\answer{OA}} \\
+                                &= \langle \answer{-8}, \answer{4} \rangle - \langle \answer{3} , \answer{1} \rangle  \\
+                                &= \langle  \answer{-11} , \answer{3} \rangle  
+\end{align*}
+$\pi/2$ radians counterclockwise. This gives the vector
 \[
-  \overrightarrow{AP} = \overrightarrow{\answer{OP}} - \overrightarrow{\answer{OA}} 
+ {\bf w} = \langle \answer{-3} , \answer{-11} \rangle \text{ cm}.
 \]
+Since the velocity vector ${\bf v}$ points in the same direction as ${\bf w}$ and has length $v = 2$ cm/sec equal to the speed, we just need to scale ${\bf w}$ by the appropriate factor to get ${\bf v}$. This factor is
+\begin{align*}
+    \lambda  &= \frac{v}{|{\bf w}|}  \\
+                  &= \frac{\answer{12} \frac{\text{cm}}{\text{sec}}}{\answer{\sqrt{130}\text{ cm}}} \\
+                 &= \answer{\frac{12}{\sqrt{130}}} \text{ sec}^{-1} .
+\end{align*}
+
+So the beetle's velocity as it passes the point $P$ is
+\begin{align*}
+   {\bf v}  &= {\bf w} \left( \frac{v}{|{\bf w}|} \right)  \\
+               &= \left \langle  \answer{\frac{-36}{\sqrt{130}}} ,  \answer{\frac{-132}{\sqrt{130}}}\right \rangle \frac{\text{cm}}{\text{sec}}.
+\end{align*}
+
 \end{enumerate}
 \end{explanation}
 \end{question}
