@@ -18,15 +18,24 @@ There are two types of velocity. Average velocity and instantaneous vecocity. Yo
 
 Calculating instantaneous velocity usually requires ideas of differential calculus. But in the special case of uniform circular motion, there is another way.
 
-The key ideas are these. At any moment, the instantaneous velocity of a point mass points in the direction of motion and has length equal to the speed of the mass.
+The key ideas are these. At any moment, the instantaneous velocity points in the direction of motion and has length equal to the speed.
 
-For a beetle moving around a circle at a constant speed, because the velocity vector is tangent to the path, the velocity is always perpendicular to the position vector of the beetle relative to the center of its path.
+For a beetle moving around a circle at a constant speed the velocity is always perpendicular to the position vector of the beetle relative to the center of its path.
 
 
 \section{Uniform Circular Motion}
 \begin{question} \label{Qe3r3rbnnn}
 \begin{enumerate}
 \item A beetle crawls counterclockwise around a circle centered at the point $A(3,1)$ at a constant speed of $12$ cm/sec. Find the velocity of the beetle as it passes the point $P(-8,4)$. All coordinates are measured in cm.
+
+\begin{onlineOnly}
+    \begin{center}
+\desmos{zin4noiazt}{900}{600}
+\end{center}
+\end{onlineOnly}
+
+\href{https://www.desmos.com/calculator/zin4noiazt}{Velocity Uniform Circular Motion}
+
 
 \item As an ant rotates about the point $A(3,-2)$ at a constant rate of $1/5$ rad/sec as it crawls clockwise around a circle centered at the origin. Find the velocity of the ant as it passes the point $P(7,-10)$.  All coordinates are measured in cm.
 
@@ -75,13 +84,25 @@ as it passes $P$.
 
 
 \section{Motion Along a Cycloid}
-We saw in Question 2 of the chapter \href{https://ximera.osu.edu/precalc2/PreCalculus2/Cycloid/Cycloid}{Inclined Cycloid} that the vector
-\begin{align*}
-  \overrightarrow{OP}  &= \langle x , y \rangle  \\
-                                  &= \overrightarrow{OC} + \overrightarrow{CP}  \\
-                             &= \langle vt , r\rangle + \left \langle   - r\sin\left( \frac{v}{r}t \right)    ,   -  r\cos\left( \frac{v}{r}t \right) \right \rangle 
-\end{align*}
-expresses the position (in meters) of a pebble attached to a wheel of radius $r$ meters rolling on the $x$-axis at a constant speed of $v$ meters/sec in terms of the number of seconds since the pebble passes the origin. Here $C$ is the center of the rolling wheel.
+
+\begin{question} \label{Qpew3r3r}
+%We saw in Question 2 of the chapter \href{https://ximera.osu.edu/precalc2/PreCalculus2/Cycloid/Cycloid}{Inclined Cycloid} that the vector
+%\begin{align*}
+%  \overrightarrow{OP}  &= \langle x , y \rangle  \\
+%                                  &= \overrightarrow{OC} + \overrightarrow{CP}  \\
+%                             &= \langle vt , r\rangle + \left \langle   - r\sin\left( \frac{v}{r}t \right)    ,   -  r\cos\left( \frac{v}{r}t \right) %\right \rangle 
+%\end{align*}
+%expresses the position (in meters) of a pebble attached to a wheel of radius $r$ meters rolling on the $x$-axis at a constant speed of $v$ meters/sec in terms of the number of seconds since the pebble passes the origin. Here $C$ is the center of the rolling wheel.
+
+A wheel of radius $r$ meters rolls along the $x$-axis without slipping as its axle $C$ moves at a constant speed of $v$ m/sec in the direction of the vector $\langle 1, 0\rangle$. A pebble $P$ attached to the wheel traces a cycloid as shown in the figure below. 
+
+Let ${\bf v}_{P/O}$ be the velocity (in meters/sec) of the pebble in the $xy$-coordinate sytem (as shown in the figure).
+
+Let ${\bf v}_{P/C}$ be the velocity (in meters/sec) of the pebble in the $uv$-coordinate sytem.
+
+Let ${\bf v}_{C/O}$ be the velocity (in meters/sec) of the wheel's axle in the $xy$-coordinate sytem.
+
+ 
 
 \begin{onlineOnly}
     \begin{center}
@@ -89,24 +110,28 @@ expresses the position (in meters) of a pebble attached to a wheel of radius $r$
 \end{center}
 \end{onlineOnly}
 
-\href{https://www.desmos.com/calculator/dvxeho1urz}{Cycloid Velocity Vector 2}
+\href{https://www.desmos.com/calculator/gxryrk97bf}{Cycloid Velocity Vector 2}
 
-Our aim in the next question is to find an expression for the pebble's velocity. The idea is to compute two velocities:
+Our aim is to find an expression for the pebble's velocity relative to the origin in the $xy$-coordinate system. %The idea is to compute two velocities:
+
+%\begin{enumerate}
+%\item the velocity ${\bf v}_{C/O}$ of the wheel's center $C$ relative to the origin $O$ and
+
+%\item the velocity ${\bf v}_{P/C}$ of the pebble relative to the wheel's center $C$.
+%\end{enumerate} the velocity ${\bf v}_{C/O}$ of the wheel's center $C$ relative to the origin $O$
+
+%Then the sum
+%\[
+%   {\bf v}_{P/O} = {\bf v}_{P/C} + {\bf v}_{C/O}
+%\] 
+%of these velocities gives the velocity of the pebble relative to the origin.
+
 
 \begin{enumerate}
-\item the velocity ${\bf v}_{C/O}$ of the wheel's center $C$ relative to the origin $O$ and
+\item Write an equation with vectors that express the position of $P$ relative to $O$ in terms of the position of $P$ relative to $C$ and the position of $C$ relative to $O$. Work in general for any points $P$, $O$, and $C$, not with the specific vectors in this scenario.
 
-\item the velocity ${\bf v}_{P/C}$ of the pebble relative to the wheel's center $C$.
-\end{enumerate} the velocity ${\bf v}_{C/O}$ of the wheel's center $C$ relative to the origin $O$
+\item Express the vector ${\bf v}_{P/O}$ in terms of the vectors ${\bf v}_{P/C}$ and ${\bf v}_{C/O}$.
 
-Then the sum
-\[
-   {\bf v}_{P/O} = {\bf v}_{P/C} + {\bf v}_{C/O}
-\] 
-of these velocities gives the velocity of the pebble relative to the origin.
-
-\begin{question} \label{Qpew3r3r}
-\begin{enumerate}
 \item Find the components of the velocity ${\bf v}_{C/O}$ of the wheel's center $C$ relative to the origin $O$.
 
 The velocity (in meters/sec) is 
@@ -114,26 +139,78 @@ The velocity (in meters/sec) is
   {\bf v}_{C/O} = \langle \answer{v}, \answer{0} \rangle.
 \]
 
-\item Express the components of the velocity ${\bf v}_{P/C}$ of the pebble relative to the wheel's center $C$ in terms of $r$, $v$, and $t$. 
+\item Express the components of the vector $\overrightarrow{CP}$ in terms of the wheel's radius $r$ and the rotation angle $\alpha$.
 
-\emph{Hint:} Find the direction ${\bf v}_{P/C}$ and the speed of $P$ in the $uv$-coordinate system attached to the rolling wheel
+\[
+    \overrightarrow{CP} = \langle \answer{\alpha - r\sin\alpha},  \answer{r - r\cos \alpha}  \rangle . 
+\]
+
+%\item Express the components of the vector $\overrightarrow{CP}$ in terms of the wheel's radius $r$, its speed $v$, and the time $t$ (measured in the number of seconds since $P$ was at the origin).
+
+\item Desribe the motion of the pebble in the $uv$-coordinate system.
+
+\item Find the pebble's speed in the $uv$-coordinate system.
+
+\item Express the components of the vector ${\bf v}_{P/C}$ (the veloicty of $P$ relative to $C$) in terms of $v$ and $\alpha$.
 
 The velocity (in meters/sec) of the pebble relative to the center of the rolling wheel is
 \[
-   {\bf v}_{P/C} = \left \langle \answer{v \cos\left( \frac{v}{r}t \right)} , \answer{v \sin\left( \frac{v}{r}t \right)} \right \rangle .
+   {\bf v}_{P/C} = \left \langle \answer{-v \cos \alpha} , \answer{v \sin \alpha} \right \rangle .
 \]
 
-\item Now add the velocities in parts (a) and (b) to find the pebble's velocity ${\bf v}_{P/O}$ relative to the origin of the $xy$-coordinate system.
+\item Express the components of the vector ${\bf v}_{P/O}$ (the veloicty of $P$ relative to $O$) in terms of $r$ and $\alpha$.
+ 
+\begin{align*}
+    {\bf v}_{P/O}  &= {\bf v}_{P/C} + {\bf v}_{C/O} \\
+                          &= \langle  \answer{-v \cos \alpha} , \answer{v \sin \alpha} \rangle  + \langle \answer{v},\answer{0} \rangle \\
+                           &=\langle \answer{v-v \cos \alpha} , \answer{v \sin \alpha} \rangle.
+\end{align*}
 
-\item Find the speed and the velocity of the pebble when it is at its high point.
+\item Sketch the velocity vectors ${\bf v}_{P/C}$ and ${\bf v}_{C/O}$ in the figure above. Place the tails of these vector at the point $P$. 
 
-\item Find the speed and the velocity of the pebble when it is at its low point.
+\item Find the velocity and speed of the pebble when it is at the top of the wheel.
 
-\item Find all possibilities for the wheel's rotation angle $\phi$, $0\leq \phi\leq 2\pi$, when the pebble's speed equals the speed of the wheel's center.
+\item Find the velocity and speed of the pebble when it is at the bottom of the wheel.
 
-\item Show the velocity of the pebble relative to the origin of the $xy$-coordinate system is perpendicular to the vector $\overrightarrow{QP}$ from the point of contact of the wheel with the $x$-axis to the pebble.
+\item Find all possible rotation angles of the wheel between $0$ and $2\pi$ when the pebble and the axle have the same speed.
 
-\item Show the speed of the pebble in the $xy$-coordinate system is equal to the product of the wheel's rotation rate and teh distance $|\overrightarrow{QP}|$.
+%\item Express the components of the vectors  ${\bf v}_{P/C}$, ${\bf v}_{C/O}$, and ${\bf v}_{P/O}$ in terms of $v$, $r$, and the wheel's rotation angle $\phi$.
+
+\item Show algebraically that the velocity vector ${\bf v}_{P/O}$ is perpendicular to the position vector $\overrightarrow{QP}$.
+
+\item Show algebraically that the pebble's speed is equal to the product of the wheel's rotation rate and the distance $|\overrightarrow{QP}|$.
+
+
+
+%\item Express the components of the vector $\overrightarrow{OP}$ in terms of the wheel's radius $r$ and the rotation angle $\phi$.
+
+%\item Find the components of the velocity ${\bf v}_{C/O}$ of the wheel's center $C$ relative to the origin $O$.
+
+%The velocity (in meters/sec) is 
+%\[
+%  {\bf v}_{C/O} = \langle \answer{v}, \answer{0} \rangle.
+%\]
+
+%\item Express the components of the velocity ${\bf v}_{P/C}$ of the pebble relative to the wheel's center $C$ in terms of $r$, $v$, and $t$. 
+
+%\emph{Hint:} Find the direction ${\bf v}_{P/C}$ and the speed of $P$ in the $uv$-coordinate system attached to the rolling wheel
+
+%The velocity (in meters/sec) of the pebble relative to the center of the rolling wheel is
+%\[
+ %  {\bf v}_{P/C} = \left \langle \answer{v \cos\left( \frac{v}{r}t \right)} , \answer{v \sin\left( \frac{v}{r}t \right)} \right \rangle .
+%\]
+
+%\item Now add the velocities in parts (a) and (b) to find the pebble's velocity ${\bf v}_{P/O}$ relative to the origin of the $xy$-coordinate system.
+
+%\item Find the speed and the velocity of the pebble when it is at its high point.
+
+%\item Find the speed and the velocity of the pebble when it is at its low point.
+
+%\item Find all possibilities for the wheel's rotation angle $\phi$, $0\leq \phi\leq 2\pi$, when the pebble's speed equals the speed of the wheel's center.
+
+%\item Show the velocity of the pebble relative to the origin of the $xy$-coordinate system is perpendicular to the vector $\overrightarrow{QP}$ from the point of contact of the wheel with the $x$-axis to the pebble.
+
+%\item Show the speed of the pebble in the $xy$-coordinate system is equal to the product of the wheel's rotation rate and teh distance $|\overrightarrow{QP}|$.
 
 
 \end{enumerate}
