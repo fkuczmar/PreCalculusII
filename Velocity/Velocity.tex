@@ -12,7 +12,7 @@ The velocity vector.
 
 
 \section{The Velocity Vector}
-\emph{Velocity} is the rate of change of position with respect to time. Since position is relative, so is velocity. 
+\emph{Velocity} is the rate of change of position with respect to time. Since position is a vector, so is velocity. Since position is relative, ditto velocity. 
 
 There are two types of velocity. Average velocity and instantaneous vecocity. You calculate average velocity as you would any average rate of change, here as the change in position divided by the change in time.
 
@@ -43,17 +43,17 @@ For a beetle moving around a circle at a constant speed the velocity is always p
 
 \begin{explanation}
 \begin{enumerate}
-\item Since the velocity vector is tangent to the circular path and in the direction of motion, we can find its direction by rotating the position vector (coordinates in cm)
+\item Since the velocity vector is tangent to the circular path and in the direction of motion, we can find its direction by starting with the position vector (of $P$ relative to $A$, coordinates in cm)
 \begin{align*}
   \overrightarrow{AP} &= \overrightarrow{\answer{OP}} - \overrightarrow{\answer{OA}} \\
                                 &= \langle \answer{-8}, \answer{4} \rangle - \langle \answer{3} , \answer{1} \rangle  \\
-                                &= \langle  \answer{-11} , \answer{3} \rangle  
+                                &= \langle  \answer{-11} , \answer{3} \rangle  .
 \end{align*}
-$\pi/2$ radians counterclockwise. This gives the vector
+Then we rotate this vector $\pi/2$ radians counterclockwise to get the vector
 \[
  {\bf w} = \langle \answer{-3} , \answer{-11} \rangle \text{ cm}.
 \]
-Since the velocity vector ${\bf v}$ points in the same direction as ${\bf w}$ and has length $v = 2$ cm/sec equal to the speed, we just need to scale ${\bf w}$ by the appropriate factor to get ${\bf v}$. This factor is
+Since the velocity vector ${\bf v}$ points in the same direction as ${\bf w}$ and has length $v |{\bf v} |= 12$ cm/sec equal to the speed, we just need to scale ${\bf w}$ by the appropriate factor to get ${\bf v}$. This factor is
 \begin{align*}
     \lambda  &= \frac{v}{|{\bf w}|}  \\
                   &= \frac{\answer{12} \frac{\text{cm}}{\text{sec}}}{\answer{\sqrt{130}\text{ cm}}} \\
@@ -112,7 +112,11 @@ Let ${\bf v}_{C/O}$ be the velocity (in meters/sec) of the wheel's axle in the $
 
 \href{https://www.desmos.com/calculator/gxryrk97bf}{Cycloid Velocity Vector 2}
 
-Our aim is to find an expression for the pebble's velocity relative to the origin in the $xy$-coordinate system. %The idea is to compute two velocities:
+Our aim is to find an expression for the pebble's velocity relative to the origin in the $xy$-coordinate system. The key idea is that 
+\[
+   {\bf v}_{P/O} = {\bf v}_{P/C} + {\bf v}_{C/O}.
+\]
+So we'll compute the velocites of $P$ relative to $C$ and of $C$ relative to $O$. Then we'll add them to get the velocity of $P$ relative to $O$.
 
 %\begin{enumerate}
 %\item the velocity ${\bf v}_{C/O}$ of the wheel's center $C$ relative to the origin $O$ and
@@ -130,7 +134,7 @@ Our aim is to find an expression for the pebble's velocity relative to the origi
 \begin{enumerate}
 \item Write an equation with vectors that express the position of $P$ relative to $O$ in terms of the position of $P$ relative to $C$ and the position of $C$ relative to $O$. Work in general for any points $P$, $O$, and $C$, not with the specific vectors in this scenario.
 
-\item Express the vector ${\bf v}_{P/O}$ in terms of the vectors ${\bf v}_{P/C}$ and ${\bf v}_{C/O}$.
+\item Express the vector ${\bf v}_{P/O}$ in terms of the vectors ${\bf v}_{P/C}$ and ${\bf v}_{C/O}$. 
 
 \item Find the components of the velocity ${\bf v}_{C/O}$ of the wheel's center $C$ relative to the origin $O$.
 
@@ -139,26 +143,58 @@ The velocity (in meters/sec) is
   {\bf v}_{C/O} = \langle \answer{v}, \answer{0} \rangle.
 \]
 
-\item Express the components of the vector $\overrightarrow{CP}$ in terms of the wheel's radius $r$ and the rotation angle $\alpha$.
+\item To find the components of the velocity ${\bf v}_{P/C}$ of $P$ relative to $C$, we need to know the direction of this vector and its magnitude. The magnitude is the speed of $P$ in the reference frame of the $uv$-coordinate system. Here are the steps.
+
+\begin{enumerate}
+
+\item The first step is to describe the motion of $P$ in the $uv$-coordinate system. Do this. Use everyday English to give a one sentence description of this motion. Then stop.
+
+\item The next observation is that the speed of $P$ in the $uv$-frame of reference is equal to the speed $v$ m/sec of the wheel's axle in the $xy$-coordinate system. This is because the as the wheel rolls through the distance ${OQ}$, both the axle $C$ and the point $P$ (in the $uv$-reference frame) travel through this same distance. Since the axle and the point $P$ (in the $uv$-reference frame) travel equal distances in equal times, they have the same speed.
+
+Explain why these two distances are both equal to the distance $OQ$.
+
+\begin{freeResponse}
+\end{freeResponse}
+
+\item The next step is to find a vector pointing in the direction of ${\bf v}_{P/C}$. For this we start with the position of $P$ relative to $Q$. 
+ 
+\begin{enumerate}
+\item First express the components of the vector $\overrightarrow{CP}$ in terms of the wheel's radius $r$ and the rotation angle $\alpha$.
 
 \[
-    \overrightarrow{CP} = \langle \answer{r\alpha - r\sin\alpha},  \answer{r - r\cos \alpha}  \rangle . 
+    \overrightarrow{CP} = \langle \answer{- r\sin\alpha},  \answer{-r\cos \alpha}  \rangle . 
 \]
+
+\item Now rotate $\overrightarrow{CP}$ to find a vector ${\bf w}$ in the direction of ${\bf v}_{P/C}$. 
+
+To get the vector ${\bf w}$, we rotate $\overrightarrow{CP}$ through an angle of $\answer{\pi/2}$ radians clockwise. We get
+\[
+     {\bf w} = \langle  \answer{-r\cos \alpha}, \answer{r\sin\alpha} \rangle        
+\]
+
+\item Finally, scale the vector ${\bf w}$ so that its length is the speed $v$ of $P$ in the reference frame of the $uv$-coordinate system. This gives the velocity of the pebble relative to the wheel's axle (in terms of $v$ and $\alpha$) as
+\[
+  {\bf v}_{P/C} = \langle  \answer{-v\cos \alpha}, \answer{v\sin\alpha}  \rangle .
+\]
+
+\end{enumerate}
+
+\end{enumerate}
 
 %\item Express the components of the vector $\overrightarrow{CP}$ in terms of the wheel's radius $r$, its speed $v$, and the time $t$ (measured in the number of seconds since $P$ was at the origin).
 
-\item Desribe the motion of the pebble in the $uv$-coordinate system.
+%\item Desribe the motion of the pebble in the $uv$-coordinate system.
 
-\item Find the pebble's speed in the $uv$-coordinate system.
+%\item Find the pebble's speed in the $uv$-coordinate system.
 
-\item Express the components of the vector ${\bf v}_{P/C}$ (the veloicty of $P$ relative to $C$) in terms of $v$ and $\alpha$.
+%\item Express the components of the vector ${\bf v}_{P/C}$ (the veloicty of $P$ relative to $C$) in terms of $v$ and $\alpha$.
 
-The velocity (in meters/sec) of the pebble relative to the center of the rolling wheel is
-\[
-   {\bf v}_{P/C} = \left \langle \answer{-v \cos \alpha} , \answer{v \sin \alpha} \right \rangle .
-\]
+%The velocity (in meters/sec) of the pebble relative to the center of the rolling wheel is
+%\[
+ %  {\bf v}_{P/C} = \left \langle \answer{-v \cos \alpha} , \answer{v \sin \alpha} \right \rangle .
+%\]
 
-\item Express the components of the vector ${\bf v}_{P/O}$ (the veloicty of $P$ relative to $O$) in terms of $r$ and $\alpha$.
+\item Now we can express the components of the vector ${\bf v}_{P/O}$ (the veloicty of $P$ relative to $O$) in terms of $v$ and $\alpha$.
  
 \begin{align*}
     {\bf v}_{P/O}  &= {\bf v}_{P/C} + {\bf v}_{C/O} \\
