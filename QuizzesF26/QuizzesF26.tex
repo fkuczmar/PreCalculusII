@@ -9,16 +9,6 @@ Quiz problems and solutions.
 \end{abstract}
 \maketitle
 
-The answer is 24
-\[
- \answer{24}
-\]
-
-The answer is 4
-\[
-  \answer{4}
-\]
-
 \section{Quiz 1B}
 
 \begin{question}
@@ -81,6 +71,106 @@ To get the polar angle at time $t$ minutes past noon, we add this change to the 
 Find another possible expression for the polar angle function.
 \begin{freeResponse}
 \end{freeResponse}
+\end{question}
+
+
+\section{Quiz 4A}
+
+\begin{question} \label{Mvem30}
+
+Use the figure below to answer the following questions.
+
+\begin{onlineOnly}
+    \begin{center}
+\desmos{8kf9jaq7t0}{900}{600}
+\end{center}
+\end{onlineOnly}
+
+\href{https://www.desmos.com/calculator/8kf9jaq7t0}{Quiz 4A}
+
+
+\begin{enumerate}
+\item Referring to some or all of the points above, interpret the meaning of the vector $\overrightarrow{u}$ in terms of relative position. Answer in a complete sentence.
+
+\item Referring to some or all of the points above, interpret the meaning of the vector $\overrightarrow{v} - \overrightarrow{u}$ in terms of relative position. Answer in a complete sentence.
+
+\item Sketch the vector $\overrightarrow{v} - \overrightarrow{u}$ in the figure above. Label that vector. Do this without drawing any other vectors.
+\end{enumerate}
+
+\begin{enumerate}
+\item The vector
+\[
+  {\bf u} = \overrightarrow{WM}
+\]
+tells us how to get from $W$ to $M$. It is the position fo $M$ relative to $W$.
+
+\item Since
+\begin{align*}
+  {\bf v} - {\bf u} &= \overrightarrow{WQ} - \overrightarrow{WM} \\
+                          &= -\overrightarrow{WM} + \overrightarrow{WQ}  \\
+                          &= \overrightarrow{MW} + \overrightarrow{WQ} \\
+                          &= \overrightarrow{MQ} ,
+\end{align*}
+the difference ${\bf v} - {\bf u}$ gives the position of $Q$ relative to $M$.
+
+\item Draw a vector from $M$ to $Q$.
+\end{enumerate}
+\end{question}
+
+
+\section{Quiz 4B}
+
+\begin{question} \label{Qpv39}
+This problem is about three points, $C$, $D$, and $Q$ in the $xy$-plane.
+
+\begin{enumerate}
+
+\item Write an equation with vectors that expresses the position of $C$ relative to $D$ in terms of the positions of $C$ and $D$ relative to $Q$. Do this without using the information that follows.
+
+\item Now suppose $C$ is 5 miles due south of $Q$ and that $D$ is $10$ miles from $Q$ at a bearing of $2.5$ radians. The bearing is measured counterclockwise from the east.
+
+\begin{enumerate}
+
+\item Draw a  reasonably accurate picture on a coordinate system that clearly shows the points and the relative position vectors in part (a). Label the axes of your coordinate system with the appropriate variable names, units, and cardinal directions (ie. North, East, South, West as appropriate).
+
+\item Find the exact components of the three vectors in part (a).
+
+\item End with a concluding sentence that describes the position of $C$ relative to $D$ in everyday English (no math terms).
+
+\end{enumerate}
+\end{enumerate}
+
+\begin{explanation}
+\begin{enumerate}
+\item To get from $D$ to $C$, you could go from $D$ to $Q$ and then from $Q$ to $D$. So
+\begin{align*}
+ \overrightarrow{DC} &= \overrightarrow{DQ} + \overrightarrow{QC} \\
+                               &= \overrightarrow{QC} - \overrightarrow{QD} .
+\end{align*}
+
+\item I'll leave the picture for you. Be sure to draw vectors.
+
+\item Since $C$ is $5$ miles due south of $Q$,
+\[
+ \overrightarrow{QC} = \langle 0, -5 \rangle \text{ miles}.
+\] 
+
+Since $D$ is 10 miles from $Q$ at a bearing of $2.5$ radians,
+\[
+   \overrightarrow{QD}  = \langle 10 cos 2.5, 10 \sin 2.5 \rangle \text{ miles}. 
+\]
+
+So the position of $C$ relative to $D$ is given by the vector (all components in miles)
+\begin{align*}
+   \overrightarrow{DC} &= \overrightarrow{QC} - \overrightarrow{QD} \\
+                                 &= \langle 0, -5 \rangle  - \langle 10 \cos 2.5, 10 \sin 2.5 \rangle \\
+                                 &= \langle 10 \cos 2.5, -5 - 10 \sin 2.5 \rangle
+\end{align*}
+
+This means to get from $D$ to $C$ we would walk $-10\cos 2.5$ miles east and $5 + 10\sin 2.5$ miles south.
+
+\end{enumerate}
+\end{explanation}
 \end{question}
 
 \section{Quiz 5A}
