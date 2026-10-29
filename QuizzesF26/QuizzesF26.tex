@@ -83,4 +83,109 @@ Find another possible expression for the polar angle function.
 \end{freeResponse}
 \end{question}
 
+\section{Quiz 5A}
+
+\begin{question} \label{Qpvme}
+Points $O$, $A$, $B$, $C$, and $D$ lie in a plane. Points $A$ and $B$ are $18$ meters apart. To get from $A$ to $B$ you would walk in the same direction as you would to get from $C$ to $D$.
+
+Write an equation that express the position of $A$ relative to $O$ in terms of the vectors $\overrightarrow{CD}$ and $\overrightarrow{OB}$.
+
+\begin{explanation}
+To get from $O$ to $A$, we can go from $O$ to $B$ and then from $B$ to $A$. So 
+\[
+  \overrightarrow{OA} = \overrightarrow{OB} + \overrightarrow{BA}.
+\]
+
+To finish the problem, we must now express $\overrightarrow{BA}$ in terms of $\overrightarrow{CD}$.
+
+Since to get from $A$ to $B$ you would walk in the \emph{same} direction as you would to get from $C$ to $D$, the vectors $\overrightarrow{BA}$ and $\overrightarrow{CD}$ point in \emph{opposite} directions. This means $\overrightarrow{BA}$ is a \emph{negative} scalar multiple of $\overrightarrow{CD}$.
+
+Since $A$ and $B$ are $18$ meters apart, 
+\[
+  \left|  \overrightarrow{BA}\right| = 18 \text{ meters}.
+\]
+
+And since $\overrightarrow{CD}$ has length $\left| \overrightarrow{CD}\right|$ meters, we should multiply $\overrightarrow{CD}$ by the dimensionless factor
+\[
+       - \frac{18}{\left| \overrightarrow{CD}\right|}  
+\]
+to get the vector $\overrightarrow{BA}$. So
+\[
+     \overrightarrow{BA} =- \left( \frac{18}{\left| \overrightarrow{CD}\right|} \right) \overrightarrow{CD}
+\]
+and the position of $A$ relative to $O$ is given by the vector
+\begin{align*}
+   \overrightarrow{OA} &= \overrightarrow{OB} + \overrightarrow{BA} \\
+                                 &=\overrightarrow{OB} - \left( \frac{18}{\left| \overrightarrow{CD}\right|} \right) \overrightarrow{CD}
+\end{align*}
+
+\end{explanation}
+\end{question}
+
+\section{Quiz 5B}
+
+\begin{question} \label{Qvm93}
+ A circle of radius $r$ meters rolls along the $x$-axis as a point $P$ on the circle traces the cycloid shown below. 
+
+\begin{onlineOnly}
+    \begin{center}
+\desmos{lebi7kyoac}{900}{600}
+\end{center}
+\end{onlineOnly}
+
+\href{https://www.desmos.com/calculator/lebi7kyoac}{Cycloid 26}
+
+
+
+Let $\phi$ be the rotation angle of the rolling circle, measured clockwise from the upward vertrical when $P$ has coordinates $(0,2r)$.
+
+ Use the methods of our class to write equations expressing the components of each of the following vectors in terms of $\phi$ and $r$:
+\begin{enumerate}
+
+\item The position of $C$ (the center of the rolling wheel) relative to the origin.
+
+\item The position of $P$ relative to $C$. Start by writing an equation that expresses this vector in terms of $\phi$ and the vectors ${\bf u}$ and ${\bf v}$
+
+\item The position of $P$ relative to $O$.
+\end{enumerate}
+
+\begin{explanation}
+\begin{enumerate}
+\item Since the distance $OQ$ from the origin to the point of contact of the circle and the $x$-axis is equal to the orange arclength $QR$ on the circle,
+\[
+  \overrightarrow{OQ} = \langle r \phi, 0 \rangle \text{ meters}.
+\]
+And since the vector $\overrightarrow{QC}$ has length $r$ and points in the direction of the postive $y$-axis,
+\[
+ \overrightarrow{QC} = \langle 0 , r \rangle \text{ meters}.
+\]
+So the position of $C$ relative to the origin is given by the vector (components in meters)
+\begin{align*}
+      \overrightarrow{OC} &= \overrightarrow{OQ} + \overrightarrow{QC} \\
+                                    &= \langle r \phi, 0 \rangle + \langle 0 , r \rangle \\
+                                    &= \langle r \phi , r \rangle.
+\end{align*}
+
+\item Since the angle $\phi$ from ${\bf u}$ to $\overrightarrow{CP}$ is measured in the direction from ${\bf u}$ to ${\bf v}$ (and the vectors ${\bf u}$ and ${\bf v}$ are perpendicular and have equal lengths),
+\begin{align*}
+     \overrightarrow{CP} &= (\cos \phi) {\bf u} + (\sin \phi) {\bf v} \\
+                                   &= (\cos \phi) \langle 0, r \rangle + (\sin \phi) \langle r, 0\rangle \\
+                                   &= \langle r \sin \phi , r \cos \phi \rangle ,
+\end{align*} 
+where all the components are measured in meters.
+
+\item The position of $P$ relative to the origin is given by the vector (components in meters)
+\begin{align*}
+    \overrightarrow{OP} &=  \overrightarrow{OC} +  \overrightarrow{CP} \\
+                                  & =  \langle r \phi , r \rangle + \langle r \sin \phi , r \cos \phi \rangle \\
+                                  & = \langle r\phi + r \sin \phi , r + r \cos \phi \rangle.
+\end{align*}
+\end{enumerate}
+
+\end{explanation}
+
+\end{question}
+
+
+
 \end{document}
