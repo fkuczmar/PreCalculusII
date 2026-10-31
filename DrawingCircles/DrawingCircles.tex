@@ -1,0 +1,71 @@
+\documentclass{ximera}
+\title{Drawing Circles with a Rectangle}
+
+\newcommand{\pskip}{\vskip 0.1 in}
+
+\begin{document}
+\begin{abstract}
+Using  a rectangle to draw a circle.
+\end{abstract}
+\maketitle
+
+
+\begin{question}  \label{Qpf3f3mbmZ}
+
+Draw two points on the board. Label them $A$ and $B$.
+
+Now take a rectangular sheet of paper, like the one this worksheet is printed on, and label one vertex $P$. Label the two adjacent vertices $Q$ and $R$. Now hold the paper so that side $\overline{PQ}$ passes through $A$ and side $\overline{PR}$ passes through $B$. Then mark the position of $P$ on the board.
+
+Now move the paper and repeat the above process, marking the position of $P$ each time. Do this enough times to notice something about all the marked positions of $P$. What do you notice?
+\begin{freeResponse}
+\end{freeResponse}
+
+\pdfOnly{Access an interactive version in desmos at \href{https://www.desmos.com/calculator/8872fdmjxr}{141: Drawing a Circle with a Rectangle}}
+
+\begin{onlineOnly}
+    \begin{center}
+\desmos{ege2z0djr4}{900}{600}
+\end{center}
+\end{onlineOnly}
+
+\href{https://www.desmos.com/calculator/ege2z0djr4}{142: Drawing a Circle with a Rectangle}
+
+
+
+We'll now use algebra to show your guess is correct.
+
+\begin{enumerate}
+\item Start by imposing a coordinate system with $A$ as the origin and $B$ as the point with coordinates $(b,0)$, where $b\neq 0$. Now let ${\cal L}_1$ (ie. Line 1) be the line through $A$ that makes the angle $\alpha$ with the $x$-axis, $0 < \alpha < \pi/2$, measured counterclockwise from segment $\overline{AP}$ as shown above. 
+
+Write an equation for Line 1.
+
+The line through $A$  makint the angle $\alpha$ with the $x$-axis has equation
+\[
+    y = \answer{(\tan \alpha)x}.
+\]
+
+\item Next use point-slope to write an equation of the line ${\cal L}_2$ through $B$ (with coordinates $(b,0)$)  perpendicluar to ${\cal L}_1$.
+
+This line has equation
+\[
+   y = \answer{-\cot \alpha \left( x - b \right)}.
+\]
+
+\item Now use algebra to find the coordinates of the point $P$ where the lines ${\cal L}_1$ and ${\cal L}_2$ intersect.
+
+The point of intersection has coordinates (in terms of $\cos\alpha and \sin\alpha$)
+\[
+    (x,y) = \left(  \answer{b \cos^2\alpha}  , \answer{b \sin\alpha \cos\alpha}   \right) .
+\]
+
+\item Use algebra and the Pythagorean theorem find the distance from $P$ to the midpoint $M$ of segment $\overline{AB}$.
+
+\emph{Conclusion:} Since the distance from $P$ to $M$ is always equal to $\answer{|b/2|}$, all the points $P$ lie on an circle centered at $M$ with this distance as the radius. 
+
+\end{enumerate}
+
+
+\end{question}
+
+\end{document}
+
