@@ -1,0 +1,233 @@
+\documentclass{ximera}
+\title{TheTangent Function}
+
+\newcommand{\pskip}{\vskip 0.1 in}
+
+\begin{document}
+\begin{abstract}
+Introduction to the tangent function.
+\end{abstract}
+\maketitle
+
+
+
+\section{Introduction}
+
+The definition of the tangent function is as follows. 
+
+Start with the polar angle $\theta$, measured counterclockwise from the positive $x$-axis as always. Then pick a point $P$ with coordinates $(x,y) \neq (0,0)$ on the ray emanating from the origin with this polar angle.
+
+Then the definition of $\tan\theta$ is
+\[
+   \tan \theta = \frac{y}{x}.
+\]
+
+As is true for the input and output of all trig functions, $\tan\theta$ is a dimensionless ratio of lengths. It is equal to the slope of the line $OP$ through the origin and the point $P$.
+
+\begin{question} \label{QzaMsaw}
+Express the domain and range of the function $z=f(\theta) \ =\tan\theta$ in set-builder notation.
+\end{question}
+
+
+\begin{question} \label{Q45dsfTRFGree}
+Use the radian protractor below to approximate each of the following.
+\begin{enumerate}
+\item $\tan 2$
+
+\item $\tan(-2)$
+
+\item $\tan 4$
+
+\item $\tan(7/10)$
+
+\item $\tan(\pi + 7/10)$
+\end{enumerate}
+
+\href{https://www.desmos.com/calculator/jnrpouwmuv}{142: Radian Protractor Tangent}
+ 
+\begin{onlineOnly}
+    \begin{center}
+\desmos{jnrpouwmuv}{900}{600}
+\end{center}
+\end{onlineOnly}
+\end{question}
+
+
+\begin{question} \label{QDrLMDndvvV}
+Evaluate each of the following expressions \emph{without} technology. Draw pictures \emph{on a coordinate system} to help with your explanations. Do \emph{not} work on the unit circle. Draw an equilateral triangle where appropriate. 
+
+\begin{enumerate}
+\item $\tan(\pi/4)$
+
+\item $\tan(3\pi/4)$
+
+\item $\tan(5\pi/4)$
+
+\item $\tan(2\pi/3)$
+
+\item $\tan(7\pi/6)$
+
+\item $\tan(53\pi + 5\pi/4)$
+
+\item $\tan(\pi/2)$
+
+\item $\tan(0)$.
+
+\end{enumerate}
+\end{question}
+
+\begin{question} \label{QzmnnNNN}
+Draw pictures on a coordinate system for each of the following questions to help with your explanations.
+\begin{enumerate}
+\item Express $\tan(\theta + \pi)$ in terms of $\tan\theta$.
+
+\item  Express $\tan(\theta + \pi/4)$ in terms of $\tan\theta$.
+
+\item  Express $\tan(\theta + 3\pi/4)$ in terms of $\tan\theta$.
+
+\item Express $\tan(\theta - \pi/2)$ in terms of $\tan\theta$.
+
+\item Express $\tan(\theta + \pi/2)$ in terms of $\tan\theta$.
+
+\item Express $\tan(\theta - \pi/6)$ in terms of $\tan\theta$.
+
+\item Express $\tan(\theta + 5\pi/3)$ in terms of $\tan\theta$.
+\end{enumerate}
+
+\begin{explanation}
+\begin{enumerate}
+\item Let $P$ be a point different from the origin with coordinates $(x,y)$ and polar angle $\theta$. Rotate $P$ counterclockwise  about the origin by the angle $\pi$ to get the point $Q$. Then $Q$ has polar angle $\theta + \pi$ and coordinates $(-x,-y)$. So
+\begin{align*}
+ \tan (\theta + \pi) &= \frac{-y}{-x} \\
+                            &= \frac{y}{x} \\
+                            &= \tan \theta .
+\end{align*}
+
+\item Let $P$ be a point different from the origin with coordinates $(x,y)$ and polar angle $\theta$. Rotate  $P$ counterclockwise about the origin by the angle $\pi/4$ to get the point $Q$ with polar angle $\theta + \pi/4$.
+
+To express $\tan(\theta + \pi/4)$ in terms of $\tan\theta = y/x$, we need to express the coordinates of $Q$ in terms of $x$ and $y$. To do this, rotate $P$ counterclockwise about the origin by the angle $\pi/2$ to get the point $R$ with coordinates $(-y,x)$. Then the vector $\overrightarrow{OQ}$ has components
+\begin{align*}
+  \overrightarrow{OQ} &= \cos (\pi/4) \, \overrightarrow{OP} +  \sin (\pi/4) \, \overrightarrow{OR} \\
+                                 &=\frac{1}{\sqrt{2}} \langle x , y \rangle + \frac{1}{\sqrt{2}} \langle -y , x \rangle \\
+                                 &= \frac{1}{\sqrt{2}}\left \langle x - y   , x + y\right \rangle .
+\end{align*}
+So using the coordinates of the point $Q$ with polar angle $\theta + \pi/4$, 
+\begin{align*}
+  \tan(\theta + \pi/4) &= \frac{\frac{1}{\sqrt{2}}\left( x + y \right)}{\frac{1}{\sqrt{2}}\left( x - y \right)} \\
+                               &= \frac{x+y}{x-y} \\
+                               &= \frac{1 + \frac{y}{x}}{1- \frac{y}{x}} \\
+                               &= \frac{1 + \tan\theta}{1 - \tan\theta}.
+\end{align*}
+
+So our conclusion is
+\[
+  \tan(\theta + \pi/4) = \frac{1 + \tan\theta}{1 - \tan\theta}.
+\]
+
+\end{enumerate}
+\end{explanation}
+\end{question}
+
+\begin{question} \label{QmCMEIE}
+Draw pictures on a coordinate system for each of the following questions to help with your explanations. Do not work on a unit circle. Do not rely on any trig identities. Work from first principles instead.
+
+\begin{enumerate}
+\item Suppose $0 < \theta \leq \pi$ and $\tan \theta = -3/5$. Determine the exact values of $\cos\theta$ and $\sin\theta$.
+
+\item Suppose $\pi < \theta \leq 2\pi$ and $\cos\theta = 3/4$. Determine the exact value of $\tan \theta$.
+
+\item Suppose $\pi/2 \leq  \theta \leq 3\pi/2$ and $\sin\theta = -2/3$. Determine the exact value of $\tan \theta$.
+
+\item Suppose $\pi \leq  \theta \leq 2\pi$ and $\tan \theta = 3/5$. Determine the exact values of $\cos\theta$ and $\sin\theta$.
+
+\item Express $\cos\theta$ and $\sin\theta$ in terms of $u=\tan \theta$ if
+
+\begin{enumerate}
+\item $0 \leq \theta < \pi/2$
+
+\item $\pi/2 < \theta \leq  \pi$
+
+\item $\pi \leq \theta < 3\pi/2$
+
+\item $3\pi/2  < \theta \leq 2\pi$
+\end{enumerate}
+\end{enumerate}
+
+\begin{enumerate}
+\item Since
+\[
+  \tan\theta = \frac{y}{x} = -\frac{3}{5},
+\]
+a point $P$ with polar angle $\theta$ lies on the line $y=-3x/5$. Since $0 < \theta \leq \pi$, such a point $P$ must lie in the second quadrant. To keep things simple, we'll suppose $P$ has coordinates $(x,y) = (-5,3)$.
+
+Then the distance from $P$ to the origin is
+\[
+     r = \sqrt{(-5)^2 + 3^2} = \sqrt{34}.   
+\]
+So
+\[
+  \cos\theta = \frac{x}{r} = -\frac{5}{\sqrt{34}}
+\] 
+and
+\[
+  \sin\theta = \frac{y}{r} = \frac{3}{\sqrt{34}}.
+\]
+
+\item Let $P$ be a point with coordinates $(x,y)$ and polar angle $\theta$,  where $\pi \leq  \theta \leq 2\pi$. Since
+\[
+  \cos\theta = \frac{x}{r} = \frac{3}{4},
+\]
+we can choose $x=3$ and 
+\[
+  r = \sqrt{x^2 + y^2} = 4.
+\]
+Then
+\[
+    \sqrt{3^2 + y^2} = 4 
+\]
+and
+\[
+   y^2 = 7.
+\]
+So 
+\[
+   y=\pm \sqrt{7}.
+\]
+
+Since $\pi \leq  \theta \leq 2\pi$,  $y\leq 0$ and therefore
+\[
+  y = - \sqrt{7}.
+\]
+
+So $P$, with polar angle $\theta$, has coordinates $(3, -\sqrt{7})$ and
+\[
+  \tan\theta = \frac{y}{x} = - \frac{\sqrt{7}}{3}.
+\]
+
+\end{enumerate}
+\end{question}
+
+
+
+\begin{question} \label{Q89fegvVDE}
+Draw pictures to help with your explanations.
+\begin{enumerate}
+\item Suppose $\tan \theta = 5$ and evaluate $\tan(\theta + \pi)$.
+
+\item Express $\tan(\theta+\pi)$ in terms of $\tan \theta$.
+
+\item Suppose $\cos \theta = 2/3$ and evaluate $\cos(\theta + \pi)$.
+
+\item Express $\cos(\theta+\pi)$ in terms of $\cos \theta$.
+
+\item Suppose $\sin \theta = 2/3$ and evaluate $\sin(\theta + \pi)$.
+
+\item Express $\sin(\theta+\pi)$ in terms of $\sin \theta$.
+
+\item Express $\tan(\theta+\pi/2)$ in terms of $\tan \theta$.
+
+\item Express $\tan(\theta -\pi/2)$ in terms of $\tan \theta$.
+\end{enumerate}
+\end{question}
+
+\end{document}
