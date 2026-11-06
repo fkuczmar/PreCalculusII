@@ -273,9 +273,56 @@ where all the components are measured in meters.
 \end{enumerate}
 
 \end{explanation}
-
 \end{question}
 
+
+\section{Quiz 6B}
+ A beetle crawls rotates about the point $A(-3,1)$ at the constant rate of $2$ revolutions/minute as it crawls around a circle centered at that point. Use the methods of this class to find the beetle's velocity as it passes the point with coordinates $(-7,-1)$. All coordinates are measured in meters.
+
+\begin{explanation}
+
+\begin{onlineOnly}
+    \begin{center}
+\desmos{wkmticsxm7}{900}{600}
+\end{center}
+\end{onlineOnly}
+
+\href{https://www.desmos.com/calculator/wkmticsxm7}{142: Velocity Quiz 6B}
+
+Let $O$ be the origin. Then the position of the beetle relative to the center of its circular path as it passes the point $P$ with coordinates $(-7,-1)$ is
+\begin{align*}
+  \overrightarrow{AP} &= \overrightarrow{OP} - \overrightarrow{OA} \\
+                                &= \langle  -7, -1  \rangle \text{meters} - \langle -3, 1  \rangle \text{meters} \\
+                                &= \langle -4, -2 \rangle \text{meters}.
+\end{align*}
+
+Since the path is a circle, the beetle's velocity ${\bf v}$ (in meters/sec) is perpendicular to $\overrightarrow{AP}$. And since the motion is clockwise, the velocity is parallel to the vector
+\[
+  {\bf w} = \langle -2 ,  4\rangle \text{meters} .
+\] 
+The beetle rotates about $A$ at the constant rate of
+\begin{align*}
+    \omega &= 2 \frac{\text{rev}}{\text{min}} \\
+                    &=  \left(  2 \frac{\text{rev}}{\text{min}} \right) \left(2\pi \frac{\text{rad}}{\text{rev}} \right) \\
+                             &= 4\pi  \, \frac{\text{rev}}{\text{min}}.
+\end{align*}
+
+So the beetle passes the  point $P$ with velocity
+\begin{align*}
+       {\bf v} &= \left(  4\pi  \, \frac{\text{rev}}{\text{min}} \right) \langle  -2, 4\rangle \text{meters}  \\
+                  &= \langle  -8\pi, 16\pi \rangle \text{ meters/min}.
+\end{align*}
+
+Note: Since the speed of the beetle is
+\[
+     v = 4\pi \left| \overrightarrow{AP}\right| \text{ meters/min}
+\]
+and
+\[
+      {\bf w} = \left| \overrightarrow{AP}\right|,
+\]
+scaling ${\bf w}$ by the factor $4\pi$ rad/min gives the velocity vector (because the vector $4\pi {\bf w}$ points in the direction of motion and has length equal to the beetle's speed.
+\end{explanation}
 
 
 \end{document}
