@@ -325,4 +325,37 @@ scaling ${\bf w}$ by the factor $4\pi$ rad/min gives the velocity vector (becaus
 \end{explanation}
 
 
+\section{Quiz 7A}
+\begin{question} \label{Q7A142}
+Use the methods of this class to express $\tan(\theta + 7\pi/2)$ in terms of $\tan\theta$.
+
+\begin{explanation}
+Let $(a,b)\neq (0,0)$ be the coordinates of a point $P$ with polar angle $\theta$. To get the coordinates of a point $Q$ with polar angle 
+\[
+ \theta + \frac{7\pi}{2}  = \theta + 4\pi - \frac{\pi}{2},
+\]
+we can rotate $P$ clockwise about the origin by the angle $\pi/2$. Then point $Q$ has coordinates $(b,-a)$.
+
+\begin{onlineOnly}
+    \begin{center}
+\desmos{3lpfrhwcxp}{900}{600}
+\end{center}
+\end{onlineOnly}
+ 
+\href{https://www.desmos.com/calculator/3lpfrhwcxp}{152: Quiz 7A}.
+
+Then since
+\[
+  \tan\theta = b/a,
+\]
+\begin{align*}
+  \tan \left( \theta + 7\pi/2  \right) &= \tan (\theta - \pi/2) \\
+                                                  &= -a/b  \\
+                                                   &= - \frac{1}{b/a} \\
+                                                  &= - \frac{1}{\tan \theta}.
+\end{align*}
+
+\end{explanation}
+\end{question}
+
 \end{document}
