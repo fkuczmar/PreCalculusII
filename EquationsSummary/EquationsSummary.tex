@@ -1,0 +1,168 @@
+\documentclass{ximera}
+\title{Solving Trigonometric Equations, Summary}
+
+\newcommand{\pskip}{\vskip 0.1 in}
+
+\begin{document}
+\begin{abstract}
+Summary for solving trigonometric equations.
+\end{abstract}
+\maketitle
+
+\section{Some Examples}
+
+\begin{example}  \label{Ex:433g3e}
+(a) Find two consecutive solutions to the equation
+\[
+   5 +  7 \cos\theta =  3 .  
+\]
+
+(b) Find the solution set of all exact solutions to the above equation without using a calculator.
+
+\begin{explanation}
+(a) Solving the above equation for $\cos\theta$ gives 
+\[
+   \cos \theta = \frac{x}{r} = -\frac{2}{7}.
+\]
+To visualize the solutions of this equation, we draw a circle of radius $r=7$ and the vertical line $x=-2$. The line intersects the circle in two points $G$ and $K$. The set of all possible radian measures of their polar angles is the solution set to the original equation. There are two families of solutions, one that gives all possible polar angles for $G$, the other all possible polar angles for $K$
+ 
+
+To find these angles, we first look at the intersection point $G$ in the second quadrant. Here we can use the inverse cosine function to find one possible measure for the polar angle. This exact radian measure, the one between $0$ and $\pi$, is 
+\[
+  \theta = \arccos(-2/7) \sim 1.87.
+\]
+
+A polar angle of the second point $K$ where the line $x=-2$ intersects the circle gives another solution to the equation $\cos\theta = -2/7$. Two possibilities for the exact and approximate radian measures for this angle are
+\[
+   \theta = -\arccos(-2/7) \sim -1.87 
+\]
+or 
+\[
+       \theta = 2\pi - \arccos(-2/7) \sim 6.28 - 1.87 \sim 4.41 .
+\]
+
+
+(b) We can find the set of all possible solutions by adding integral multiples of $2\pi$ to the angles $\theta  =\arccos(-2/7)$ and either the angle $\theta = -\arccos(-2/7)$ or $\theta = 2\pi - \arccos(-2/7)$. With the first of the two latter choices we can write  the solution set to the equation
+\[
+     5 + 7 \cos\theta  =  3 
+\]
+as
+\[
+     \{  \theta \, | \, \theta = \pm \arccos(-2/7) + 2\pi n \, , \, n \in \mathbb{Z}    \}.
+\]
+ 
+Access Geogebra interactives through the online version of this text at
+ 
+\href{https://www.geogebra.org/classic/qnhtd4h8}{142: Solving Trigonometric Equations}.
+\end{explanation}
+\end{example}
+
+\begin{example} \label{Ex9f93q}
+Solve the equation
+\[
+  5 + 7 \cos \left( \frac{\pi}{8}\left( t-2 \right)  \right) =  3 .
+\]
+
+\begin{explanation}
+Make the substitution
+\[
+   \theta = \frac{\pi}{8}\left( t-2 \right)
+\]
+and the equation becomes
+\[ 
+     5 + 7 \cos \theta  =  3.
+\]
+From Example 1, it follows that
+\[
+  \theta = \pm \arccos(-2/7) + 2\pi n \, , \, n\in \mathbb{Z}.
+\]
+
+So
+\[
+   \frac{\pi}{8}\left( t-2 \right) = \pm \arccos(-2/7) + 2\pi n \, , \, n\in \mathbb{Z}
+\]
+and
+\[
+  t = 2 \pm \frac{8}{\pi} \arccos(-2/7) + 2\pi n \, , \, n\in \mathbb{Z}.
+\]
+
+So the solution set to the equation
+\[
+  5 + 7 \cos \left( \frac{\pi}{8}\left( t-2 \right)  \right) =  3 .
+\]
+is
+\[
+ \{ t \, | \,   t = 2 \pm \frac{8}{\pi} \arccos(-2/7) + 2\pi n \, , \, n\in \mathbb{Z}     \}.
+\]
+\end{explanation}
+\end{example}
+
+\begin{example} \label{Exlfeef}
+Solve the equation
+\[
+  5 + 7 \sin \left( \frac{\pi}{8}\left( t-2 \right)  \right) =  3 .
+\]
+
+\begin{explanation}
+Letting 
+\[
+   \theta = \frac{\pi}{8}\left( t-2 \right)
+\]
+and doing some algebra leads to the equivalent equation
+\[
+ \sin\theta = -\frac{2}{7}.
+\]
+The solution to this equation closest to zero (ie. between $-\pi/2$ and $\pi/2$) is
+\[
+    \theta = \arcsin(-2/7),
+\]
+giving one family of solutions (in the fourth quadrant),
+\[
+  \theta = \frac{\pi}{8}\left( t-2 \right) = \arcsin(-2/7) + 2\pi n \, , \, n \in \mathbb{Z}.
+\]
+
+A solution in the second family (in the third quadrant) is
+\[
+  \theta =  \pi - \arcsin(-2/7),
+\]
+giving the other family of solutions (in the third quadrant),
+\[
+  \theta = \frac{\pi}{8}\left( t-2 \right) = \pi - \arcsin(-2/7) + 2\pi n \, , \, n \in \mathbb{Z}.
+\]
+
+Solving the two equations above for $t$ (details left for you) gives the solution set to the equation
+\[
+  5 + 7 \sin \left( \frac{\pi}{8}\left( t-2 \right)  \right) =  3 .
+\]
+as
+\[
+     \{  t \, | \, t = 2 + \frac{8}{\pi} \arcsin(-2/7) + 2\pi n  \text{ or } t= 10 - \frac{8}{\pi} \arcsin(-2/7) + 2\pi n ,n\in \mathbb{Z}     \}.
+\]
+\end{explanation}
+\end{example}
+
+\begin{example} \label{Ex93r93r}
+Solve the equation
+\[
+     \tan \theta = -2 .
+\]
+
+\begin{explanation}
+The solution nearest to zero (ie. strictly between $-\pi/2$ and $\pi/2$) is
+\[
+  \theta = \arctan (-2) .
+\]
+Since the tangent fiunction has period $\pi$ and the range of the inverse tangent function has length $\pi/2 - (-\pi/2) = \pi$, the solution set to the equation
+\[
+  \tan \theta = -2 
+\]
+is
+\[
+  \{ \theta \, | \, \theta = \arctan(-2) + \pi n , n\in \mathbb{Z} \}.
+\]
+\end{explanation}
+\end{example}
+
+
+\end{document}
+
