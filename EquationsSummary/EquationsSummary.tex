@@ -38,6 +38,10 @@ Access Geogebra interactives through the online version of this text at
 \end{center}
 \end{onlineOnly}
 
+Access Geogebra interactives through the online version of this text at
+ 
+\href{https://www.geogebra.org/classic/qnhtd4h8}{142: Solving Trigonometric Equations}.
+
 
 To find these angles, we first look at the intersection point $G$ in the second quadrant. Here we can use the inverse cosine function to find one possible measure for the polar angle. This exact radian measure, the one between $0$ and $\pi$, is 
 \[
@@ -63,9 +67,7 @@ as
      \{  \theta \, | \, \theta = \pm \arccos(-2/7) + 2\pi n \, , \, n \in \mathbb{Z}    \}.
 \]
  
-Access Geogebra interactives through the online version of this text at
- 
-\href{https://www.geogebra.org/classic/qnhtd4h8}{142: Solving Trigonometric Equations}.
+
 \end{explanation}
 \end{example}
 
@@ -160,11 +162,38 @@ Solve the equation
 \]
 
 \begin{explanation}
-The solution nearest to zero (ie. strictly between $-\pi/2$ and $\pi/2$) is
+Since
+\[
+  \tan\theta = \frac{y}{x} = -2,
+\]
+the solutions to this equation are the polar angles of the points on the line $y=-2x$. This line intersects any circle centered at the origin in two points, giving two families of solutions. 
+
+The solution nearest to zero (ie. strictly between $-\pi/2$ and $\pi/2$) lies in the fourth quadrant and is
 \[
   \theta = \arctan (-2) .
 \]
-Since the tangent fiunction has period $\pi$ and the range of the inverse tangent function has length $\pi/2 - (-\pi/2) = \pi$, the solution set to the equation
+A solution in the second family is
+\[
+    \theta = \arctan (-2) + \pi .
+\]
+
+So the two families of solutions are
+\[
+  \theta = \arctan (-2)  + 2\pi n , n\in \mathbb{Z}
+\]
+or
+\[
+   \theta = \arctan (-2)  + \pi + 2\pi n , n\in \mathbb{Z}.
+\]
+
+We can write these two families together as one big family:
+\[
+  \theta = \arctan(-2) + \pi n, n\in \mathbb{Z}.
+\]
+
+%Since the tangent fiunction has period $\pi$ and the range of the inverse tangent function has length $\pi/2 - (-\pi/2) = \pi$, the solution set to the equation
+
+So the solution set to the equation 
 \[
   \tan \theta = -2 
 \]
@@ -174,6 +203,26 @@ is
 \]
 \end{explanation}
 \end{example}
+
+\section{Exercises}
+
+\begin{exercise} \label{Exe8310}
+\begin{enumerate}
+\item Draw the missing picture for Example 2 that explains why a member of the second family of solutions to the equation
+\[
+   \sin\theta = -2/7
+\]
+is
+\[
+ \theta = \pi - \arcsin(-2/7).
+\]
+
+\item Fill in all the steps for the missing algebra to get the second family of solutions in Example 2.
+
+\item Draw a picture that illustrates the two families of solutions in Example 3. Draw and label the two specific angles in the two families of solutions.
+
+\end{enumerate}
+\end{exercise}
 
 
 \end{document}
