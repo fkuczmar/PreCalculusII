@@ -1,0 +1,233 @@
+\documentclass{ximera}
+\title{Composing Functions}
+
+\newcommand{\pskip}{\vskip 0.1 in}
+
+\begin{document}
+\begin{abstract}
+Composing trig functions and their partial inverses.
+\end{abstract}
+\maketitle
+
+\begin{question} \label{Qd3r90}
+Explain the meaning of each of the following expressions and simplify each.
+
+\begin{enumerate}
+\item $\arccos(\cos\theta)$, $0\leq \theta \leq \pi$
+
+\item $\arccos(\cos\theta)$, $\pi\leq \theta \leq 2\pi$
+
+\item $\arccos\left(\cos\left( \frac{\pi}{8}\left( t+3 \right) \right)\right)$, $5 \leq t \leq 13$
+
+\item $\arcsin(\sin\theta)$, $\pi/2\leq \theta \leq 3\pi/2i$
+
+\item $\arcsin(\sin\theta)$, $3\pi/2\leq \theta \leq 5\pi/2$
+
+\item $\arcsin\left(\sin\left( \frac{\pi}{10}\left( t-4 \right) \right)\right)$, $9 \leq t \leq 19$
+
+\end{enumerate}
+
+\begin{explanation}
+\begin{enumerate}
+\item $\arccos(\cos\theta)$ is the angle between $0$ and $\pi$ that has the same cosine as the angle $\theta$. If $\theta$ is between $0$ and $\pi$ it follows immediately that 
+\[
+   \arccos(\cos\theta) = \theta .
+\]
+
+
+\item $\arccos(\cos\theta)$ is the angle between $0$ and $\pi$ that has the same cosine as the angle $\theta$. If $\theta$ is between $\pi$ and $2\pi$ it is \emph{not} true that 
+\[
+   \arccos(\cos\theta) = \theta .
+\]
+To find the correct expression, draw a picture (left for you). Start by labeling some arbitrary point $P$ in the third or fourth quadrant with coordinates $(a,b)$, $b< 0$. Then draw and label its polar angle $\theta$, $\pi \leq \theta \leq 2\pi$. 
+
+We're looking for the angle between $0$ and $\pi$ that has the same cosine as the angle $\theta$. Remembering that 
+\[
+  \cos\theta = \frac{a}{r} = \frac{a}{\sqrt{a^2 + b^2}},
+\]
+we draw the line $x=a$ through $P$. This line intersects the circle centered at the origin with radius $r=\sqrt{a^2+b^2}$ (draw this circle) in another point $Q$ with coordinates $(a,-b)$. Since $Q$ is in the first or second quadrant, one of its polar angles $\phi$ lies between $0$ and $\pi$. But since also
+\[
+ \cos\phi = \frac{a}{r},
+\]
+it follows that
+\[
+ \phi = \arccos(\cos\theta).
+\] 
+
+To express $\phi =  \arccos(\cos\theta)$ in terms of $\theta$, imagine standing at the origin facing in the direction of the positive $x$-axis. To end up facing the point $Q$, we could first rotate counterclockwise through the angle $2\pi$ and then clockwise through the angle $\theta$. This means that
+\[
+  \arccos(\cos\theta) = 2\pi - \theta
+\]
+if $\pi \leq \theta \leq 2\pi$.
+
+\item Let 
+\[
+ \theta= \frac{\pi}{8}\left( t+3 \right).
+\]
+Then since $5\leq t \leq 13$,
+\[
+       \frac{\pi}{8}\left(5+3 \right) \leq \theta \leq \frac{\pi}{8}\left( 13+3 \right),
+\]
+or equivalently,
+\[
+       \pi \leq \theta \leq 2\pi.
+\]
+So from part (b) we know
+\[
+ \arccos(\cos\theta) = 2\pi - \theta .
+\]
+Substituting 
+\[
+   \theta = \frac{\pi}{8}\left( t+3 \right)
+\]
+gives
+\[
+  \arccos\left(\cos\left( \frac{\pi}{8}\left( t+3 \right) \right)\right) = 2\pi - \frac{\pi}{8}\left( t+3 \right).
+\]
+\end{enumerate}
+\end{explanation}
+
+\end{question}
+
+
+\begin{question} \label{Q0fevme}
+The function
+\[
+  h = f(t) = 2500 - 200 \cos \left(  \frac{\pi}{10}t  \right) \, , 0\leq t \leq 20 ,
+\]
+expresses the height (in feet) of a balloon in terms of the number of minutes past noon.
+
+\begin{enumerate}
+
+\item What are the units of the constant $\pi/10$ above? How do you know?
+
+\item Interpret the meaning of the constant $\pi/10$ and use it to determine the period of oscillation of the balloon's altitude about its mean.
+
+\item Determine the times when the balloon is at its maximum and minimum heights. Find these heights.
+
+\item Use the results of parts (a)-(c) to sketch a graph of the function $f$. Label the coordinates of the endpoints and the turning points. 
+
+\item  Find a function $T=d(h)$ that takes a height (in feet) as an input and returns as an output the time (measured in minutes past noon) when the balloon is at that height and on its way down. Include the correct domain.
+
+\item  Explain the meaning of the composition $u\circ f$. What does the function take as an input? What does it return as an output? 
+
+\item Simplify the composition $u\circ f$ as much as possible (there should be no trig or inverse trig functions in your final result). 
+
+\item Graph the compostion $u\circ f$ over its domain.
+
+\end{enumerate}
+
+\begin{explanation}
+\begin{enumerate}
+\item Since the input $\theta = (\pi/10)t$ to the cosine function is a dimensionless angle (measured in radians) and $t$ is measured in minutes, $\pi/10$ has units rad/min.
+
+\item The rotation rate of the uniform circular motion that drives the simple harmonic oscillation of the balloon's height about its mean is $\pi/10$ rad/min. So the period of oscillation is
+\[
+  \frac{2\pi \text{ rad}}{\frac{\pi}{10} \frac{\text{ rad}}{\text{min}}} = 20 \text{min}.
+\]
+
+\item The balloon is at its maximum height when $\cos\theta = \cos (\frac{\pi}{10}t) = -1$. So the maximum height (in feet) is
+\[
+   2500 + 200 = 2700.
+\] 
+This occurs when
+\[
+   \theta = \frac{\pi}{10}t = \pi
+\]
+or when
+\[
+ t = 10.
+\]
+The minimum height of
+\[
+   (2500 - 200)\text{ ft} = 2300\text{ ft}
+\]
+occurs when
+\[
+   \frac{\pi}{10}t = 0 \hskip 0.3 in \text{or} \hskip 0.3in  \frac{\pi}{10}t = 2\pi
+\]
+or when
+\[
+  t = 0 \hskip 0.3 in \text{or} \hskip 0.3in t=20.
+\]
+
+\item I'll leave this for you.
+
+\item The balloon is on its way down when $10 < t < 20$. So to find an expression for the function $T=d(h)$, we solve the equation 
+\[
+     h = 2500 - 200 \cos \left(  \frac{\pi}{10}T \right) \, , \, 10 < T <20,
+\]
+for $t$ in terms of $h$. Some algebra leads to
+\[
+   \cos \left(  \frac{\pi}{10}T  \right) = \frac{2500-h}{200}.
+\]
+
+Now let 
+\[
+  \theta = \frac{\pi}{10}T.
+\]
+Then since $10 < T <20$,
+\[
+          \pi < \theta < 2\pi.
+\]
+So we first solve the equation
+\[
+  \cos \theta = \frac{2500-h}{200} \, , \, \pi < \theta < 2\pi.
+\]
+One solution to this equation (ie. the one between $0$ and $\pi$) is
+\[
+    \theta = \arccos\left(  \frac{2500-h}{200} \right).
+\]
+So the solution between $\pi$ and $2\pi$ (draw a picture to explain why) is
+\[
+     \theta = 2\pi - \arccos\left(  \frac{2500-h}{200} \right).
+\]
+Thus,
+\[
+  \frac{\pi}{10}T = 2\pi - \arccos\left(  \frac{2500-h}{200} \right)
+\]
+and
+\[
+  T = 20 - \frac{10}{\pi} \arccos\left(  \frac{2500-h}{200} \right).
+\]
+
+So the function
+\[   
+  T = g(h) = 20 - \frac{10}{\pi} \arccos\left(  \frac{2500-h}{200} \right) \, , \, 2300 < h < 2700,
+\]
+gives the time (in minutes past noon) when the balloon is $h$ feet above the ground and on its way down.
+
+\item The function $T=h(f(t))$, $0 <  t  < 20$ and $t\neq 10$, takes as an input a time $t$ (measured in minutes past noon) and returns as an output the time (measured in minutes past noon) when the balloon is at the same height as it is at time $t$ and on its way down.
+
+\item 
+\begin{align*}
+    T &= d(f(t)) \\
+       & = d\left( 2500 - 200 \cos \left(  \frac{\pi}{10}t  \right)  \right) \\
+       &= 20 - \frac{10}{\pi} \arccos\left( \frac{2500 - \left(  2500 - 200 \cos \left(  \frac{\pi}{10}t \right)\right) }{200} \right) \\ 
+       &=  20 - \frac{10}{\pi} \arccos\left( \cos \left(  \frac{\pi}{10}t \right) \right) \\
+       &=\begin{cases}
+               20 - \frac{10}{\pi}  \left( \frac{\pi}{10}t\right) \, , \, 0 <  t < 10 \\ \\
+                20 - \frac{10}{\pi}  \left( 2\pi - \frac{\pi}{10}t\right) \, , \, 10 < t < 20
+            \end{cases} \\
+       &=\begin{cases}
+               20 - t \, , \, 0 <  t < 10 \\
+                t   \, , \, 10 < t < 20 .
+            \end{cases}
+\end{align*}
+\end{enumerate}
+\end{explanation}
+
+\end{question}
+
+
+
+
+\begin{onlineOnly}
+    \begin{center}
+\desmosThreeD{xq8nuuxbcb}{900}{600}
+\end{center}
+\end{onlineOnly}
+
+\href{https://www.desmos.com/3d/xq8nuuxbcb}{Helix  Curvature}
+
+\end{document}
