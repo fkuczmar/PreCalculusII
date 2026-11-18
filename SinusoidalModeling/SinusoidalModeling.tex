@@ -21,7 +21,7 @@ Find a function
 that expresses the position of the mass (in meters) in terms of the number of seconds since it was released. Do this as follows:
 
 \begin{enumerate}
-\item First expess the position as a function $s=f(\theta)$ of the polar angle of the uniform circular motion that drives the oscillation.
+\item First expess the position as a function $s=g(\theta)$ of the polar angle of the uniform circular motion that drives the oscillation.
 
 \item Then express the polar angle as a function $\theta = a(t)$ of time.
 
@@ -36,12 +36,12 @@ that expresses the position of the mass (in meters) in terms of the number of se
 
 Desmos activity available at:
 
-\href{https://www.desmos.com/calculator/yaopsldty0}{142: Simple Harmonic Motion 1}.
+\href{https://www.desmos.com/calculator/ae793153a6}{142: Simple Harmonic Motion 1}.
 
  
 \begin{onlineOnly}
     \begin{center}
-\desmos{yaopsldty0}{900}{600}
+\desmos{ae793153a6}{900}{600}
 \end{center}
 \end{onlineOnly}
 
@@ -68,10 +68,7 @@ Since $\theta=0$ at time $t=0$,
 \]
 
 \end{enumerate}
-
 \end{explanation}
-
-
 \end{example}
 
 
@@ -79,7 +76,7 @@ Since $\theta=0$ at time $t=0$,
 \begin{example}  \label{Efdb56gthyn}
 A mass oscillates in simple harmonic motion along the $s$-axis between positions $s=2$ m and $s=8$ m. The mass reaches position $s=8$ at time $t=2.5$ seconds. It takes two seconds for the mass to slide from position $s=2$ to $s=8$. 
 
-Find a function
+Follow the method of Example 1 to find a function
 \[
    s = f(t) \, , \, 0\leq t \leq 12
 \]  
@@ -89,17 +86,18 @@ that expresses the position of the mass (in meters) in terms of the number of se
 
 Desmos activity available at:
 
-\href{https://www.desmos.com/calculator/piayt4fmno}{142: Simple Harmonic Motion 2}.
+\href{https://www.desmos.com/calculator/mpqtxfyzco}{142: Simple Harmonic Motion 2}.
 
  
 \begin{onlineOnly}
     \begin{center}
-\desmos{piayt4fmno}{900}{600}
+\desmos{mpqtxfyzco}{900}{600}
 \end{center}
 \end{onlineOnly}
 
+\begin{enumerate}
 
-The equilibrium position is halfway between $s=2$ and $s=8$ at 
+\item The equilibrium position is halfway between $s=2$ and $s=8$ at 
 \[
   s = 0.5(2 \text{ m} + 8 \text{ m}) =  5 \text{ m}.
 \]
@@ -107,15 +105,28 @@ As in the previous example, the maximum displacement from equilibrium is
 \[
    s = 8\text{ m} - 5\text{ m} = 3 \text{ m}.
 \] 
-The rotation rate of the point $P$ about the center of its circular path is still
+So the function 
+\[
+  s = g(\theta)  = 5+3\cos\theta 
+\]
+expresses the position as a function of the polar angle.
+
+\item The rotation rate of the point $P$ about the center of its circular path is still
 \[
    \omega = \frac{\pi \text{ rad}}{2 \text{ sec}} .
 \]
-Since the mass oscillates about $s=5$ and its displacement from equilibrium is at a maximum value of $s=3$ at time $t=2.5$, we know that  
+Since the polar angle is $\theta = 0$ at time $t=2.5$ seconds when the mass its maximum displacement from equilibrium, the polar angle function is
 \[
-  s = f(t) = 5+3\cos\left( \frac{\pi}{2}(t-2.5) \right) \, , \, 0\leq t \leq 12.
+ \theta = \frac{\pi}{2}\left( t - 2.5 \right) \, , \, 0\leq t \leq 12.
 \]
 
+\item Composing the functions $s=g(\theta)$ and $\theta = a(t)$, gives the position function
+\[
+  s = f(t) g(a(t)) = 5+3\cos\left( \frac{\pi}{2}(t-2.5) \right) \, , \, 0\leq t \leq 12.
+\]
+\end{enumerate}
+\end{explanation}
+\end{example}
 
 \begin{question}  \label{Qdgyh5y43}
 A mass oscillates in simple harmonic motion along the $s$-axis between positions $s=-2$ m and $s=12$ m. The mass reaches position $s=-2$ at time $t=3$ seconds. It takes five seconds for the mass to complete one oscillation. 
@@ -127,9 +138,6 @@ Find a function
 that expresses the position of the mass (in meters) in terms of the number of seconds since time $t=0$.
 \end{question}
 
-
-\end{explanation}
-\end{example}
 
 \section{Modeling Other Oscillatory Behavior}
 
