@@ -29,15 +29,15 @@ Explain the meaning of each of the following expressions and simplify each.
 
 \begin{explanation}
 \begin{enumerate}
-\item $\arccos(\cos\theta)$ is the angle between $0$ and $\pi$ that has the same cosine as the angle $\theta$. If $\theta$ is between $0$ and $\pi$ it follows immediately that 
+\item Since $theta$ is between $0$ and $\pi$ and $\arccos(\cos\theta)$ is the angle between $0$ and $\pi$ that has the same cosine as the angle $\theta$, 
 \[
    \arccos(\cos\theta) = \theta .
 \]
 
 
-\item $\arccos(\cos\theta)$ is the angle between $0$ and $\pi$ that has the same cosine as the angle $\theta$. If $\theta$ is between $\pi$ and $2\pi$ it is \emph{not} true that 
+\item $\arccos(\cos\theta)$ is the angle between $0$ and $\pi$ that has the same cosine as the angle $\theta$. But since $\theta$ is between $\pi$ and $2\pi$,
 \[
-   \arccos(\cos\theta) = \theta .
+   \arccos(\cos\theta) \neq \theta .
 \]
 To find the correct expression, draw a picture (left for you). Start by labeling some arbitrary point $P$ in the third or fourth quadrant with coordinates $(a,b)$, $b< 0$. Then draw and label its polar angle $\theta$, $\pi \leq \theta \leq 2\pi$. 
 
@@ -45,7 +45,7 @@ We're looking for the angle between $0$ and $\pi$ that has the same cosine as th
 \[
   \cos\theta = \frac{a}{r} = \frac{a}{\sqrt{a^2 + b^2}},
 \]
-we draw the line $x=a$ through $P$. This line intersects the circle centered at the origin with radius $r=\sqrt{a^2+b^2}$ (draw this circle) in another point $Q$ with coordinates $(a,-b)$. Since $Q$ is in the first or second quadrant, one of its polar angles $\phi$ lies between $0$ and $\pi$. But since also
+we draw the line $x=a$ through $P$. This line intersects the circle centered at the origin with radius $r=\sqrt{a^2+b^2}$ in a second point $Q$ with coordinates $(a,-b)$. Since $Q$ is in the first or second quadrant, one of its polar angles $\phi$ lies between $0$ and $\pi$. But since also
 \[
  \cos\phi = \frac{a}{r},
 \]
@@ -119,7 +119,7 @@ expresses the height (in feet) of a balloon in terms of the number of minutes pa
 
 \begin{explanation}
 \begin{enumerate}
-\item Since the input $\theta = (\pi/10)t$ to the cosine function is a dimensionless angle (measured in radians) and $t$ is measured in minutes, $\pi/10$ has units rad/min.
+\item Since the input $\theta = (\pi/10)t$ to the cosine function is a dimensionless angle (measured in radians) and $t$ is measured in minutes, the factor $\pi/10$ has units rad/min.
 
 \item The rotation rate of the uniform circular motion that drives the simple harmonic oscillation of the balloon's height about its mean is $\pi/10$ rad/min. So the period of oscillation is
 \[
@@ -142,7 +142,7 @@ The minimum height of
 \[
    (2500 - 200)\text{ ft} = 2300\text{ ft}
 \]
-occurs when
+occurs when $\cos\theta = 1$, or equivalently when
 \[
    \frac{\pi}{10}t = 0 \hskip 0.3 in \text{or} \hskip 0.3in  \frac{\pi}{10}t = 2\pi
 \]
@@ -151,13 +151,13 @@ or when
   t = 0 \hskip 0.3 in \text{or} \hskip 0.3in t=20.
 \]
 
-\item I'll leave this for you.
+\item I'll leave this for you, but from part (c) the points $(0,2300)$, $(20,2300)$, and $(10,2700)$ lie on the graph.
 
 \item The balloon is on its way down when $10 < t < 20$. So to find an expression for the function $T=d(h)$, we solve the equation 
 \[
      h = 2500 - 200 \cos \left(  \frac{\pi}{10}T \right) \, , \, 10 < T <20,
 \]
-for $t$ in terms of $h$. Some algebra leads to
+for $T$ in terms of $h$. Then
 \[
    \cos \left(  \frac{\pi}{10}T  \right) = \frac{2500-h}{200}.
 \]
@@ -197,7 +197,9 @@ So the function
 \]
 gives the time (in minutes past noon) when the balloon is $h$ feet above the ground and on its way down.
 
-\item The function $T=h(f(t))$, $0 <  t  < 20$ and $t\neq 10$, takes as an input a time $t$ (measured in minutes past noon) and returns as an output the time (measured in minutes past noon) when the balloon is at the same height as it is at time $t$ and on its way down.
+\item The function $T=h(f(t))$, $0 <  t  < 20$ and $t\neq 10$, gives the time $T$ (in minutes past noon) when the balloon is at the same height as it is at time $t$ minutes past noon and on its way down.
+
+%takes as an input a time $t$ (measured in minutes past noon) and returns as an output the time (measured in minutes past noon) when the balloon is at the same height as it is at time $t$ and on its way down.
 
 \item 
 \begin{align*}
@@ -216,18 +218,24 @@ gives the time (in minutes past noon) when the balloon is $h$ feet above the gro
 \end{align*}
 \end{enumerate}
 \end{explanation}
+\end{question}
 
+
+\begin{question} \label{Qmfmf3zzzz}
+Repeat all parts of Question 2 for the height function
+\[
+ h = f(t) = 1300 + 400\sin\left(  \frac{\pi}{13}t \right) \, , \, 0\leq t \leq 26.
+\]
 \end{question}
 
 
 
+%\begin{onlineOnly}
+%    \begin{center}
+%\desmosThreeD{xq8nuuxbcb}{900}{600}
+%\end{center}
+%\end{onlineOnly}
 
-\begin{onlineOnly}
-    \begin{center}
-\desmosThreeD{xq8nuuxbcb}{900}{600}
-\end{center}
-\end{onlineOnly}
-
-\href{https://www.desmos.com/3d/xq8nuuxbcb}{Helix  Curvature}
+%\href{https://www.desmos.com/3d/xq8nuuxbcb}{Helix  Curvature}
 
 \end{document}
