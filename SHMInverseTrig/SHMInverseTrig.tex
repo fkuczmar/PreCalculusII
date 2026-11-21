@@ -9,6 +9,63 @@ Using inverse trigonometry to paramaterize simple harmonic motion.
 \end{abstract}
 \maketitle
 
+\begin{example} \label{Qpvce30}
+Suppose that between consecutive noons on July 21 and July 22 the depth of the water at the Edmonds pier oscillates in simple harmonic motion between $5$ feet and $21$ feet with a period of $12$ hours. Suppose also that at 3am on July 21 the water is $11$ feet deep and falling.
+
+Use inverse trigonometry to help find a function
+\[
+  h = f(t) \, , \, 0\leq t \leq 24
+\]
+that expresses the depth of the water in terms of the number of hours since noon on July 21.
+
+\begin{explanation}
+We'll use the cosine function and first express the depth in terms of the polar angle:
+\[
+  h = g(\theta) = 13 + 8\cos\theta.
+\]
+
+To express the polar angle $\theta = a(t)$ as a function of time, we first find a possible value $a(15)$ for the polar angle $a(15) = \theta_0$ at 3am on July 22. Since the water is 11 feet deep at 3am,
+\[
+  h = 13 + 8\cos\theta_0 = 11
+\]
+and
+\[
+  \cos\theta_0 = -1/4.
+\]
+This equation has infinitely many solutions, but we'll choose the one between $0$ and $\pi$, namely
+\[
+ \theta_ 0 = \arccos(-1/4).
+\]
+
+Now since the tide is going out at 3am, the function
+\[
+  h = g(\theta) = 13 + 8\cos\theta
+\]
+is decreasing when $\theta=\theta_0 =  \arccos(-1/4)$. And because $\cos\theta$ is a decreasing function for $\theta\in [0,\pi]$,  $\theta$ is increasing when $\theta=\theta_0$. That means the rotation rate of the polar angle is positive. Since the tides osciallate with a period of $12$ hours, the rotation rate of the uniform circluar motion that drives the oscillation is
+\[
+  \frac{\Delta \theta}{\Delta t} = \frac{2\pi \text{ rad}}{12\text{ hrs}} = \frac{\pi}{6} \text{ rad/hr}.
+\]
+So the polar angle function is
+\begin{align*}
+  \theta &= a(t) \\
+           &= a(15) + \frac{\pi}{12}\left( t-15 \right) \\
+           &= \arccos(-1/4) + \frac{\pi}{12}\left( t-15 \right) \, , \, 0\leq t \leq 24. 
+\end{align*}
+And therefore the function
+\begin{align*}
+   h &= g(a(t)) \\
+      &= g\left( \arccos(-1/4) + \frac{\pi}{12}\left( t-15 \right) \right)  \\
+      &= 13 + 8\cos \left(  \arccos(-1/4) + \frac{\pi}{12}\left( t-15 \right) \right) \, , \, 0\leq t \leq 24,
+\end{align*}
+expresses the depth of the water (in feet) in terms of the number of hours since noon on July 21.
+\end{explanation}
+\end{example}
+
+
+\iffalse
+
+***************
+
 Here's a problem we solved earlier using vectors. 
 
 \href{https://ximera.osu.edu/precalc2/PreCalculus2/SHMVectors/SHMVectors}{Simple Harmonic Motion with Vectors}
@@ -147,6 +204,33 @@ You should check this by
 \end{enumerate}
 \end{question}
 
+***********************************************************************************************
+\fi
+
+\section{Exercises}
+
+\begin{exercise} \label{Exmf210dc}
+Make another choice for the polar angle $\theta_0=a(15)$ in Example  1 and find an expression for the new polar angle function. Explain your reasoning.
+\end{exercise}
+
+\begin{exercise} \label{Ex39v39}
+Suppose between consecutive midnights the temperature in Seattle oscillates in simple harmonic motion about its mean between a high of $83^\circ$F and a low of $51^\circ$F with a period of 24 hours. Suppose also it is $79^\circ$ at 2pm and getting hotter.
+
+\begin{enumerate}
+\item Follow the method of Example 1 to find a function 
+\[
+  T = f(h) \, , \, 0\leq h \leq 24,
+\]
+that expresses the temperature (in Fahrenheit degrees) in terms of the number of hours past midnight.
+
+\item Use your function to find the exact time(s) when the temperature is $60^\circ$F. Then use a calculator to approximate these times to the nearest minute.
+
+\item Determine the exact time when the temperature is a maximum. Then use a calculator to approximate this time.
+
+\item Find the exact fraction of the $24$-hour period during which the temperature is at least $60^\circ$. Then use a calculator to approximate this fraction to the nearest hundredth.
+\end{enumerate}
+
+\end{exercise}
 
 \end{document}
 
