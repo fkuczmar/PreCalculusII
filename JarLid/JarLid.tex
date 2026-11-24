@@ -1,0 +1,73 @@
+\documentclass{ximera}
+\title{Elastic Bands, Jar Lids and Measuring the Earth}
+
+\newcommand{\pskip}{\vskip 0.1 in}
+
+\begin{document}
+\begin{abstract}
+A few related problems.
+\end{abstract}
+\maketitle
+
+
+\begin{question} \label{4Ef4tDE}
+
+You wrap an elastic band around a jar lid of radius $a$ cm and stretch the band as shown below.
+
+\begin{onlineOnly}
+    \begin{center}
+\desmos{ymesxpazea}{900}{600}
+\end{center}
+\end{onlineOnly}
+
+\href{https://www.desmos.com/calculator/ymesxpazea}{Jar Lid 44}
+
+\begin{enumerate}
+
+\item Drag the point $P$ in the worksheet above to see how the elastic band changes. Pay particular attention to the points of tangency $Q$ and $R$ and describe what you see.
+
+\begin{freeResponse}
+\end{freeResponse}
+
+\item Sketch by hand a graph of the function $L=f(h)$ that express the length of the band (measured in cm) in terms of $a$ and the distance $h$ between the point $P$ and the center of the lid, also measured in cm. Pay particular attention to oblique asymptotes.
+
+\item Find an expression for the function $L=f(h)$. include the domain. Do this as follows.
+
+\item Check that your expression has the correct units.
+
+\begin{enumerate}
+\item First express the length of one straight part $\overline{PQ}$ of the elastic band in terms of $h$ and $a$. 
+
+The length is 
+\[
+  PQ = \answer{\sqrt{h^2-a^2}}.
+\]
+
+\item Next find an expression for the angle $\theta = \angle QOP$.
+
+The angle $\theta$ is
+\[
+  \theta = \answer{\arccos(a/h)}.
+\]
+
+\item Then find the length of portion of the band wrapped around the lid.
+
+This length is 
+\begin{align*}
+\text{long arc} QR &= 2\pi a - \answer{2a\arccos(a/h)} \\
+                           &= 2a \arccos (\answer{-a/h})
+\end{align*} 
+
+\item So the length of the band in cm is
+\[
+ f(h) = \answer{2\sqrt{a^2+h^2}+2a\arccos(-a/h)} \, , \, h\geq \answer{a} .
+\]
+\end{enumerate}
+\end{enumerate}
+
+
+\end{question}
+
+
+
+\end{document}
